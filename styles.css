@@ -291,6 +291,20 @@ body {
 .player-name { font-weight: 600; }
 .deck-name { color: var(--text-muted); font-size: 0.85rem; }
 
+
+.deck-type-badge {
+  display: inline-block;
+  padding: 0.12rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #0f1218;
+  background: linear-gradient(135deg, #7dd3fc 0%, #c4b5fd 100%);
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
 .photo-note {
   font-size: 0.8rem;
   color: var(--accent);

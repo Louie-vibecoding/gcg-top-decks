@@ -18,10 +18,14 @@
     CS: "badge-cs",
   };
 
+  // Fixed color order for sorting 卡组类型 options
+  const DECK_TYPE_ORDER = ["红", "蓝", "绿", "白", "紫"];
+
   const state = {
     region: "all",
     month: "",
     eventType: "",
+    deckType: "",
     page: 1,
     allEvents: [],
     filtered: [],
@@ -34,6 +38,7 @@
     pagination: document.getElementById("pagination"),
     month: document.getElementById("month-filter"),
     type: document.getElementById("type-filter"),
+    deckType: document.getElementById("deck-type-filter"),
     chinaNote: document.getElementById("china-note"),
   };
 
@@ -116,6 +121,42 @@
         .join("");
   }
 
+  function deckTypeSortKey(label) {
+    // Sort by first color in fixed order, then second, then length
+    const chars = [...String(label || "")];
+    const idxs = chars.map((c) => {
+      const i = DECK_TYPE_ORDER.indexOf(c);
+      return i === -1 ? 99 : i;
+    });
+    while (idxs.length < 3) idxs.push(99);
+    return idxs.join("-") + "-" + chars.length;
+  }
+
+  function populateDeckTypeOptions() {
+    if (!el.deckType) return;
+    const types = new Set();
+    for (const e of state.allEvents) {
+      for (const p of e.placements || []) {
+        if (p.deck_type && placementHasDeck(p)) types.add(p.deck_type);
+      }
+    }
+    const sorted = [...types].sort((a, b) =>
+      deckTypeSortKey(a).localeCompare(deckTypeSortKey(b))
+    );
+    const prev = state.deckType;
+    el.deckType.innerHTML =
+      '<option value="">全部</option>' +
+      sorted
+        .map((t) => `<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`)
+        .join("");
+    if (prev && types.has(prev)) {
+      el.deckType.value = prev;
+      state.deckType = prev;
+    } else {
+      state.deckType = "";
+    }
+  }
+
   function matchesRegion(event) {
     if (state.region === "all") return true;
     const tag = event.region_tag || event.region || "";
@@ -147,14 +188,36 @@
     return placements.some(placementHasDeck);
   }
 
+  function placementMatchesDeckType(p) {
+    if (!state.deckType) return true;
+    return p && p.deck_type === state.deckType;
+  }
+
+  /** Visible placements for an event under current filters (deck info + deck type). */
+  function visiblePlacements(event) {
+    return (event.placements || [])
+      .filter(placementHasDeck)
+      .filter(placementMatchesDeckType)
+      .slice()
+      .sort((a, b) => (a.rank || 99) - (b.rank || 99));
+  }
+
   function applyFilters() {
-    state.filtered = state.allEvents.filter(
-      (e) =>
-        eventHasDeckInfo(e) &&
-        matchesRegion(e) &&
-        matchesMonth(e) &&
-        matchesType(e)
-    );
+    state.filtered = state.allEvents
+      .filter(
+        (e) =>
+          eventHasDeckInfo(e) &&
+          matchesRegion(e) &&
+          matchesMonth(e) &&
+          matchesType(e)
+      )
+      .map((e) => {
+        if (!state.deckType) return e;
+        const placements = visiblePlacements(e);
+        if (!placements.length) return null;
+        return { ...e, placements };
+      })
+      .filter(Boolean);
     state.page = 1;
     render();
   }
@@ -186,7 +249,7 @@
     }
     return {
       title: "暂无匹配赛事",
-      body: "试试调整地区、月份或赛事类型筛选。",
+      body: "试试调整地区、月份、赛事类型或卡组类型筛选。",
     };
   }
 
@@ -237,6 +300,10 @@
 
     const keyAttr = storeKey ? ` data-store-key="${storeKey}"` : "";
 
+    const typeBadge = p.deck_type
+      ? `<span class="deck-type-badge" title="卡组类型">${escapeHtml(p.deck_type)}</span>`
+      : "";
+
     return (
       `<div class="placement"${keyAttr}>` +
       `<div class="placement-head">` +
@@ -244,6 +311,7 @@
       (p.player_name
         ? `<span class="player-name">${escapeHtml(p.player_name)}</span>`
         : "") +
+      typeBadge +
       (p.deck_name
         ? `<span class="deck-name">${escapeHtml(p.deck_name)}</span>`
         : "") +
@@ -378,6 +446,13 @@
       applyFilters();
     });
 
+    if (el.deckType) {
+      el.deckType.addEventListener("change", () => {
+        state.deckType = el.deckType.value;
+        applyFilters();
+      });
+    }
+
     el.list.addEventListener("click", (ev) => {
       const summary = ev.target.closest(".event-summary");
       if (!summary) return;
@@ -405,6 +480,7 @@
     try {
       const counts = await loadAllData();
       populateMonthOptions();
+      populateDeckTypeOptions();
       applyFilters();
       console.info(
         `[gcg-preview] loaded japan=${counts.japan} china=${counts.china} eu=${counts.eu} cs=${counts.japanCs} total=${counts.total}`

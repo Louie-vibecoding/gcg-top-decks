@@ -21,7 +21,9 @@
     "tonamel.com/organization/O6TBW (ARCH CS)",
     "tonamel.com/organization/EOzqD (UC杯)",
     "tonamel.com/organization/Wk2iz (からセナCS)",
-    "note.com / web search / YouTube @arch_cs_gcg"
+    "note.com / web search / YouTube @arch_cs_gcg",
+    "tonamel.com/competition/TiNTV (ガンダムカードゲームCS キラキラ杯; 2025-08-23; 最大32名)",
+    "web/X/Tonamel recheck 2026-09-17 (no new qualifying unofficial CS ≥50 found)"
   ],
   "excluded": [
     {
@@ -57,6 +59,12 @@
       "name": "Trinity Cup 3on3",
       "date": "2026-08〜09",
       "reason": "店舗主催3on3・チームデッキ表現がv1に不向きのためスキップ"
+    },
+    {
+      "name": "ガンダムカードゲームCS - キラキラ杯",
+      "date": "2025-08-23",
+      "entrants": "最大32",
+      "reason": "参加者≥50未達・min_date前（Tonamel）"
     }
   ],
   "included": [
@@ -69,5 +77,5 @@
       "tonamel": "https://tonamel.com/competition/sWn8e"
     }
   ],
-  "honesty_notes": "2026-08-01〜2026-09-17の非公認CSで参加者≥50を確認できたのはUC杯主催『GCG 大阪祭』(75名)のみ。定期開催のアークCSは会場定員が概ね32–45で閾値未満。からセナCSも同時期は32枠前後。デッキリストは主催が公開した写真からカードIDを起こしており、公式テキストレシピではない。"
+  "honesty_notes": "2026-08-01〜2026-09-17の非公認CSで参加者≥50を確認できたのはUC杯主催『GCG 大阪祭』(75名)のみ。2026-09-17にX・Tonamel・Webを再確認したが、新たに条件を満たすイベントは確認できなかった。定期開催のアークCSは会場定員が概ね32–45で閾値未満。からセナCSも同時期は32枠前後。デッキリストは主催が公開した写真からカードIDを起こしており、公式テキストレシピではない。"
 }

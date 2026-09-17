@@ -1,0 +1,73 @@
+{
+  "region_tag": "日本",
+  "event_type": "CS",
+  "min_date": "2026-08-01",
+  "min_entrants": 50,
+  "as_of": "2026-09-17",
+  "total_events": 1,
+  "total_decks": 2,
+  "events_with_full_lists": 1,
+  "by_month": [
+    {
+      "month": "2026-08",
+      "events": 1,
+      "decks": 2
+    }
+  ],
+  "sources_checked": [
+    "x.com/arch_cs_gcg",
+    "x.com/UCCUP2025",
+    "x.com/karasenaGCG",
+    "tonamel.com/organization/O6TBW (ARCH CS)",
+    "tonamel.com/organization/EOzqD (UC杯)",
+    "tonamel.com/organization/Wk2iz (からセナCS)",
+    "note.com / web search / YouTube @arch_cs_gcg"
+  ],
+  "excluded": [
+    {
+      "name": "第17回 ARCH CS",
+      "date": "2026-08-01",
+      "entrants": "45/45",
+      "reason": "entrants < 50"
+    },
+    {
+      "name": "第18回 ARCH CS",
+      "date": "2026-08-22",
+      "entrants": "44/45",
+      "reason": "entrants < 50"
+    },
+    {
+      "name": "第19回 ARCH CS Freedom Ascension争奪戦vol.3",
+      "date": "2026-09-05",
+      "entrants": "32/38",
+      "reason": "entrants < 50（優勝ちきん/赤白MF・準優勝キンキ/赤白MFは確認済だが閾値未満）"
+    },
+    {
+      "name": "からセナCS ST争奪戦 with LABO会",
+      "date": "2026-09-13",
+      "entrants": "12/32",
+      "reason": "entrants < 50"
+    },
+    {
+      "name": "第9回 GCG大阪UC杯 3on3",
+      "date": "2026-09-27",
+      "reason": "未開催（受付中）/ 3on3"
+    },
+    {
+      "name": "Trinity Cup 3on3",
+      "date": "2026-08〜09",
+      "reason": "店舗主催3on3・チームデッキ表現がv1に不向きのためスキップ"
+    }
+  ],
+  "included": [
+    {
+      "id": "jp-cs-2026-08-09-uc-osaka-matsuri",
+      "name": "GCG 大阪祭",
+      "date": "2026-08-09",
+      "entrants": 75,
+      "source_url": "https://x.com/UCCUP2025/status/2086805814803902894",
+      "tonamel": "https://tonamel.com/competition/sWn8e"
+    }
+  ],
+  "honesty_notes": "2026-08-01〜2026-09-17の非公認CSで参加者≥50を確認できたのはUC杯主催『GCG 大阪祭』(75名)のみ。定期開催のアークCSは会場定員が概ね32–45で閾値未満。からセナCSも同時期は32枠前後。デッキリストは主催が公開した写真からカードIDを起こしており、公式テキストレシピではない。"
+}

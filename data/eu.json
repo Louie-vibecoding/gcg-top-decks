@@ -1,0 +1,2787 @@
+[
+  {
+    "id": "eu-tcgtd-2026-09-12-lgs",
+    "date": "2026-09-12",
+    "month": "2026-09",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "Regional @ LGS",
+    "store_or_venue": "LGS",
+    "store_name": "LGS",
+    "area": "UK",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Allonsyyy",
+        "player": "Allonsyyy",
+        "deck_name": "BW League Militaire SF",
+        "cards": [
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-003",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-068",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-101",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-121",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-egman-a44d1f19",
+    "date": "2026-09-05",
+    "month": "2026-09",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "401 Games' Toronto Regionals",
+    "store_or_venue": "401 Games' Toronto Regionals",
+    "store_name": "401 Games' Toronto Regionals",
+    "area": "CA",
+    "source": "egman",
+    "source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments",
+    "player_count": 512,
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Omnomnath",
+        "player": "Omnomnath",
+        "deck_name": "Blue/White GD05-002",
+        "cards": [
+          {
+            "card_id": "GD04-016",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-066",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-117",
+            "count": 1
+          },
+          {
+            "card_id": "ST04-012",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "player_name": "OneDriftingLeaf",
+        "player": "OneDriftingLeaf",
+        "deck_name": "Blue/White GD05-002",
+        "cards": [
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-065",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-120",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-117",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-30-area-51",
+    "date": "2026-08-30",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ Area 51",
+    "store_or_venue": "Area 51",
+    "store_name": "Area 51",
+    "area": "US",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Andre",
+        "player": "Andre",
+        "deck_name": "BG Nu Gundam",
+        "cards": [
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-027",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-018",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-029",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-020",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-017",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-085",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-126",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-125",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-27-top-level-games",
+    "date": "2026-08-27",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ Top Level Games",
+    "store_or_venue": "Top Level Games",
+    "store_name": "Top Level Games",
+    "area": "PR",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Carlos Camunas",
+        "player": "Carlos Camunas",
+        "deck_name": "BW StrikeFreedom",
+        "cards": [
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "EB01-054",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-012",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-23-lgs",
+    "date": "2026-08-23",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ LGS",
+    "store_or_venue": "LGS",
+    "store_name": "LGS",
+    "area": "EU",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "ABurningFalcon",
+        "player": "ABurningFalcon",
+        "deck_name": "BW StrikeFreedom",
+        "cards": [
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-003",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-068",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-121",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-23-game-grid-clearfield",
+    "date": "2026-08-23",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ Game Grid Clearfield",
+    "store_or_venue": "Game Grid Clearfield",
+    "store_name": "Game Grid Clearfield",
+    "area": "US",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Francesco Bonalde",
+        "player": "Francesco Bonalde",
+        "deck_name": "BW League Militaire SF",
+        "cards": [
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-011",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-003",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-121",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-egman-4d2e59e4",
+    "date": "2026-08-23",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "Egman Events GD05 Cup",
+    "store_or_venue": "Egman Events GD05 Cup",
+    "store_name": "Egman Events GD05 Cup",
+    "area": "US",
+    "source": "egman",
+    "source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments",
+    "player_count": 44,
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Steffon A Bizzell",
+        "player": "Steffon A Bizzell",
+        "deck_name": "White/Red GD05-066",
+        "cards": [
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-128",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-066",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-042",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-112",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-036",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-128",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "player_name": "Juan Medrano",
+        "player": "Juan Medrano",
+        "deck_name": "Blue/Purple GD02-054",
+        "cards": [
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-008",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 1
+          },
+          {
+            "card_id": "ST09-009",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-111",
+            "count": 1
+          },
+          {
+            "card_id": "ST05-002",
+            "count": 3
+          },
+          {
+            "card_id": "ST05-001",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-16-lgs",
+    "date": "2026-08-16",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ LGS",
+    "store_or_venue": "LGS",
+    "store_name": "LGS",
+    "area": "US",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "papi__gaming",
+        "player": "papi__gaming",
+        "deck_name": "BW StrikeFreedom",
+        "cards": [
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-014",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-003",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-006",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-117",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-121",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-15-marid-regional",
+    "date": "2026-08-15",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "Regional @ Marid Regional",
+    "store_or_venue": "Marid Regional",
+    "store_name": "Marid Regional",
+    "area": "ES",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Jordi Wang",
+        "player": "Jordi Wang",
+        "deck_name": "BW StrikeFreedom",
+        "cards": [
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-003",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-068",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-121",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "player_name": "adrian martin",
+        "player": "adrian martin",
+        "deck_name": "RW GundamFighter",
+        "cards": [
+          {
+            "card_id": "GD05-042",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-035",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-15-mageling-games",
+    "date": "2026-08-15",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ Mageling Games",
+    "store_or_venue": "Mageling Games",
+    "store_name": "Mageling Games",
+    "area": "US",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "John",
+        "player": "John",
+        "deck_name": "PB Tekkadan StrikeFreedom",
+        "cards": [
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-015",
+            "count": 2
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 3
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-095",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "ST09-009",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-15-ktcards",
+    "date": "2026-08-15",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ KTCards",
+    "store_or_venue": "KTCards",
+    "store_name": "KTCards",
+    "area": "DE",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "DeshengC",
+        "player": "DeshengC",
+        "deck_name": "BG Nu Gundam",
+        "cards": [
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-027",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-029",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-019",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-001",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-020",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-017",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-085",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "ST02-016",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-125",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-14-vault14",
+    "date": "2026-08-14",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ Vault14",
+    "store_or_venue": "Vault14",
+    "store_name": "Vault14",
+    "area": "UK",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "TomB",
+        "player": "TomB",
+        "deck_name": "RW GundamFighter",
+        "cards": [
+          {
+            "card_id": "GD05-042",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-066",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-egman-832efe2d",
+    "date": "2026-08-12",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "Eagle's Nest S6GW5.0 GD05 Webcam Locals",
+    "store_or_venue": "Eagle's Nest S6GW5.0 GD05 Webcam Locals",
+    "store_name": "Eagle's Nest S6GW5.0 GD05 Webcam Locals",
+    "area": "US",
+    "source": "egman",
+    "source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments",
+    "player_count": 20,
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "SdotAkuma",
+        "player": "SdotAkuma",
+        "deck_name": "White/Red GD05-066",
+        "cards": [
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-036",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "player_name": "Mas",
+        "player": "Mas",
+        "deck_name": "White/Blue GD05-002",
+        "cards": [
+          {
+            "card_id": "ST04-015",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-119",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 3
+          },
+          {
+            "card_id": "ST02-011",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-002",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 1
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-070",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-09-xpolytcg",
+    "date": "2026-08-09",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ XpolyTCG",
+    "store_or_venue": "XpolyTCG",
+    "store_name": "XpolyTCG",
+    "area": "ES",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Reim",
+        "player": "Reim",
+        "deck_name": "PG Aggro",
+        "cards": [
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-035",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-026",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-023",
+            "count": 2
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-016",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-09-lgs",
+    "date": "2026-08-09",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ LGS",
+    "store_or_venue": "LGS",
+    "store_name": "LGS",
+    "area": "UK",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Daniel N",
+        "player": "Daniel N",
+        "deck_name": "RW GundamFighter",
+        "cards": [
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-036",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-128",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-egman-c7705b5c",
+    "date": "2026-08-09",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "Victory Road's Rotterdam Regionals",
+    "store_or_venue": "Victory Road's Rotterdam Regionals",
+    "store_name": "Victory Road's Rotterdam Regionals",
+    "area": "EU",
+    "source": "egman",
+    "source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments",
+    "player_count": 230,
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "KawaPedros",
+        "player": "KawaPedros",
+        "deck_name": "Blue/White GD05-002",
+        "cards": [
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-011",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-003",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-121",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "player_name": "Lyanke",
+        "player": "Lyanke",
+        "deck_name": "Blue/Green GD05-017",
+        "cards": [
+          {
+            "card_id": "GD01-008",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-019",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-029",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-085",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-027",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-125",
+            "count": 2
+          },
+          {
+            "card_id": "ST02-016",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-017",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-020",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-001",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-08-weevil-cards-and-collectibles",
+    "date": "2026-08-08",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ Weevil Cards and Collectibles",
+    "store_or_venue": "Weevil Cards and Collectibles",
+    "store_name": "Weevil Cards and Collectibles",
+    "area": "US",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Crash",
+        "player": "Crash",
+        "deck_name": "PG Aggro",
+        "cards": [
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-035",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-026",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-016",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-08-lgs",
+    "date": "2026-08-08",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ LGS",
+    "store_or_venue": "LGS",
+    "store_name": "LGS",
+    "area": "UK",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "ABurningFalcon",
+        "player": "ABurningFalcon",
+        "deck_name": "BW StrikeFreedom",
+        "cards": [
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-003",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-006",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-117",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-121",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-08-funtainment",
+    "date": "2026-08-08",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ Funtainment",
+    "store_or_venue": "Funtainment",
+    "store_name": "Funtainment",
+    "area": "DE",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "IBO",
+        "player": "IBO",
+        "deck_name": "PG Aggro",
+        "cards": [
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-035",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-026",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-123",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-06-topdeck-hero",
+    "date": "2026-08-06",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ TopDeck Hero",
+    "store_or_venue": "TopDeck Hero",
+    "store_name": "TopDeck Hero",
+    "area": "EU",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "100s",
+        "player": "100s",
+        "deck_name": "PB Tekkadan StrikeFreedom",
+        "cards": [
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-018",
+            "count": 1
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 1
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 3
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "ST09-009",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "ST05-015",
+            "count": 1
+          },
+          {
+            "card_id": "ST02-016",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-egman-e934583f",
+    "date": "2026-08-05",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "Eagle's Nest S6GW4.0 GD05 Webcam Locals",
+    "store_or_venue": "Eagle's Nest S6GW4.0 GD05 Webcam Locals",
+    "store_name": "Eagle's Nest S6GW4.0 GD05 Webcam Locals",
+    "area": "US",
+    "source": "egman",
+    "source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments",
+    "player_count": 25,
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Jinzo777",
+        "player": "Jinzo777",
+        "deck_name": "Red/White GD05-066",
+        "cards": [
+          {
+            "card_id": "GD05-042",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-075",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-035",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-068",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-128",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "player_name": "ZimZamBlam",
+        "player": "ZimZamBlam",
+        "deck_name": "Blue/White GD05-002",
+        "cards": [
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-011",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-003",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-006",
+            "count": 3
+          },
+          {
+            "card_id": "ST09-004",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-121",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-03-treasure-chest-games",
+    "date": "2026-08-03",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ Treasure Chest Games",
+    "store_or_venue": "Treasure Chest Games",
+    "store_name": "Treasure Chest Games",
+    "area": "CA",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "SXven(Aiden)",
+        "player": "SXven(Aiden)",
+        "deck_name": "PR Barbatos Sazabi",
+        "cards": [
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-058",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-058",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-049",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-111",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-015",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-02-meisia",
+    "date": "2026-08-02",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ MeiSia",
+    "store_or_venue": "MeiSia",
+    "store_name": "MeiSia",
+    "area": "FR",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Nagy",
+        "player": "Nagy",
+        "deck_name": "BW StrikeFreedom",
+        "cards": [
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-003",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-006",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-117",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-121",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-01-super-games-inc",
+    "date": "2026-08-01",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ Super Games Inc",
+    "store_or_venue": "Super Games Inc",
+    "store_name": "Super Games Inc",
+    "area": "US",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Ain",
+        "player": "Ain",
+        "deck_name": "BG Nu Gundam",
+        "cards": [
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-027",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-029",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-019",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-001",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-020",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-017",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-085",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-126",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-125",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "player_name": "Bad Apple",
+        "player": "Bad Apple",
+        "deck_name": "PR Barbatos Sazabi",
+        "cards": [
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-058",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-058",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-049",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-111",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "ST05-015",
+            "count": 1
+          },
+          {
+            "card_id": "ST03-015",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-01-only-cards",
+    "date": "2026-08-01",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ Only cards",
+    "store_or_venue": "Only cards",
+    "store_name": "Only cards",
+    "area": "ES",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Juan RPG",
+        "player": "Juan RPG",
+        "deck_name": "BG Nu Gundam",
+        "cards": [
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-027",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-029",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-019",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-001",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-020",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-017",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-085",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-126",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-125",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-01-main-phase-one",
+    "date": "2026-08-01",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ Main Phase One",
+    "store_or_venue": "Main Phase One",
+    "store_name": "Main Phase One",
+    "area": "US",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Izadore",
+        "player": "Izadore",
+        "deck_name": "BW StrikeFreedom",
+        "cards": [
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-011",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-003",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-121",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  }
+]

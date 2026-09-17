@@ -1,0 +1,166 @@
+[
+  {
+    "id": "jp-cs-2026-08-09-uc-osaka-matsuri",
+    "date": "2026-08-09",
+    "month": "2026-08",
+    "region_tag": "日本",
+    "event_type": "CS",
+    "event_name": "GCG 大阪祭",
+    "series_name": "UC杯 / GCG大阪UC杯",
+    "store_name": "GIRAFULL オタロード店",
+    "area": "大阪",
+    "entrants": 75,
+    "source": "x",
+    "source_url": "https://x.com/UCCUP2025/status/2086805814803902894",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "K",
+        "deck_name": "緑紫",
+        "cards": [
+          {
+            "card_id": "GD05-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-019",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-029",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-027",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-050",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-085",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-015",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-126",
+            "count": 2
+          }
+        ],
+        "deck_photo": "data/japan-cs/2026-08-09-uc-osaka-matsuri-p1.png",
+        "photo_note": "主催X投稿のデッキ写真よりカードIDを読み取り（要目視確認）"
+      },
+      {
+        "rank": 2,
+        "player_name": "田中",
+        "deck_name": "青紫",
+        "cards": [
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-008",
+            "count": 2
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "ST09-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "ST09-007",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 2
+          },
+          {
+            "card_id": "ST09-002",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-014",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-015",
+            "count": 1
+          }
+        ],
+        "deck_photo": "data/japan-cs/2026-08-09-uc-osaka-matsuri-p2.png",
+        "photo_note": "主催X投稿のデッキ写真よりカードIDを読み取り（要目視確認）"
+      }
+    ],
+    "notes": "Tonamel https://tonamel.com/competition/sWn8e で75/96確認。優勝K・準優勝田中はX@UCCUP2025結果投稿およびTonamel結果と一致。ARCH CS第17–19回は定員最大45で除外。からセナCS 9/13は12/32で除外。Trinity Cupは店舗主催3on3のためv1対象外。",
+    "tonamel_url": "https://tonamel.com/competition/sWn8e"
+  }
+]

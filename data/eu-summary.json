@@ -1,0 +1,18 @@
+{
+  "total_events": 26,
+  "dropped_name_only": 11,
+  "dropped_ids": [
+    "eu-digilab-9517",
+    "eu-digilab-9431",
+    "eu-digilab-9260",
+    "eu-digilab-8624",
+    "eu-digilab-8468",
+    "eu-digilab-8499",
+    "eu-digilab-8829",
+    "eu-digilab-8973",
+    "eu-digilab-7821",
+    "eu-digilab-8831",
+    "eu-digilab-8830"
+  ],
+  "note": "仅保留至少一侧冠亚有 cards 或 deck_photo 的场次"
+}

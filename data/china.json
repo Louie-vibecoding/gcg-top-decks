@@ -1,0 +1,33 @@
+[
+  {
+    "id": "cn-2026-08-shanghai-city-qual",
+    "date": "2026-08-17",
+    "month": "2026-08",
+    "region_tag": "中国",
+    "event_type": "TOURNAMENT",
+    "event_name": "冠军锦标赛 26-27 城市预选 上海站",
+    "series_name": "冠军锦标赛 26-27 城市预选 上海站",
+    "store_name": "上海",
+    "area": "上海",
+    "source": "bilibili",
+    "source_url": "https://www.bilibili.com/opus/1237360323337388041",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "F91",
+        "deck_name": "红白卡组",
+        "cards": [],
+        "deck_photo": "data/china/p1_champ.jpg",
+        "photo_note": "牌表为实物图，OCR 待补"
+      },
+      {
+        "rank": 2,
+        "player_name": "星霜-誠哥",
+        "deck_name": "蓝白卡组",
+        "cards": [],
+        "deck_photo": "data/china/p2_runner.jpg",
+        "photo_note": "牌表为实物图，OCR 待补"
+      }
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>GCG 上位卡组</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>GCG 上位卡组</h1>
+      <p class="subtitle">本地预览 · 日本 / 中国 / 欧美</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="region-tabs" role="tablist" aria-label="地区">
+      <button type="button" class="tab active" data-region="all" role="tab" aria-selected="true">全部</button>
+      <button type="button" class="tab" data-region="中国" role="tab" aria-selected="false">中国</button>
+      <button type="button" class="tab" data-region="日本" role="tab" aria-selected="false">日本</button>
+      <button type="button" class="tab" data-region="欧美" role="tab" aria-selected="false">欧美</button>
+    </nav>
+
+    <section class="filters" aria-label="筛选">
+      <label class="filter">
+        <span>月份</span>
+        <select id="month-filter">
+          <option value="">全部月份</option>
+        </select>
+      </label>
+      <label class="filter">
+        <span>赛事类型</span>
+        <select id="type-filter">
+          <option value="">全部类型</option>
+          <option value="NTC">NTC</option>
+          <option value="SERIAL">编号卡</option>
+          <option value="TOURNAMENT">锦标赛</option>
+          <option value="CS">民间CS</option>
+        </select>
+      </label>
+    </section>
+
+    <div id="status" class="status" aria-live="polite">加载中…</div>
+    <div id="empty-state" class="empty-state hidden"></div>
+    <div id="event-list" class="event-list"></div>
+
+    <nav id="pagination" class="pagination hidden" aria-label="分页"></nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>非官方预览 · 数据来自 gcg-stats 等 · 卡图版权归万代等 · 仅本地预览</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

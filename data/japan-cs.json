@@ -76,7 +76,13 @@
           }
         ],
         "deck_photo": "data/japan-cs/2026-08-09-uc-osaka-matsuri-p1.png",
-        "photo_note": "主催X投稿のデッキ写真よりカードIDを読み取り（要目視確認）"
+        "photo_note": "主催X投稿のデッキ写真よりカードIDを読み取り（要目視確認）",
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
+        ]
       },
       {
         "rank": 2,
@@ -157,7 +163,13 @@
           }
         ],
         "deck_photo": "data/japan-cs/2026-08-09-uc-osaka-matsuri-p2.png",
-        "photo_note": "主催X投稿のデッキ写真よりカードIDを読み取り（要目視確認）"
+        "photo_note": "主催X投稿のデッキ写真よりカードIDを読み取り（要目視確認）",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
       }
     ],
     "notes": "Tonamel https://tonamel.com/competition/sWn8e で75/96確認。優勝K・準優勝田中はX@UCCUP2025結果投稿およびTonamel結果と一致。ARCH CS第17–19回は定員最大45で除外。からセナCS 9/13は12/32で除外。Trinity Cupは店舗主催3on3のためv1対象外。",

@@ -18,7 +18,13 @@
         "deck_name": "红白卡组",
         "cards": [],
         "deck_photo": "data/china/p1_champ.jpg",
-        "photo_note": "牌表为实物图，OCR 待补"
+        "photo_note": "牌表为实物图，OCR 待补",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
       },
       {
         "rank": 2,
@@ -26,7 +32,13 @@
         "deck_name": "蓝白卡组",
         "cards": [],
         "deck_photo": "data/china/p2_runner.jpg",
-        "photo_note": "牌表为实物图，OCR 待补"
+        "photo_note": "牌表为实物图，OCR 待补",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
       }
     ]
   }

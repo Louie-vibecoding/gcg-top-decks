@@ -83,6 +83,12 @@
             "card_id": "GD04-121",
             "count": 3
           }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
         ]
       }
     ]
@@ -184,6 +190,12 @@
             "card_id": "GD02-129",
             "count": 4
           }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
         ]
       },
       {
@@ -264,6 +276,12 @@
             "card_id": "GD01-073",
             "count": 2
           }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
         ]
       }
     ]
@@ -344,6 +362,12 @@
             "card_id": "GD05-125",
             "count": 4
           }
+        ],
+        "deck_type": "蓝绿",
+        "deck_type_key": "Blue+Green",
+        "colors": [
+          "Blue",
+          "Green"
         ]
       }
     ]
@@ -428,6 +452,12 @@
             "card_id": "GD02-129",
             "count": 3
           }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
         ]
       }
     ]
@@ -508,6 +538,12 @@
             "card_id": "GD04-121",
             "count": 4
           }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
         ]
       }
     ]
@@ -596,6 +632,12 @@
             "card_id": "GD04-121",
             "count": 3
           }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
         ]
       }
     ]
@@ -701,6 +743,12 @@
             "card_id": "GD05-128",
             "count": 1
           }
+        ],
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
         ]
       },
       {
@@ -789,6 +837,12 @@
             "card_id": "ST05-001",
             "count": 2
           }
+        ],
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
         ]
       }
     ]
@@ -877,6 +931,12 @@
             "card_id": "GD04-121",
             "count": 2
           }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
         ]
       }
     ]
@@ -957,6 +1017,12 @@
             "card_id": "GD04-121",
             "count": 4
           }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
         ]
       },
       {
@@ -1021,6 +1087,12 @@
             "card_id": "GD02-129",
             "count": 3
           }
+        ],
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
         ]
       }
     ]
@@ -1113,6 +1185,12 @@
             "card_id": "GD05-129",
             "count": 2
           }
+        ],
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
         ]
       }
     ]
@@ -1197,6 +1275,12 @@
             "card_id": "GD05-125",
             "count": 2
           }
+        ],
+        "deck_type": "蓝绿",
+        "deck_type_key": "Blue+Green",
+        "colors": [
+          "Blue",
+          "Green"
         ]
       }
     ]
@@ -1285,6 +1369,12 @@
             "card_id": "GD01-128",
             "count": 3
           }
+        ],
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
         ]
       }
     ]
@@ -1370,6 +1460,12 @@
             "card_id": "GD02-129",
             "count": 4
           }
+        ],
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
         ]
       },
       {
@@ -1450,6 +1546,12 @@
             "card_id": "ST01-001",
             "count": 4
           }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
         ]
       }
     ]
@@ -1534,6 +1636,12 @@
             "card_id": "GD05-129",
             "count": 2
           }
+        ],
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
         ]
       }
     ]
@@ -1614,6 +1722,12 @@
             "card_id": "GD05-128",
             "count": 4
           }
+        ],
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
         ]
       }
     ]
@@ -1711,6 +1825,12 @@
             "card_id": "GD02-129",
             "count": 2
           }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
         ]
       },
       {
@@ -1779,6 +1899,12 @@
             "card_id": "ST01-001",
             "count": 4
           }
+        ],
+        "deck_type": "蓝绿",
+        "deck_type_key": "Blue+Green",
+        "colors": [
+          "Blue",
+          "Green"
         ]
       }
     ]
@@ -1859,6 +1985,12 @@
             "card_id": "ST03-016",
             "count": 4
           }
+        ],
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
         ]
       }
     ]
@@ -1943,6 +2075,12 @@
             "card_id": "GD04-121",
             "count": 4
           }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
         ]
       }
     ]
@@ -2023,6 +2161,12 @@
             "card_id": "GD05-129",
             "count": 4
           }
+        ],
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
         ]
       }
     ]
@@ -2119,6 +2263,12 @@
             "card_id": "GD05-129",
             "count": 2
           }
+        ],
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
         ]
       }
     ]
@@ -2216,6 +2366,12 @@
             "card_id": "GD02-129",
             "count": 1
           }
+        ],
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
         ]
       },
       {
@@ -2292,6 +2448,12 @@
             "card_id": "GD04-121",
             "count": 4
           }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
         ]
       }
     ]
@@ -2376,6 +2538,12 @@
             "card_id": "ST03-015",
             "count": 4
           }
+        ],
+        "deck_type": "红紫",
+        "deck_type_key": "Red+Purple",
+        "colors": [
+          "Red",
+          "Purple"
         ]
       }
     ]
@@ -2460,6 +2628,12 @@
             "card_id": "GD04-121",
             "count": 4
           }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
         ]
       }
     ]
@@ -2544,6 +2718,12 @@
             "card_id": "GD05-125",
             "count": 2
           }
+        ],
+        "deck_type": "蓝绿",
+        "deck_type_key": "Blue+Green",
+        "colors": [
+          "Blue",
+          "Green"
         ]
       },
       {
@@ -2612,6 +2792,12 @@
             "card_id": "ST03-015",
             "count": 3
           }
+        ],
+        "deck_type": "红紫",
+        "deck_type_key": "Red+Purple",
+        "colors": [
+          "Red",
+          "Purple"
         ]
       }
     ]
@@ -2696,6 +2882,12 @@
             "card_id": "GD05-125",
             "count": 2
           }
+        ],
+        "deck_type": "蓝绿",
+        "deck_type_key": "Blue+Green",
+        "colors": [
+          "Blue",
+          "Green"
         ]
       }
     ]
@@ -2780,6 +2972,12 @@
             "card_id": "GD04-121",
             "count": 4
           }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
         ]
       }
     ]

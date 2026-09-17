@@ -530,6 +530,18 @@ body {
   }
 }
 
+
+.scope-note {
+    margin: 0 0 1rem;
+    padding: 0.75rem 0.9rem;
+    border-radius: 10px;
+    border: 1px solid var(--border, #2a3344);
+    background: rgba(91, 157, 255, 0.1);
+    color: var(--text, #e8ecf4);
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
 @media (min-width: 640px) {
   .filters {
     flex-direction: row;

@@ -34,6 +34,7 @@
     pagination: document.getElementById("pagination"),
     month: document.getElementById("month-filter"),
     type: document.getElementById("type-filter"),
+    chinaNote: document.getElementById("china-note"),
   };
 
   function escapeHtml(str) {
@@ -179,8 +180,8 @@
     }
     if (state.region === "中国" && !state.filtered.length) {
       return {
-        title: "暂无匹配赛事",
-        body: "试试调整月份或赛事类型筛选。",
+        title: "中国区信息较少",
+        body: "完整赛果与卡组请使用「万代卡牌」App 查询；也可调整月份或类型筛选。",
       };
     }
     return {
@@ -312,6 +313,10 @@
   }
 
   function render() {
+    if (el.chinaNote) {
+      el.chinaNote.classList.toggle("hidden", state.region !== "中国");
+    }
+
     const total = state.filtered.length;
     const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
     if (state.page > totalPages) state.page = totalPages;

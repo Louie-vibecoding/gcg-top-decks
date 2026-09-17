@@ -21,6 +21,42 @@
   // Fixed color order for sorting 卡组类型 options
   const DECK_TYPE_ORDER = ["红", "蓝", "绿", "白", "紫"];
 
+  const COLOR_HEX = {
+    Red: "#e53935",
+    Blue: "#1e88e5",
+    Green: "#43a047",
+    White: "#f5f5f5",
+    Purple: "#8e24aa",
+    红: "#e53935",
+    蓝: "#1e88e5",
+    绿: "#43a047",
+    白: "#f5f5f5",
+    紫: "#8e24aa",
+  };
+
+  function colorsFromDeckType(label, colors) {
+    if (Array.isArray(colors) && colors.length) return colors;
+    return [...String(label || "")].filter((c) => COLOR_HEX[c]);
+  }
+
+  function colorSwatchesHtml(label, colors) {
+    const cols = colorsFromDeckType(label, colors);
+    if (!cols.length) return "";
+    return (
+      '<span class="color-swatches" aria-hidden="true">' +
+      cols
+        .map((c) => {
+          const hex = COLOR_HEX[c];
+          if (!hex) return "";
+          const border =
+            c === "White" || c === "白" ? " border:1px solid #9aa3b2;" : "";
+          return `<span class="color-swatch" style="background:${hex};${border}"></span>`;
+        })
+        .join("") +
+      "</span>"
+    );
+  }
+
   const state = {
     region: "all",
     month: "",
@@ -135,26 +171,38 @@
   function populateDeckTypeOptions() {
     if (!el.deckType) return;
     const types = new Set();
+    const typeColors = new Map();
     for (const e of state.allEvents) {
       for (const p of e.placements || []) {
-        if (p.deck_type && placementHasDeck(p)) types.add(p.deck_type);
+        if (p.deck_type && placementHasDeck(p)) {
+          types.add(p.deck_type);
+          if (!typeColors.has(p.deck_type) && Array.isArray(p.colors)) {
+            typeColors.set(p.deck_type, p.colors);
+          }
+        }
       }
     }
     const sorted = [...types].sort((a, b) =>
       deckTypeSortKey(a).localeCompare(deckTypeSortKey(b))
     );
     const prev = state.deckType;
+    if (prev && !types.has(prev)) state.deckType = "";
+
+    const chip = (value, label, colors, active) => {
+      const sw = colorSwatchesHtml(label, colors);
+      const pressed = active ? "true" : "false";
+      const cls = active ? "deck-type-chip active" : "deck-type-chip";
+      return (
+        `<button type="button" class="${cls}" data-deck-type="${escapeHtml(value)}" aria-pressed="${pressed}">` +
+        `<span class="deck-type-chip-label">${escapeHtml(label)}</span>${sw}</button>`
+      );
+    };
+
     el.deckType.innerHTML =
-      '<option value="">全部</option>' +
+      chip("", "全部", [], !state.deckType) +
       sorted
-        .map((t) => `<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`)
+        .map((t) => chip(t, t, typeColors.get(t), state.deckType === t))
         .join("");
-    if (prev && types.has(prev)) {
-      el.deckType.value = prev;
-      state.deckType = prev;
-    } else {
-      state.deckType = "";
-    }
   }
 
   function matchesRegion(event) {
@@ -301,7 +349,7 @@
     const keyAttr = storeKey ? ` data-store-key="${storeKey}"` : "";
 
     const typeBadge = p.deck_type
-      ? `<span class="deck-type-badge" title="卡组类型">${escapeHtml(p.deck_type)}</span>`
+      ? `<span class="deck-type-badge" title="卡组类型"><span class="deck-type-badge-text">${escapeHtml(p.deck_type)}</span>${colorSwatchesHtml(p.deck_type, p.colors)}</span>`
       : "";
 
     return (
@@ -447,8 +495,11 @@
     });
 
     if (el.deckType) {
-      el.deckType.addEventListener("change", () => {
-        state.deckType = el.deckType.value;
+      el.deckType.addEventListener("click", (ev) => {
+        const btn = ev.target.closest("[data-deck-type]");
+        if (!btn) return;
+        state.deckType = btn.dataset.deckType || "";
+        populateDeckTypeOptions();
         applyFilters();
       });
     }

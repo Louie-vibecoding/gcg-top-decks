@@ -94007,6 +94007,173 @@
     "series_id": "7483"
   },
   {
+    "id": "ntcd-01M2TCD2BXNR46W5Q65DRP326X",
+    "date": "2026-09-18",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "NTC",
+    "series_name": "ニュータイプチャレンジ 2026 MISSION4（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2TCD2BXNR46W5Q65DRP326X.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-066",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-036",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-128",
+            "count": 1
+          }
+        ],
+        "player_name": "バッサ",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-001",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-105",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          }
+        ],
+        "player_name": "ジャスティン",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      }
+    ],
+    "store_name": "カードショップBAHAMUT",
+    "area": "北海道",
+    "series_id": "7483"
+  },
+  {
     "id": "ntcd-01M2SQWTMRW5ZBGA84AA4TWV2F",
     "date": "2026-09-18",
     "month": "2026-09",
@@ -95142,5 +95309,4048 @@
     "store_name": "ドラゴンスター神戸三宮",
     "area": "関西",
     "series_id": "7483"
+  },
+  {
+    "id": "ntcd-01M2T920JAAGF4TFRA4N5ND29D",
+    "date": "2026-09-18",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2T920JAAGF4TFRA4N5ND29D.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-018",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-015",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          }
+        ],
+        "player_name": "h",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-018",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-015",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          }
+        ],
+        "player_name": "るるぴ",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
+      }
+    ],
+    "store_name": "ブックオフ町田中央通り店（本・ホビー館）4F",
+    "area": "関東",
+    "series_id": "7932"
+  },
+  {
+    "id": "ntcd-01M2WA959RK5HNVPASHA1DJF4P",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WA959RK5HNVPASHA1DJF4P.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-066",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-036",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          }
+        ],
+        "player_name": "マル",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-042",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          }
+        ],
+        "player_name": "はいらう",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      }
+    ],
+    "store_name": "BOOKOFFSUPERBAZAAR甲府貢川店",
+    "area": "中部",
+    "series_id": "7932"
+  },
+  {
+    "id": "ntcd-01M2W6R0CKS3PSPPCG9DGEJJHC",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "NTC",
+    "series_name": "ニュータイプチャレンジ 2026 MISSION4（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2W6R0CKS3PSPPCG9DGEJJHC.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-065",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          }
+        ],
+        "player_name": "ぐさ",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-018",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-126",
+            "count": 2
+          },
+          {
+            "card_id": "GD03-001",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-019",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-020",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-027",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-029",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-085",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-125",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST02-016",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          }
+        ],
+        "player_name": "コショウチ",
+        "deck_type": "蓝绿",
+        "deck_type_key": "Blue+Green",
+        "colors": [
+          "Blue",
+          "Green"
+        ]
+      }
+    ],
+    "store_name": "Duel Stade Ganryu 入間店",
+    "area": "関東",
+    "series_id": "7483"
+  },
+  {
+    "id": "ntcd-01M2WDKVJVM26ZHY2CCD5GGEAP",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "NTC",
+    "series_name": "ニュータイプチャレンジ 2026 MISSION4（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WDKVJVM26ZHY2CCD5GGEAP.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-023",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-026",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-035",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 1
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-016",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          }
+        ],
+        "player_name": "りぷとん",
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-065",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-066",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-101",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-012",
+            "count": 2
+          }
+        ],
+        "player_name": "たすく",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      }
+    ],
+    "store_name": "DuelStadeGanryuひたち野うしく店",
+    "area": "関東",
+    "series_id": "7483"
+  },
+  {
+    "id": "ntcd-01M2WDQ353NGWMZG0SHG18D66X",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WDQ353NGWMZG0SHG18D66X.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-026",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-049",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-062",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          }
+        ],
+        "player_name": "カエル",
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "EB01-054",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-036",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-119",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 3
+          }
+        ],
+        "player_name": "あまと",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      }
+    ],
+    "store_name": "GameSpace&cafeドラグーン博多",
+    "area": "九州",
+    "series_id": "7932"
+  },
+  {
+    "id": "ntcd-01M2W3DJP19S4RHN7YK4122649",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2W3DJP19S4RHN7YK4122649.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-031",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-035",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-049",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-016",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          }
+        ],
+        "player_name": "えすえす",
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-026",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-035",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-007",
+            "count": 3
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-016",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          }
+        ],
+        "player_name": "かむいんご",
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
+        ]
+      }
+    ],
+    "store_name": "TCGShop193秋葉原店",
+    "area": "関東",
+    "series_id": "7932"
+  },
+  {
+    "id": "ntcd-01M2W3DKEYE834DJF3H7J6H656",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2W3DKEYE834DJF3H7J6H656.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-036",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          }
+        ],
+        "player_name": "イル",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-014",
+            "count": 2
+          }
+        ],
+        "player_name": "有名なアレ",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
+      }
+    ],
+    "store_name": "TSUTAYA AVクラブ 玉名店",
+    "area": "九州",
+    "series_id": "7932"
+  },
+  {
+    "id": "ntcd-01M2WA9616TAVG1ZQRQWQZ6CCJ",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WA9616TAVG1ZQRQWQZ6CCJ.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-023",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-026",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-031",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-035",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-007",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-016",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          }
+        ],
+        "player_name": "TG",
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-123",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST09-004",
+            "count": 1
+          }
+        ],
+        "player_name": "SAI",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      }
+    ],
+    "store_name": "TSUTAYAリノアス八尾店",
+    "area": "関西",
+    "series_id": "7932"
+  },
+  {
+    "id": "ntcd-01M2WH1FZFJ55CBX60ZY27PH29",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "NTC",
+    "series_name": "ニュータイプチャレンジ 2026 MISSION4（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WH1FZFJ55CBX60ZY27PH29.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-019",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-020",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-027",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-029",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-085",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-086",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-125",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          }
+        ],
+        "player_name": "もちお",
+        "deck_type": "蓝绿",
+        "deck_type_key": "Blue+Green",
+        "colors": [
+          "Blue",
+          "Green"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-035",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          }
+        ],
+        "player_name": "みっちー",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      }
+    ],
+    "store_name": "TSUTAYA田宮店",
+    "area": "四国",
+    "series_id": "7483"
+  },
+  {
+    "id": "ntcd-01M2W6V77P87YE83HHFB3QVYSD",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2W6V77P87YE83HHFB3QVYSD.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-067",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-066",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-128",
+            "count": 1
+          }
+        ],
+        "player_name": "nori",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-035",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          }
+        ],
+        "player_name": "コサンジ",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      }
+    ],
+    "store_name": "お宝弁財天 feat. パンドラ",
+    "area": "東北",
+    "series_id": "7932"
+  },
+  {
+    "id": "ntcd-01M2W6V81NSWXQ596PH3E2MDE9",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2W6V81NSWXQ596PH3E2MDE9.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-036",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-042",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          }
+        ],
+        "player_name": "ダイスケ",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-100",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-015",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          }
+        ],
+        "player_name": "久遠",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
+      }
+    ],
+    "store_name": "ふるいちイオンモール白山店",
+    "area": "中部",
+    "series_id": "7932"
+  },
+  {
+    "id": "ntcd-01M2W6R0ZTGK6S4SEN9EBMP2A6",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "NTC",
+    "series_name": "ニュータイプチャレンジ 2026 MISSION4（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2W6R0ZTGK6S4SEN9EBMP2A6.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-100",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-015",
+            "count": 1
+          }
+        ],
+        "player_name": "まけまけ3",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-018",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-126",
+            "count": 2
+          },
+          {
+            "card_id": "GD03-001",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-019",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-027",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-029",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-085",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-125",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          }
+        ],
+        "player_name": "はるてぃー",
+        "deck_type": "蓝绿",
+        "deck_type_key": "Blue+Green",
+        "colors": [
+          "Blue",
+          "Green"
+        ]
+      }
+    ],
+    "store_name": "アメニティードリーム大須店",
+    "area": "中部",
+    "series_id": "7483"
+  },
+  {
+    "id": "ntcd-01M2WA5XQ4BEJE451MPCB39A1M",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "NTC",
+    "series_name": "ニュータイプチャレンジ 2026 MISSION4（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WA5XQ4BEJE451MPCB39A1M.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-036",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          }
+        ],
+        "player_name": "たなっきー",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-066",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 2
+          },
+          {
+            "card_id": "GD03-005",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-015",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-015",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-012",
+            "count": 2
+          }
+        ],
+        "player_name": "camui G",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      }
+    ],
+    "store_name": "カードゲームのシーガル郡山店",
+    "area": "東北",
+    "series_id": "7483"
+  },
+  {
+    "id": "ntcd-01M2W6R717AHTWNET4QQ1NFZFB",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "NTC",
+    "series_name": "ニュータイプチャレンジ 2026 MISSION4（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2W6R717AHTWNET4QQ1NFZFB.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-065",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-001",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-117",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          }
+        ],
+        "player_name": "こあん",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-065",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          }
+        ],
+        "player_name": "けいおす",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      }
+    ],
+    "store_name": "カードショップ彩々 国分店",
+    "area": "九州",
+    "series_id": "7483"
+  },
+  {
+    "id": "ntcd-01M2WH1EE62M4J83R6MN928FAP",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "NTC",
+    "series_name": "ニュータイプチャレンジ 2026 MISSION4（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WH1EE62M4J83R6MN928FAP.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-026",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-062",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-016",
+            "count": 2
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          }
+        ],
+        "player_name": "タカキ",
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-044",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-093",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-126",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-019",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-027",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-029",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-085",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-125",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          }
+        ],
+        "player_name": "老師",
+        "deck_type": "红绿",
+        "deck_type_key": "Red+Green",
+        "colors": [
+          "Red",
+          "Green"
+        ]
+      }
+    ],
+    "store_name": "カードボックスイオンモール高知店",
+    "area": "四国",
+    "series_id": "7483"
+  },
+  {
+    "id": "ntcd-01M2WA5ZMSFCS2S1WSGYFQAMBA",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "NTC",
+    "series_name": "ニュータイプチャレンジ 2026 MISSION4（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WA5ZMSFCS2S1WSGYFQAMBA.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-058",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-058",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          }
+        ],
+        "player_name": "さめろあ",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-086",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-042",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          }
+        ],
+        "player_name": "ユキ",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      }
+    ],
+    "store_name": "カードラボ池袋店",
+    "area": "関東",
+    "series_id": "7483"
+  },
+  {
+    "id": "ntcd-01M2W6V8SVZD8D0Z2B0M04WJ3A",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2W6V8SVZD8D0Z2B0M04WJ3A.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-003",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-044",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-093",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-111",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 2
+          },
+          {
+            "card_id": "GD03-109",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-101",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-109",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-015",
+            "count": 3
+          },
+          {
+            "card_id": "ST03-013",
+            "count": 4
+          }
+        ],
+        "player_name": "シエロ",
+        "deck_type": "红蓝",
+        "deck_type_key": "Blue+Red",
+        "colors": [
+          "Red",
+          "Blue"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-100",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-015",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-014",
+            "count": 1
+          }
+        ],
+        "player_name": "エクシア",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
+      }
+    ],
+    "store_name": "カードラボ＆ゲーマーズ小倉店",
+    "area": "九州",
+    "series_id": "7932"
+  },
+  {
+    "id": "ntcd-01M2WA9ZG2HWSMW65ZBZCMME75",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WA9ZG2HWSMW65ZBZCMME75.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-003",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-121",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-009",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 1
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 2
+          }
+        ],
+        "player_name": "けんけん",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-023",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-026",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-035",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-016",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          }
+        ],
+        "player_name": "mobu",
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
+        ]
+      }
+    ],
+    "store_name": "ガンダムカードゲーム 公式ショップ 福岡 キャナルシティ博多店",
+    "area": "九州",
+    "series_id": "7932"
+  },
+  {
+    "id": "ntcd-01M2WH1CREFX2FVS37GQHXSZAV",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "NTC",
+    "series_name": "ニュータイプチャレンジ 2026 MISSION4（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WH1CREFX2FVS37GQHXSZAV.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-130",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-100",
+            "count": 1
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          }
+        ],
+        "player_name": "うみんちゅ",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-001",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          }
+        ],
+        "player_name": "ソル",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      }
+    ],
+    "store_name": "ゲームプラザ元気302",
+    "area": "関西",
+    "series_id": "7483"
+  },
+  {
+    "id": "ntcd-01M2WDQ4B8H5GFC0PZ4FMV6CYV",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WDQ4B8H5GFC0PZ4FMV6CYV.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-008",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-018",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          }
+        ],
+        "player_name": "オータニ",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-023",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-062",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 1
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-007",
+            "count": 1
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-016",
+            "count": 3
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 2
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          }
+        ],
+        "player_name": "える",
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
+        ]
+      }
+    ],
+    "store_name": "サンエイト沼津店",
+    "area": "中部",
+    "series_id": "7932"
+  },
+  {
+    "id": "ntcd-01M2W3AQNE0K1H3BRF6VQX3E02",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "NTC",
+    "series_name": "ニュータイプチャレンジ 2026 MISSION4（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2W3AQNE0K1H3BRF6VQX3E02.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD03-109",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-024",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-038",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-085",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-106",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-109",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-018",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-022",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-025",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-108",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-126",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-013",
+            "count": 4
+          }
+        ],
+        "player_name": "@akrsususu",
+        "deck_type": "红绿",
+        "deck_type_key": "Red+Green",
+        "colors": [
+          "Red",
+          "Green"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-003",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-121",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 1
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 3
+          }
+        ],
+        "player_name": "黒川安輝",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      }
+    ],
+    "store_name": "トレーディングカードゲームショップ193大須店",
+    "area": "中部",
+    "series_id": "7483"
+  },
+  {
+    "id": "ntcd-01M2WDQ53QR3Y6752N7XJQRKEM",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WDQ53QR3Y6752N7XJQRKEM.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-018",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-015",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-015",
+            "count": 1
+          }
+        ],
+        "player_name": "うし",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-018",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-001",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-015",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-019",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-020",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-027",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-029",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-085",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-125",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST02-016",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          }
+        ],
+        "player_name": "あー",
+        "deck_type": "蓝绿",
+        "deck_type_key": "Blue+Green",
+        "colors": [
+          "Blue",
+          "Green"
+        ]
+      }
+    ],
+    "store_name": "トーナメントセンターバトロコ小田原駅前",
+    "area": "関東",
+    "series_id": "7932"
+  },
+  {
+    "id": "ntcd-01M2WA941FW4N2X4J48DJQB4RS",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WA941FW4N2X4J48DJQB4RS.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-018",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-015",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          }
+        ],
+        "player_name": "にこひめの",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-035",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-068",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          }
+        ],
+        "player_name": "domigainer",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      }
+    ],
+    "store_name": "トーナメントセンターバトロコ渋谷センター街",
+    "area": "関東",
+    "series_id": "7932"
+  },
+  {
+    "id": "ntcd-01M2WDQ25HEP7RP694PM3NR6H9",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WDQ25HEP7RP694PM3NR6H9.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-018",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-058",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST09-009",
+            "count": 1
+          }
+        ],
+        "player_name": "かさ☂️",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-066",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-015",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 3
+          }
+        ],
+        "player_name": "なんとかかんとか",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      }
+    ],
+    "store_name": "プレイズ大阪日本橋本店",
+    "area": "関西",
+    "series_id": "7932"
+  },
+  {
+    "id": "ntcd-01M2WA92RMECGKBMS46KN073ZJ",
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "SERIAL",
+    "series_name": "ガンダムカードゲーム　シリアルカードチャレンジ（9月開催）",
+    "source": "gcg-stats",
+    "source_url": "https://gcg-stats.com/events/ntcd-01M2WA92RMECGKBMS46KN073ZJ.html",
+    "placements": [
+      {
+        "rank": 1,
+        "cards": [
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-123",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-001",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          }
+        ],
+        "player_name": "はむ",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      },
+      {
+        "rank": 2,
+        "cards": [
+          {
+            "card_id": "GD01-100",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-015",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST09-009",
+            "count": 1
+          }
+        ],
+        "player_name": "かわはら",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
+      }
+    ],
+    "store_name": "竜星の嵐名古屋店",
+    "area": "中部",
+    "series_id": "7932"
   }
 ]

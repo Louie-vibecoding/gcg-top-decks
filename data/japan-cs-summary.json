@@ -3,7 +3,7 @@
   "event_type": "CS",
   "min_date": "2026-08-01",
   "min_entrants": 50,
-  "as_of": "2026-09-21",
+  "as_of": "2026-09-22",
   "total_events": 1,
   "total_decks": 2,
   "events_with_full_lists": 1,
@@ -26,7 +26,8 @@
     "web/X/Tonamel recheck 2026-09-17 (no new qualifying unofficial CS ≥50 found)",
     "web/X/Tonamel recheck 2026-09-19 (no new qualifying unofficial CS ≥50 found)",
     "web/X/Tonamel recheck 2026-09-20 (no new qualifying unofficial CS ≥50 found)",
-    "web/X/Tonamel recheck 2026-09-21 (no new qualifying unofficial CS ≥50 found)"
+    "web/X/Tonamel recheck 2026-09-21 (no new qualifying unofficial CS ≥50 found)",
+    "web/X/Tonamel recheck 2026-09-22 (no new qualifying unofficial CS ≥50 found)"
   ],
   "excluded": [
     {

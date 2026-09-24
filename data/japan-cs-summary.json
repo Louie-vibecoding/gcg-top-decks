@@ -3,7 +3,7 @@
   "event_type": "CS",
   "min_date": "2026-08-01",
   "min_entrants": 50,
-  "as_of": "2026-09-22",
+  "as_of": "2026-09-23",
   "total_events": 1,
   "total_decks": 2,
   "events_with_full_lists": 1,
@@ -27,7 +27,8 @@
     "web/X/Tonamel recheck 2026-09-19 (no new qualifying unofficial CS ≥50 found)",
     "web/X/Tonamel recheck 2026-09-20 (no new qualifying unofficial CS ≥50 found)",
     "web/X/Tonamel recheck 2026-09-21 (no new qualifying unofficial CS ≥50 found)",
-    "web/X/Tonamel recheck 2026-09-22 (no new qualifying unofficial CS ≥50 found)"
+    "web/X/Tonamel recheck 2026-09-22 (no new qualifying unofficial CS ≥50 found)",
+    "web/X/Tonamel recheck 2026-09-23 (no new qualifying unofficial CS ≥50 found)"
   ],
   "excluded": [
     {
@@ -81,5 +82,5 @@
       "tonamel": "https://tonamel.com/competition/sWn8e"
     }
   ],
-  "honesty_notes": "2026-08-01〜2026-09-21の非公認CSで参加者≥50を確認できたのはUC杯主催『GCG 大阪祭』(75名)のみ。2026-09-21にX・Tonamel・Webを再確認したが、新たに条件を満たすイベントは確認できなかった。定期開催のアークCSは会場定員が概ね32–45で閾値未満。からセナCSも同時期は32枠前後。第9回GCG大阪UC杯3on3は未開催（受付中）。デッキリストは主催が公開した写真からカードIDを起こしており、公式テキストレシピではない。"
+  "honesty_notes": "2026-08-01〜2026-09-23の非公認CSで参加者≥50を確認できたのはUC杯主催『GCG 大阪祭』(75名)のみ。2026-09-23にX・Tonamel・Webを再確認したが、新たに条件を満たすイベントは確認できなかった。定期開催のアークCSは会場定員が概ね32–45で閾値未満。からセナCSも同時期は32枠前後。第9回GCG大阪UC杯3on3は未開催（受付中）/予定。デッキリストは主催が公開した写真からカードIDを起こしており、公式テキストレシピではない。"
 }

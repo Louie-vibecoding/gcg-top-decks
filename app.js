@@ -6,16 +6,29 @@
 
   const TYPE_LABELS = {
     NTC: "NTC",
-    SERIAL: "编号卡",
+    SERIAL: "SERIAL 编号卡",
     TOURNAMENT: "锦标赛",
     CS: "民间CS",
+    OFFICIAL: "官方大型赛事",
   };
+
+  // 赛事类型筛选按钮（顺序即展示顺序）
+  const TYPE_CHIPS = [
+    ["", "全部"],
+    ["NTC", "NTC"],
+    ["SERIAL", "SERIAL 编号卡挑战"],
+    ["TOURNAMENT", "锦标赛"],
+    ["CS", "民间CS"],
+    ["OFFICIAL", "官方大型赛事 / EXPO予選"],
+  ];
+  const NEW_DAYS = 2;
 
   const TYPE_BADGE_CLASS = {
     NTC: "badge-ntc",
     SERIAL: "badge-serial",
     TOURNAMENT: "badge-tournament",
     CS: "badge-cs",
+    OFFICIAL: "badge-official",
   };
 
   // Fixed color order for sorting 卡组类型 options
@@ -65,6 +78,7 @@
     page: 1,
     allEvents: [],
     filtered: [],
+    latestDate: "",
   };
 
   const el = {
@@ -76,6 +90,7 @@
     type: document.getElementById("type-filter"),
     deckType: document.getElementById("deck-type-filter"),
     chinaNote: document.getElementById("china-note"),
+    updated: document.getElementById("data-updated"),
   };
 
   function escapeHtml(str) {
@@ -91,18 +106,24 @@
   }
 
   async function loadJson(path) {
-    const res = await fetch(path);
+    const res = await fetch(path, { cache: "no-cache" });
     if (!res.ok) throw new Error(`Failed to load ${path}: ${res.status}`);
     return res.json();
   }
 
   async function loadAllData() {
-    const [japan, china, eu, japanCs] = await Promise.all([
+    const [japan, china, eu, japanCs, official] = await Promise.all([
       loadJson("data/japan-events.json"),
       loadJson("data/china.json"),
       loadJson("data/eu.json"),
       loadJson("data/japan-cs.json"),
+      loadJson("data/japan-official.json").catch(() => []),
     ]);
+    const officialTagged = (official || []).map((e) => ({
+      ...e,
+      event_type: e.event_type || "OFFICIAL",
+      region_tag: e.region_tag || "日本",
+    }));
 
     // Tag CS events if any; keep empty for now
     const csTagged = (japanCs || []).map((e) => ({
@@ -116,23 +137,22 @@
       ...(japan || []),
       ...(eu || []),
       ...csTagged,
+      ...officialTagged,
     ];
 
     events.sort((a, b) => {
       if (a.date !== b.date) return a.date < b.date ? 1 : -1;
+      const ao = a.event_type === "OFFICIAL" ? 0 : 1;
+      const bo = b.event_type === "OFFICIAL" ? 0 : 1;
+      if (ao !== bo) return ao - bo;
       return (a.id || "").localeCompare(b.id || "");
     });
 
-    // 丢弃没有任何牌表/卡组图的场次（如仅有选手名的欧美 NTC）
-    state.allEvents = events.filter((e) => {
-      const placements = e.placements || [];
-      return placements.some((p) => {
-        if (Array.isArray(p.cards) && p.cards.length > 0) return true;
-        if (p.deck_photo || p.photo) return true;
-        return false;
-      });
-    });
+    // 丢弃没有任何牌表/卡组图的场次（如仅有选手名的欧美 NTC）；
+    // 官方大型赛事即使牌表未公开也保留（显示「牌表待官方公开」）
+    state.allEvents = events.filter((e) => (e.placements || []).some(placementHasDeck));
     const kept = state.allEvents;
+    state.latestDate = kept.reduce((m, e) => (e.date && e.date > m ? e.date : m), "");
     return {
       japan: kept.filter((e) => (e.region_tag || e.region) === "日本").length,
       china: kept.filter((e) => (e.region_tag || e.region) === "中国").length,
@@ -227,7 +247,33 @@
     if (!p) return false;
     if (Array.isArray(p.cards) && p.cards.length > 0) return true;
     if (p.deck_photo || p.photo) return true;
+    if (p.list_pending) return true;
     return false;
+  }
+
+  function isNewEvent(e) {
+    if (!state.latestDate || !e.date) return false;
+    const diff = (Date.parse(state.latestDate) - Date.parse(e.date)) / 86400000;
+    return diff <= NEW_DAYS;
+  }
+
+  function populateTypeChips() {
+    if (!el.type) return;
+    const counts = {};
+    for (const e of state.allEvents) {
+      if (!matchesRegion(e) || !matchesMonth(e)) continue;
+      counts[e.event_type] = (counts[e.event_type] || 0) + 1;
+    }
+    const all = Object.values(counts).reduce((a, b) => a + b, 0);
+    el.type.innerHTML = TYPE_CHIPS.map(([value, label]) => {
+      const n = value ? counts[value] || 0 : all;
+      const active = state.eventType === value;
+      const cls = "type-chip" + (value ? " type-chip-" + value.toLowerCase() : "") + (active ? " active" : "");
+      return (
+        `<button type="button" class="${cls}" data-event-type="${escapeHtml(value)}" aria-pressed="${active}">` +
+        `${escapeHtml(label)}<span class="type-chip-count">${n}</span></button>`
+      );
+    }).join("");
   }
 
   /** 整场至少有一个冠/亚有牌表或图，否则不展示 */
@@ -267,6 +313,7 @@
       })
       .filter(Boolean);
     state.page = 1;
+    populateTypeChips();
     render();
   }
 
@@ -327,7 +374,7 @@
 
   function renderPlacement(p) {
     const rankClass = p.rank === 1 ? "rank-1" : "rank-2";
-    const rankText = p.rank === 1 ? "冠军" : "亚军";
+    const rankText = p.rank_label || (p.rank === 1 ? "冠军" : p.rank === 2 ? "亚军" : `第${p.rank}名`);
     const hasCards = Array.isArray(p.cards) && p.cards.length > 0;
     const photo = p.deck_photo;
     const note = p.photo_note || (photo && !hasCards ? "牌表为实物图，OCR 待补" : "");
@@ -342,6 +389,12 @@
       body =
         (note ? `<p class="photo-note">${escapeHtml(note)}</p>` : "") +
         `<div class="deck-photo-wrap"><img src="${escapeHtml(photo)}" alt="${escapeHtml(p.deck_name || rankText)}" loading="lazy" /></div>`;
+    } else if (p.list_pending) {
+      body =
+        `<p class="photo-note pending-note">${escapeHtml(p.photo_note || "牌表待官方公开")}</p>` +
+        (p.source_url
+          ? `<a class="source-link" href="${escapeHtml(p.source_url)}" target="_blank" rel="noopener noreferrer">直播/来源 ↗</a>`
+          : "");
     } else {
       body = `<p class="photo-note">暂无牌表</p>`;
     }
@@ -355,7 +408,8 @@
     return (
       `<div class="placement"${keyAttr}>` +
       `<div class="placement-head">` +
-      `<span class="rank-label ${rankClass}">${rankText}</span>` +
+      `<span class="rank-label ${rankClass}">${escapeHtml(rankText)}</span>` +
+      (p.team_name ? `<span class="team-name">${escapeHtml(p.team_name)}</span>` : "") +
       (p.player_name
         ? `<span class="player-name">${escapeHtml(p.player_name)}</span>`
         : "") +
@@ -384,6 +438,7 @@
       `<button type="button" class="event-summary" aria-expanded="false">` +
       `<span class="event-date">${escapeHtml(event.date || "")}</span>` +
       `<div class="event-meta">` +
+      (isNewEvent(event) ? `<span class="badge badge-new">NEW</span>` : "") +
       `<span class="badge ${badgeClass}">${escapeHtml(badgeLabel)}</span>` +
       `<span class="event-venue">${escapeHtml(venue)}</span>` +
       (area ? `<span class="event-area">· ${escapeHtml(area)}</span>` : "") +
@@ -395,6 +450,7 @@
         : "") +
       `</button>` +
       `<div class="event-detail">` +
+      (event.event_note ? `<p class="event-note">${escapeHtml(event.event_note)}</p>` : "") +
       `<div class="placements">${placements.filter(placementHasDeck).map(renderPlacement).join("")}</div>` +
       (event.source_url
         ? `<a class="source-link" href="${escapeHtml(event.source_url)}" target="_blank" rel="noopener noreferrer">来源链接 ↗</a>`
@@ -465,7 +521,8 @@
 
     const regionLabel =
       state.region === "all" ? "全部" : state.region;
-    el.status.textContent = `共 ${total} 场赛事 · 当前：${regionLabel} · 第 ${state.page}/${totalPages} 页（每页 ${PAGE_SIZE}）`;
+    const typeLabel = state.eventType ? ` · 类型：${TYPE_LABELS[state.eventType] || state.eventType}` : "";
+    el.status.textContent = `共 ${total} 场赛事 · 当前：${regionLabel}${typeLabel} · 按日期 新→旧 · 第 ${state.page}/${totalPages} 页（每页 ${PAGE_SIZE}）`;
 
     renderPagination(totalPages);
   }
@@ -489,8 +546,10 @@
       applyFilters();
     });
 
-    el.type.addEventListener("change", () => {
-      state.eventType = el.type.value;
+    el.type.addEventListener("click", (ev) => {
+      const btn = ev.target.closest("[data-event-type]");
+      if (!btn) return;
+      state.eventType = btn.dataset.eventType || "";
       applyFilters();
     });
 
@@ -528,10 +587,17 @@
 
   async function init() {
     bindUI();
+    const qsType = new URLSearchParams(location.search).get("type");
+    if (qsType && TYPE_CHIPS.some(([v]) => v === qsType.toUpperCase())) {
+      state.eventType = qsType.toUpperCase();
+    }
     try {
       const counts = await loadAllData();
       populateMonthOptions();
       populateDeckTypeOptions();
+      if (el.updated && state.latestDate) {
+        el.updated.textContent = `数据更新至 ${state.latestDate}（最新赛事日期）· 列表按日期从新到旧排列，标 NEW 的为最近 ${NEW_DAYS + 1} 天的赛事`;
+      }
       applyFilters();
       console.info(
         `[gcg-preview] loaded japan=${counts.japan} china=${counts.china} eu=${counts.eu} cs=${counts.japanCs} total=${counts.total}`

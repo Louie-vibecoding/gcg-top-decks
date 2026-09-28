@@ -1,0 +1,226 @@
+[
+ {
+  "id": "official-expo2026-tokyo-1on1",
+  "date": "2026-09-26",
+  "month": "2026-09",
+  "region_tag": "日本",
+  "event_type": "OFFICIAL",
+  "event_name": "WORLD CHAMPIONSHIPS 26-27 EXPO予選 1on1（GUNDAM CARD GAME EXPO 2026 東京会場）",
+  "store_name": "EXPO予選 1on1 · 東京（幕張メッセ）",
+  "area": "関東",
+  "format": "1on1",
+  "source": "official-broadcast",
+  "source_url": "https://youtube.com/live/hd-SQy--_-g",
+  "sources": [
+   "https://youtube.com/live/hd-SQy--_-g",
+   "https://www.gundam-gcg.com/jp/events/WCS_EXPO_Qualifier.html",
+   "https://www.gundam-gcg.com/jp/events/EXPO_2026_TOKYO.html"
+  ],
+  "event_note": "Swiss 后 Top32 淘汰。Top32 分布（直播口述）：红白 MF 12、蓝白 自由 12，其余混合。（选手名来自直播自动字幕，拼写待官方赛报确认）",
+  "placements": [
+   {
+    "rank": 1,
+    "rank_label": "優勝",
+    "player_name": "ヒロ",
+    "deck_type": "蓝紫",
+    "deck_type_key": "Blue+Purple",
+    "colors": [
+     "Blue",
+     "Purple"
+    ],
+    "deck_name": "青紫 鉄華団（リゼル×4 / 覚悟の現れ×4 / ストフリ / ルプス）",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）。Swiss 予選21位。",
+    "source_url": "https://youtube.com/live/hd-SQy--_-g"
+   },
+   {
+    "rank": 2,
+    "rank_label": "準優勝",
+    "player_name": "ジョーカ",
+    "deck_type": "蓝白",
+    "deck_type_key": "Blue+White",
+    "colors": [
+     "Blue",
+     "White"
+    ],
+    "deck_name": "青白 V系（ゾロアット / V・V2・Vダッシュ / シルバーバレット×4 / ルブリス×1）",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
+    "source_url": "https://youtube.com/live/hd-SQy--_-g"
+   },
+   {
+    "rank": 3,
+    "rank_label": "ベスト4",
+    "player_name": "竜一",
+    "deck_type": "蓝紫",
+    "deck_type_key": "Blue+Purple",
+    "colors": [
+     "Blue",
+     "Purple"
+    ],
+    "deck_name": "青紫 鉄華団（Swiss 予選1位，半决赛镜像负于ヒロ）",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
+    "source_url": "https://youtube.com/live/hd-SQy--_-g"
+   },
+   {
+    "rank": 3,
+    "rank_label": "ベスト4",
+    "player_name": "パジート",
+    "deck_type": "绿紫",
+    "deck_type_key": "Green+Purple",
+    "colors": [
+     "Green",
+     "Purple"
+    ],
+    "deck_name": "緑紫 ジオング（サザビー×1）",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
+    "source_url": "https://youtube.com/live/hd-SQy--_-g"
+   },
+   {
+    "rank": 5,
+    "rank_label": "予選4位",
+    "player_name": "NENE",
+    "deck_type": "红白",
+    "deck_type_key": "Red+White",
+    "colors": [
+     "Red",
+     "White"
+    ],
+    "deck_name": "赤白 モビルファイター（官方直播牌表页：GD05-069×4 等）",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）。用户提供的官方牌表图含 GD05-069×4，完整清单待转录。",
+    "source_url": "https://youtube.com/live/hd-SQy--_-g"
+   }
+  ]
+ },
+ {
+  "id": "official-expo2026-tokyo-3on3",
+  "date": "2026-09-27",
+  "month": "2026-09",
+  "region_tag": "日本",
+  "event_type": "OFFICIAL",
+  "event_name": "WORLD CHAMPIONSHIPS 26-27 EXPO予選 3on3（GUNDAM CARD GAME EXPO 2026 東京会場）",
+  "store_name": "EXPO予選 3on3 · 東京（幕張メッセ）",
+  "area": "関東",
+  "format": "3on3",
+  "source": "official-broadcast",
+  "source_url": "https://youtube.com/live/pRf6w8rEkUc",
+  "sources": [
+   "https://youtube.com/live/pRf6w8rEkUc",
+   "https://www.gundam-gcg.com/jp/events/WCS_EXPO_Qualifier.html",
+   "https://www.gundam-gcg.com/jp/events/EXPO_2026_TOKYO.html"
+  ],
+  "event_note": "决赛 チームニート 3-0 チーム目崎。（选手名来自直播自动字幕，拼写待官方赛报确认）",
+  "placements": [
+   {
+    "rank": 1,
+    "rank_label": "優勝",
+    "player_name": "よけ",
+    "deck_type": "蓝紫",
+    "deck_type_key": "Blue+Purple",
+    "colors": [
+     "Blue",
+     "Purple"
+    ],
+    "deck_name": "青紫 鉄華団/ストフリ",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
+    "team_name": "チームニート",
+    "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+   },
+   {
+    "rank": 1,
+    "rank_label": "優勝",
+    "player_name": "デン",
+    "deck_type": "绿紫",
+    "deck_type_key": "Green+Purple",
+    "colors": [
+     "Green",
+     "Purple"
+    ],
+    "deck_name": "緑紫 ジオング",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
+    "team_name": "チームニート",
+    "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+   },
+   {
+    "rank": 1,
+    "rank_label": "優勝",
+    "player_name": "ネ",
+    "deck_type": "红白",
+    "deck_type_key": "Red+White",
+    "colors": [
+     "Red",
+     "White"
+    ],
+    "deck_name": "赤白 モビルファイター",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
+    "team_name": "チームニート",
+    "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+   },
+   {
+    "rank": 2,
+    "rank_label": "準優勝",
+    "player_name": "目崎",
+    "deck_type": "红蓝",
+    "deck_type_key": "Blue+Red",
+    "colors": [
+     "Blue",
+     "Red"
+    ],
+    "deck_name": "青赤 ストフリ/バンシィ（コマンド多め）",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
+    "team_name": "チーム目崎",
+    "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+   },
+   {
+    "rank": 2,
+    "rank_label": "準優勝",
+    "player_name": "西田",
+    "deck_type": "蓝白",
+    "deck_type_key": "Blue+White",
+    "colors": [
+     "Blue",
+     "White"
+    ],
+    "deck_name": "青白 ストフリ（ソードストライク / 良き生の出来事）",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
+    "team_name": "チーム目崎",
+    "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+   },
+   {
+    "rank": 2,
+    "rank_label": "準優勝",
+    "player_name": "（未确认）",
+    "deck_type": "蓝白",
+    "deck_type_key": "Blue+White",
+    "colors": [
+     "Blue",
+     "White"
+    ],
+    "deck_name": "青白",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
+    "team_name": "チーム目崎",
+    "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+   }
+  ]
+ }
+]

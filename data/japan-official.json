@@ -16,7 +16,7 @@
    "https://www.gundam-gcg.com/jp/events/WCS_EXPO_Qualifier.html",
    "https://www.gundam-gcg.com/jp/events/EXPO_2026_TOKYO.html"
   ],
-  "event_note": "Swiss 后 Top32 淘汰。Top32 分布（直播口述）：红白 MF 12、蓝白 自由 12，其余混合。（选手名来自直播自动字幕，拼写待官方赛报确认）",
+  "event_note": "Swiss 5轮后 Top32 淘汰赛。決勝トーナメント進出者32名使用デッキ（官方直播页）：赤白モビルファイター10 / 青白ストライクフリーダム10 / 青紫鉄華団6 / 青赤ストライクフリーダム2 / 青緑ロンド・ベル2 / 緑紫ジオング2。选手名以官方直播牌表页标题为准；「予選n位」为 Swiss 排名。",
   "placements": [
    {
     "rank": 1,
@@ -93,56 +93,57 @@
     ],
     "list_pending": false,
     "photo_note": "官方直播牌表页标注「予選21位」（Swiss 排名）；正赛 Top32 淘汰赛夺冠。牌表来源：官方直播截图（用户提供）",
-    "source_url": "https://youtube.com/live/hd-SQy--_-g",
-    "card_source": "官方直播截图（用户提供）"
+    "source_url": "https://youtu.be/hd-SQy--_-g?t=19060",
+    "card_source": "官方直播截图（用户提供）",
+    "slide_source": "https://youtu.be/hd-SQy--_-g?t=19060"
    },
    {
     "rank": 2,
     "rank_label": "準優勝",
-    "player_name": "ジョーカ",
+    "player_name": "じょか",
     "deck_type": "蓝白",
     "deck_type_key": "Blue+White",
     "colors": [
      "Blue",
      "White"
     ],
-    "deck_name": "青白 V系（ゾロアット / V・V2・Vダッシュ / シルバーバレット×4 / ルブリス×1）",
+    "deck_name": "青白ストライクフリーダムデッキ（予選10位）",
     "cards": [],
     "list_pending": true,
-    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
-    "source_url": "https://youtube.com/live/hd-SQy--_-g"
+    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
+    "source_url": "https://youtu.be/hd-SQy--_-g?t=26820"
    },
    {
     "rank": 3,
     "rank_label": "ベスト4",
-    "player_name": "竜一",
+    "player_name": "龍一",
     "deck_type": "蓝紫",
     "deck_type_key": "Blue+Purple",
     "colors": [
      "Blue",
      "Purple"
     ],
-    "deck_name": "青紫 鉄華団（Swiss 予選1位，半决赛镜像负于ヒロ）",
+    "deck_name": "青紫鉄華団デッキ（予選1位；半决赛镜像负于ヒロ）",
     "cards": [],
     "list_pending": true,
-    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
-    "source_url": "https://youtube.com/live/hd-SQy--_-g"
+    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
+    "source_url": "https://youtu.be/hd-SQy--_-g?t=24080"
    },
    {
     "rank": 3,
     "rank_label": "ベスト4",
-    "player_name": "パジート",
+    "player_name": "ぱじいと",
     "deck_type": "绿紫",
     "deck_type_key": "Green+Purple",
     "colors": [
      "Green",
      "Purple"
     ],
-    "deck_name": "緑紫 ジオング（サザビー×1）",
+    "deck_name": "緑紫ジオングデッキ（予選22位）",
     "cards": [],
     "list_pending": true,
-    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
-    "source_url": "https://youtube.com/live/hd-SQy--_-g"
+    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
+    "source_url": "https://youtu.be/hd-SQy--_-g?t=21550"
    },
    {
     "rank": 5,
@@ -219,8 +220,56 @@
     ],
     "list_pending": false,
     "photo_note": "Swiss 予選4位。牌表来源：官方直播截图（用户提供）",
-    "source_url": "https://youtube.com/live/hd-SQy--_-g",
+    "source_url": "hd-SQy--_-g",
     "card_source": "官方直播截图（用户提供）"
+   },
+   {
+    "rank": 5,
+    "rank_label": "ベスト8",
+    "player_name": "HAiNekO",
+    "deck_type": "红白",
+    "deck_type_key": "Red+White",
+    "colors": [
+     "Red",
+     "White"
+    ],
+    "deck_name": "赤白モビルファイターデッキ（予選8位；8强负于龍一）",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
+    "source_url": "https://youtu.be/hd-SQy--_-g?t=24180"
+   },
+   {
+    "rank": 9,
+    "rank_label": "決勝T",
+    "player_name": "コジョウチ",
+    "deck_type": "蓝白",
+    "deck_type_key": "Blue+White",
+    "colors": [
+     "Blue",
+     "White"
+    ],
+    "deck_name": "青白ストライクフリーダムデッキ（予選12位；决赛T首轮负于ヒロ）",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
+    "source_url": "https://youtu.be/hd-SQy--_-g?t=18960"
+   },
+   {
+    "rank": 9,
+    "rank_label": "決勝T",
+    "player_name": "fujio",
+    "deck_type": "红白",
+    "deck_type_key": "Red+White",
+    "colors": [
+     "Red",
+     "White"
+    ],
+    "deck_name": "赤白モビルファイターデッキ（予選28位；负于ぱじいと）",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
+    "source_url": "https://youtu.be/hd-SQy--_-g?t=21610"
    }
   ],
   "event_images": [
@@ -247,75 +296,75 @@
    "https://www.gundam-gcg.com/jp/events/WCS_EXPO_Qualifier.html",
    "https://www.gundam-gcg.com/jp/events/EXPO_2026_TOKYO.html"
   ],
-  "event_note": "决赛 チームニート 3-0 チーム目崎。（选手名来自直播自动字幕，拼写待官方赛报确认）",
+  "event_note": "决赛 チームニート 3-0 チーム目崎。选手名以官方直播牌表页标题为准；队名来自直播口述（待官方赛报确认）。3on3 规则：队内三人须覆盖 青/緑/赤/紫/白 五色，且组合不得重复。",
   "placements": [
    {
     "rank": 1,
     "rank_label": "優勝",
-    "player_name": "よけ",
+    "player_name": "よしけん",
     "deck_type": "蓝紫",
     "deck_type_key": "Blue+Purple",
     "colors": [
      "Blue",
      "Purple"
     ],
-    "deck_name": "青紫 鉄華団/ストフリ",
+    "deck_name": "青紫ストライクフリーダムデッキ",
     "cards": [],
     "list_pending": true,
-    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
-    "team_name": "チームニート",
-    "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。 队伍 Swiss 予選4位。",
+    "source_url": "https://youtu.be/pRf6w8rEkUc?t=27470",
+    "team_name": "チームニート"
    },
    {
     "rank": 1,
     "rank_label": "優勝",
-    "player_name": "デン",
+    "player_name": "ででん",
     "deck_type": "绿紫",
     "deck_type_key": "Green+Purple",
     "colors": [
      "Green",
      "Purple"
     ],
-    "deck_name": "緑紫 ジオング",
+    "deck_name": "緑紫ジオングデッキ",
     "cards": [],
     "list_pending": true,
-    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
-    "team_name": "チームニート",
-    "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
+    "source_url": "https://youtu.be/pRf6w8rEkUc?t=24550",
+    "team_name": "チームニート"
    },
    {
     "rank": 1,
     "rank_label": "優勝",
-    "player_name": "ネ",
+    "player_name": "（第三人，直播称「ネ」）",
     "deck_type": "红白",
     "deck_type_key": "Red+White",
     "colors": [
      "Red",
      "White"
     ],
-    "deck_name": "赤白 モビルファイター",
+    "deck_name": "赤白モビルファイター",
     "cards": [],
     "list_pending": true,
-    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
-    "team_name": "チームニート",
-    "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。 直播中未找到此人的牌表页。",
+    "source_url": "pRf6w8rEkUc",
+    "team_name": "チームニート"
    },
    {
     "rank": 2,
     "rank_label": "準優勝",
-    "player_name": "目崎",
+    "player_name": "メサキ",
     "deck_type": "红蓝",
     "deck_type_key": "Blue+Red",
     "colors": [
      "Blue",
      "Red"
     ],
-    "deck_name": "青赤 ストフリ/バンシィ（コマンド多め）",
+    "deck_name": "青赤ストライクフリーダムデッキ",
     "cards": [],
     "list_pending": true,
-    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
-    "team_name": "チーム目崎",
-    "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。 队伍 Swiss 予選14位。",
+    "source_url": "https://youtu.be/pRf6w8rEkUc?t=21720",
+    "team_name": "チーム目崎"
    },
    {
     "rank": 2,
@@ -327,17 +376,17 @@
      "Blue",
      "White"
     ],
-    "deck_name": "青白 ストフリ（ソードストライク / 良き生の出来事）",
+    "deck_name": "青白ストライクフリーダムデッキ",
     "cards": [],
     "list_pending": true,
-    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
-    "team_name": "チーム目崎",
-    "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
+    "source_url": "https://youtu.be/pRf6w8rEkUc?t=27520",
+    "team_name": "チーム目崎"
    },
    {
     "rank": 2,
     "rank_label": "準優勝",
-    "player_name": "（未确认）",
+    "player_name": "（第三人未确认）",
     "deck_type": "蓝白",
     "deck_type_key": "Blue+White",
     "colors": [
@@ -347,9 +396,43 @@
     "deck_name": "青白",
     "cards": [],
     "list_pending": true,
-    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
-    "team_name": "チーム目崎",
-    "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。 直播中未找到此人的牌表页。",
+    "source_url": "pRf6w8rEkUc",
+    "team_name": "チーム目崎"
+   },
+   {
+    "rank": 3,
+    "rank_label": "ベスト4",
+    "player_name": "アテンザ",
+    "deck_type": "蓝白",
+    "deck_type_key": "Blue+White",
+    "colors": [
+     "Blue",
+     "White"
+    ],
+    "deck_name": "青白ユニコーンデッキ",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
+    "source_url": "https://youtu.be/pRf6w8rEkUc?t=15260",
+    "team_name": "予選3位チーム（直播称「ネオひ峰」，拼写待确认）"
+   },
+   {
+    "rank": 3,
+    "rank_label": "ベスト4",
+    "player_name": "A.O.",
+    "deck_type": "绿紫",
+    "deck_type_key": "Green+Purple",
+    "colors": [
+     "Green",
+     "Purple"
+    ],
+    "deck_name": "緑紫νガンダムデッキ",
+    "cards": [],
+    "list_pending": true,
+    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
+    "source_url": "https://youtu.be/pRf6w8rEkUc?t=24490",
+    "team_name": "予選3位チーム（直播称「ネオひ峰」，拼写待确认）"
    }
   ],
   "event_images": [

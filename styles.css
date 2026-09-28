@@ -684,3 +684,6 @@ body {
 .team-name { font-weight: 700; color: var(--badge-official); font-size: 0.85rem; }
 .event-note { font-size: 0.8rem; color: var(--text-muted); margin: 0 0 0.75rem; }
 .pending-note { color: var(--badge-cs); }
+.event-image { margin: 0 0 0.9rem; }
+.event-image img { max-width: 100%; border-radius: 8px; border: 1px solid var(--border); display: block; }
+.event-image figcaption { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.3rem; }

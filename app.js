@@ -384,7 +384,9 @@
     if (hasCards) {
       storeKey = `p${++placementSeq}`;
       placementCardStore.set(storeKey, p.cards);
-      body = `<div class="deck-cards" data-pending="1"></div>`;
+      body =
+        (p.card_source && p.photo_note ? `<p class="photo-note">${escapeHtml(p.photo_note)}</p>` : "") +
+        `<div class="deck-cards" data-pending="1"></div>`;
     } else if (photo) {
       body =
         (note ? `<p class="photo-note">${escapeHtml(note)}</p>` : "") +
@@ -451,6 +453,14 @@
       `</button>` +
       `<div class="event-detail">` +
       (event.event_note ? `<p class="event-note">${escapeHtml(event.event_note)}</p>` : "") +
+      (event.event_images || [])
+        .map(
+          (im) =>
+            `<figure class="event-image"><a href="${escapeHtml(im.src)}" target="_blank" rel="noopener"><img src="${escapeHtml(im.src)}" alt="${escapeHtml(im.caption || "")}" loading="lazy" /></a>` +
+            (im.caption ? `<figcaption>${escapeHtml(im.caption)}</figcaption>` : "") +
+            `</figure>`
+        )
+        .join("") +
       `<div class="placements">${placements.filter(placementHasDeck).map(renderPlacement).join("")}</div>` +
       (event.source_url
         ? `<a class="source-link" href="${escapeHtml(event.source_url)}" target="_blank" rel="noopener noreferrer">来源链接 ↗</a>`

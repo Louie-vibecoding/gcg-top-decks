@@ -28,11 +28,73 @@
      "Blue",
      "Purple"
     ],
-    "deck_name": "青紫 鉄華団（リゼル×4 / 覚悟の現れ×4 / ストフリ / ルプス）",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）。Swiss 予選21位。",
-    "source_url": "https://youtube.com/live/hd-SQy--_-g"
+    "deck_name": "青紫鉄華団デッキ",
+    "cards": [
+     {
+      "card_id": "ST05-004",
+      "count": 4
+     },
+     {
+      "card_id": "GD05-015",
+      "count": 2
+     },
+     {
+      "card_id": "ST05-006",
+      "count": 4
+     },
+     {
+      "card_id": "GD02-054",
+      "count": 2
+     },
+     {
+      "card_id": "GD01-018",
+      "count": 4
+     },
+     {
+      "card_id": "GD03-056",
+      "count": 4
+     },
+     {
+      "card_id": "GD05-005",
+      "count": 3
+     },
+     {
+      "card_id": "GD02-055",
+      "count": 4
+     },
+     {
+      "card_id": "GD05-060",
+      "count": 1
+     },
+     {
+      "card_id": "GD03-050",
+      "count": 2
+     },
+     {
+      "card_id": "GD05-002",
+      "count": 4
+     },
+     {
+      "card_id": "ST05-010",
+      "count": 4
+     },
+     {
+      "card_id": "GD05-081",
+      "count": 4
+     },
+     {
+      "card_id": "GD01-100",
+      "count": 4
+     },
+     {
+      "card_id": "GD05-129",
+      "count": 4
+     }
+    ],
+    "list_pending": false,
+    "photo_note": "官方直播牌表页标注「予選21位」（Swiss 排名）；正赛 Top32 淘汰赛夺冠。牌表来源：官方直播截图（用户提供）",
+    "source_url": "https://youtube.com/live/hd-SQy--_-g",
+    "card_source": "官方直播截图（用户提供）"
    },
    {
     "rank": 2,
@@ -92,11 +154,79 @@
      "Red",
      "White"
     ],
-    "deck_name": "赤白 モビルファイター（官方直播牌表页：GD05-069×4 等）",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）。用户提供的官方牌表图含 GD05-069×4，完整清单待转录。",
-    "source_url": "https://youtube.com/live/hd-SQy--_-g"
+    "deck_name": "赤白モビルファイターデッキ",
+    "cards": [
+     {
+      "card_id": "GD05-069",
+      "count": 4
+     },
+     {
+      "card_id": "GD05-072",
+      "count": 4
+     },
+     {
+      "card_id": "GD05-066",
+      "count": 4
+     },
+     {
+      "card_id": "GD04-068",
+      "count": 3
+     },
+     {
+      "card_id": "GD05-068",
+      "count": 1
+     },
+     {
+      "card_id": "GD04-066",
+      "count": 1
+     },
+     {
+      "card_id": "GD05-033",
+      "count": 4
+     },
+     {
+      "card_id": "GD05-089",
+      "count": 3
+     },
+     {
+      "card_id": "GD05-097",
+      "count": 4
+     },
+     {
+      "card_id": "GD05-121",
+      "count": 4
+     },
+     {
+      "card_id": "GD05-110",
+      "count": 4
+     },
+     {
+      "card_id": "GD05-120",
+      "count": 3
+     },
+     {
+      "card_id": "GD05-111",
+      "count": 4
+     },
+     {
+      "card_id": "GD01-118",
+      "count": 4
+     },
+     {
+      "card_id": "GD01-128",
+      "count": 3
+     }
+    ],
+    "list_pending": false,
+    "photo_note": "Swiss 予選4位。牌表来源：官方直播截图（用户提供）",
+    "source_url": "https://youtube.com/live/hd-SQy--_-g",
+    "card_source": "官方直播截图（用户提供）"
+   }
+  ],
+  "event_images": [
+   {
+    "src": "data/japan-official/2026-09-26-expo-tokyo-1on1-usage.png",
+    "caption": "東京会場 1on1 使用デッキ分布（官方）：赤白19.6% / 青白18.9% / 青緑18.1% / 緑紫14.8% / 青紫13.5% / 青赤6.8%"
    }
   ]
  },
@@ -220,6 +350,12 @@
     "photo_note": "牌表待官方公开（大阪站官方赛报约赛后16天发布，届时补全卡号/张数）",
     "team_name": "チーム目崎",
     "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+   }
+  ],
+  "event_images": [
+   {
+    "src": "data/japan-official/2026-09-27-expo-tokyo-3on3-usage.png",
+    "caption": "東京会場 3on3 使用デッキ分布（官方速報値）：赤白25.5% / 緑紫23.0% / 青白13.1% / 青緑12.9% / 青紫10.9% / 青赤6.7%"
    }
   ]
  }

@@ -1,445 +1,1451 @@
 [
- {
-  "id": "official-expo2026-tokyo-1on1",
-  "date": "2026-09-26",
-  "month": "2026-09",
-  "region_tag": "日本",
-  "event_type": "OFFICIAL",
-  "event_name": "WORLD CHAMPIONSHIPS 26-27 EXPO予選 1on1（GUNDAM CARD GAME EXPO 2026 東京会場）",
-  "store_name": "EXPO予選 1on1 · 東京（幕張メッセ）",
-  "area": "関東",
-  "format": "1on1",
-  "source": "official-broadcast",
-  "source_url": "https://youtube.com/live/hd-SQy--_-g",
-  "sources": [
-   "https://youtube.com/live/hd-SQy--_-g",
-   "https://www.gundam-gcg.com/jp/events/WCS_EXPO_Qualifier.html",
-   "https://www.gundam-gcg.com/jp/events/EXPO_2026_TOKYO.html"
-  ],
-  "event_note": "Swiss 5轮后 Top32 淘汰赛。決勝トーナメント進出者32名使用デッキ（官方直播页）：赤白モビルファイター10 / 青白ストライクフリーダム10 / 青紫鉄華団6 / 青赤ストライクフリーダム2 / 青緑ロンド・ベル2 / 緑紫ジオング2。选手名以官方直播牌表页标题为准；「予選n位」为 Swiss 排名。",
-  "placements": [
-   {
-    "rank": 1,
-    "rank_label": "優勝",
-    "player_name": "ヒロ",
-    "deck_type": "蓝紫",
-    "deck_type_key": "Blue+Purple",
-    "colors": [
-     "Blue",
-     "Purple"
-    ],
-    "deck_name": "青紫鉄華団デッキ",
-    "cards": [
-     {
-      "card_id": "ST05-004",
-      "count": 4
-     },
-     {
-      "card_id": "GD05-015",
-      "count": 2
-     },
-     {
-      "card_id": "ST05-006",
-      "count": 4
-     },
-     {
-      "card_id": "GD02-054",
-      "count": 2
-     },
-     {
-      "card_id": "GD01-018",
-      "count": 4
-     },
-     {
-      "card_id": "GD03-056",
-      "count": 4
-     },
-     {
-      "card_id": "GD05-005",
-      "count": 3
-     },
-     {
-      "card_id": "GD02-055",
-      "count": 4
-     },
-     {
-      "card_id": "GD05-060",
-      "count": 1
-     },
-     {
-      "card_id": "GD03-050",
-      "count": 2
-     },
-     {
-      "card_id": "GD05-002",
-      "count": 4
-     },
-     {
-      "card_id": "ST05-010",
-      "count": 4
-     },
-     {
-      "card_id": "GD05-081",
-      "count": 4
-     },
-     {
-      "card_id": "GD01-100",
-      "count": 4
-     },
-     {
-      "card_id": "GD05-129",
-      "count": 4
-     }
-    ],
-    "list_pending": false,
-    "photo_note": "官方直播牌表页标注「予選21位」（Swiss 排名）；正赛 Top32 淘汰赛夺冠。牌表来源：官方直播截图（用户提供）",
-    "source_url": "https://youtu.be/hd-SQy--_-g?t=19060",
-    "card_source": "官方直播截图（用户提供）",
-    "slide_source": "https://youtu.be/hd-SQy--_-g?t=19060"
-   },
-   {
-    "rank": 2,
-    "rank_label": "準優勝",
-    "player_name": "じょか",
-    "deck_type": "蓝白",
-    "deck_type_key": "Blue+White",
-    "colors": [
-     "Blue",
-     "White"
-    ],
-    "deck_name": "青白ストライクフリーダムデッキ（予選10位）",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
-    "source_url": "https://youtu.be/hd-SQy--_-g?t=26820"
-   },
-   {
-    "rank": 3,
-    "rank_label": "ベスト4",
-    "player_name": "龍一",
-    "deck_type": "蓝紫",
-    "deck_type_key": "Blue+Purple",
-    "colors": [
-     "Blue",
-     "Purple"
-    ],
-    "deck_name": "青紫鉄華団デッキ（予選1位；半决赛镜像负于ヒロ）",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
-    "source_url": "https://youtu.be/hd-SQy--_-g?t=24080"
-   },
-   {
-    "rank": 3,
-    "rank_label": "ベスト4",
-    "player_name": "ぱじいと",
-    "deck_type": "绿紫",
-    "deck_type_key": "Green+Purple",
-    "colors": [
-     "Green",
-     "Purple"
-    ],
-    "deck_name": "緑紫ジオングデッキ（予選22位）",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
-    "source_url": "https://youtu.be/hd-SQy--_-g?t=21550"
-   },
-   {
-    "rank": 5,
-    "rank_label": "予選4位",
-    "player_name": "NENE",
-    "deck_type": "红白",
-    "deck_type_key": "Red+White",
-    "colors": [
-     "Red",
-     "White"
-    ],
-    "deck_name": "赤白モビルファイターデッキ",
-    "cards": [
-     {
-      "card_id": "GD05-069",
-      "count": 4
-     },
-     {
-      "card_id": "GD05-072",
-      "count": 4
-     },
-     {
-      "card_id": "GD05-066",
-      "count": 4
-     },
-     {
-      "card_id": "GD04-068",
-      "count": 3
-     },
-     {
-      "card_id": "GD05-068",
-      "count": 1
-     },
-     {
-      "card_id": "GD04-066",
-      "count": 1
-     },
-     {
-      "card_id": "GD05-033",
-      "count": 4
-     },
-     {
-      "card_id": "GD05-089",
-      "count": 3
-     },
-     {
-      "card_id": "GD05-097",
-      "count": 4
-     },
-     {
-      "card_id": "GD05-121",
-      "count": 4
-     },
-     {
-      "card_id": "GD05-110",
-      "count": 4
-     },
-     {
-      "card_id": "GD05-120",
-      "count": 3
-     },
-     {
-      "card_id": "GD05-111",
-      "count": 4
-     },
-     {
-      "card_id": "GD01-118",
-      "count": 4
-     },
-     {
-      "card_id": "GD01-128",
-      "count": 3
-     }
-    ],
-    "list_pending": false,
-    "photo_note": "Swiss 予選4位。牌表来源：官方直播截图（用户提供）",
+  {
+    "id": "official-expo2026-tokyo-1on1",
+    "date": "2026-09-26",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "OFFICIAL",
+    "event_name": "WORLD CHAMPIONSHIPS 26-27 EXPO予選 1on1（GUNDAM CARD GAME EXPO 2026 東京会場）",
+    "store_name": "EXPO予選 1on1 · 東京（幕張メッセ）",
+    "area": "関東",
+    "format": "1on1",
+    "source": "official-broadcast",
     "source_url": "https://youtube.com/live/hd-SQy--_-g",
-    "card_source": "官方直播截图（用户提供）"
-   },
-   {
-    "rank": 5,
-    "rank_label": "ベスト8",
-    "player_name": "HAiNekO",
-    "deck_type": "红白",
-    "deck_type_key": "Red+White",
-    "colors": [
-     "Red",
-     "White"
+    "sources": [
+      "https://youtube.com/live/hd-SQy--_-g",
+      "https://www.gundam-gcg.com/jp/events/WCS_EXPO_Qualifier.html",
+      "https://www.gundam-gcg.com/jp/events/EXPO_2026_TOKYO.html"
     ],
-    "deck_name": "赤白モビルファイターデッキ（予選8位；8强负于龍一）",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
-    "source_url": "https://youtu.be/hd-SQy--_-g?t=24180"
-   },
-   {
-    "rank": 9,
-    "rank_label": "決勝T",
-    "player_name": "コジョウチ",
-    "deck_type": "蓝白",
-    "deck_type_key": "Blue+White",
-    "colors": [
-     "Blue",
-     "White"
+    "event_note": "Swiss 5轮后 Top32 淘汰赛。決勝トーナメント進出者32名使用デッキ（官方直播页）：赤白モビルファイター10 / 青白ストライクフリーダム10 / 青紫鉄華団6 / 青赤ストライクフリーダム2 / 青緑ロンド・ベル2 / 緑紫ジオング2。选手名以官方直播牌表页标题为准；「予選n位」为 Swiss 排名。NENE（予選4位 赤白MF）经对阵表核实属 3on3 チームニート，已移至 3on3 条目。",
+    "placements": [
+      {
+        "rank": 1,
+        "rank_label": "優勝",
+        "player_name": "ヒロ",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ],
+        "deck_name": "青紫鉄華団デッキ",
+        "cards": [
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-015",
+            "count": 2
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-018",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 1
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          }
+        ],
+        "list_pending": false,
+        "photo_note": "官方直播牌表页标注「予選21位」（Swiss 排名）；正赛 Top32 淘汰赛夺冠。牌表来源：官方直播截图（用户提供）",
+        "source_url": "https://youtu.be/hd-SQy--_-g?t=19060",
+        "card_source": "官方直播截图（用户提供）",
+        "slide_source": "https://youtu.be/hd-SQy--_-g?t=19060"
+      },
+      {
+        "rank": 2,
+        "rank_label": "準優勝",
+        "player_name": "じょか",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ],
+        "deck_name": "青白ストライクフリーダムデッキ（予選10位）",
+        "cards": [
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-003",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-011",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-121",
+            "count": 4
+          }
+        ],
+        "list_pending": false,
+        "photo_note": "Swiss 予選10位；決勝负于ヒロ。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。",
+        "source_url": "https://youtu.be/hd-SQy--_-g?t=26850",
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）"
+      },
+      {
+        "rank": 3,
+        "rank_label": "ベスト4",
+        "player_name": "龍一",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ],
+        "deck_name": "青紫鉄華団デッキ（予選1位；半决赛镜像负于ヒロ）",
+        "cards": [
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-018",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-014",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          }
+        ],
+        "list_pending": false,
+        "photo_note": "Swiss 予選1位；半决赛镜像负于ヒロ。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。",
+        "source_url": "https://youtu.be/hd-SQy--_-g?t=24110",
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）"
+      },
+      {
+        "rank": 3,
+        "rank_label": "ベスト4",
+        "player_name": "ぱじいと",
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
+        ],
+        "deck_name": "緑紫ジオングデッキ（予選22位）",
+        "cards": [
+          {
+            "card_id": "ST03-007",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-035",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-050",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-026",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-023",
+            "count": 1
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-031",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-049",
+            "count": 1
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 3
+          },
+          {
+            "card_id": "ST03-016",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 1
+          }
+        ],
+        "list_pending": false,
+        "photo_note": "Swiss 予選22位。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。",
+        "source_url": "https://youtu.be/hd-SQy--_-g?t=21580",
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）"
+      },
+      {
+        "rank": 5,
+        "rank_label": "ベスト8",
+        "player_name": "HAiNekO",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ],
+        "deck_name": "赤白モビルファイターデッキ（予選8位；8强负于龍一）",
+        "cards": [
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD03-035",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 3
+          }
+        ],
+        "list_pending": false,
+        "photo_note": "Swiss 予選8位；8强负于龍一。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。",
+        "source_url": "https://youtu.be/hd-SQy--_-g?t=24200",
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）"
+      },
+      {
+        "rank": 9,
+        "rank_label": "決勝T",
+        "player_name": "コジョウチ",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ],
+        "deck_name": "青白ストライクフリーダムデッキ（予選12位；决赛T首轮负于ヒロ）",
+        "cards": [
+          {
+            "card_id": "GD01-086",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 2
+          },
+          {
+            "card_id": "EB01-054",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-066",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 2
+          }
+        ],
+        "list_pending": false,
+        "photo_note": "Swiss 予選12位；决赛T负于ヒロ。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。",
+        "source_url": "https://youtu.be/hd-SQy--_-g?t=18990",
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）"
+      },
+      {
+        "rank": 9,
+        "rank_label": "決勝T",
+        "player_name": "fujio",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ],
+        "deck_name": "赤白モビルファイターデッキ（予選28位；负于ぱじいと）",
+        "cards": [
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-068",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 4
+          }
+        ],
+        "list_pending": false,
+        "photo_note": "Swiss 予選28位；决赛T负于ぱじいと。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。",
+        "source_url": "https://youtu.be/hd-SQy--_-g?t=21630",
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）"
+      }
     ],
-    "deck_name": "青白ストライクフリーダムデッキ（予選12位；决赛T首轮负于ヒロ）",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
-    "source_url": "https://youtu.be/hd-SQy--_-g?t=18960"
-   },
-   {
-    "rank": 9,
-    "rank_label": "決勝T",
-    "player_name": "fujio",
-    "deck_type": "红白",
-    "deck_type_key": "Red+White",
-    "colors": [
-     "Red",
-     "White"
-    ],
-    "deck_name": "赤白モビルファイターデッキ（予選28位；负于ぱじいと）",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
-    "source_url": "https://youtu.be/hd-SQy--_-g?t=21610"
-   }
-  ],
-  "event_images": [
-   {
-    "src": "data/japan-official/2026-09-26-expo-tokyo-1on1-usage.png",
-    "caption": "東京会場 1on1 使用デッキ分布（官方）：赤白19.6% / 青白18.9% / 青緑18.1% / 緑紫14.8% / 青紫13.5% / 青赤6.8%"
-   }
-  ]
- },
- {
-  "id": "official-expo2026-tokyo-3on3",
-  "date": "2026-09-27",
-  "month": "2026-09",
-  "region_tag": "日本",
-  "event_type": "OFFICIAL",
-  "event_name": "WORLD CHAMPIONSHIPS 26-27 EXPO予選 3on3（GUNDAM CARD GAME EXPO 2026 東京会場）",
-  "store_name": "EXPO予選 3on3 · 東京（幕張メッセ）",
-  "area": "関東",
-  "format": "3on3",
-  "source": "official-broadcast",
-  "source_url": "https://youtube.com/live/pRf6w8rEkUc",
-  "sources": [
-   "https://youtube.com/live/pRf6w8rEkUc",
-   "https://www.gundam-gcg.com/jp/events/WCS_EXPO_Qualifier.html",
-   "https://www.gundam-gcg.com/jp/events/EXPO_2026_TOKYO.html"
-  ],
-  "event_note": "决赛 チームニート 3-0 チーム目崎。选手名以官方直播牌表页标题为准；队名来自直播口述（待官方赛报确认）。3on3 规则：队内三人须覆盖 青/緑/赤/紫/白 五色，且组合不得重复。",
-  "placements": [
-   {
-    "rank": 1,
-    "rank_label": "優勝",
-    "player_name": "よしけん",
-    "deck_type": "蓝紫",
-    "deck_type_key": "Blue+Purple",
-    "colors": [
-     "Blue",
-     "Purple"
-    ],
-    "deck_name": "青紫ストライクフリーダムデッキ",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。 队伍 Swiss 予選4位。",
-    "source_url": "https://youtu.be/pRf6w8rEkUc?t=27470",
-    "team_name": "チームニート"
-   },
-   {
-    "rank": 1,
-    "rank_label": "優勝",
-    "player_name": "ででん",
-    "deck_type": "绿紫",
-    "deck_type_key": "Green+Purple",
-    "colors": [
-     "Green",
-     "Purple"
-    ],
-    "deck_name": "緑紫ジオングデッキ",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
-    "source_url": "https://youtu.be/pRf6w8rEkUc?t=24550",
-    "team_name": "チームニート"
-   },
-   {
-    "rank": 1,
-    "rank_label": "優勝",
-    "player_name": "（第三人，直播称「ネ」）",
-    "deck_type": "红白",
-    "deck_type_key": "Red+White",
-    "colors": [
-     "Red",
-     "White"
-    ],
-    "deck_name": "赤白モビルファイター",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。 直播中未找到此人的牌表页。",
+    "event_images": [
+      {
+        "src": "data/japan-official/2026-09-26-expo-tokyo-1on1-usage.png",
+        "caption": "東京会場 1on1 使用デッキ分布（官方）：赤白19.6% / 青白18.9% / 青緑18.1% / 緑紫14.8% / 青紫13.5% / 青赤6.8%"
+      }
+    ]
+  },
+  {
+    "id": "official-expo2026-tokyo-3on3",
+    "date": "2026-09-27",
+    "month": "2026-09",
+    "region_tag": "日本",
+    "event_type": "OFFICIAL",
+    "event_name": "WORLD CHAMPIONSHIPS 26-27 EXPO予選 3on3（GUNDAM CARD GAME EXPO 2026 東京会場）",
+    "store_name": "EXPO予選 3on3 · 東京（幕張メッセ）",
+    "area": "関東",
+    "format": "3on3",
+    "source": "official-broadcast",
     "source_url": "https://youtube.com/live/pRf6w8rEkUc",
-    "team_name": "チームニート"
-   },
-   {
-    "rank": 2,
-    "rank_label": "準優勝",
-    "player_name": "メサキ",
-    "deck_type": "红蓝",
-    "deck_type_key": "Blue+Red",
-    "colors": [
-     "Blue",
-     "Red"
+    "sources": [
+      "https://youtube.com/live/pRf6w8rEkUc",
+      "https://www.gundam-gcg.com/jp/events/WCS_EXPO_Qualifier.html",
+      "https://www.gundam-gcg.com/jp/events/EXPO_2026_TOKYO.html"
     ],
-    "deck_name": "青赤ストライクフリーダムデッキ",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。 队伍 Swiss 予選14位。",
-    "source_url": "https://youtu.be/pRf6w8rEkUc?t=21720",
-    "team_name": "チーム目崎"
-   },
-   {
-    "rank": 2,
-    "rank_label": "準優勝",
-    "player_name": "西田",
-    "deck_type": "蓝白",
-    "deck_type_key": "Blue+White",
-    "colors": [
-     "Blue",
-     "White"
+    "event_note": "决赛 チームニート 3-0 チームメサキ；半决赛 チームニート 胜 ネオ・広峰。队名/成员/对位以官方直播对阵表为准，选手名与排名以牌表页标题为准（「予選n位」为队伍 Swiss 排名）。3on3 规则：队内三人须覆盖 青/緑/赤/紫/白 五色，且组合不得重复。未展示牌表：Lotus、社畜ルーゼ、白夜団 タイキ/ぐんちょす 等；决赛T 1回戦 ZSC れおま（青緑ロンド・ベル，予選33位）牌表页存在于 4:15:10 附近但截图时遇 YouTube bot 验证未能获取。",
+    "placements": [
+      {
+        "rank": 1,
+        "rank_label": "優勝",
+        "player_name": "NENE",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ],
+        "deck_name": "赤白モビルファイターデッキ",
+        "cards": [
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-068",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-066",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 3
+          }
+        ],
+        "list_pending": false,
+        "photo_note": "队伍 Swiss 予選4位（牌表页标注「予選4位」与同队よしけん/ででん一致；直播对阵表确认 NENE 属チームニート）。牌表来源：官方直播截图（用户提供）",
+        "source_url": "https://youtube.com/live/pRf6w8rEkUc",
+        "card_source": "官方直播截图（用户提供）",
+        "team_name": "チームニート"
+      },
+      {
+        "rank": 1,
+        "rank_label": "優勝",
+        "player_name": "よしけん",
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ],
+        "deck_name": "青紫ストライクフリーダムデッキ",
+        "cards": [
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-015",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-018",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 1
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          }
+        ],
+        "list_pending": false,
+        "photo_note": "队伍 Swiss 予選4位。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。",
+        "source_url": "https://youtu.be/pRf6w8rEkUc?t=27490",
+        "team_name": "チームニート",
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）"
+      },
+      {
+        "rank": 1,
+        "rank_label": "優勝",
+        "player_name": "ででん",
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
+        ],
+        "deck_name": "緑紫ジオングデッキ",
+        "cards": [
+          {
+            "card_id": "ST03-007",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-050",
+            "count": 3
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-062",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-026",
+            "count": 3
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 2
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-016",
+            "count": 3
+          },
+          {
+            "card_id": "ST05-014",
+            "count": 1
+          }
+        ],
+        "list_pending": false,
+        "photo_note": "队伍 Swiss 予選4位。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。",
+        "source_url": "https://youtu.be/pRf6w8rEkUc?t=24570",
+        "team_name": "チームニート",
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）"
+      },
+      {
+        "rank": 2,
+        "rank_label": "準優勝",
+        "player_name": "Lotus",
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
+        ],
+        "deck_name": "緑紫サザビーデッキ",
+        "team_name": "チームメサキ",
+        "cards": [],
+        "list_pending": true,
+        "photo_note": "直播对阵表确认 Lotus 为チームメサキ成员（緑紫サザビー），但直播未展示其牌表页。",
+        "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+      },
+      {
+        "rank": 2,
+        "rank_label": "準優勝",
+        "player_name": "メサキ",
+        "deck_type": "红蓝",
+        "deck_type_key": "Blue+Red",
+        "colors": [
+          "Blue",
+          "Red"
+        ],
+        "deck_name": "青赤ストライクフリーダムデッキ",
+        "cards": [
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-003",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-044",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-093",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-110",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-109",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-109",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-111",
+            "count": 3
+          },
+          {
+            "card_id": "ST03-013",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-015",
+            "count": 4
+          }
+        ],
+        "list_pending": false,
+        "photo_note": "队伍 Swiss 予選14位。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。",
+        "source_url": "https://youtu.be/pRf6w8rEkUc?t=21750",
+        "team_name": "チームメサキ",
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）"
+      },
+      {
+        "rank": 2,
+        "rank_label": "準優勝",
+        "player_name": "西田",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ],
+        "deck_name": "青白ストライクフリーダムデッキ",
+        "cards": [
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-065",
+            "count": 1
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-066",
+            "count": 1
+          },
+          {
+            "card_id": "ST04-012",
+            "count": 1
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 1
+          }
+        ],
+        "list_pending": false,
+        "photo_note": "队伍 Swiss 予選14位。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。",
+        "source_url": "https://youtu.be/pRf6w8rEkUc?t=27545",
+        "team_name": "チームメサキ",
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）"
+      },
+      {
+        "rank": 3,
+        "rank_label": "ベスト4",
+        "player_name": "アテンザ",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ],
+        "deck_name": "青白ユニコーンデッキ",
+        "cards": [
+          {
+            "card_id": "GD04-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-010",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-002",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-005",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-088",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-101",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-012",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 3
+          }
+        ],
+        "list_pending": false,
+        "photo_note": "队伍 Swiss 予選3位；半决赛负于チームニート。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。",
+        "source_url": "https://youtu.be/pRf6w8rEkUc?t=15290",
+        "team_name": "ネオ・広峰",
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）"
+      },
+      {
+        "rank": 3,
+        "rank_label": "ベスト4",
+        "player_name": "社畜ルーゼ",
+        "deck_type": "蓝红",
+        "deck_type_key": "Blue+Red",
+        "colors": [
+          "Blue",
+          "Red"
+        ],
+        "deck_name": "青赤ストライクフリーダムデッキ",
+        "team_name": "ネオ・広峰",
+        "cards": [],
+        "list_pending": true,
+        "photo_note": "直播对阵表确认为ネオ・広峰成员，直播未展示其牌表页。",
+        "source_url": "https://youtube.com/live/pRf6w8rEkUc"
+      },
+      {
+        "rank": 3,
+        "rank_label": "ベスト4",
+        "player_name": "A.O.",
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
+        ],
+        "deck_name": "緑紫νガンダムデッキ",
+        "cards": [
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-027",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-029",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-019",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-020",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "ST05-001",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-085",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-126",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-125",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 1
+          }
+        ],
+        "list_pending": false,
+        "photo_note": "队伍 Swiss 予選3位；半决赛负于チームニート。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。",
+        "source_url": "https://youtu.be/pRf6w8rEkUc?t=24520",
+        "team_name": "ネオ・広峰",
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）"
+      },
+      {
+        "rank": 5,
+        "rank_label": "ベスト8",
+        "player_name": "みーと",
+        "deck_type": "绿紫",
+        "deck_type_key": "Green+Purple",
+        "colors": [
+          "Green",
+          "Purple"
+        ],
+        "deck_name": "緑紫サザビーデッキ",
+        "team_name": "白夜団",
+        "cards": [
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-011",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-031",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-062",
+            "count": 2
+          },
+          {
+            "card_id": "ST09-009",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-049",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-017",
+            "count": 4
+          }
+        ],
+        "list_pending": false,
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）",
+        "source_url": "https://youtu.be/pRf6w8rEkUc?t=21680",
+        "photo_note": "队伍 Swiss 予選13位；8强负于チームメサキ。同队：タイキ（赤白MF）、ぐんちょす（青紫SF），二人牌表直播未展示。GD02-055 牌表页分两格各2张（不同卡图），此处合并为4张。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。"
+      },
+      {
+        "rank": 9,
+        "rank_label": "決勝T 2回戦",
+        "player_name": "もちこ",
+        "deck_type": "蓝绿",
+        "deck_type_key": "Blue+Green",
+        "colors": [
+          "Blue",
+          "Green"
+        ],
+        "deck_name": "青緑ロンド・ベルデッキ",
+        "team_name": "担当メシは麻辣湯",
+        "cards": [
+          {
+            "card_id": "GD05-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-019",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-027",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-029",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-085",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-008",
+            "count": 4
+          },
+          {
+            "card_id": "ST02-016",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-106",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-018",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-125",
+            "count": 2
+          }
+        ],
+        "list_pending": false,
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）",
+        "source_url": "https://youtu.be/pRf6w8rEkUc?t=18830",
+        "photo_note": "队伍 Swiss 予選1位；决赛T 2回戦 对 ATT。同队：みー（青紫SF）、うらうらら（赤白MF），牌表直播未展示。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。"
+      },
+      {
+        "rank": 9,
+        "rank_label": "決勝T 2回戦",
+        "player_name": "タチ",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ],
+        "deck_name": "赤白モビルファイターデッキ",
+        "team_name": "ATT",
+        "cards": [
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-035",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 3
+          }
+        ],
+        "list_pending": false,
+        "card_source": "官方直播牌表页截图（YouTube 官方 VOD，box 转录）",
+        "source_url": "https://youtu.be/pRf6w8rEkUc?t=18940",
+        "photo_note": "队伍 Swiss 予選19位；决赛T 2回戦 对 担当メシは麻辣湯。同队：トイテック/ToyTech（青白SF）、あいぽん（緑紫ジオング），牌表直播未展示。 牌表来源：官方直播牌表页（点「直播/来源」跳到对应时间点）。"
+      }
     ],
-    "deck_name": "青白ストライクフリーダムデッキ",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
-    "source_url": "https://youtu.be/pRf6w8rEkUc?t=27520",
-    "team_name": "チーム目崎"
-   },
-   {
-    "rank": 2,
-    "rank_label": "準優勝",
-    "player_name": "（第三人未确认）",
-    "deck_type": "蓝白",
-    "deck_type_key": "Blue+White",
-    "colors": [
-     "Blue",
-     "White"
-    ],
-    "deck_name": "青白",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。 直播中未找到此人的牌表页。",
-    "source_url": "https://youtube.com/live/pRf6w8rEkUc",
-    "team_name": "チーム目崎"
-   },
-   {
-    "rank": 3,
-    "rank_label": "ベスト4",
-    "player_name": "アテンザ",
-    "deck_type": "蓝白",
-    "deck_type_key": "Blue+White",
-    "colors": [
-     "Blue",
-     "White"
-    ],
-    "deck_name": "青白ユニコーンデッキ",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
-    "source_url": "https://youtu.be/pRf6w8rEkUc?t=15260",
-    "team_name": "予選3位チーム（直播称「ネオひ峰」，拼写待确认）"
-   },
-   {
-    "rank": 3,
-    "rank_label": "ベスト4",
-    "player_name": "A.O.",
-    "deck_type": "绿紫",
-    "deck_type_key": "Green+Purple",
-    "colors": [
-     "Green",
-     "Purple"
-    ],
-    "deck_name": "緑紫νガンダムデッキ",
-    "cards": [],
-    "list_pending": true,
-    "photo_note": "牌表未转录：官方直播在该时间点展示了完整牌表页（卡号+张数），可点「直播/来源」查看；待截图转录或官方赛报公开后补全。",
-    "source_url": "https://youtu.be/pRf6w8rEkUc?t=24490",
-    "team_name": "予選3位チーム（直播称「ネオひ峰」，拼写待确认）"
-   }
-  ],
-  "event_images": [
-   {
-    "src": "data/japan-official/2026-09-27-expo-tokyo-3on3-usage.png",
-    "caption": "東京会場 3on3 使用デッキ分布（官方速報値）：赤白25.5% / 緑紫23.0% / 青白13.1% / 青緑12.9% / 青紫10.9% / 青赤6.7%"
-   }
-  ]
- }
+    "event_images": [
+      {
+        "src": "data/japan-official/2026-09-27-expo-tokyo-3on3-usage.png",
+        "caption": "東京会場 3on3 使用デッキ分布（官方速報値）：赤白25.5% / 緑紫23.0% / 青白13.1% / 青緑12.9% / 青紫10.9% / 青赤6.7%"
+      }
+    ]
+  }
 ]

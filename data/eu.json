@@ -1,5 +1,429 @@
 [
   {
+    "id": "eu-egman-ac89207a",
+    "date": "2026-10-05",
+    "month": "2026-10",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "Play!TCG Milwaukee Regionals",
+    "store_or_venue": "Play!TCG Milwaukee Regionals",
+    "store_name": "Play!TCG Milwaukee Regionals",
+    "area": "US",
+    "source": "egman",
+    "source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments",
+    "player_count": 500,
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Taidana",
+        "player": "Taidana",
+        "deck_name": "Blue/Purple ST11-001",
+        "cards": [
+          {
+            "card_id": "ST11-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST11-003",
+            "count": 4
+          },
+          {
+            "card_id": "ST11-009",
+            "count": 4
+          },
+          {
+            "card_id": "ST11-011",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "ST02-016",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-015",
+            "count": 1
+          },
+          {
+            "card_id": "ST11-007",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-050",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "ST11-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-001",
+            "count": 1
+          }
+        ],
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
+      },
+      {
+        "rank": 2,
+        "player_name": "Luc",
+        "player": "Luc",
+        "deck_name": "Blue/Purple GD02-054",
+        "cards": [
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-058",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 3
+          },
+          {
+            "card_id": "ST05-015",
+            "count": 1
+          }
+        ],
+        "deck_type": "蓝紫",
+        "deck_type_key": "Blue+Purple",
+        "colors": [
+          "Blue",
+          "Purple"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-egman-29abd745",
+    "date": "2026-10-04",
+    "month": "2026-10",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "NoHEROES' Düsseldorf Regionals",
+    "store_or_venue": "NoHEROES' Düsseldorf Regionals",
+    "store_name": "NoHEROES' Düsseldorf Regionals",
+    "area": "EU",
+    "source": "egman",
+    "source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments",
+    "player_count": 191,
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Ripi TCG",
+        "player": "Ripi TCG",
+        "deck_name": "Red/White GD05-066",
+        "cards": [
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-066",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-036",
+            "count": 1
+          },
+          {
+            "card_id": "GD03-035",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-076",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-126",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 2
+          }
+        ],
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      },
+      {
+        "rank": 2,
+        "player_name": "Johannes",
+        "player": "Johannes",
+        "deck_name": "Blue/White GD05-002",
+        "cards": [
+          {
+            "card_id": "GD04-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-003",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-121",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-081",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-09-20-gameland",
+    "date": "2026-09-20",
+    "month": "2026-09",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "1st Year Anniversary @ GameLand",
+    "store_or_venue": "GameLand",
+    "store_name": "GameLand",
+    "area": "US",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 2,
+        "player_name": "Kraid",
+        "player": "Kraid",
+        "deck_name": "RW MF",
+        "cards": [
+          {
+            "card_id": "GD05-042",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-128",
+            "count": 3
+          }
+        ],
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      }
+    ]
+  },
+  {
     "id": "eu-tcgtd-2026-09-19-tcg-arena",
     "date": "2026-09-19",
     "month": "2026-09",

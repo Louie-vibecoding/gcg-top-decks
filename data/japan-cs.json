@@ -173,6 +173,9 @@
       }
     ],
     "notes": "Tonamel https://tonamel.com/competition/sWn8e で75/96確認。優勝K・準優勝田中はX@UCCUP2025結果投稿およびTonamel結果と一致。ARCH CS第17–19回は定員最大45で除外。からセナCS 9/13は12/32で除外。Trinity Cupは店舗主催3on3のためv1対象外。",
-    "tonamel_url": "https://tonamel.com/competition/sWn8e"
+    "tonamel_url": "https://tonamel.com/competition/sWn8e",
+    "players": 75,
+    "players_source": "tonamel",
+    "players_source_url": "https://tonamel.com/competition/sWn8e"
   }
 ]

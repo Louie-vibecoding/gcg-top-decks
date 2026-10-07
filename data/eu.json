@@ -166,7 +166,10 @@
           "Purple"
         ]
       }
-    ]
+    ],
+    "players": 500,
+    "players_source": "egman",
+    "players_source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments"
   },
   {
     "id": "eu-egman-29abd745",
@@ -339,7 +342,10 @@
           "White"
         ]
       }
-    ]
+    ],
+    "players": 191,
+    "players_source": "egman",
+    "players_source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments"
   },
   {
     "id": "eu-tcgtd-2026-09-20-gameland",
@@ -602,7 +608,10 @@
         ]
       }
     ],
-    "player_count": 14
+    "player_count": 14,
+    "players": 14,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "eu-tcgtd-2026-09-15-sugoi-stuff",
@@ -1175,7 +1184,10 @@
           "White"
         ]
       }
-    ]
+    ],
+    "players": 512,
+    "players_source": "egman",
+    "players_source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments"
   },
   {
     "id": "eu-tcgtd-2026-08-30-area-51",
@@ -1351,7 +1363,11 @@
           "White"
         ]
       }
-    ]
+    ],
+    "players": 37,
+    "player_count": 37,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "eu-tcgtd-2026-08-23-lgs",
@@ -1736,7 +1752,10 @@
           "Purple"
         ]
       }
-    ]
+    ],
+    "players": 44,
+    "players_source": "egman",
+    "players_source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments"
   },
   {
     "id": "eu-tcgtd-2026-08-16-lgs",
@@ -2268,7 +2287,11 @@
           "White"
         ]
       }
-    ]
+    ],
+    "players": 32,
+    "player_count": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "eu-egman-832efe2d",
@@ -2445,7 +2468,10 @@
           "White"
         ]
       }
-    ]
+    ],
+    "players": 20,
+    "players_source": "egman",
+    "players_source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments"
   },
   {
     "id": "eu-tcgtd-2026-08-09-xpolytcg",
@@ -2798,7 +2824,10 @@
           "Green"
         ]
       }
-    ]
+    ],
+    "players": 230,
+    "players_source": "egman",
+    "players_source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments"
   },
   {
     "id": "eu-tcgtd-2026-08-08-weevil-cards-and-collectibles",
@@ -3060,7 +3089,11 @@
           "Purple"
         ]
       }
-    ]
+    ],
+    "players": 25,
+    "player_count": 25,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "eu-tcgtd-2026-08-06-topdeck-hero",
@@ -3347,7 +3380,10 @@
           "White"
         ]
       }
-    ]
+    ],
+    "players": 25,
+    "players_source": "egman",
+    "players_source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments"
   },
   {
     "id": "eu-tcgtd-2026-08-03-treasure-chest-games",
@@ -3437,7 +3473,11 @@
           "Purple"
         ]
       }
-    ]
+    ],
+    "players": 32,
+    "player_count": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "eu-tcgtd-2026-08-02-meisia",
@@ -3527,7 +3567,11 @@
           "White"
         ]
       }
-    ]
+    ],
+    "players": 23,
+    "player_count": 23,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "eu-tcgtd-2026-08-01-super-games-inc",
@@ -3691,7 +3735,11 @@
           "Purple"
         ]
       }
-    ]
+    ],
+    "players": 30,
+    "player_count": 30,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "eu-tcgtd-2026-08-01-only-cards",

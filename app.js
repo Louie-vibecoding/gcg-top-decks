@@ -22,6 +22,7 @@
     ["OFFICIAL", "官方大型赛事 / EXPO予選"],
   ];
   const NEW_DAYS = 2;
+  const PLAYERS_TAG_MIN = 32; // 参赛人数 ≥32 才在赛事名后显示「· N人」
 
   const TYPE_BADGE_CLASS = {
     NTC: "badge-ntc",
@@ -423,13 +424,23 @@
     );
   }
 
+  /**
+   * 参赛人数标签：仅当 players 为来源确认的整数且 ≥ PLAYERS_TAG_MIN 时显示。
+   * players_unit === "teams" 的团体赛按队计数显示「N队」。
+   */
+  function playersTag(event) {
+    const n = event.players;
+    if (!Number.isInteger(n) || n < PLAYERS_TAG_MIN) return "";
+    return event.players_unit === "teams" ? `${n}队` : `${n}人`;
+  }
+
   function renderEvent(event) {
     const type = event.event_type || "";
     const badgeClass = TYPE_BADGE_CLASS[type] || "badge-other";
     const badgeLabel = TYPE_LABELS[type] || type || "未知";
     const venue = event.store_name || event.event_name || event.series_name || "—";
     const area = event.area || "";
-    const entrants = event.entrants ? `${event.entrants}人` : "";
+    const players = playersTag(event);
     const nameLine = event.event_name || event.series_name || "";
     const placements = (event.placements || [])
       .slice()
@@ -443,8 +454,8 @@
       (isNewEvent(event) ? `<span class="badge badge-new">NEW</span>` : "") +
       `<span class="badge ${badgeClass}">${escapeHtml(badgeLabel)}</span>` +
       `<span class="event-venue">${escapeHtml(venue)}</span>` +
+      (players ? `<span class="event-players" title="参赛人数（来源：${escapeHtml(event.players_source || "")}）">· ${escapeHtml(players)}</span>` : "") +
       (area ? `<span class="event-area">· ${escapeHtml(area)}</span>` : "") +
-      (entrants ? `<span class="event-area">· ${escapeHtml(entrants)}</span>` : "") +
       `<span class="chevron" aria-hidden="true">▼</span>` +
       `</div>` +
       (nameLine && nameLine !== venue

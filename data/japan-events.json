@@ -2605,7 +2605,10 @@
     ],
     "store_name": "Duel Stade Ganryu 入間店",
     "area": "関東",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01KZ14TPJAQ4AP8M7DGZ0ZPS2C",
@@ -3555,7 +3558,10 @@
     ],
     "store_name": "カードショップ彩々アミュプラザ鹿児島店",
     "area": "九州",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 26,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01KZ0G8RHTKNAYXRXA76KPDQ9G",
@@ -4028,7 +4034,10 @@
     ],
     "store_name": "ゲームスペース鶴岡",
     "area": "東北",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 26,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01KZ0CSZD9QX255GCVH6FNJFBY",
@@ -5316,7 +5325,10 @@
     ],
     "store_name": "フタバ図書TSUTAYA三次店",
     "area": "中国",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01KZ0THTG2EPJK15PKY0PCVXA7",
@@ -6242,7 +6254,10 @@
     ],
     "store_name": "Japan TCG Center吉祥寺駅北口店",
     "area": "関東",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 64,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01KZ32MSK502K0AQRHEVBECEWC",
@@ -11159,7 +11174,10 @@
     ],
     "store_name": "TCGShop193秋葉原店",
     "area": "関東",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01KZG5FJQQ2G2BBWGZW2XRZ7D0",
@@ -12920,7 +12938,10 @@
     ],
     "store_name": "ブックマーケット 野々市新庄店",
     "area": "中部",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 61,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01KZJMES8E22SP038Y7KADZCZJ",
@@ -13079,7 +13100,10 @@
     ],
     "store_name": "GIRAFULLなんば店",
     "area": "関西",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 64,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01KZK91QKV7EQ1Y2GD9CEZABGV",
@@ -13540,7 +13564,10 @@
     ],
     "store_name": "TSUTAYA AVクラブ御領店",
     "area": "九州",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01KZJH0GS84AW0FCPP98QMK5HX",
@@ -14331,7 +14358,10 @@
     ],
     "store_name": "カード＆ホビーショップ ドラグーン住吉",
     "area": "九州",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 26,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01KZJDJVNNF89NG3QAA6M4GXHV",
@@ -14796,7 +14826,10 @@
     ],
     "store_name": "トレカショップKCC",
     "area": "関東",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01KZJYQY4K2XMK1HWZEFJAK6NB",
@@ -16863,7 +16896,10 @@
     ],
     "store_name": "ホビーステーション仙台駅前店",
     "area": "東北",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01KZQWPA51QGCR5HHJZ87TXA9Z",
@@ -19264,7 +19300,10 @@
     ],
     "store_name": "ラックス奈良柏木店",
     "area": "関西",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01KZQWP8X101YKFYWVYSVVG2BK",
@@ -19419,7 +19458,10 @@
     ],
     "store_name": "遊INGコマーシャルモール博多店",
     "area": "九州",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 64,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01KZTJGWQP2FDDVJ53D2BNY95D",
@@ -21339,7 +21381,10 @@
     ],
     "store_name": "トレジャーコレクション山口店",
     "area": "中国",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 28,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M01VZYSYDFQER4X6EX2ZTWJK",
@@ -21498,7 +21543,10 @@
     ],
     "store_name": "JABUROⅡ",
     "area": "中部",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 50,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M02M0M6W0P1XXXTQPS9B6AM4",
@@ -22305,7 +22353,10 @@
     ],
     "store_name": "TSUTAYAリノアス八尾店",
     "area": "関西",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M029QCWY16YPW6S981XX671Q",
@@ -22981,7 +23032,10 @@
     ],
     "store_name": "カードショップLight",
     "area": "関西",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M02QECHJ90SETASWTC0PYXF5",
@@ -23927,7 +23981,10 @@
     ],
     "store_name": "ティアワン浜松店",
     "area": "中部",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 62,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M022VK7D1ZVASBJC69Y6NT9C",
@@ -25382,7 +25439,10 @@
     ],
     "store_name": "CARDBOXアリオン塩冶店",
     "area": "中国",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M04ZH3MV2PBDTXVRNHBM3BX4",
@@ -27000,7 +27060,10 @@
     ],
     "store_name": "ドラゴンスター池袋店",
     "area": "関東",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 60,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M0833D75DK7WSWVDZ5GM3F95",
@@ -28793,7 +28856,10 @@
     ],
     "store_name": "トーナメントセンターバトロコ川崎駅前",
     "area": "関東",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 64,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M0A4B4NZ9ZDTTYZ4GWM739HK",
@@ -30407,7 +30473,10 @@
     ],
     "store_name": "カードラボ天王寺店",
     "area": "関西",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M0J5TDGXDDVFAV4NESTYBGKG",
@@ -31373,7 +31442,10 @@
     ],
     "store_name": "カードゲームショップ オレタン岡山本店",
     "area": "中国",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M0M72CYTWD8XDR7ATDKEQ5W1",
@@ -32761,7 +32833,10 @@
     ],
     "store_name": "ブックオフイトーヨーカドー溝ノ口店",
     "area": "関東",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 64,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M0MDXFZ00FCQWFVHZSKSKB59",
@@ -34856,7 +34931,10 @@
     ],
     "store_name": "カードボックス広島店",
     "area": "中国",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 28,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M0Q0ANBRN1KDDDQGRTMQHAET",
@@ -37412,7 +37490,10 @@
     ],
     "store_name": "TSUTAYA大安寺店",
     "area": "中国",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M13NEN6CMD3JME9XR6NWC0Z0",
@@ -38386,7 +38467,10 @@
     ],
     "store_name": "カードショップ彩々 国分店",
     "area": "九州",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 22,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M167VA974FVX5MH3C66RSPV7",
@@ -41252,7 +41336,10 @@
     ],
     "store_name": "タッチ松本店",
     "area": "中部",
-    "series_id": "7482"
+    "series_id": "7482",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M18XNW5AVK6XKZY8DHG8WW7K",
@@ -44253,7 +44340,10 @@
     ],
     "store_name": "コーギーアール大宮駅前店",
     "area": "関東",
-    "series_id": "7932"
+    "series_id": "7932",
+    "players": 64,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M1H62XZWF30BZT89QZKQFD95",
@@ -50630,7 +50720,10 @@
     ],
     "store_name": "カードゲームのシーガル イオン福島店",
     "area": "東北",
-    "series_id": "7483"
+    "series_id": "7483",
+    "players": 28,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M1R8PGY203243XZTS7GFZ0FZ",
@@ -77060,7 +77153,10 @@
     ],
     "store_name": "カードボックス広島店",
     "area": "中国",
-    "series_id": "7932"
+    "series_id": "7932",
+    "players": 30,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M2AKS0R24V136FZ586F4NFBY",
@@ -78010,7 +78106,10 @@
     ],
     "store_name": "ストレージワン",
     "area": "中国",
-    "series_id": "7932"
+    "series_id": "7932",
+    "players": 64,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M29Z4PVP3Y3RH6STVKQXXWQR",
@@ -88577,7 +88676,10 @@
     ],
     "store_name": "蔦屋書店熊本三年坂",
     "area": "九州",
-    "series_id": "7483"
+    "series_id": "7483",
+    "players": 22,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M2FHMM1YTR1C2QSS0CTMCQ1V",
@@ -95308,7 +95410,10 @@
     ],
     "store_name": "ドラゴンスター神戸三宮",
     "area": "関西",
-    "series_id": "7483"
+    "series_id": "7483",
+    "players": 62,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M2T920JAAGF4TFRA4N5ND29D",
@@ -106229,7 +106334,10 @@
     ],
     "store_name": "JABUROⅡ",
     "area": "中部",
-    "series_id": "7932"
+    "series_id": "7932",
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M31BJKDWSMWXNAN59QH8N5AP",
@@ -131543,7 +131651,10 @@
     ],
     "store_name": "カード＆ホビーショップ ドラグーン住吉",
     "area": "九州",
-    "series_id": "7483"
+    "series_id": "7483",
+    "players": 15,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M3GPM1C5ZX1NH6SFKQGRA2XW",
@@ -134529,7 +134640,10 @@
     ],
     "store_name": "ドラゴンスター日本橋3号店",
     "area": "関西",
-    "series_id": "7932"
+    "series_id": "7932",
+    "players": 62,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M3P5QQK5P35W6CX3J17SQHV2",
@@ -136135,7 +136249,10 @@
     ],
     "store_name": "カードボックス川口店",
     "area": "関東",
-    "series_id": "7933"
+    "series_id": "7933",
+    "players": 26,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M3VVQF5GWB1WP015F8HSR9S7",
@@ -138759,7 +138876,10 @@
     ],
     "store_name": "TCGShop193秋葉原店",
     "area": "関東",
-    "series_id": "7933"
+    "series_id": "7933",
+    "players": 26,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M401MMMRB9P23S0E743GT226",
@@ -141351,7 +141471,10 @@
     ],
     "store_name": "ドラグーン周南",
     "area": "中国",
-    "series_id": "7933"
+    "series_id": "7933",
+    "players": 53,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M40X3DKMRA5X93NCXAM56WK8",
@@ -146416,7 +146539,10 @@
     ],
     "store_name": "ゲームスペース鶴岡",
     "area": "東北",
-    "series_id": "7933"
+    "series_id": "7933",
+    "players": 30,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M42YB6X7DVRGKNP7WA15GGNR",
@@ -147382,7 +147508,10 @@
     ],
     "store_name": "プレイズ西尾シャオ店",
     "area": "中部",
-    "series_id": "7933"
+    "series_id": "7933",
+    "players": 29,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "ntcd-01M42YB4E992YH8FSQ1MATV9YS",

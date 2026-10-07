@@ -233,6 +233,13 @@ body {
   font-size: 0.8rem;
 }
 
+.event-players {
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 .event-name-line {
   grid-column: 1 / -1;
   font-size: 0.8rem;

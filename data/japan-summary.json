@@ -7,11 +7,11 @@
   ],
   "excluded_notes": "WCS and other tournaments skipped for JP v1. Only NTC (ニュータイプチャレンジ) and Serial Card Challenge (シリアルカードチャレンジ). Only placements rank 1 and 2. Source series dated before 2026-08-01 are dropped by date filter. Orphan series_ids absent from the catalog (e.g. 6791) are excluded.",
   "card_image_url_template": "https://gcg-stats.com/images/cards/{CARD_ID}.webp",
-  "total_events": 944,
-  "total_decks": 1894,
+  "total_events": 950,
+  "total_decks": 1906,
   "by_event_type": {
     "NTC": 518,
-    "SERIAL": 426
+    "SERIAL": 432
   },
   "by_month": [
     {
@@ -29,9 +29,9 @@
     },
     {
       "month": "2026-10",
-      "events": 109,
-      "SERIAL": 109,
-      "decks": 218
+      "events": 115,
+      "SERIAL": 115,
+      "decks": 230
     }
   ]
 }

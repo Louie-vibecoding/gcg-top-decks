@@ -3,7 +3,7 @@
   "event_type": "CS",
   "min_date": "2026-08-01",
   "min_entrants": 50,
-  "as_of": "2026-10-10",
+  "as_of": "2026-10-11",
   "total_events": 1,
   "total_decks": 2,
   "events_with_full_lists": 1,
@@ -44,7 +44,8 @@
     "web/X/Tonamel recheck 2026-10-07 (no new qualifying unofficial CS ≥50 found)",
     "web/X/Tonamel recheck 2026-10-08 (no new qualifying unofficial CS ≥50 found)",
     "web/X/Tonamel recheck 2026-10-09 (no new qualifying unofficial CS ≥50 found; ARCH CS 10/11 高田馬場 upcoming, not yet held)",
-    "web/X/Tonamel recheck 2026-10-10 (no new qualifying unofficial CS ≥50 found; ARCH CS 10/11 高田馬場 still upcoming)"
+    "web/X/Tonamel recheck 2026-10-10 (no new qualifying unofficial CS ≥50 found; ARCH CS 10/11 高田馬場 still upcoming)",
+    "web/X/Tonamel recheck 2026-10-11 (no new qualifying unofficial CS ≥50 found; 第20回 ARCH CS 10/11 高田馬場/ガンハッピー held, Tonamel max capacity 38 <50, colors-only results on X, excluded)"
   ],
   "excluded": [
     {
@@ -86,6 +87,12 @@
       "date": "2025-08-23",
       "entrants": "最大32",
       "reason": "参加者≥50未達・min_date前（Tonamel）"
+    },
+    {
+      "name": "第20回 ARCH CS Freedom Ascension争奪戦vol.4",
+      "date": "2026-10-11",
+      "entrants": "最大38（Tonamel maximumAttendeeCapacity）",
+      "reason": "entrants < 50（定員38・キャンセル待ち満枠）。X結果は色のみ（優勝緑白ウイング/準優勝青白SEED）、完全デッキリスト未確認だが閾値未満のため収集対象外"
     }
   ],
   "included": [
@@ -100,6 +107,7 @@
   ],
   "honesty_notes": [
     "2026-08-01〜2026-10-09の非公認CSで参加者≥50を確認できたのはUC杯主催『GCG 大阪祭』(75名)のみ。2026-10-09にX・Tonamel・Webを再確認したが、新たに条件を満たすイベントは確認できなかった。定期開催のアークCSは会場定員が概ね32–45で閾値未満。からセナCSも同時期は32枠前後。第9回GCG大阪UC杯3on3は未開催（受付中）/予定。WCSエリア予選は公式のため非公認CS対象外。デッキリストは主催が公開した写真からカードIDを起こしており、公式テキストレシピではない。",
-    "2026-10-10: X+web+Tonamel recheck; no new ≥50 folk CS with full 冠亚 lists; ARCH CS 10/11 Takadanobaba not yet held."
+    "2026-10-10: X+web+Tonamel recheck; no new ≥50 folk CS with full 冠亚 lists; ARCH CS 10/11 Takadanobaba not yet held.",
+    "2026-10-11: X(@arch_cs_gcg)+Tonamel(8Bcmd)+Web recheck。第20回 ARCH CS（高田馬場ガンハッピー）は開催済・結果投稿ありだが Tonamel 定員38で≥50未達。他に条件を満たす民間CSなし。total_events 維持1（GCG大阪祭）。"
   ]
 }

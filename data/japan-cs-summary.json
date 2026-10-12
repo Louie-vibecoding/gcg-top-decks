@@ -3,7 +3,7 @@
   "event_type": "CS",
   "min_date": "2026-08-01",
   "min_entrants": 50,
-  "as_of": "2026-10-11",
+  "as_of": "2026-10-12",
   "total_events": 1,
   "total_decks": 2,
   "events_with_full_lists": 1,
@@ -45,7 +45,8 @@
     "web/X/Tonamel recheck 2026-10-08 (no new qualifying unofficial CS ≥50 found)",
     "web/X/Tonamel recheck 2026-10-09 (no new qualifying unofficial CS ≥50 found; ARCH CS 10/11 高田馬場 upcoming, not yet held)",
     "web/X/Tonamel recheck 2026-10-10 (no new qualifying unofficial CS ≥50 found; ARCH CS 10/11 高田馬場 still upcoming)",
-    "web/X/Tonamel recheck 2026-10-11 (no new qualifying unofficial CS ≥50 found; 第20回 ARCH CS 10/11 高田馬場/ガンハッピー held, Tonamel max capacity 38 <50, colors-only results on X, excluded)"
+    "web/X/Tonamel recheck 2026-10-11 (no new qualifying unofficial CS ≥50 found; 第20回 ARCH CS 10/11 高田馬場/ガンハッピー held, Tonamel max capacity 38 <50, colors-only results on X, excluded)",
+    "web/X/Tonamel recheck 2026-10-12 (ARCH 第20回 10/11 高田馬場 Tonamel 定員38<50 excluded; UC杯 10/25 未開; からセナ無新≥50 CS; X shared rate-limit, web+Tonamel confirming)"
   ],
   "excluded": [
     {

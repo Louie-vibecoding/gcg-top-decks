@@ -851,10 +851,10 @@
         "rank_label": "準優勝",
         "player_name": "メサキ",
         "deck_type": "红蓝",
-        "deck_type_key": "Blue+Red",
+        "deck_type_key": "Red+Blue",
         "colors": [
-          "Blue",
-          "Red"
+          "Red",
+          "Blue"
         ],
         "deck_name": "青赤ストライクフリーダムデッキ",
         "cards": [
@@ -1103,11 +1103,11 @@
         "rank": 3,
         "rank_label": "ベスト4",
         "player_name": "社畜ルーゼ",
-        "deck_type": "蓝红",
-        "deck_type_key": "Blue+Red",
+        "deck_type": "红蓝",
+        "deck_type_key": "Red+Blue",
         "colors": [
-          "Blue",
-          "Red"
+          "Red",
+          "Blue"
         ],
         "deck_name": "青赤ストライクフリーダムデッキ",
         "team_name": "ネオ・広峰",

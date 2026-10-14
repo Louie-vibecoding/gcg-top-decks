@@ -174,11 +174,11 @@
             "count": 3
           }
         ],
-        "deck_type": "白红",
-        "deck_type_key": "White+Red",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
         "colors": [
-          "White",
-          "Red"
+          "Red",
+          "White"
         ]
       }
     ]

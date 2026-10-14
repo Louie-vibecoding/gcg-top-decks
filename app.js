@@ -48,6 +48,35 @@
     紫: "#8e24aa",
   };
 
+  // Canonical order-independent colour key: 红 蓝 绿 白 紫 (matches data scripts/deck_colors.py)
+  const EN_ORDER = ["Red", "Blue", "Green", "White", "Purple"];
+  const EN_TO_CN = { Red: "红", Blue: "蓝", Green: "绿", White: "白", Purple: "紫" };
+  const CHAR_TO_EN = { 红: "Red", 赤: "Red", 紅: "Red", 蓝: "Blue", 青: "Blue", 藍: "Blue", 绿: "Green", 緑: "Green", 白: "White", 紫: "Purple" };
+  const KATA_TO_EN = { レッド: "Red", ブルー: "Blue", グリーン: "Green", ホワイト: "White", パープル: "Purple" };
+  function colorsFromAny(v) {
+    if (!v) return [];
+    if (Array.isArray(v)) return normalizeEn(v.flatMap(colorsFromAny));
+    let s = String(v);
+    for (const k in KATA_TO_EN) s = s.split(k).join(" " + KATA_TO_EN[k] + " ");
+    const out = (s.match(/red|blue|green|white|purple/gi) || []).map((w) => w[0].toUpperCase() + w.slice(1).toLowerCase());
+    for (const ch of s) if (CHAR_TO_EN[ch]) out.push(CHAR_TO_EN[ch]);
+    return normalizeEn(out);
+  }
+  function normalizeEn(list) {
+    return [...new Set(list)].filter((c) => EN_ORDER.includes(c)).sort((a, b) => EN_ORDER.indexOf(a) - EN_ORDER.indexOf(b));
+  }
+  /** Rewrite placement deck_type/colors canonically; defensive against any leftover order in data. */
+  function canonicalizePlacement(p) {
+    if (!p) return;
+    let cols = colorsFromAny(p.colors);
+    if (!cols.length) cols = colorsFromAny(p.deck_type_key);
+    if (!cols.length) cols = colorsFromAny(p.deck_type);
+    if (!cols.length) return;
+    p.colors = cols;
+    p.deck_type_key = cols.join("+");
+    p.deck_type = cols.map((c) => EN_TO_CN[c]).join("");
+  }
+
   function colorsFromDeckType(label, colors) {
     if (Array.isArray(colors) && colors.length) return colors;
     return [...String(label || "")].filter((c) => COLOR_HEX[c]);
@@ -151,6 +180,7 @@
 
     // 丢弃没有任何牌表/卡组图的场次（如仅有选手名的欧美 NTC）；
     // 官方大型赛事即使牌表未公开也保留（显示「牌表待官方公开」）
+    for (const e of events) for (const p of e.placements || []) canonicalizePlacement(p);
     state.allEvents = events.filter((e) => (e.placements || []).some(placementHasDeck));
     const kept = state.allEvents;
     state.latestDate = kept.reduce((m, e) => (e.date && e.date > m ? e.date : m), "");
@@ -191,12 +221,16 @@
 
   function populateDeckTypeOptions() {
     if (!el.deckType) return;
+    // Counts = decks under current region/month/event-type filters; only combos with ≥1 deck are shown.
     const types = new Set();
+    const typeCounts = new Map();
     const typeColors = new Map();
     for (const e of state.allEvents) {
+      if (!matchesRegion(e) || !matchesMonth(e) || !matchesType(e)) continue;
       for (const p of e.placements || []) {
         if (p.deck_type && placementHasDeck(p)) {
           types.add(p.deck_type);
+          typeCounts.set(p.deck_type, (typeCounts.get(p.deck_type) || 0) + 1);
           if (!typeColors.has(p.deck_type) && Array.isArray(p.colors)) {
             typeColors.set(p.deck_type, p.colors);
           }
@@ -209,20 +243,22 @@
     const prev = state.deckType;
     if (prev && !types.has(prev)) state.deckType = "";
 
-    const chip = (value, label, colors, active) => {
+    const chip = (value, label, colors, active, n) => {
       const sw = colorSwatchesHtml(label, colors);
       const pressed = active ? "true" : "false";
       const cls = active ? "deck-type-chip active" : "deck-type-chip";
       return (
         `<button type="button" class="${cls}" data-deck-type="${escapeHtml(value)}" aria-pressed="${pressed}">` +
-        `<span class="deck-type-chip-label">${escapeHtml(label)}</span>${sw}</button>`
+        `<span class="deck-type-chip-label">${escapeHtml(label)}</span>${sw}` +
+        (n != null ? `<span class="type-chip-count">${n}</span>` : "") +
+        `</button>`
       );
     };
 
     el.deckType.innerHTML =
-      chip("", "全部", [], !state.deckType) +
+      chip("", "全部", [], !state.deckType, [...typeCounts.values()].reduce((a, b) => a + b, 0)) +
       sorted
-        .map((t) => chip(t, t, typeColors.get(t), state.deckType === t))
+        .map((t) => chip(t, t, typeColors.get(t), state.deckType === t, typeCounts.get(t)))
         .join("");
   }
 
@@ -263,6 +299,7 @@
     const counts = {};
     for (const e of state.allEvents) {
       if (!matchesRegion(e) || !matchesMonth(e)) continue;
+      if (state.deckType && !visiblePlacements(e).length) continue;
       counts[e.event_type] = (counts[e.event_type] || 0) + 1;
     }
     const all = Object.values(counts).reduce((a, b) => a + b, 0);
@@ -285,7 +322,8 @@
 
   function placementMatchesDeckType(p) {
     if (!state.deckType) return true;
-    return p && p.deck_type === state.deckType;
+    if (!p) return false;
+    return colorsFromAny(p.colors && p.colors.length ? p.colors : p.deck_type).join("+") === colorsFromAny(state.deckType).join("+");
   }
 
   /** Visible placements for an event under current filters (deck info + deck type). */
@@ -298,6 +336,7 @@
   }
 
   function applyFilters() {
+    populateDeckTypeOptions(); // may reset a deck type that has 0 decks in new region/type
     state.filtered = state.allEvents
       .filter(
         (e) =>
@@ -315,6 +354,7 @@
       .filter(Boolean);
     state.page = 1;
     populateTypeChips();
+    populateDeckTypeOptions();
     render();
   }
 
@@ -579,7 +619,6 @@
         const btn = ev.target.closest("[data-deck-type]");
         if (!btn) return;
         state.deckType = btn.dataset.deckType || "";
-        populateDeckTypeOptions();
         applyFilters();
       });
     }

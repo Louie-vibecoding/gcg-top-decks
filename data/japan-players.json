@@ -385,5 +385,41 @@
     "evidence": "Preyz(29) / Yochan / identical decklist",
     "date": "2026-10-04",
     "store_name": "プレイズ西尾シャオ店"
+  },
+  "ntcd-01M4ANH3NR289SB8DYB8RJFEZ2": {
+    "players": 28,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "match": "auto",
+    "evidence": "DragonStar(28) / Koppepan / identical decklist",
+    "date": "2026-10-07",
+    "store_name": "ドラゴンスター秋葉原駅前店"
+  },
+  "ntcd-01M4J5VTCTK13V1NVZB0X5CGFY": {
+    "players": 64,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "match": "auto",
+    "evidence": "TCGShop193(64) / flax / identical decklist",
+    "date": "2026-10-10",
+    "store_name": "トレーディングカードゲームショップ193名駅太閤店"
+  },
+  "ntcd-01M4J5VV6C187TTNF4FV024AFK": {
+    "players": 32,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "match": "auto",
+    "evidence": "DGsumiyoshi(32) / Furu / identical decklist",
+    "date": "2026-10-10",
+    "store_name": "カード＆ホビーショップ ドラグーン住吉"
+  },
+  "ntcd-01M4JCQJK03WS06A8T96QJV2GA": {
+    "players": 25,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "match": "auto",
+    "evidence": "Batoloco(25) / Nokki / identical decklist",
+    "date": "2026-10-10",
+    "store_name": "トーナメントセンターバトロコ小田原駅前"
   }
 }

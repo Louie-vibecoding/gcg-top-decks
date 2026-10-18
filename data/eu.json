@@ -1,5 +1,91 @@
 [
   {
+    "id": "eu-tcgtd-2026-10-11-lgs",
+    "date": "2026-10-11",
+    "month": "2026-10",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "1st Year Anniversary @ LGS",
+    "store_or_venue": "LGS",
+    "store_name": "LGS",
+    "area": "US",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "ProjVX",
+        "player": "ProjVX",
+        "deck_name": "BW SF-Orb",
+        "cards": [
+          {
+            "card_id": "GD05-015",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-003",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-004",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-082",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "ST11-016",
+            "count": 3
+          }
+        ],
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      }
+    ]
+  },
+  {
     "id": "eu-egman-d3a6a145",
     "date": "2026-10-10",
     "month": "2026-10",
@@ -172,6 +258,120 @@
           {
             "card_id": "GD02-126",
             "count": 3
+          }
+        ],
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-10-10-lgs",
+    "date": "2026-10-10",
+    "month": "2026-10",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "1st Year Anniversary @ LGS",
+    "store_or_venue": "LGS",
+    "store_name": "LGS",
+    "area": "US",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "NobleTCG",
+        "player": "NobleTCG",
+        "deck_name": "RW MF-Aerial",
+        "cards": [
+          {
+            "card_id": "GD01-076",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-067",
+            "count": 1
+          },
+          {
+            "card_id": "GD03-035",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-036",
+            "count": 1
+          },
+          {
+            "card_id": "ST13-006",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-033",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "ST13-012",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-126",
+            "count": 2
           }
         ],
         "deck_type": "红白",

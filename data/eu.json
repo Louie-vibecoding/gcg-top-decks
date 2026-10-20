@@ -1,5 +1,173 @@
 [
   {
+    "id": "eu-egman-59a53820",
+    "date": "2026-10-18",
+    "month": "2026-10",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "TAK Games Brisbane Regionals",
+    "store_or_venue": "TAK Games Brisbane Regionals",
+    "store_name": "TAK Games Brisbane Regionals",
+    "area": "AU",
+    "source": "egman",
+    "source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Sylvie",
+        "player": "Sylvie",
+        "deck_name": "White/Red ST13-006",
+        "cards": [
+          {
+            "card_id": "GD04-068",
+            "count": 4
+          },
+          {
+            "card_id": "ST13-006",
+            "count": 4
+          },
+          {
+            "card_id": "ST13-012",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "ST03-013",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-126",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-011",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-012",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-006",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-109",
+            "count": 2
+          },
+          {
+            "card_id": "GD03-035",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-066",
+            "count": 4
+          }
+        ],
+        "colors": [
+          "Red",
+          "White"
+        ],
+        "deck_type_key": "Red+White",
+        "deck_type": "红白"
+      },
+      {
+        "rank": 2,
+        "player_name": "James",
+        "player": "James",
+        "deck_name": "White/Blue GD05-002",
+        "cards": [
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "ST11-016",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 3
+          },
+          {
+            "card_id": "ST11-013",
+            "count": 2
+          }
+        ],
+        "colors": [
+          "Blue",
+          "White"
+        ],
+        "deck_type_key": "Blue+White",
+        "deck_type": "蓝白"
+      }
+    ],
+    "player_count": 166,
+    "players": 166,
+    "players_source": "egman",
+    "players_source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments"
+  },
+  {
     "id": "eu-tcgtd-2026-10-11-lgs",
     "date": "2026-10-11",
     "month": "2026-10",
@@ -82,6 +250,116 @@
           "Blue",
           "White"
         ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-10-11-northern-boards",
+    "date": "2026-10-11",
+    "month": "2026-10",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "1st Year Anniversary @ Northern Boards",
+    "store_or_venue": "Northern Boards",
+    "store_name": "Northern Boards",
+    "area": "AU",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "KayC",
+        "player": "KayC",
+        "deck_name": "BW SF-Blocker",
+        "cards": [
+          {
+            "card_id": "GD01-086",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 2
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-001",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          },
+          {
+            "card_id": "ST14-005",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST14-001",
+            "count": 1
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 3
+          },
+          {
+            "card_id": "ST11-016",
+            "count": 1
+          }
+        ],
+        "colors": [
+          "Blue",
+          "White"
+        ],
+        "deck_type_key": "Blue+White",
+        "deck_type": "蓝白"
       }
     ]
   },
@@ -1284,6 +1562,198 @@
     ]
   },
   {
+    "id": "eu-egman-8aeb13ae",
+    "date": "2026-09-13",
+    "month": "2026-09",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "TAK Games Melbourne Regionals",
+    "store_or_venue": "TAK Games Melbourne Regionals",
+    "store_name": "TAK Games Melbourne Regionals",
+    "area": "AU",
+    "source": "egman",
+    "source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Guele",
+        "player": "Guele",
+        "deck_name": "Blue/White GD05-002",
+        "cards": [
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-066",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-015",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-123",
+            "count": 1
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          }
+        ],
+        "colors": [
+          "Blue",
+          "White"
+        ],
+        "deck_type_key": "Blue+White",
+        "deck_type": "蓝白"
+      },
+      {
+        "rank": 2,
+        "player_name": "Daniel",
+        "player": "Daniel",
+        "deck_name": "Blue/White GD05-002",
+        "cards": [
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-066",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 3
+          },
+          {
+            "card_id": "ST09-004",
+            "count": 1
+          },
+          {
+            "card_id": "GD01-065",
+            "count": 2
+          }
+        ],
+        "colors": [
+          "Blue",
+          "White"
+        ],
+        "deck_type_key": "Blue+White",
+        "deck_type": "蓝白"
+      }
+    ],
+    "players": 234,
+    "player_count": 234,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
+  },
+  {
     "id": "eu-tcgtd-2026-09-12-lgs",
     "date": "2026-09-12",
     "month": "2026-09",
@@ -1658,6 +2128,190 @@
         ]
       }
     ]
+  },
+  {
+    "id": "eu-egman-2d6cee6d",
+    "date": "2026-08-30",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "TAK Games' Auckland Regionals",
+    "store_or_venue": "TAK Games' Auckland Regionals",
+    "store_name": "TAK Games' Auckland Regionals",
+    "area": "NZ",
+    "source": "egman",
+    "source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Mickey",
+        "player": "Mickey",
+        "deck_name": "White/Blue GD05-002",
+        "cards": [
+          {
+            "card_id": "GD04-077",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 2
+          },
+          {
+            "card_id": "EB01-054",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-101",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-117",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-066",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 2
+          }
+        ],
+        "colors": [
+          "Blue",
+          "White"
+        ],
+        "deck_type_key": "Blue+White",
+        "deck_type": "蓝白"
+      },
+      {
+        "rank": 2,
+        "player_name": "Jackson",
+        "player": "Jackson",
+        "deck_name": "Red/Blue GD01-003",
+        "cards": [
+          {
+            "card_id": "GD03-109",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-109",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-013",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-003",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-093",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-044",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-005",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-016",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          }
+        ],
+        "colors": [
+          "Red",
+          "Blue"
+        ],
+        "deck_type_key": "Red+Blue",
+        "deck_type": "红蓝"
+      }
+    ],
+    "player_count": 141,
+    "players": 141,
+    "players_source": "egman",
+    "players_source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments"
   },
   {
     "id": "eu-tcgtd-2026-08-27-top-level-games",
@@ -2140,6 +2794,104 @@
     "players": 44,
     "players_source": "egman",
     "players_source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments"
+  },
+  {
+    "id": "eu-tcgtd-2026-08-23-akikambara",
+    "date": "2026-08-23",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ Akikambara",
+    "store_or_venue": "Akikambara",
+    "store_name": "Akikambara",
+    "area": "AU",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "w4kz1412",
+        "player": "w4kz1412",
+        "deck_name": "BG Nu Gundam",
+        "cards": [
+          {
+            "card_id": "ST03-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-027",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-018",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-030",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-029",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-019",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-020",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-017",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-024",
+            "count": 1
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-085",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "ST02-016",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-125",
+            "count": 2
+          }
+        ],
+        "colors": [
+          "Blue",
+          "Green"
+        ],
+        "deck_type_key": "Blue+Green",
+        "deck_type": "蓝绿"
+      }
+    ],
+    "players": 28,
+    "player_count": 28,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   },
   {
     "id": "eu-tcgtd-2026-08-16-lgs",
@@ -3214,6 +3966,190 @@
     "players_source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments"
   },
   {
+    "id": "eu-egman-bd644f0c",
+    "date": "2026-08-09",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "Let's Play Games' Sydney Regionals",
+    "store_or_venue": "Let's Play Games' Sydney Regionals",
+    "store_name": "Let's Play Games' Sydney Regionals",
+    "area": "AU",
+    "source": "egman",
+    "source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Guele",
+        "player": "Guele",
+        "deck_name": "Blue/White GD05-002",
+        "cards": [
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 2
+          },
+          {
+            "card_id": "GD04-016",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-073",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-066",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 3
+          },
+          {
+            "card_id": "GD04-077",
+            "count": 1
+          },
+          {
+            "card_id": "GD04-068",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-123",
+            "count": 1
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-001",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 1
+          }
+        ],
+        "colors": [
+          "Blue",
+          "White"
+        ],
+        "deck_type_key": "Blue+White",
+        "deck_type": "蓝白"
+      },
+      {
+        "rank": 2,
+        "player_name": "Frank",
+        "player": "Frank",
+        "deck_name": "Red/White GD05-066",
+        "cards": [
+          {
+            "card_id": "GD05-033",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-036",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-089",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-066",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-097",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-069",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-121",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-072",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-076",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-042",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-120",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-111",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-128",
+            "count": 1
+          }
+        ],
+        "colors": [
+          "Red",
+          "White"
+        ],
+        "deck_type_key": "Red+White",
+        "deck_type": "红白"
+      }
+    ],
+    "player_count": 207,
+    "players": 207,
+    "players_source": "egman",
+    "players_source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments"
+  },
+  {
     "id": "eu-tcgtd-2026-08-08-weevil-cards-and-collectibles",
     "date": "2026-08-08",
     "month": "2026-08",
@@ -3478,6 +4414,96 @@
     "player_count": 25,
     "players_source": "tcgtopdecks",
     "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
+  },
+  {
+    "id": "eu-tcgtd-2026-08-07-beyond-games",
+    "date": "2026-08-07",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ Beyond games",
+    "store_or_venue": "Beyond games",
+    "store_name": "Beyond games",
+    "area": "AU",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Rhys",
+        "player": "Rhys",
+        "deck_name": "PB Tekkadan StrikeFreedom",
+        "cards": [
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-018",
+            "count": 1
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 1
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-100",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 4
+          }
+        ],
+        "colors": [
+          "Blue",
+          "Purple"
+        ],
+        "deck_type_key": "Blue+Purple",
+        "deck_type": "蓝紫"
+      }
+    ]
   },
   {
     "id": "eu-tcgtd-2026-08-06-topdeck-hero",
@@ -4304,5 +5330,107 @@
         ]
       }
     ]
+  },
+  {
+    "id": "eu-tcgtd-2026-08-01-ronin-games-belconnen",
+    "date": "2026-08-01",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ Ronin Games Belconnen",
+    "store_or_venue": "Ronin Games Belconnen",
+    "store_name": "Ronin Games Belconnen",
+    "area": "AU",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Jreuben",
+        "player": "Jreuben",
+        "deck_name": "PW Impulse",
+        "cards": [
+          {
+            "card_id": "GD05-050",
+            "count": 2
+          },
+          {
+            "card_id": "GD01-086",
+            "count": 4
+          },
+          {
+            "card_id": "ST09-001",
+            "count": 4
+          },
+          {
+            "card_id": "ST09-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-053",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-064",
+            "count": 2
+          },
+          {
+            "card_id": "ST09-002",
+            "count": 2
+          },
+          {
+            "card_id": "ST09-007",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-050",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-055",
+            "count": 2
+          },
+          {
+            "card_id": "ST09-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD04-093",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 3
+          },
+          {
+            "card_id": "ST01-014",
+            "count": 3
+          },
+          {
+            "card_id": "ST04-012",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-110",
+            "count": 2
+          },
+          {
+            "card_id": "ST09-010",
+            "count": 4
+          }
+        ],
+        "colors": [
+          "White",
+          "Purple"
+        ],
+        "deck_type_key": "White+Purple",
+        "deck_type": "白紫"
+      }
+    ],
+    "players": 16,
+    "player_count": 16,
+    "players_source": "tcgtopdecks",
+    "players_source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/"
   }
 ]

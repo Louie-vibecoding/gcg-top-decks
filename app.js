@@ -361,7 +361,7 @@
   function emptyMessage() {
     if (state.region === "欧美") {
       return {
-        title: "暂无匹配欧美赛事",
+        title: "暂无匹配欧美（含澳洲/新西兰）赛事",
         body: "仅展示有牌表或卡组图的场次；可调整月份或类型筛选。",
       };
     }

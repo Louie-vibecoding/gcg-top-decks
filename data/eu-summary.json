@@ -1,5 +1,5 @@
 {
-  "total_events": 37,
+  "total_events": 45,
   "dropped_name_only": 11,
   "dropped_ids": [
     "eu-digilab-9517",
@@ -14,5 +14,6 @@
     "eu-digilab-8831",
     "eu-digilab-8830"
   ],
-  "note": "仅保留至少一侧冠亚有 cards 或 deck_photo 的场次"
+  "note": "仅保留至少一侧冠亚有 cards 或 deck_photo 的场次",
+  "scope": "欧洲 + 北美 + 澳洲/新西兰（2026-10-20 起含澳洲）；不含拉美/南美/亚洲"
 }

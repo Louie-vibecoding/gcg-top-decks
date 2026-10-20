@@ -3,7 +3,7 @@
   "event_type": "CS",
   "min_date": "2026-08-01",
   "min_entrants": 50,
-  "as_of": "2026-10-19",
+  "as_of": "2026-10-20",
   "total_events": 1,
   "total_decks": 2,
   "events_with_full_lists": 1,
@@ -53,7 +53,8 @@
     "web/X/Tonamel recheck 2026-10-16 (no new qualifying unofficial CS ≥50 found; ARCH 第20回 10/11 高田馬場 定員38<50 excluded, X 10/16 only match video post; 次回11/1 3on3; UC杯 10/25 未開; からセナ無新≥50 CS; X@arch_cs_gcg/@UCCUP2025/@karasenaGCG checked; Tonamel org pages JS-shell only)",
     "web/X/Tonamel recheck 2026-10-17 (no new qualifying unofficial CS ≥50 found; ARCH 第20回 10/11 高田馬場 定員38<50 excluded, X 10/16 only match video post; 次回11/1 3on3; UC杯 10/25 未開; からセナ無新≥50 CS; X@arch_cs_gcg/@UCCUP2025/@karasenaGCG checked; Tonamel org pages JS-shell only)",
     "web/X/Tonamel recheck 2026-10-18 (no new qualifying unofficial CS ≥50 found; ARCH 第20回 10/11 高田馬場 定員38<50 excluded, X 10/17-18 only match video posts; 次回11/1 3on3; UC杯 10/25 未開; からセナ 10/18 posts are an official Serial win, not a CS; X@arch_cs_gcg/@UCCUP2025/@karasenaGCG checked)",
-    "web/X/Tonamel recheck 2026-10-19 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg no new posts since 10/18; UC杯 10/25 未開 (10/19 告知: 現在25名登録); からセナ 10/19 posts = 10/18 official Serial win recipe, not a CS; X keyword search CS 優勝/結果 since 10/18 only store prelims (<50); Tonamel org pages JS-shell only)"
+    "web/X/Tonamel recheck 2026-10-19 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg no new posts since 10/18; UC杯 10/25 未開 (10/19 告知: 現在25名登録); からセナ 10/19 posts = 10/18 official Serial win recipe, not a CS; X keyword search CS 優勝/結果 since 10/18 only store prelims (<50); Tonamel org pages JS-shell only)",
+    "web/X/Tonamel recheck 2026-10-20 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg no new posts since 10/18 (第20回 match video only); UC杯 10/25 未開 (no new post since 10/19 告知 25名); からセナ 10/19-20 posts casual/no CS result; X keyword search CS/非公認 優勝/結果 since 10/17 only store prelims/shop events (<50) and flat工房 small unofficial events; Tonamel org pages JS-shell only)"
   ],
   "excluded": [
     {

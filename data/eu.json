@@ -168,6 +168,92 @@
     "players_source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments"
   },
   {
+    "id": "eu-tcgtd-2026-10-16-express-tcg",
+    "date": "2026-10-16",
+    "month": "2026-10",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "1st Year Anniversary @ Express TCG",
+    "store_or_venue": "Express TCG",
+    "store_name": "Express TCG",
+    "area": "US",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "RulerOT7Skies",
+        "player": "RulerOT7Skies",
+        "deck_name": "PR Marida",
+        "cards": [
+          {
+            "card_id": "ST11-009",
+            "count": 4
+          },
+          {
+            "card_id": "ST11-008",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "ST11-007",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-051",
+            "count": 4
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 4
+          },
+          {
+            "card_id": "ST11-006",
+            "count": 2
+          },
+          {
+            "card_id": "ST12-006",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-093",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST12-012",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-110",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-128",
+            "count": 4
+          }
+        ],
+        "colors": [
+          "Red",
+          "Purple"
+        ],
+        "deck_type_key": "Red+Purple",
+        "deck_type": "红紫"
+      }
+    ]
+  },
+  {
     "id": "eu-tcgtd-2026-10-11-lgs",
     "date": "2026-10-11",
     "month": "2026-10",
@@ -1844,6 +1930,108 @@
           "Blue",
           "White"
         ]
+      }
+    ]
+  },
+  {
+    "id": "eu-tcgtd-2026-09-12-wallys-pro",
+    "date": "2026-09-12",
+    "month": "2026-09",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "TOURNAMENT",
+    "event_name": "1st Year Anniversary @ Wallys Pro",
+    "store_or_venue": "Wallys Pro",
+    "store_name": "Wallys Pro",
+    "area": "CA",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "Sxven",
+        "player": "Sxven",
+        "deck_name": "PR Tekkadan",
+        "cards": [
+          {
+            "card_id": "ST05-004",
+            "count": 4
+          },
+          {
+            "card_id": "ST05-006",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-054",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-058",
+            "count": 3
+          },
+          {
+            "card_id": "GD03-056",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-058",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-055",
+            "count": 3
+          },
+          {
+            "card_id": "GD05-060",
+            "count": 2
+          },
+          {
+            "card_id": "GD03-050",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-049",
+            "count": 3
+          },
+          {
+            "card_id": "ST05-010",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-093",
+            "count": 3
+          },
+          {
+            "card_id": "GD01-111",
+            "count": 2
+          },
+          {
+            "card_id": "GD02-112",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-110",
+            "count": 1
+          },
+          {
+            "card_id": "GD05-114",
+            "count": 2
+          },
+          {
+            "card_id": "ST03-015",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-129",
+            "count": 2
+          }
+        ],
+        "colors": [
+          "Red",
+          "Purple"
+        ],
+        "deck_type_key": "Red+Purple",
+        "deck_type": "红紫"
       }
     ]
   },
@@ -4148,6 +4336,100 @@
     "players": 207,
     "players_source": "egman",
     "players_source_url": "https://deckbuilder.egmanevents.com/gundam/tournaments"
+  },
+  {
+    "id": "eu-tcgtd-2026-08-09-victoryroad",
+    "date": "2026-08-09",
+    "month": "2026-08",
+    "region": "欧美",
+    "region_tag": "欧美",
+    "event_type": "NTC",
+    "event_name": "Newtype Challenge @ VictoryRoad",
+    "store_or_venue": "VictoryRoad",
+    "store_name": "VictoryRoad",
+    "area": "NL",
+    "source": "tcgtopdecks",
+    "source_url": "https://tcgtopdecks-hq.com/gundam-cg-decks-gd-05-freedom-ascension/",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "AcademyAibo",
+        "player": "AcademyAibo",
+        "deck_name": "BW StrikeFreedom",
+        "cards": [
+          {
+            "card_id": "GD05-014",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-015",
+            "count": 4
+          },
+          {
+            "card_id": "GD02-079",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-003",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-016",
+            "count": 1
+          },
+          {
+            "card_id": "GD02-076",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-010",
+            "count": 4
+          },
+          {
+            "card_id": "ST04-001",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-004",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-002",
+            "count": 2
+          },
+          {
+            "card_id": "ST04-010",
+            "count": 2
+          },
+          {
+            "card_id": "GD05-082",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-081",
+            "count": 4
+          },
+          {
+            "card_id": "GD01-118",
+            "count": 4
+          },
+          {
+            "card_id": "GD05-123",
+            "count": 3
+          },
+          {
+            "card_id": "GD02-129",
+            "count": 2
+          }
+        ],
+        "colors": [
+          "Blue",
+          "White"
+        ],
+        "deck_type_key": "Blue+White",
+        "deck_type": "蓝白"
+      }
+    ]
   },
   {
     "id": "eu-tcgtd-2026-08-08-weevil-cards-and-collectibles",

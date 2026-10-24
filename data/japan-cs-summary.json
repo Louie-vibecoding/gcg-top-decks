@@ -3,7 +3,7 @@
   "event_type": "CS",
   "min_date": "2026-08-01",
   "min_entrants": 50,
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-24",
   "total_events": 1,
   "total_decks": 2,
   "events_with_full_lists": 1,
@@ -57,7 +57,8 @@
     "web/X/Tonamel recheck 2026-10-20 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg no new posts since 10/18 (第20回 match video only); UC杯 10/25 未開 (no new post since 10/19 告知 25名); からセナ 10/19-20 posts casual/no CS result; X keyword search CS/非公認 優勝/結果 since 10/17 only store prelims/shop events (<50) and flat工房 small unofficial events; Tonamel org pages JS-shell only)",
     "web/X/Tonamel recheck 2026-10-21 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg/@UCCUP2025 no new posts since 10/20; UC杯 10/25 未開; からセナ 10/20-21 posts casual/GD06 talk, no CS result; X keyword search CS 優勝/準優勝 since 10/20 only 店舗予選 (コーギーアール横浜店) and shop events (<50))",
     "web/X/Tonamel recheck 2026-10-22 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg no posts since 10/20; UC杯 10/25 未開 (last UCCUP2025 post 10/19 告知 25名); からセナ 10/20-21 casual/GD06 talk, no CS result; X keyword search CS 優勝/結果 since 10/20 only 店舗予選 (コーギーアール横浜店 / TSUTAYA山陽店) <50)",
-    "web/X/Tonamel recheck 2026-10-23 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg 10/19后无新帖 (bio: 次回11/1・11/8・11/22); UC杯 10/25 未開 (UCCUP2025 最近帖仍为 10/19 告知 25名); @karasenaGCG 10/21-23 LABO LIVE/闲聊无 CS 赛果; X 关键词检索仅 UC杯报名 RT / 旧静岡LABO杯 RT，无新≥50冠亚名单)"
+    "web/X/Tonamel recheck 2026-10-23 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg 10/19后无新帖 (bio: 次回11/1・11/8・11/22); UC杯 10/25 未開 (UCCUP2025 最近帖仍为 10/19 告知 25名); @karasenaGCG 10/21-23 LABO LIVE/闲聊无 CS 赛果; X 关键词检索仅 UC杯报名 RT / 旧静岡LABO杯 RT，无新≥50冠亚名单)",
+    "web/X/Tonamel recheck 2026-10-24 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg 10/19后无新结果帖 (bio: 次回11/1・11/8・11/22; 最近为第20回对局视频至10/18); UC杯 10/25 未開 (UCCUP2025 最近帖仍为 10/19 告知 25名); @karasenaGCG 10/22-23 LABO LIVE/闲聊无 CS 赛果; X 关键词检索仅 店舗予選 e.g. トップカード名古屋大須店 13名 绿紫，阈值<50)"
   ],
   "excluded": [
     {
@@ -126,6 +127,7 @@
     "2026-10-16: X+web+Tonamel recheck。无新≥50民間CS（完整冠亚牌表）。total_events 維持1（GCG大阪祭）。",
     "2026-10-17: X+web+Tonamel recheck。无新≥50民間CS（完整冠亚牌表）。total_events 維持1（GCG大阪祭）。",
     "2026-10-22: X+web recheck。无新≥50民間CS（完整冠亚牌表）。total_events 維持1（GCG大阪祭）。UC杯10/25未開。",
-    "2026-10-23: X+web recheck。无新≥50民間CS（完整冠亚牌表）。total_events 維持1（GCG大阪祭）。UC杯10/25未開。"
+    "2026-10-23: X+web recheck。无新≥50民間CS（完整冠亚牌表）。total_events 維持1（GCG大阪祭）。UC杯10/25未開。",
+    "2026-10-24: X+web recheck。无新≥50民間CS（完整冠亚牌表）。total_events 維持1（GCG大阪祭）。UC杯10/25未開。"
   ]
 }

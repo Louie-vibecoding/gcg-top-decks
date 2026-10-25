@@ -3,7 +3,7 @@
   "event_type": "CS",
   "min_date": "2026-08-01",
   "min_entrants": 50,
-  "as_of": "2026-10-24",
+  "as_of": "2026-10-25",
   "total_events": 1,
   "total_decks": 2,
   "events_with_full_lists": 1,
@@ -58,7 +58,8 @@
     "web/X/Tonamel recheck 2026-10-21 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg/@UCCUP2025 no new posts since 10/20; UC杯 10/25 未開; からセナ 10/20-21 posts casual/GD06 talk, no CS result; X keyword search CS 優勝/準優勝 since 10/20 only 店舗予選 (コーギーアール横浜店) and shop events (<50))",
     "web/X/Tonamel recheck 2026-10-22 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg no posts since 10/20; UC杯 10/25 未開 (last UCCUP2025 post 10/19 告知 25名); からセナ 10/20-21 casual/GD06 talk, no CS result; X keyword search CS 優勝/結果 since 10/20 only 店舗予選 (コーギーアール横浜店 / TSUTAYA山陽店) <50)",
     "web/X/Tonamel recheck 2026-10-23 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg 10/19后无新帖 (bio: 次回11/1・11/8・11/22); UC杯 10/25 未開 (UCCUP2025 最近帖仍为 10/19 告知 25名); @karasenaGCG 10/21-23 LABO LIVE/闲聊无 CS 赛果; X 关键词检索仅 UC杯报名 RT / 旧静岡LABO杯 RT，无新≥50冠亚名单)",
-    "web/X/Tonamel recheck 2026-10-24 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg 10/19后无新结果帖 (bio: 次回11/1・11/8・11/22; 最近为第20回对局视频至10/18); UC杯 10/25 未開 (UCCUP2025 最近帖仍为 10/19 告知 25名); @karasenaGCG 10/22-23 LABO LIVE/闲聊无 CS 赛果; X 关键词检索仅 店舗予選 e.g. トップカード名古屋大須店 13名 绿紫，阈值<50)"
+    "web/X/Tonamel recheck 2026-10-24 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg 10/19后无新结果帖 (bio: 次回11/1・11/8・11/22; 最近为第20回对局视频至10/18); UC杯 10/25 未開 (UCCUP2025 最近帖仍为 10/19 告知 25名); @karasenaGCG 10/22-23 LABO LIVE/闲聊无 CS 赛果; X 关键词检索仅 店舗予選 e.g. トップカード名古屋大須店 13名 绿紫，阈值<50)",
+    "web/X recheck 2026-10-25 (UC杯第10回 10/25 開催・公式発表参加者29名 <50 不収録; @arch_cs_gcg bio 次回 11/1・11/8・11/22、10/19後無新結果帖; @karasenaGCG 無 CS 賽果; 無新 qualifying unofficial CS ≥50)"
   ],
   "excluded": [
     {

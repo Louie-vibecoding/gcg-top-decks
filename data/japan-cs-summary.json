@@ -3,7 +3,7 @@
   "event_type": "CS",
   "min_date": "2026-08-01",
   "min_entrants": 50,
-  "as_of": "2026-10-27",
+  "as_of": "2026-10-28",
   "total_events": 1,
   "total_decks": 2,
   "events_with_full_lists": 1,
@@ -61,7 +61,8 @@
     "web/X/Tonamel recheck 2026-10-24 (no new qualifying unofficial CS ≥50 found; X@arch_cs_gcg 10/19后无新结果帖 (bio: 次回11/1・11/8・11/22; 最近为第20回对局视频至10/18); UC杯 10/25 未開 (UCCUP2025 最近帖仍为 10/19 告知 25名); @karasenaGCG 10/22-23 LABO LIVE/闲聊无 CS 赛果; X 关键词检索仅 店舗予選 e.g. トップカード名古屋大須店 13名 绿紫，阈值<50)",
     "web/X recheck 2026-10-25 (UC杯第10回 10/25 開催・公式発表参加者29名 <50 不収録; @arch_cs_gcg bio 次回 11/1・11/8・11/22、10/19後無新結果帖; @karasenaGCG 無 CS 賽果; 無新 qualifying unofficial CS ≥50)",
     "web/X recheck 2026-10-26 (UC杯第10回 10/25 参加者29名 <50 不収録確認・無新結果帖; @arch_cs_gcg 10/24后無新帖 bio 次回11/1・11/8・11/22; @karasenaGCG 今日多为 GD06/エリクト闲聊無 CS 賽果; X关键词检索仅 タッチ松本店 非公認16名 / flat工房小赛 / 店舗予選13名，均 <50; 無新 qualifying unofficial CS ≥50)",
-    "web/X recheck 2026-10-27 (UC杯第10回 10/25 参加者29名 <50 不収録確認・10/26結果帖ありも閾値未満; @arch_cs_gcg 今日RT告知のみ bio 次回11/1・11/8・11/22; @karasenaGCG 多为 GD06/ZZ/日常闲聊無 CS 賽果; X关键词检索仅 ショップバトル 5–11名 / 非公認BOX争奪戦 小规模，均 <50; 無新 qualifying unofficial CS ≥50)"
+    "web/X recheck 2026-10-27 (UC杯第10回 10/25 参加者29名 <50 不収録確認・10/26結果帖ありも閾値未満; @arch_cs_gcg 今日RT告知のみ bio 次回11/1・11/8・11/22; @karasenaGCG 多为 GD06/ZZ/日常闲聊無 CS 賽果; X关键词检索仅 ショップバトル 5–11名 / 非公認BOX争奪戦 小规模，均 <50; 無新 qualifying unofficial CS ≥50)",
+    "web/X recheck 2026-10-28 (no new qualifying unofficial CS ≥50; arch_cs next 11/1・11/8・11/22; karasenaCS 11/1 upcoming; shop/非公認 small <50; UC杯 10/25 29 excluded)"
   ],
   "excluded": [
     {

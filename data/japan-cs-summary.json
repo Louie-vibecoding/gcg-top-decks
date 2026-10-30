@@ -3,7 +3,7 @@
   "event_type": "CS",
   "min_date": "2026-08-01",
   "min_entrants": 50,
-  "as_of": "2026-10-29",
+  "as_of": "2026-10-30",
   "total_events": 1,
   "total_decks": 2,
   "events_with_full_lists": 1,
@@ -63,7 +63,8 @@
     "web/X recheck 2026-10-26 (UC杯第10回 10/25 参加者29名 <50 不収録確認・無新結果帖; @arch_cs_gcg 10/24后無新帖 bio 次回11/1・11/8・11/22; @karasenaGCG 今日多为 GD06/エリクト闲聊無 CS 賽果; X关键词检索仅 タッチ松本店 非公認16名 / flat工房小赛 / 店舗予選13名，均 <50; 無新 qualifying unofficial CS ≥50)",
     "web/X recheck 2026-10-27 (UC杯第10回 10/25 参加者29名 <50 不収録確認・10/26結果帖ありも閾値未満; @arch_cs_gcg 今日RT告知のみ bio 次回11/1・11/8・11/22; @karasenaGCG 多为 GD06/ZZ/日常闲聊無 CS 賽果; X关键词检索仅 ショップバトル 5–11名 / 非公認BOX争奪戦 小规模，均 <50; 無新 qualifying unofficial CS ≥50)",
     "web/X recheck 2026-10-28 (no new qualifying unofficial CS ≥50; arch_cs next 11/1・11/8・11/22; karasenaCS 11/1 upcoming; shop/非公認 small <50; UC杯 10/25 29 excluded)",
-    "web/X recheck 2026-10-29 (no new qualifying unofficial CS ≥50; @arch_cs_gcg bio 次回 11/1・11/8・11/22、最近仍为第20回对局视频至10/18; @UCCUP2025 UC杯 10/25 29名<50 不収録維持（10/26結果帖あり）; @karasenaGCG 11/1 からセナCS 规则追记/デッキ準備告知、尚无赛果; X关键词多为 flat工房小赛 / 非公認 BOX 争奪戦 16名 / ショップ小规模，均 <50)"
+    "web/X recheck 2026-10-29 (no new qualifying unofficial CS ≥50; @arch_cs_gcg bio 次回 11/1・11/8・11/22、最近仍为第20回对局视频至10/18; @UCCUP2025 UC杯 10/25 29名<50 不収録維持（10/26結果帖あり）; @karasenaGCG 11/1 からセナCS 规则追记/デッキ準備告知、尚无赛果; X关键词多为 flat工房小赛 / 非公認 BOX 争奪戦 16名 / ショップ小规模，均 <50)",
+    "web/X recheck 2026-10-30 (no new qualifying unofficial CS ≥50; @arch_cs_gcg bio 次回 11/1・11/8・11/22、最近仍为第20回对局视频至10/18; @UCCUP2025 UC杯 10/25 29名<50 不収録維持（10/26結果帖あり）; @karasenaGCG 10/29–10/30 为 note/週末大会準備・デッキ話題，尚无≥50 赛果; X关键词多为 flat工房大須店小赛 / ワンショット石橋阪大前 非公認 等，均 <50)"
   ],
   "excluded": [
     {
@@ -142,6 +143,7 @@
     "2026-10-24: X+web recheck。无新≥50民間CS（完整冠亚牌表）。total_events 維持1（GCG大阪祭）。UC杯10/25未開。",
     "2026-10-26: X+web recheck。無新≥50民間CS（完整冠亚牌表）。total_events 維持1（GCG大阪祭）。UC杯10/25 29人<50 不収録。",
     "2026-10-27: X+web recheck。無新≥50民間CS（完整冠亚牌表）。total_events 維持1（GCG大阪祭）。UC杯10/25 29人<50 不収録。",
-    "2026-10-29: checked @arch_cs_gcg/@UCCUP2025/@karasenaGCG + keyword search; no ≥50 new CS; UC杯 29 stays excluded"
+    "2026-10-29: checked @arch_cs_gcg/@UCCUP2025/@karasenaGCG + keyword search; no ≥50 new CS; UC杯 29 stays excluded",
+    "2026-10-30: rechecked ARCH/UC杯/からセナ + keyword search; no new ≥50 with full lists; UC杯 10/25 remains excluded (29<50)."
   ]
 }

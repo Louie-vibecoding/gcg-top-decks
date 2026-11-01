@@ -3,7 +3,7 @@
   "event_type": "CS",
   "min_date": "2026-08-01",
   "min_entrants": 50,
-  "as_of": "2026-10-31",
+  "as_of": "2026-11-01",
   "total_events": 1,
   "total_decks": 2,
   "events_with_full_lists": 1,
@@ -65,7 +65,8 @@
     "web/X recheck 2026-10-28 (no new qualifying unofficial CS ≥50; arch_cs next 11/1・11/8・11/22; karasenaCS 11/1 upcoming; shop/非公認 small <50; UC杯 10/25 29 excluded)",
     "web/X recheck 2026-10-29 (no new qualifying unofficial CS ≥50; @arch_cs_gcg bio 次回 11/1・11/8・11/22、最近仍为第20回对局视频至10/18; @UCCUP2025 UC杯 10/25 29名<50 不収録維持（10/26結果帖あり）; @karasenaGCG 11/1 からセナCS 规则追记/デッキ準備告知、尚无赛果; X关键词多为 flat工房小赛 / 非公認 BOX 争奪戦 16名 / ショップ小规模，均 <50)",
     "web/X recheck 2026-10-30 (no new qualifying unofficial CS ≥50; @arch_cs_gcg bio 次回 11/1・11/8・11/22、最近仍为第20回对局视频至10/18; @UCCUP2025 UC杯 10/25 29名<50 不収録維持（10/26結果帖あり）; @karasenaGCG 10/29–10/30 为 note/週末大会準備・デッキ話題，尚无≥50 赛果; X关键词多为 flat工房大須店小赛 / ワンショット石橋阪大前 非公認 等，均 <50)",
-    "web/X/Tonamel recheck 2026-10-31 (@arch_cs_gcg bio 次回11/1・11/8・11/22、RTのみ無新赛果; @UCCUP2025 UC杯10/25 29名発表済・29<50不収録维持; @karasenaGCG 10/30–10/31 GD06开包/明日名古屋からセナCS参加予告、尚无≥50赛果; X关键词多为店铺SB/店舗予选6–11人等 <50; Tonamel org O6TBW/EOzqD/Wk2iz SPA壳无赛表; no new qualifying unofficial CS ≥50)"
+    "web/X/Tonamel recheck 2026-10-31 (@arch_cs_gcg bio 次回11/1・11/8・11/22、RTのみ無新赛果; @UCCUP2025 UC杯10/25 29名発表済・29<50不収録维持; @karasenaGCG 10/30–10/31 GD06开包/明日名古屋からセナCS参加予告、尚无≥50赛果; X关键词多为店铺SB/店舗予选6–11人等 <50; Tonamel org O6TBW/EOzqD/Wk2iz SPA壳无赛表; no new qualifying unofficial CS ≥50)",
+    "web/X/Tonamel recheck 2026-11-01 (@arch_cs_gcg 本日アークCS 3on3 in 福福トレカ結果投稿済・冠亜チーム色確認だが3on3のため不収録; @UCCUP2025 UC杯10/25 29名<50不収録维持; @karasenaGCG 本日からセナCS 23/24チームで開幕・結果後ほど、3on3のため不収録予定; X关键词多为店铺SB/店舗予选/新弹構築戦 5–21人等 <50; Tonamel org SPA壳; no new qualifying unofficial CS ≥50 individual)"
   ],
   "excluded": [
     {
@@ -119,6 +120,17 @@
       "date": "2026-10-25",
       "entrants": 29,
       "reason": "entrants < 50（主催 @UCCUP2025 公式発表参加者29名；優勝 udon 赤白MF / 準優勝 だーはま 緑紫）"
+    },
+    {
+      "name": "アークCS 3on3 in 福福トレカ秋葉原店",
+      "date": "2026-11-01",
+      "reason": "3on3チーム戦・チームデッキ表現がv1に不向き（Trinity Cup同様スキップ）。優勝チーム「ラーメン二郎愛好会」青白/赤白/緑紫・準優勝「無敵要塞ザイガス」青白/赤白/緑紫はX確認済だが収集対象外。参加者人数≥50の明示なし"
+    },
+    {
+      "name": "からセナCS カートン争奪戦 3on3（コーギーアール名古屋店）",
+      "date": "2026-11-01",
+      "entrants": "23/24チーム",
+      "reason": "3on3チーム戦（23/24チーム）。結果は主催@karasenaGCGが「後ほどアップ」と告知時点で未公開。チーム形式はv1不向きのためスキップ"
     }
   ],
   "included": [
@@ -145,6 +157,7 @@
     "2026-10-26: X+web recheck。無新≥50民間CS（完整冠亚牌表）。total_events 維持1（GCG大阪祭）。UC杯10/25 29人<50 不収録。",
     "2026-10-27: X+web recheck。無新≥50民間CS（完整冠亚牌表）。total_events 維持1（GCG大阪祭）。UC杯10/25 29人<50 不収録。",
     "2026-10-29: checked @arch_cs_gcg/@UCCUP2025/@karasenaGCG + keyword search; no ≥50 new CS; UC杯 29 stays excluded",
-    "2026-10-30: rechecked ARCH/UC杯/からセナ + keyword search; no new ≥50 with full lists; UC杯 10/25 remains excluded (29<50)."
+    "2026-10-30: rechecked ARCH/UC杯/からセナ + keyword search; no new ≥50 with full lists; UC杯 10/25 remains excluded (29<50).",
+    "2026-11-01: X recheck。アークCS 3on3（福福）・からセナCS 3on3（名古屋・23/24チーム）はチーム戦のためv1スキップ；UC杯29維持除外。無新≥50個人戦民間CS。total_events 維持1（GCG大阪祭）。"
   ]
 }

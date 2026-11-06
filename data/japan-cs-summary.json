@@ -3,7 +3,7 @@
   "event_type": "CS",
   "min_date": "2026-08-01",
   "min_entrants": 50,
-  "as_of": "2026-11-05",
+  "as_of": "2026-11-06",
   "total_events": 1,
   "total_decks": 2,
   "events_with_full_lists": 1,
@@ -70,7 +70,8 @@
     "web/X/Tonamel recheck 2026-11-02 (@arch_cs_gcg bio 次は11月8日・11月21日；11/1 アークCS 3on3 結果確認済・次回11/8 は LABO合同 5on5 チーム戦→不収録予定；@UCCUP2025 UC杯10/25 29<50不収録维持・bio 次回7/11(3on3)；@karasenaGCG 11/1 からセナCS 3on3 23/24チーム・結果仍「後ほど」未公開、3on3故不収録；X关键词 GCG CS 優勝/準優勝/非公認 since 11/01 仅アークCS 3on3相关；Tonamel org O6TBW/EOzqD/Wk2iz SPA壳；no new qualifying unofficial CS ≥50 individual)",
     "web/X/Tonamel recheck 2026-11-03 (@arch_cs_gcg bio 次は11月8日5on5；11/1 アークCS 3on3 冠亚确认済・今日仍有对局视频；下次11/8 LABO合同5on5 チーム戦→不収録予定；@UCCUP2025 UC杯10/25 29<50不収録维持・bio 次回7/11(3on3)；@karasenaGCG 11/1 からセナCS 3on3 冠亚名单11/2公开（優勝『下がれ、ほたるが全て倒す⭐️』緑紫/青紫/赤白・準優勝『鉄華丼』緑紫/赤青/赤白）但仍为チーム戦→不収録；X关键词 CS/非公認 優勝 since 11/02 仅为 flat工房大須店小赛 / トレカピット上越 2名 等 <50；Tonamel org O6TBW/EOzqD/Wk2iz SPA壳；no new qualifying unofficial CS ≥50 individual)",
     "web/X/Tonamel recheck 2026-11-04 (@arch_cs_gcg bio 次は11月8日5on5；11/1 アークCS 3on3 冠亚确认済・11/3仍有对局视频；下次11/8 LABO合同5on5 チーム戦→不収録予定；@UCCUP2025 UC杯10/25 29<50不収録维持・bio 次回7/11(3on3)；@karasenaGCG 11/1 からセナCS 3on3 冠亚已公开仍チーム戦→不収録・今日多为构筑闲聊；X关键词 CS/非公認 優勝 since 11/03 仅为 flat工房大須店小赛 / トレカピット上越 2名 / カーキン告知 等 <50；Tonamel org O6TBW/EOzqD/Wk2iz SPA壳；no new qualifying unofficial CS ≥50 individual)",
-    "web/X/Tonamel recheck 2026-11-05 (no new qualifying unofficial CS ≥50 found; ARCH bio next 11/8 5on5 team exclude; 11/1 アークCS/からセナCS 3on3 team exclude maintained; UC杯 10/25 29<50 exclude; keyword hits only flat工房大須店 store swiss / カーキン告知)"
+    "web/X/Tonamel recheck 2026-11-05 (no new qualifying unofficial CS ≥50 found; ARCH bio next 11/8 5on5 team exclude; 11/1 アークCS/からセナCS 3on3 team exclude maintained; UC杯 10/25 29<50 exclude; keyword hits only flat工房大須店 store swiss / カーキン告知)",
+    "web/X recheck 2026-11-06 (no new qualifying unofficial CS ≥50 found; ARCH bio next 11/8 5on5 team exclude; 11/5 only 3on3 match video; UC杯 10/25 29<50; karasena meta chatter only; keyword hits shop battles / flat工房小赛 <50)"
   ],
   "excluded": [
     {
@@ -166,6 +167,7 @@
     "2026-11-02: X recheck。アークCS 3on3（福福）・からセナCS 3on3（名古屋・23/24チーム・結果仍未公開）はチーム戦のためv1スキップ；次回アーク 11/8 5on5 もチーム戦予定；UC杯29維持除外。無新≥50個人戦民間CS。total_events 維持1（GCG大阪祭）。",
     "2026-11-03: X recheck。アークCS 3on3（福福）・からセナCS 3on3（名古屋・冠亚名单11/2公開）はチーム戦のためv1スキップ；次回アーク 11/8 5on5 もチーム戦予定；UC杯29維持除外。無新≥50個人戦民間CS。total_events 維持1（GCG大阪祭）。",
     "2026-11-04: X recheck。アークCS 3on3（福福）・からセナCS 3on3（名古屋）はチーム戦のためv1スキップ；次回アーク 11/8 5on5 もチーム戦予定；UC杯29維持除外。無新≥50個人戦民間CS。total_events 維持1（GCG大阪祭）。",
-    "2026-11-05: X @arch_cs_gcg/@UCCUP2025/@karasenaGCG + keyword (GCG/ガンダムカード CS/非公認 優勝/準優勝) since 11-04 — no new ≥50 individual CS with champ+runner lists; team formats remain excluded."
+    "2026-11-05: X @arch_cs_gcg/@UCCUP2025/@karasenaGCG + keyword (GCG/ガンダムカード CS/非公認 優勝/準優勝) since 11-04 — no new ≥50 individual CS with champ+runner lists; team formats remain excluded.",
+    "2026-11-06: X @arch_cs_gcg/@UCCUP2025/@karasenaGCG + keyword (GCG/ガンダムカード CS/非公認 優勝/準優勝) since 11-05 — no new ≥50 individual CS with champ+runner lists; team formats remain excluded."
   ]
 }

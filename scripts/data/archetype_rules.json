@@ -1,0 +1,124 @@
+[
+  {
+    "name": "红白·机动武斗传",
+    "color": "红白",
+    "minimum_cards": {
+      "GD05-033": 3,
+      "GD05-066": 3,
+      "GD05-097": 3
+    },
+    "representative_card": "GD05-033"
+  },
+  {
+    "name": "红白·ZZ高达",
+    "color": "红白",
+    "minimum_cards": {
+      "GD06-033": 3
+    },
+    "representative_card": "GD06-033"
+  },
+  {
+    "name": "红白·加拉尔霍恩",
+    "color": "红白",
+    "minimum_cards": {
+      "GD06-034": 3,
+      "GD06-036": 3,
+      "GD06-090": 3
+    },
+    "representative_card": "GD06-034"
+  },
+  {
+    "name": "蓝绿·ν高达",
+    "color": "蓝绿",
+    "minimum_cards": {
+      "GD05-017": 3,
+      "GD05-085": 3,
+      "GD05-027": 3,
+      "GD05-029": 3
+    },
+    "representative_card": "GD05-017"
+  },
+  {
+    "name": "绿紫·新吉翁",
+    "color": "绿紫",
+    "minimum_cards": {
+      "ST13-001": 3,
+      "ST13-011": 3,
+      "GD05-129": 3,
+      "GD05-093": 3
+    },
+    "representative_card": "ST13-001"
+  },
+  {
+    "name": "绿紫·全装独角兽",
+    "color": "绿紫",
+    "minimum_cards": {
+      "ST14-006": 4,
+      "ST14-012": 4
+    },
+    "representative_card": "ST14-006"
+  },
+  {
+    "name": "蓝白·强袭自由",
+    "color": "蓝白",
+    "minimum_cards": {
+      "GD05-002": 3,
+      "GD05-081": 3
+    },
+    "representative_card": "GD05-002"
+  },
+  {
+    "name": "蓝白·GQuuuuuuX",
+    "color": "蓝白",
+    "minimum_cards": {
+      "GD06-003": 3,
+      "GD06-017": 3,
+      "GD06-081": 3
+    },
+    "representative_card": "GD06-003"
+  },
+  {
+    "name": "蓝白·天使号",
+    "color": "蓝白",
+    "minimum_cards": {
+      "GD05-123": 3,
+      "GD05-082": 3,
+      "GD05-003": 3,
+      "GD05-004": 3
+    },
+    "representative_card": "GD05-123"
+  },
+  {
+    "name": "绿白·飞翼高达",
+    "color": "绿白",
+    "minimum_cards": {
+      "ST02-001": 4,
+      "ST02-010": 3,
+      "GD05-067": 2
+    },
+    "representative_card": "ST02-001"
+  },
+  {
+    "name": "红蓝·强袭自由",
+    "color": "红蓝",
+    "minimum_cards": {
+      "GD05-002": 3,
+      "GD05-081": 3,
+      "GD06-041": 4,
+      "GD06-092": 4
+    },
+    "representative_card": "GD05-002"
+  },
+  {
+    "name": "白紫·密涅瓦",
+    "color": "白紫",
+    "minimum_cards": {
+      "ST09-001": 4,
+      "ST09-008": 4,
+      "ST09-010": 4,
+      "GD04-050": 4,
+      "GD06-050": 4
+    },
+    "representative_card": "GD04-050"
+  }
+]

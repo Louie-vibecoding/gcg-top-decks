@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+"""Idempotent weekly top-cut rebuild.
+
+    python3 scripts/build_weekly_stats.py
+    python3 scripts/build_weekly_stats.py --check
+
+Repeat runs do not append decks. --check exits nonzero when data/weekly-top.json
+does not match the current event files, rules, catalog, or quarantine list.
+Generated timestamps are ignored by --check so a clean tree stays clean.
+"""
+
+from __future__ import annotations
+
+import argparse
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from weekly_stats import ROOT as STATS_ROOT, build_report, fingerprint, load_json, write_report
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Rebuild data/weekly-top.json from public event files.")
+    parser.add_argument("--check", action="store_true", help="Exit 1 if the committed report is stale.")
+    parser.add_argument("--out", default="data/weekly-top.json")
+    args = parser.parse_args()
+    path = (STATS_ROOT / args.out).resolve()
+    report = build_report(STATS_ROOT)
+    if args.check:
+        if not path.exists():
+            print(f"missing {path}", file=sys.stderr)
+            return 1
+        current = load_json(path)
+        if fingerprint(current) != fingerprint(report):
+            print("weekly-top.json is stale; run python3 scripts/build_weekly_stats.py", file=sys.stderr)
+            return 1
+        print("weekly-top.json matches current inputs")
+        return 0
+    status = write_report(report, path)
+    japan = report["regions"]["日本"]
+    print(
+        f"{status} {path} fingerprint={fingerprint(report)[:12]} "
+        f"japan_default={japan['default_view']} included_decks={japan['included_decks']}"
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

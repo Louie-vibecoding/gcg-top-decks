@@ -1,0 +1,75 @@
+{
+  "policy": "默认保守口径：TCG+ 展示的亚军标签可以单独注明，但只要独立渠道写成双全胜或分桌冠军，或缺少亚军的独立佐证，该套就不进入冠亚分母，也不改判成冠军。gcg-stats 可能转引官方页，不算第二独立证据。",
+  "entries": [
+    {
+      "strong_event_id": "01M6TXM9DTBHD37WTSY2AFTPG7",
+      "player": "なー",
+      "stored_rank": 2,
+      "date": "2026-11-07",
+      "store": "ブックマーケット 野々市新庄店",
+      "official_url": "https://d.bandai-tcg-plus.com/gcgja/tournament/sanctioned/01M6AQ6G9PQ34HYPJXZA31SPZA/01M6TXM9DTBHD37WTSY2AFTPG7/single",
+      "official_visible_rank": "準優勝",
+      "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6TXM9DTBHD37WTSY2AFTPG7.html",
+      "gcg_stats_row": "優勝: なー",
+      "secondary_url": "https://x.com/cb750F71598/status/2119118163619287433",
+      "secondary_author": "ウキョウ（官方冠军本人）",
+      "reason": "独立渠道只证实冠军乌京和赛事，未发现なー本人名次佐证。TCG+展示亚军已看到，实际冠亚口径未核实。"
+    },
+    {
+      "strong_event_id": "01M6WYTPKDZ2HBRBY2EQ69G5RX",
+      "player": "BOX",
+      "stored_rank": 2,
+      "date": "2026-11-08",
+      "store": "CARDBASE JABURO",
+      "official_url": "https://d.bandai-tcg-plus.com/gcgja/tournament/sanctioned/01M6AQ6G9PQ34HYPJXZA31SPZA/01M6WYTPKDZ2HBRBY2EQ69G5RX/single",
+      "official_visible_rank": "準優勝",
+      "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6WYTPKDZ2HBRBY2EQ69G5RX.html",
+      "gcg_stats_row": "優勝: BOX",
+      "secondary_url": "https://x.com/jaburo2024/status/2119321824232357985",
+      "secondary_author": "CARDBASE JABURO官方门店",
+      "reason": "门店明确两位全胜；官方展示顺序2不等于决赛亚军。不改判为冠军，也不计入亚军分母。"
+    },
+    {
+      "strong_event_id": "01M6WVDGAD721NS9YDF54C2NWM",
+      "player": "5番隊見習い",
+      "stored_rank": 2,
+      "date": "2026-11-08",
+      "store": "GameSpace&cafeドラグーン博多",
+      "official_url": "https://d.bandai-tcg-plus.com/gcgja/tournament/sanctioned/01M6AQ6G9PQ34HYPJXZA31SPZA/01M6WVDGAD721NS9YDF54C2NWM/single",
+      "official_visible_rank": "準優勝",
+      "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6WVDGAD721NS9YDF54C2NWM.html",
+      "gcg_stats_row": "優勝: 5番隊見習い",
+      "secondary_url": "https://x.com/DragoonHakata/status/2119305502228427232",
+      "secondary_author": "ドラグーン博多官方门店",
+      "reason": "门店同时列两位全胜且同用金牌，不能自行解释为决赛冠亚。不改判为冠军，也不计入亚军分母。"
+    },
+    {
+      "strong_event_id": "01M6WVDF8XDYVCR58QWPM4BZMX",
+      "player": "はなたれ",
+      "stored_rank": 2,
+      "date": "2026-11-08",
+      "store": "ストレージワン",
+      "official_url": "https://d.bandai-tcg-plus.com/gcgja/tournament/sanctioned/01M6AQ6G9PQ34HYPJXZA31SPZA/01M6WVDF8XDYVCR58QWPM4BZMX/single",
+      "official_visible_rank": "準優勝",
+      "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6WVDF8XDYVCR58QWPM4BZMX.html",
+      "gcg_stats_row": "優勝: はなたれ",
+      "secondary_url": "https://x.com/storage0810/status/2119296151166005736",
+      "secondary_author": "ストレージワン広島店官方门店",
+      "reason": "门店写明 A 卓、B 卓各自冠军。合并到官方页的第2名不能证明双方打了冠亚决赛。不改判为冠军，也不计入亚军分母。"
+    },
+    {
+      "strong_event_id": "01M6WVDDZPGVCGCV4CDEB0T45R",
+      "player": "パー式",
+      "stored_rank": 2,
+      "date": "2026-11-08",
+      "store": "トレーディングカードショップシエル",
+      "official_url": "https://d.bandai-tcg-plus.com/gcgja/tournament/sanctioned/01M6AQ6G9PQ34HYPJXZA31SPZA/01M6WVDDZPGVCGCV4CDEB0T45R/single",
+      "official_visible_rank": "準優勝",
+      "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6WVDDZPGVCGCV4CDEB0T45R.html",
+      "gcg_stats_row": "優勝: パー式",
+      "secondary_url": "https://x.com/TCSCiel/status/2119350999194485098",
+      "secondary_author": "TradingCardShop Ciel官方门店",
+      "reason": "独立渠道只公布冠军シンゴ与蓝红卡表，没有パー式的亚军或同列全胜证据。实际冠亚口径未核实。"
+    }
+  ]
+}

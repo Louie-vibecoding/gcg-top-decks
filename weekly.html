@@ -5,16 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>每周上位统计 · GCG</title>
   <link rel="icon" href="data:," />
-  <link rel="stylesheet" href="weekly.css?v=20261109a" />
+  <link rel="stylesheet" href="weekly.css?v=20261109c" />
 </head>
 <body>
   <a class="skip" href="#summary">跳到本周摘要</a>
+  <div class="site-bridge">
+    <div class="wrap bridge-inner">
+      <a href="index.html">GCG 上位卡组</a>
+      <span aria-hidden="true">/</span>
+      <span>每周上位统计</span>
+      <a class="bridge-back" href="index.html">返回赛事列表</a>
+    </div>
+  </div>
   <header class="hero">
     <div class="wrap hero-inner">
-      <p class="kicker">高达卡牌 · 冠亚样本</p>
+      <p class="kicker">同一站点的每周板块 · 冠亚样本</p>
       <div class="hero-top">
         <h1>每周上位统计</h1>
-        <a class="back" href="index.html">赛事列表</a>
       </div>
       <p class="lede">按赛事日期的周一至周日汇总已收录的冠军和亚军。默认日本、最近一个已经过完的完整周。套数只表示样本多少，不是强度，也不是全体参赛使用率。</p>
       <div id="region-switch" class="segment" role="tablist" aria-label="地区"></div>
@@ -42,7 +49,7 @@
 
   <footer class="site-foot">
     <div class="wrap">
-      <p>非官方统计。卡图来自公开源，版权归万代等权利方。更新命令：<code>python3 scripts/build_weekly_stats.py</code></p>
+      <p><a href="index.html">返回赛事列表</a>。非官方统计。代表卡图放在站点的 weekly-cards，版权归万代等权利方。更新命令：<code>python3 scripts/build_weekly_stats.py</code></p>
     </div>
   </footer>
 
@@ -54,6 +61,7 @@
     <div id="dialog-body" class="dialog-body"></div>
   </dialog>
 
-  <script src="weekly.js?v=20261109a"></script>
+  <script src="weekly-pie.js?v=20261109c"></script>
+  <script src="weekly.js?v=20261109c"></script>
 </body>
 </html>

@@ -2,8 +2,9 @@
   "use strict";
 
   const REGION_ORDER = ["日本", "中国", "欧美"];
-  const PALETTE = ["#1d4e89", "#0e7c86", "#c44900", "#5c4d7a", "#2a6f4e", "#8c3a4b", "#245b7a", "#6b4f2a", "#3f5e4a", "#7a4e8a", "#3e6b5a", "#8a5a2b", "#1f4e79", "#6d3b4a", "#2f6f6a", "#4d6280"];
   const ROLE = { rule_core: "规则核心", cooccurring_unit: "同场机体", unconfirmed_unit: "待确认机体" };
+  const imageCache = new Map();
+  let chartToken = 0;
 
   const state = { report: null, region: "日本", viewId: "" };
   const $ = (id) => document.getElementById(id);
@@ -28,7 +29,23 @@
 
   function cardImage(cardId) {
     if (!/^[A-Z]{1,4}\d{0,2}-\d{3}$/.test(cardId || "")) return "";
-    return `https://gcg-stats.com/images/cards/${cardId}.webp`;
+    const embedded = window.__CARD_DATA__ && window.__CARD_DATA__[cardId];
+    if (embedded) return embedded;
+    return `weekly-cards/${cardId}.webp`;
+  }
+
+  function loadCard(cardId) {
+    const src = cardImage(cardId);
+    if (!src) return Promise.resolve(null);
+    if (imageCache.has(src)) return imageCache.get(src);
+    const pending = new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => resolve(img.naturalWidth ? img : null);
+      img.onerror = () => resolve(null);
+      img.src = src;
+    });
+    imageCache.set(src, pending);
+    return pending;
   }
 
   function displayName(card) {
@@ -83,10 +100,6 @@
     $("view-select").innerHTML = groupHtml("完整周", groups.complete) + groupHtml("非完整周", groups.partial) + groupHtml("特别窗口（不是整周总数）", groups.special);
   }
 
-  function metric(label, value) {
-    return `<div class="metric"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`;
-  }
-
   function renderBanner(view) {
     const host = $("banner");
     const windows = state.report.regions[state.region].special_windows || [];
@@ -105,6 +118,19 @@
     host.innerHTML = html;
   }
 
+  function metric(label, lines, wide) {
+    const body = (Array.isArray(lines) ? lines : [lines])
+      .map((line) => `<span class="metric-line">${escapeHtml(line)}</span>`)
+      .join("");
+    return `<div class="metric${wide ? " metric-wide" : ""}"><span>${escapeHtml(label)}</span><strong>${body}</strong></div>`;
+  }
+
+  function timeLines(label) {
+    const match = /^(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2}) (北京时间)$/.exec(label || "");
+    if (!match) return [label || ""];
+    return [`${match[1]} ${match[2]}`, match[3]];
+  }
+
   function renderSummary(view) {
     const meta = state.report.meta;
     const kind = view.kind === "special" ? "特别窗口" : (view.complete ? "完整周" : "非完整周");
@@ -112,15 +138,15 @@
     $("distribution").hidden = false;
     $("method").hidden = false;
     $("summary").innerHTML = [
-      metric("日期", `${view.start} 至 ${view.end}`),
-      metric("地区", `${state.region} · ${kind}`),
+      metric("日期", [view.start, `至 ${view.end}`], true),
+      metric("地区", [state.region, kind], true),
       metric("纳入样本", `${view.included_decks} 套`),
       metric("冠军 / 亚军", `${view.champions} / ${view.runners_up}`),
       metric("赛事", `${view.events} 场`),
       metric("体系待确认", `${view.unconfirmed_decks} 套`),
       metric("名次争议", `${view.quarantined_decks} 套`),
       metric("异常隔离", `${view.isolated_decks} 套`),
-      metric("更新时间", meta.generated_at_label || ""),
+      metric("更新时间", timeLines(meta.generated_at_label), true),
     ].join("");
   }
 
@@ -129,7 +155,7 @@
     const name = displayName(card);
     const avg = avgCopies(card);
     const img = src
-      ? `<img src="${escapeHtml(src)}" alt="${escapeHtml(name + " " + card.card_id)}" width="126" height="176" loading="lazy" decoding="async" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-fallback',textContent:this.alt}))" />`
+      ? `<img src="${escapeHtml(src)}" alt="${escapeHtml(name + " " + card.card_id)}" width="600" height="838" decoding="sync" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-fallback',textContent:this.alt}))" />`
       : `<div class="img-fallback">${escapeHtml(card.card_id)}</div>`;
     return { img, caption: `<figcaption><span class="role">${escapeHtml(ROLE[card.role] || "机体")}</span><span class="cname">${escapeHtml(name)}</span><span class="cid">${escapeHtml(card.card_id)}${avg ? ` · 平均 ${escapeHtml(avg)} 张` : ""}</span><span class="mini">${escapeHtml(String(card.decks_with_card))}/${escapeHtml(String(card.group_size))} 套有这张</span></figcaption>` };
   }
@@ -192,31 +218,161 @@
     host.innerHTML = `<h2>体系分布</h2><p class="hint">各组套数之和 ${view.group_total_sum} = 分母 ${view.denominator}。点击一组可看里面的赛事和来源。图是机体，不是驾驶员。</p><div class="dist">${band("套数较多", "只按样本套数分栏，不是强度", lead, "lead")}${band("中间数量", "", mid, "mid")}${band("其余分布", "", rest, "rest")}</div>`;
   }
 
-  function renderChart(view) {
+  function legendIcon(card) {
+    const src = cardImage(card.card_id);
+    const name = displayName(card);
+    if (!src) return `<span class="pie-ph">无图</span>`;
+    return `<img src="${escapeHtml(src)}" alt="${escapeHtml(name)}" width="600" height="838" decoding="sync" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'pie-ph',textContent:this.alt}))" />`;
+  }
+
+  function pieSpec() {
+    const mobile = window.matchMedia("(max-width: 640px)").matches;
+    return mobile
+      ? { width: 440, height: 400, cx: 214, cy: 196, r: 102, minSweep: 0.42, maxLabelShift: 18, fontSize: 12 }
+      : { width: 640, height: 520, cx: 320, cy: 260, r: 150, minSweep: 0.2, maxLabelShift: 24, fontSize: 13 };
+  }
+
+  function drawPie(canvas, layout, images) {
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width = Math.round(layout.width * dpr);
+    canvas.height = Math.round(layout.height * dpr);
+    canvas.style.aspectRatio = `${layout.width} / ${layout.height}`;
+    const ctx = canvas.getContext("2d");
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(0, 0, layout.width, layout.height);
+    const font = getComputedStyle(document.body).fontFamily || "sans-serif";
+    let missing = 0;
+
+    function clipWedge(start, end, full) {
+      ctx.beginPath();
+      if (full) {
+        ctx.arc(layout.cx, layout.cy, layout.r, 0, Math.PI * 2);
+      } else {
+        ctx.moveTo(layout.cx, layout.cy);
+        ctx.arc(layout.cx, layout.cy, layout.r, start, end);
+      }
+      ctx.closePath();
+      ctx.clip();
+    }
+
+    layout.sectors.forEach((sector) => {
+      if (!sector.parts.length) {
+        ctx.save();
+        clipWedge(sector.start, sector.end, sector.fullCircle);
+        ctx.fillStyle = "#e7eef6";
+        ctx.fillRect(layout.cx - layout.r, layout.cy - layout.r, layout.r * 2, layout.r * 2);
+        if (sector.sweep > 0.55) {
+          const mid = (sector.start + sector.end) / 2;
+          const dist = layout.r * 0.55;
+          ctx.fillStyle = "#8a4b12";
+          ctx.font = `700 12px ${font}`;
+          ctx.textAlign = "center";
+          ctx.textBaseline = "middle";
+          ctx.fillText("待确认", layout.cx + Math.cos(mid) * dist, layout.cy + Math.sin(mid) * dist);
+        }
+        ctx.restore();
+        return;
+      }
+      sector.parts.forEach((part) => {
+        const image = images.get(part.cardId);
+        ctx.save();
+        clipWedge(part.start, part.end, sector.fullCircle && sector.parts.length === 1);
+        if (!image) {
+          missing += 1;
+          ctx.fillStyle = "#e7eef6";
+          ctx.fillRect(part.x, part.y, part.width, part.height);
+          ctx.fillStyle = "#10233f";
+          ctx.font = `700 11px ${font}`;
+          ctx.textAlign = "center";
+          ctx.textBaseline = "middle";
+          ctx.fillText(part.name, part.x + part.width / 2, part.y + part.height / 2);
+        } else {
+          ctx.drawImage(image, part.x, part.y, part.width, part.height);
+        }
+        ctx.restore();
+      });
+    });
+
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "#ffffff";
+    ctx.lineJoin = "round";
+    layout.sectors.forEach((sector) => {
+      ctx.beginPath();
+      if (sector.fullCircle) {
+        ctx.arc(layout.cx, layout.cy, layout.r, 0, Math.PI * 2);
+      } else {
+        ctx.moveTo(layout.cx, layout.cy);
+        ctx.arc(layout.cx, layout.cy, layout.r, sector.start, sector.end);
+        ctx.closePath();
+      }
+      ctx.stroke();
+      if (sector.parts.length === 2) {
+        const mid = (sector.start + sector.end) / 2;
+        ctx.beginPath();
+        ctx.moveTo(layout.cx, layout.cy);
+        ctx.lineTo(layout.cx + Math.cos(mid) * layout.r, layout.cy + Math.sin(mid) * layout.r);
+        ctx.stroke();
+      }
+    });
+
+    ctx.strokeStyle = "#7d91ab";
+    ctx.fillStyle = "#10233f";
+    ctx.lineWidth = 1;
+    ctx.font = `600 ${pieSpec().fontSize}px ${font}`;
+    ctx.textBaseline = "middle";
+    layout.sectors.forEach((sector) => {
+      if (!sector.showLabel || !sector.label) return;
+      const [x1, y1, x2, y2, x3, y3] = sector.label.leader;
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.lineTo(x3, y3);
+      ctx.stroke();
+      ctx.textAlign = sector.label.anchor === "end" ? "end" : "start";
+      ctx.fillText(sector.label.text, sector.label.x, sector.label.y);
+    });
+    canvas._pieLayout = layout;
+    canvas.dataset.ready = "1";
+    canvas.dataset.missing = String(missing);
+  }
+
+  async function renderChart(view) {
     const host = $("chart");
+    const token = ++chartToken;
     if (!view.groups.length) {
       host.innerHTML = "";
       host.hidden = true;
       return;
     }
     host.hidden = false;
-    const total = view.included_decks || 1;
-    const radius = 42;
-    const circ = 2 * Math.PI * radius;
-    let offset = 0;
-    const circles = view.groups.map((group, index) => {
-      const length = (group.total / total) * circ;
-      const color = PALETTE[index % PALETTE.length];
-      const dash = `${length.toFixed(3)} ${(circ - length).toFixed(3)}`;
-      const piece = `<circle r="${radius}" cx="60" cy="60" fill="none" stroke="${color}" stroke-width="16" stroke-dasharray="${dash}" stroke-dashoffset="${(-offset).toFixed(3)}" transform="rotate(-90 60 60)"></circle>`;
-      offset += length;
-      return piece;
+    const spec = pieSpec();
+    const input = view.groups.map((group) => ({
+      name: group.name,
+      total: group.total,
+      percent: group.percent,
+      unconfirmed: group.unconfirmed,
+      cards: (((group.representative || {}).cards) || []).map((card) => ({ card_id: card.card_id, name: displayName(card) })),
+    }));
+    const layout = WeeklyPie.layoutPie(input, spec);
+    const legend = view.groups.map((group) => {
+      const cards = ((group.representative || {}).cards) || [];
+      const icons = cards.length
+        ? cards.map(legendIcon).join("")
+        : `<span class="pie-ph">${group.unconfirmed ? "待确认" : "无代表机体"}</span>`;
+      const badge = group.unconfirmed ? `<span class="badge warn">待确认</span>` : "";
+      const num = `${group.total}套${group.percent ? ` · ${group.percent}%` : ""}`;
+      return `<button type="button" class="pie-legend-item" data-group="${escapeHtml(group.name)}" role="listitem"><span class="pie-icons">${icons}</span><span class="pie-name">${escapeHtml(group.name)} ${badge}</span><span class="pie-num">${escapeHtml(num)}</span></button>`;
     }).join("");
-    const legend = view.groups.map((group, index) => {
-      const color = PALETTE[index % PALETTE.length];
-      return `<div class="legend-row"><span class="swatch" style="background:${color}"></span><span class="legend-name">${escapeHtml(group.name)}</span><span class="legend-num">${escapeHtml(String(group.total))} 套${group.percent ? ` · ${escapeHtml(group.percent)}%` : ""}</span></div>`;
-    }).join("");
-    host.innerHTML = `<h2>样本占比</h2><p class="hint">环上的颜色只用来区分组别。百分比按纳入套数四舍五入到一位，各组相加可能不是刚好 100%，以套数为准。</p><div class="chart-layout"><div class="donut-wrap"><svg viewBox="0 0 120 120" role="img" aria-label="各组占纳入样本的比例">${circles}<circle r="28" cx="60" cy="60" fill="#fff"></circle><text x="60" y="58" text-anchor="middle" font-size="11" fill="#10233f" font-weight="700">${escapeHtml(String(view.included_decks))}</text><text x="60" y="72" text-anchor="middle" font-size="8" fill="#4d6280">套</text></svg></div><div class="legend">${legend}</div></div>`;
+    host.innerHTML = `<h2>样本占比</h2><p class="hint">实心扇区面积按纳入套数。图是该组选出的机体；双色优先同一卡表里的两台核心，没有第二台或未知体系时不配凑数图。外侧只标放得下的套数和占比，小扇区看右侧图例。点击扇区或图例可看赛事来源。</p><div class="chart-layout"><div class="pie-stage"><canvas class="pie-canvas" role="img" aria-label="按纳入套数划分的实心饼图，扇区用机体卡图填满"></canvas></div><div class="pie-legend" role="list">${legend}</div></div>`;
+    const canvas = host.querySelector("canvas");
+    const ids = [];
+    layout.sectors.forEach((sector) => sector.parts.forEach((part) => ids.push(part.cardId)));
+    const loaded = await Promise.all(ids.map((cardId) => loadCard(cardId)));
+    if (token !== chartToken) return;
+    const images = new Map();
+    ids.forEach((cardId, index) => { if (loaded[index]) images.set(cardId, loaded[index]); });
+    drawPie(canvas, layout, images);
   }
 
   function link(url, label) {
@@ -288,7 +444,7 @@
       return `<li class="deck-row"><span class="rank rank-${deck.rank === 1 ? "1" : "2"}">${escapeHtml(rank)}</span><span>${escapeHtml(deck.date)}</span><span class="player">${escapeHtml(deck.player)}</span><span class="store">${escapeHtml(deck.store)}</span><span class="mini">${escapeHtml(deck.event_type || "")}</span>${attendance}${link(deck.source_url, "来源")}</li>`;
     }).join("");
     const alternatives = ((group.representative || {}).alternatives || []).map((item) => `<li class="mini">${escapeHtml(displayName(item))} ${escapeHtml(item.card_id)}：${escapeHtml(item.detail || "")}</li>`).join("");
-    $("dialog-body").innerHTML = `${ruleLine(group)}<p>${escapeHtml((group.representative && group.representative.reason) || "")}</p>${alternatives ? `<p class="mini">没有入选的邻近卡</p><ul class="audit-list">${alternatives}</ul>` : ""}<p class="hint">${group.decks.length} 套。同卡表若来自不同赛事，会各算一套。</p><ul class="deck-list">${decks}</ul>`;
+    $("dialog-body").innerHTML = `${ruleLine(group)}<p>${escapeHtml((group.representative && group.representative.reason) || "")}</p>${alternatives ? `<p class="mini">没有入选的邻近卡</p><ul class="audit-list">${alternatives}</ul>` : ""}<p class="hint">${group.decks.length} 套。同卡表若来自不同赛事，会各算一套。</p><p class="mini"><a class="source" href="index.html">返回赛事列表</a></p><ul class="deck-list">${decks}</ul>`;
     $("deck-dialog").showModal();
   }
 
@@ -343,6 +499,29 @@
     $("distribution").addEventListener("click", (event) => {
       const button = event.target.closest("[data-group]");
       if (button) openGroup(button.dataset.group);
+    });
+    $("chart").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-group]");
+      if (button && button.dataset.group) {
+        openGroup(button.dataset.group);
+        return;
+      }
+      const canvas = event.target.closest("canvas");
+      if (!canvas || !canvas._pieLayout) return;
+      const rect = canvas.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) * canvas._pieLayout.width) / rect.width;
+      const y = ((event.clientY - rect.top) * canvas._pieLayout.height) / rect.height;
+      const sector = WeeklyPie.hitSector(canvas._pieLayout, x, y);
+      if (sector) openGroup(sector.name);
+    });
+    let resizeTimer = 0;
+    window.addEventListener("resize", () => {
+      if (!state.report) return;
+      window.clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(() => {
+        const view = currentView();
+        if (view) renderChart(view);
+      }, 150);
     });
     $("dialog-close").addEventListener("click", () => $("deck-dialog").close());
   }

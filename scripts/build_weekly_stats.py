@@ -18,6 +18,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
+from sync_weekly_cards import sync_cards
 from weekly_stats import ROOT as STATS_ROOT, build_report, fingerprint, load_json, write_report
 
 
@@ -36,9 +37,17 @@ def main() -> int:
         if fingerprint(current) != fingerprint(report):
             print("weekly-top.json is stale; run python3 scripts/build_weekly_stats.py", file=sys.stderr)
             return 1
+        missing = sync_cards(STATS_ROOT, current, download=False)
+        if missing:
+            print("missing weekly card images: " + ", ".join(missing), file=sys.stderr)
+            return 1
         print("weekly-top.json matches current inputs")
         return 0
     status = write_report(report, path)
+    missing = sync_cards(STATS_ROOT, report, download=True)
+    if missing:
+        print("missing weekly card images: " + ", ".join(missing), file=sys.stderr)
+        return 1
     japan = report["regions"]["日本"]
     print(
         f"{status} {path} fingerprint={fingerprint(report)[:12]} "

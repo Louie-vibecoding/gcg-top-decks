@@ -9,6 +9,7 @@ import unittest
 from collections import Counter, defaultdict
 from pathlib import Path
 
+import sync_weekly_cards
 import weekly_stats as weekly
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -403,6 +404,12 @@ class WeeklyStatsTest(unittest.TestCase):
         self.assertEqual(result["mode"], "unconfirmed_none")
         self.assertNotIn("cards", result)
         self.assertNotIn("co_occurrence", result)
+
+    def test_representative_card_images_are_local_webp(self):
+        missing = sync_weekly_cards.sync_cards(ROOT, self.report, download=False)
+        self.assertEqual(missing, [])
+        for card_id in sync_weekly_cards.representative_ids(self.report):
+            self.assertNotIn(card_id, PILOTS)
 
     def test_rebuild_fingerprint_is_idempotent(self):
         again = weekly.build_report(ROOT)

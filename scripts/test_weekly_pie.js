@@ -1,6 +1,6 @@
 const assert = require("node:assert/strict");
 const test = require("node:test");
-const { layoutPie, hitSector, CARD_ASPECT } = require("../weekly-pie.js");
+const { layoutPie, hitSector, CARD_ASPECT, focusFor, sourceCrop, frameWindow, HEAD_BOX } = require("../weekly-pie.js");
 
 function group(name, total, extra) {
   return Object.assign({ name, total, percent: "", cards: [], unconfirmed: false }, extra || {});
@@ -81,6 +81,30 @@ test("小扇区不标外侧数字，留下来的标签互不重叠", () => {
     for (let i = 1; i < labels.length; i += 1) {
       assert.ok(labels[i].label.y - labels[i - 1].label.y >= labels[i].label.height + 5);
     }
+  });
+});
+
+test("前五体系的头框整颗落在 5:4 取景窗里并留边", () => {
+  assert.equal(focusFor("NO-SUCH").measured, false);
+  assert.notEqual(focusFor("GD05-033").y, focusFor("GD05-066").y);
+  Object.entries(HEAD_BOX).forEach(([cardId, box]) => {
+    const win = frameWindow(cardId);
+    assert.ok(win.x0 <= box[0] + 1e-9, cardId);
+    assert.ok(win.y0 <= box[1] + 1e-9, cardId);
+    assert.ok(win.x1 >= box[2] - 1e-9, cardId);
+    assert.ok(win.y1 >= box[3] - 1e-9, cardId);
+    const fracW = win.x1 - win.x0;
+    const fracH = win.y1 - win.y0;
+    const pixelAspect = (fracW * 600) / (fracH * 838);
+    assert.ok(Math.abs(pixelAspect - 5 / 4) < 0.03, cardId);
+    assert.ok((box[1] - win.y0) / fracH > 0.04, cardId);
+    assert.ok((win.y1 - box[3]) / fracH > 0.04, cardId);
+    const crop = sourceCrop(600, 838, 0, 0, 0.4, cardId);
+    assert.ok(Math.abs(crop.sw / crop.sh - 600 / 838) < 1e-6, cardId);
+    assert.ok(crop.sx / 600 <= box[0] + 1e-6, cardId);
+    assert.ok(crop.sy / 838 <= box[1] + 1e-6, cardId);
+    assert.ok((crop.sx + crop.sw) / 600 >= box[2] - 1e-6, cardId);
+    assert.ok((crop.sy + crop.sh) / 838 >= box[3] - 1e-6, cardId);
   });
 });
 

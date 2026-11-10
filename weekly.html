@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>每周上位统计 · GCG</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="weekly.css?v=20261110a" />
+</head>
+<body>
+  <a class="skip" href="#summary">跳到本周摘要</a>
+  <div class="site-bridge">
+    <div class="wrap bridge-inner">
+      <a href="index.html">GCG 上位卡组</a>
+      <span aria-hidden="true">/</span>
+      <span>每周上位统计</span>
+      <a class="bridge-back" href="index.html">返回赛事列表</a>
+    </div>
+  </div>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <p class="kicker">同一站点的每周板块 · 冠亚样本</p>
+      <div class="hero-top">
+        <h1>每周上位统计</h1>
+      </div>
+      <p class="lede">按赛事日期的周一至周日汇总已收录的冠军和亚军。默认日本、最近一个已经过完的完整周。套数只表示样本多少，不是强度，也不是全体参赛使用率。</p>
+      <div id="region-switch" class="segment" role="tablist" aria-label="地区"></div>
+      <div class="switch-row">
+        <button type="button" id="prev-view" class="nav-btn">上一档</button>
+        <label class="week-label">
+          <span>周次</span>
+          <select id="view-select" aria-label="选择周次或特别窗口"></select>
+        </label>
+        <button type="button" id="next-view" class="nav-btn">下一档</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <p id="status" class="status" role="status">正在读取统计…</p>
+    <section id="banner" class="banner" hidden></section>
+    <section id="summary" class="summary" aria-label="本周摘要" hidden></section>
+    <div id="display-switch" class="segment display-switch" role="tablist" aria-label="展示方式" hidden>
+      <button type="button" data-display="distribution" aria-selected="true">卡组分布</button>
+      <button type="button" data-display="pie">占比饼图</button>
+    </div>
+    <section id="distribution" class="panel" aria-label="体系分布" hidden></section>
+    <section id="chart" class="panel" aria-label="样本占比" hidden></section>
+    <section id="quarantine" class="panel" aria-label="名次争议" hidden></section>
+    <section id="isolated" class="panel" aria-label="异常隔离" hidden></section>
+    <section id="method" class="panel method" aria-label="口径说明" hidden></section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <p><a href="index.html">返回赛事列表</a>。非官方统计。代表卡图放在站点的 weekly-cards，版权归万代等权利方。更新命令：<code>python3 scripts/build_weekly_stats.py</code></p>
+    </div>
+  </footer>
+
+  <dialog id="deck-dialog">
+    <div class="dialog-head">
+      <h2 id="dialog-title"></h2>
+      <button type="button" id="dialog-close" class="nav-btn">关闭</button>
+    </div>
+    <div id="dialog-body" class="dialog-body"></div>
+  </dialog>
+
+  <script src="weekly-pie.js?v=20261110a"></script>
+  <script src="weekly.js?v=20261110a"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>每周上位统计 · GCG</title>
   <link rel="icon" href="data:," />
-  <link rel="stylesheet" href="weekly.css?v=20261110d" />
+  <link rel="stylesheet" href="weekly.css?v=20261110e" />
 </head>
 <body>
   <a class="skip" href="#summary">跳到本周摘要</a>
@@ -25,14 +25,6 @@
       </div>
       <p class="lede">按赛事日期的周一至周日汇总已收录的冠军和亚军。默认日本、最近一个已经过完的完整周。套数只表示样本多少，不是强度，也不是全体参赛使用率。</p>
       <div id="region-switch" class="segment" role="tablist" aria-label="地区"></div>
-      <div class="switch-row">
-        <button type="button" id="prev-view" class="nav-btn">上一档</button>
-        <label class="week-label">
-          <span>周次</span>
-          <select id="view-select" aria-label="选择周次或特别窗口"></select>
-        </label>
-        <button type="button" id="next-view" class="nav-btn">下一档</button>
-      </div>
     </div>
   </header>
 
@@ -40,9 +32,15 @@
     <p id="status" class="status" role="status">正在读取统计…</p>
     <section id="banner" class="banner" hidden></section>
     <section id="summary" class="summary" aria-label="本周摘要" hidden></section>
-    <div id="display-switch" class="segment display-switch" role="tablist" aria-label="展示方式" hidden>
-      <button type="button" data-display="distribution" aria-selected="true">卡组分布</button>
-      <button type="button" data-display="pie">占比饼图</button>
+    <div id="toolbar" class="toolbar" hidden>
+      <div id="display-switch" class="segment display-switch" role="tablist" aria-label="展示方式">
+        <button type="button" data-display="distribution" aria-selected="true">卡组分布</button>
+        <button type="button" data-display="pie">占比饼图</button>
+      </div>
+      <label class="week-label">
+        <span>周次</span>
+        <select id="view-select" aria-label="选择周次或特别窗口"></select>
+      </label>
     </div>
     <section id="distribution" class="panel" aria-label="体系分布" hidden></section>
     <section id="chart" class="panel" aria-label="样本占比" hidden></section>
@@ -66,6 +64,6 @@
   </dialog>
 
   <script src="weekly-pie.js?v=20261110d"></script>
-  <script src="weekly.js?v=20261110d"></script>
+  <script src="weekly.js?v=20261110e"></script>
 </body>
 </html>

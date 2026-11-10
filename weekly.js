@@ -283,10 +283,18 @@
         ctx.restore();
         return;
       }
-      sector.parts.forEach((part) => {
+      ctx.save();
+      clipWedge(sector.start, sector.end, sector.fullCircle);
+      // 两台机体的裁剪边在中线重叠约 1.5px，盖住抗锯齿露出的白底。重叠只留在本组扇区里。
+      const seam = sector.parts.length > 1 ? 1.5 / layout.r : 0;
+      sector.parts.forEach((part, index) => {
         const image = images.get(part.cardId);
         ctx.save();
-        clipWedge(part.start, part.end, sector.fullCircle && sector.parts.length === 1);
+        if (seam) {
+          const start = index === 0 ? part.start : Math.max(sector.start, part.start - seam);
+          const end = index === sector.parts.length - 1 ? part.end : Math.min(sector.end, part.end + seam);
+          clipWedge(start, end, false);
+        }
         if (!image) {
           missing += 1;
           ctx.fillStyle = "#e7eef6";
@@ -302,8 +310,10 @@
         }
         ctx.restore();
       });
+      ctx.restore();
     });
 
+    // 白线只描不同体系之间的边界，不在同一体系的机体中线再画一条。
     ctx.lineWidth = 2;
     ctx.strokeStyle = "#ffffff";
     ctx.lineJoin = "round";
@@ -317,13 +327,6 @@
         ctx.closePath();
       }
       ctx.stroke();
-      if (sector.parts.length === 2) {
-        const mid = (sector.start + sector.end) / 2;
-        ctx.beginPath();
-        ctx.moveTo(layout.cx, layout.cy);
-        ctx.lineTo(layout.cx + Math.cos(mid) * layout.r, layout.cy + Math.sin(mid) * layout.r);
-        ctx.stroke();
-      }
     });
 
     ctx.strokeStyle = "#7d91ab";

@@ -248,9 +248,13 @@
     canvas.style.aspectRatio = `${layout.width} / ${layout.height}`;
     const ctx = canvas.getContext("2d");
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const theme = getComputedStyle(document.body);
+    const ink = theme.getPropertyValue("--sm-ink").trim() || "#111111";
+    const muted = theme.getPropertyValue("--sm-muted").trim() || "#646c74";
+    const wash = theme.getPropertyValue("--sm-wash").trim() || "#f6f7f8";
     ctx.fillStyle = "#ffffff";
     ctx.fillRect(0, 0, layout.width, layout.height);
-    const font = getComputedStyle(document.body).fontFamily || "sans-serif";
+    const font = theme.fontFamily || "sans-serif";
     let missing = 0;
 
     function clipWedge(start, end, full) {
@@ -269,12 +273,12 @@
       if (!sector.parts.length) {
         ctx.save();
         clipWedge(sector.start, sector.end, sector.fullCircle);
-        ctx.fillStyle = "#e7eef6";
+        ctx.fillStyle = wash;
         ctx.fillRect(layout.cx - layout.r, layout.cy - layout.r, layout.r * 2, layout.r * 2);
         if (sector.sweep > 0.55) {
           const mid = (sector.start + sector.end) / 2;
           const dist = layout.r * 0.55;
-          ctx.fillStyle = "#8a4b12";
+          ctx.fillStyle = ink;
           ctx.font = `700 12px ${font}`;
           ctx.textAlign = "center";
           ctx.textBaseline = "middle";
@@ -297,9 +301,9 @@
         }
         if (!image) {
           missing += 1;
-          ctx.fillStyle = "#e7eef6";
+          ctx.fillStyle = wash;
           ctx.fillRect(part.x, part.y, part.width, part.height);
-          ctx.fillStyle = "#10233f";
+          ctx.fillStyle = ink;
           ctx.font = `700 11px ${font}`;
           ctx.textAlign = "center";
           ctx.textBaseline = "middle";
@@ -329,8 +333,8 @@
       ctx.stroke();
     });
 
-    ctx.strokeStyle = "#7d91ab";
-    ctx.fillStyle = "#10233f";
+    ctx.strokeStyle = muted;
+    ctx.fillStyle = ink;
     ctx.lineWidth = 1;
     ctx.font = `600 ${pieSpec().fontSize}px ${font}`;
     ctx.textBaseline = "middle";

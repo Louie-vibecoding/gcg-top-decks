@@ -195,58 +195,127 @@
     return layout.sectors.find((sector) => angle >= sector.start - 1e-6 && angle <= sector.end + 1e-6) || null;
   }
 
-  // Measured on each weekly-cards print: fraction across and down the full card
-  // where that unit's head sits. Not the geometric center of the card frame.
-  const CARD_FOCUS = {
-    "GD01-003": [0.511, 0.288], "GD01-026": [0.400, 0.312], "GD01-031": [0.589, 0.304],
-    "GD01-035": [0.500, 0.272], "GD01-044": [0.444, 0.240], "GD01-066": [0.411, 0.296],
-    "GD01-086": [0.567, 0.288], "GD02-054": [0.456, 0.216], "GD02-079": [0.456, 0.240],
-    "GD04-003": [0.456, 0.272], "GD04-006": [0.456, 0.344], "GD04-016": [0.622, 0.328],
-    "GD04-050": [0.567, 0.360], "GD05-002": [0.511, 0.312], "GD05-003": [0.567, 0.376],
-    "GD05-004": [0.433, 0.344], "GD05-005": [0.556, 0.288], "GD05-017": [0.433, 0.312],
-    "GD05-027": [0.556, 0.304], "GD05-029": [0.489, 0.280], "GD05-033": [0.578, 0.352],
-    "GD05-049": [0.478, 0.272], "GD05-050": [0.489, 0.296], "GD05-058": [0.500, 0.376],
-    "GD05-066": [0.578, 0.304], "GD05-067": [0.444, 0.304], "GD06-003": [0.444, 0.280],
-    "GD06-033": [0.544, 0.336], "GD06-034": [0.478, 0.336], "GD06-036": [0.611, 0.296],
-    "GD06-041": [0.578, 0.264], "GD06-050": [0.633, 0.288], "GD06-064": [0.511, 0.264],
-    "ST02-001": [0.589, 0.336], "ST03-006": [0.489, 0.272], "ST03-007": [0.600, 0.304],
-    "ST04-001": [0.511, 0.272], "ST09-006": [0.544, 0.288], "ST11-007": [0.644, 0.336],
-    "ST11-009": [0.444, 0.344], "ST12-006": [0.378, 0.344], "ST13-001": [0.544, 0.264],
-    "ST13-006": [0.456, 0.296], "ST14-006": [0.667, 0.272],
+  // Head rectangle on the full card, read off the print: [left, top, right, bottom].
+  // These are the whole head (crest through chin), not a single point on the chest.
+  const HEAD_BOX = {
+    "GD05-033": [0.14, 0.29, 0.38, 0.46],
+    "GD05-066": [0.50, 0.11, 0.76, 0.30],
+    "GD05-017": [0.32, 0.22, 0.56, 0.39],
+    "GD05-029": [0.26, 0.09, 0.48, 0.25],
+    "ST13-001": [0.46, 0.13, 0.64, 0.34],
+    "GD05-049": [0.32, 0.05, 0.48, 0.25],
+    "GD05-002": [0.30, 0.16, 0.50, 0.35],
+    "ST04-001": [0.38, 0.19, 0.62, 0.38],
+    "GD06-033": [0.40, 0.05, 0.64, 0.24],
+    "GD06-064": [0.40, 0.10, 0.62, 0.35],
   };
-  const DEFAULT_FOCUS = { x: 0.50, y: 0.31, measured: false };
+  // 5:4 avatar: fraction width / fraction height on a 600×838 card.
+  const FRAME_RATIO = (5 / 4) * (838 / 600);
 
   function focusFor(cardId) {
-    const row = CARD_FOCUS[cardId];
-    if (!row) return DEFAULT_FOCUS;
-    return { x: row[0], y: row[1], measured: true };
+    const box = HEAD_BOX[cardId];
+    if (!box) return { x: 0.5, y: 0.32, measured: false };
+    return { x: (box[0] + box[2]) / 2, y: (box[1] + box[3]) / 2, measured: true };
   }
 
-  function clamp(value, min, max) {
-    return Math.min(max, Math.max(min, value));
-  }
-
-  // Portrait crop of the real head. Same aspect as the card, so drawing it into
-  // the wedge cover does not squash the art or change the sector's area.
-  // Tighter on narrow slices; the paired legend stays the readable dual portrait.
-  function sourceCrop(imgW, imgH, focusX, focusY, sweep) {
-    const fx = clamp(Number(focusX) || DEFAULT_FOCUS.x, 0.02, 0.98);
-    const fy = clamp(Number(focusY) || DEFAULT_FOCUS.y, 0.02, 0.98);
-    const angle = Math.max(Number(sweep) || 0, 0);
-    const desired = angle >= 1 ? 0.5 : angle >= 0.55 ? 0.42 : angle >= 0.28 ? 0.34 : 0.26;
-    const maxFrac = 2 * Math.min(fx, 1 - fx, fy, 1 - fy);
-    const frac = Math.min(desired, maxFrac * 0.98);
-    const sw = imgW * frac;
-    const sh = imgH * frac;
+  function fitHeadBox(box) {
+    const hh = box[3] - box[1];
+    const hw = box[2] - box[0];
+    let winH = hh / 0.46;
+    let winW = winH * FRAME_RATIO;
+    if (hw / 0.5 > winW) {
+      winW = hw / 0.5;
+      winH = winW / FRAME_RATIO;
+    }
+    let wy0 = box[1] - 0.24 * winH;
+    let wx0 = (box[0] + box[2]) / 2 - winW / 2;
+    let wy1 = wy0 + winH;
+    let wx1 = wx0 + winW;
+    if (wx0 < 0) { wx1 -= wx0; wx0 = 0; }
+    if (wy0 < 0) { wy1 -= wy0; wy0 = 0; }
+    if (wx1 > 1) { wx0 -= wx1 - 1; wx1 = 1; }
+    if (wy1 > 1) { wy0 -= wy1 - 1; wy1 = 1; }
     return {
-      sx: fx * imgW - sw / 2,
-      sy: fy * imgH - sh / 2,
-      sw,
-      sh,
-      focusX: fx,
-      focusY: fy,
+      x0: Math.max(0, wx0),
+      y0: Math.max(0, wy0),
+      x1: Math.min(1, wx1),
+      y1: Math.min(1, wy1),
     };
   }
 
-  return { CARD_ASPECT, CARD_FOCUS, layoutPie, hitSector, focusFor, sourceCrop };
+  function frameWindow(cardId) {
+    if (HEAD_BOX[cardId]) return fitHeadBox(HEAD_BOX[cardId]);
+    const winW = 0.72;
+    const winH = winW / FRAME_RATIO;
+    return { x0: (1 - winW) / 2, y0: 0.1, x1: (1 + winW) / 2, y1: 0.1 + winH };
+  }
+
+  function avatarFrame(cardId) {
+    const win = frameWindow(cardId);
+    const spanX = win.x1 - win.x0;
+    const spanY = win.y1 - win.y0;
+    return {
+      x0: win.x0,
+      y0: win.y0,
+      x1: win.x1,
+      y1: win.y1,
+      fw: 100 / spanX,
+      left: (-win.x0 / spanX) * 100,
+      top: (-win.y0 / spanY) * 100,
+      measured: Boolean(HEAD_BOX[cardId]),
+    };
+  }
+
+  function clampUnit(value) {
+    return Math.min(1, Math.max(0, value));
+  }
+
+  // Card-aspect crop. Measured heads keep the whole crest-to-chin box inside
+  // the source. The wedge may still clip it; the legend uses avatarFrame.
+  function sourceCrop(imgW, imgH, focusX, focusY, sweep, cardId) {
+    const box = HEAD_BOX[cardId];
+    let frac;
+    let cx;
+    let cy;
+    if (box) {
+      const padX = (box[2] - box[0]) * 0.28;
+      const padTop = (box[3] - box[1]) * 0.4;
+      const padBot = (box[3] - box[1]) * 0.7;
+      const x0 = box[0] - padX;
+      const y0 = box[1] - padTop;
+      const x1 = box[2] + padX;
+      const y1 = box[3] + padBot;
+      frac = Math.min(0.7, Math.max(x1 - x0, y1 - y0, 0.34));
+      cx = (Math.max(0, x0) + Math.min(1, x1)) / 2;
+      cy = (Math.max(0, y0) + Math.min(1, y1)) / 2;
+    } else {
+      frac = 0.58;
+      cx = 0.5;
+      cy = 0.34;
+    }
+    let sx = cx - frac / 2;
+    let sy = cy - frac / 2;
+    if (sx < 0) sx = 0;
+    if (sy < 0) sy = 0;
+    if (sx + frac > 1) sx = 1 - frac;
+    if (sy + frac > 1) sy = 1 - frac;
+    if (box) {
+      if (sx > box[0]) sx = Math.max(0, box[0] - 0.02);
+      if (sy > box[1]) sy = Math.max(0, box[1] - 0.02);
+      if (sx + frac < box[2]) frac = Math.min(1, box[2] - sx + 0.02);
+      if (sy + frac < box[3]) frac = Math.min(1, box[3] - sy + 0.02);
+      if (sx + frac > 1) sx = 1 - frac;
+      if (sy + frac > 1) sy = 1 - frac;
+    }
+    return {
+      sx: sx * imgW,
+      sy: sy * imgH,
+      sw: frac * imgW,
+      sh: frac * imgH,
+      focusX: clampUnit(cx),
+      focusY: clampUnit(cy),
+    };
+  }
+
+  return { CARD_ASPECT, HEAD_BOX, layoutPie, hitSector, focusFor, sourceCrop, frameWindow, avatarFrame };
 });

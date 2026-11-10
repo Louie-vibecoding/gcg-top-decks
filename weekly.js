@@ -154,15 +154,12 @@
     ].join("");
   }
 
-  function focusStyle(cardId) {
-    const focus = WeeklyPie.focusFor(cardId);
-    return `--fx:${focus.x};--fy:${focus.y}`;
-  }
-
   function portrait(cardId, alt) {
     const src = cardImage(cardId);
     if (!src) return `<span class="img-fallback">${escapeHtml(cardId)}</span>`;
-    return `<span class="avatar" style="${focusStyle(cardId)}"><img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" width="600" height="838" decoding="sync" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'img-fallback',textContent:this.alt}))" /></span>`;
+    const frame = WeeklyPie.avatarFrame(cardId);
+    const style = `--fw:${frame.fw.toFixed(3)};--left:${frame.left.toFixed(3)};--top:${frame.top.toFixed(3)}`;
+    return `<span class="avatar" style="${style}"><img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" width="600" height="838" decoding="sync" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'img-fallback',textContent:this.alt}))" /></span>`;
   }
 
   function figure(card) {
@@ -300,7 +297,7 @@
           ctx.textBaseline = "middle";
           ctx.fillText(part.name, part.x + part.width / 2, part.y + part.height / 2);
         } else {
-          const crop = WeeklyPie.sourceCrop(image.naturalWidth, image.naturalHeight, part.focusX, part.focusY, part.end - part.start);
+          const crop = WeeklyPie.sourceCrop(image.naturalWidth, image.naturalHeight, part.focusX, part.focusY, part.end - part.start, part.cardId);
           ctx.drawImage(image, crop.sx, crop.sy, crop.sw, crop.sh, part.x, part.y, part.width, part.height);
         }
         ctx.restore();
@@ -377,7 +374,7 @@
       const num = `${group.total}套${group.percent ? ` · ${group.percent}%` : ""}`;
       return `<button type="button" class="pie-legend-item" data-group="${escapeHtml(group.name)}" role="listitem"><span class="pie-icons">${icons}</span><span class="pie-name">${escapeHtml(group.name)} ${badge}</span><span class="pie-num">${escapeHtml(num)}</span></button>`;
     }).join("");
-    host.innerHTML = `<h2>样本占比</h2><p class="hint">实心扇区面积按纳入套数。每片按该机体自己的头部位置取景，双机体各看各的头，不把整张卡从正中一刀裁开。扇区太窄、放不下两张头像时，看右侧图例里的两台；面积和机体都不改。点击扇区或图例可看赛事来源。</p><div class="chart-layout"><div class="pie-stage"><canvas class="pie-canvas" role="img" aria-label="按纳入套数划分的实心饼图，扇区对准各组机体头部"></canvas></div><div class="pie-legend" role="list">${legend}</div></div>`;
+    host.innerHTML = `<h2>样本占比</h2><p class="hint">实心扇区面积按纳入套数。大扇区尽量放进该机体的头；扇区太窄时完整的头看右侧图例，不改面积，也不换机体。点击扇区或图例可看赛事来源。</p><div class="chart-layout"><div class="pie-stage"><canvas class="pie-canvas" role="img" aria-label="按纳入套数划分的实心饼图。窄扇区看右侧图例里的机体头像"></canvas></div><div class="pie-legend" role="list">${legend}</div></div>`;
     const canvas = host.querySelector("canvas");
     const ids = [];
     layout.sectors.forEach((sector) => sector.parts.forEach((part) => ids.push(part.cardId)));

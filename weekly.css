@@ -265,13 +265,12 @@ select {
 }
 .avatar img {
   position: absolute;
-  width: 220%;
+  width: calc(var(--fw, 140) * 1%);
   height: auto;
   max-width: none;
   aspect-ratio: auto;
-  left: 50%;
-  top: 40%;
-  transform: translate(calc(var(--fx, 0.5) * -100%), calc(var(--fy, 0.31) * -100%));
+  left: calc(var(--left, -20) * 1%);
+  top: calc(var(--top, -15) * 1%);
 }
 .rep-note {
   width: 100%;

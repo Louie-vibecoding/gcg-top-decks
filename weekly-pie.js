@@ -208,6 +208,20 @@
     "ST04-001": [0.38, 0.19, 0.62, 0.38],
     "GD06-033": [0.40, 0.05, 0.64, 0.24],
     "GD06-064": [0.40, 0.10, 0.62, 0.35],
+    "ST11-009": [0.22, 0.12, 0.74, 0.40],
+    "GD02-054": [0.30, 0.14, 0.48, 0.30],
+    "ST02-001": [0.24, 0.28, 0.42, 0.44],
+    "GD05-067": [0.42, 0.16, 0.58, 0.28],
+    "GD06-041": [0.48, 0.18, 0.68, 0.34],
+    "GD06-034": [0.20, 0.34, 0.44, 0.50],
+    "GD06-036": [0.42, 0.15, 0.60, 0.32],
+    "GD04-050": [0.42, 0.30, 0.64, 0.48],
+    "GD06-050": [0.60, 0.20, 0.80, 0.38],
+    "ST14-006": [0.66, 0.30, 0.94, 0.50],
+    "GD06-003": [0.32, 0.07, 0.56, 0.26],
+    "GD05-004": [0.46, 0.06, 0.70, 0.26],
+    "GD05-003": [0.40, 0.16, 0.64, 0.34],
+    "GD04-006": [0.30, 0.20, 0.54, 0.40],
   };
   // 5:4 avatar: fraction width / fraction height on a 600×838 card.
   const FRAME_RATIO = (5 / 4) * (838 / 600);
@@ -226,6 +240,14 @@
     if (hw / 0.5 > winW) {
       winW = hw / 0.5;
       winH = winW / FRAME_RATIO;
+    }
+    // A head wider than the card (Kapool's dome) cannot stay at 46% of a
+    // 5:4 window. Shrink to the largest on-card window and keep the ratio,
+    // so the crest-to-chin box stays inside instead of getting clamped flat.
+    if (winW > 1 || winH > 1) {
+      const scale = Math.min(1 / winW, 1 / winH);
+      winW *= scale;
+      winH *= scale;
     }
     let wy0 = box[1] - 0.24 * winH;
     let wx0 = (box[0] + box[2]) / 2 - winW / 2;

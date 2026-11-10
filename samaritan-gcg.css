@@ -1,0 +1,15 @@
+/* Small gaps the shared override does not cover. No image filters, no data colors. */
+body[data-theme="samaritan"] .rank-1 { background: var(--sm-wash); }
+body[data-theme="samaritan"] :is(.event-image img,.deck-photo-wrap img) {
+  border-radius: 2px;
+  filter: none;
+}
+body[data-theme="samaritan"] .photo-note { color: var(--sm-muted); }
+body[data-theme="samaritan"] .card-cell img {
+  background: var(--sm-wash);
+  border-radius: 2px;
+}
+body[data-theme="samaritan"] .avatar img {
+  filter: none;
+  border-radius: 0;
+}

@@ -1,0 +1,104 @@
+/* Load AFTER original styles and samaritan-tokens.css.
+   Opt in with body[data-theme="samaritan"].
+   UI only: no card image recoloring, no COLOR_HEX or dataset edits. */
+body[data-theme="samaritan"] {
+  --bg:var(--sm-bg); --bg-elevated:var(--sm-wash);
+  --bg-card:var(--sm-bg); --bg-card-hover:var(--sm-wash);
+  --border:var(--sm-line); --text:var(--sm-ink); --text-muted:var(--sm-muted);
+  --accent:var(--sm-red); --accent-soft:var(--sm-red-wash);
+  --champ:var(--sm-ink); --runner:var(--sm-muted);
+  --badge-ntc:var(--sm-wash); --badge-serial:var(--sm-wash);
+  --badge-tournament:var(--sm-wash); --badge-cs:var(--sm-red);
+  --badge-official:var(--sm-ink);
+  --ink:var(--sm-ink); --muted:var(--sm-muted); --line:var(--sm-line);
+  --paper:var(--sm-bg); --deep:var(--sm-ink); --deep-2:var(--sm-ink);
+  --gold:var(--sm-ink); --silver:var(--sm-muted); --warn:var(--sm-red);
+  --radius:var(--sm-radius); --shadow:none; --font:var(--sm-sans);
+  background:var(--sm-bg); color:var(--sm-ink); font-family:var(--sm-sans);
+}
+body[data-theme="samaritan"]::before { background:none; mask-image:none; }
+body[data-theme="samaritan"] :is(.site-header,.hero) {
+  background:var(--sm-bg); color:var(--sm-ink);
+}
+body[data-theme="samaritan"] .site-header { border-top:3px solid var(--sm-red); border-bottom:1px solid var(--sm-line); }
+body[data-theme="samaritan"] .site-header h1 { font-size:clamp(28px,3vw,36px); line-height:1.4; letter-spacing:normal; }
+body[data-theme="samaritan"] :is(.subtitle,.lede,.scope-note,.china-note,.event-note,.data-updated,.hint,.reason,.status) { line-height:1.75; }
+body[data-theme="samaritan"] :is(.scope-note,.china-note,.banner) {
+  background:var(--sm-wash); color:var(--sm-muted); border:1px solid var(--sm-line);
+  border-left:3px solid var(--sm-ink); border-radius:0; box-shadow:none;
+}
+body[data-theme="samaritan"] .banner { color:var(--sm-ink); border-left-color:var(--sm-red); }
+body[data-theme="samaritan"] :is(.region-tabs,.segment) {
+  background:var(--sm-bg); border:1px solid var(--sm-line); border-radius:0; padding:0;
+}
+body[data-theme="samaritan"] :is(.tab,.segment button,.type-chip,.deck-type-chip) {
+  border-radius:0; background:var(--sm-bg); color:var(--sm-ink); min-height:44px;
+  border-color:var(--sm-line); box-shadow:none; font-weight:500;
+}
+body[data-theme="samaritan"] :is(.tab:hover,.segment button:hover,.type-chip:hover,.deck-type-chip:hover) { background:var(--sm-wash); color:var(--sm-ink); }
+body[data-theme="samaritan"] :is(.tab.active,.type-chip.active,.deck-type-chip.active,.segment button[aria-selected="true"]) {
+  background:var(--sm-ink); color:#fff; border-color:var(--sm-ink); font-weight:700;
+}
+body[data-theme="samaritan"] .type-chip-count { background:var(--sm-wash); color:var(--sm-muted); border-radius:0; }
+body[data-theme="samaritan"] :is(.type-chip.active,.deck-type-chip.active) .type-chip-count { background:#fff; color:var(--sm-ink); }
+body[data-theme="samaritan"] .deck-type-chip.active .deck-type-chip-label { color:#fff; }
+body[data-theme="samaritan"] .weekly-entry {
+  background:var(--sm-ink); color:#fff; border:1px solid var(--sm-ink); border-radius:0;
+  box-shadow:none; letter-spacing:normal;
+}
+body[data-theme="samaritan"] .weekly-entry:hover { background:var(--sm-red); border-color:var(--sm-red); filter:none; }
+body[data-theme="samaritan"] :is(.weekly-link,.source-link,.source,.back) { color:var(--sm-ink); text-decoration:underline; text-underline-offset:4px; }
+body[data-theme="samaritan"] :is(.weekly-link,.source-link,.source,.back):hover { color:var(--sm-red); }
+body[data-theme="samaritan"] select {
+  background-color:var(--sm-bg); color:var(--sm-ink); border:1px solid var(--sm-control-line);
+  border-radius:2px; min-height:44px;
+}
+body[data-theme="samaritan"] .filter select { background-image:none; appearance:auto; padding-right:12px; }
+body[data-theme="samaritan"] :is(.event-card,.placement,.panel,.tile,dialog,.empty-state) {
+  background:var(--sm-bg); color:var(--sm-ink); border:1px solid var(--sm-line);
+  border-radius:2px; box-shadow:none;
+}
+body[data-theme="samaritan"] .event-card { border-left:2px solid var(--sm-ink); }
+body[data-theme="samaritan"] .event-summary:hover { background:var(--sm-wash); }
+body[data-theme="samaritan"] .event-detail { background:var(--sm-wash); }
+body[data-theme="samaritan"] :is(.event-date,.rank-label,.count-xl,.metric strong,.page-info) { font-variant-numeric:tabular-nums; }
+body[data-theme="samaritan"] :is(.event-card .badge,.badge,.role,.deck-type-badge) {
+  background:var(--sm-wash); color:var(--sm-ink); border:1px solid var(--sm-line);
+  border-radius:2px; box-shadow:none; letter-spacing:normal;
+}
+body[data-theme="samaritan"] .event-card .badge-new { background:var(--sm-ink); color:#fff; border-color:var(--sm-ink); }
+body[data-theme="samaritan"] .badge.warn { background:var(--sm-red-wash); color:var(--sm-red); border-color:var(--sm-red); }
+/* Existing color-swatch inline fills deliberately untouched. */
+body[data-theme="samaritan"] .color-swatch { outline:1px solid #7b838b; outline-offset:0; }
+body[data-theme="samaritan"] .rank-1 { color:var(--sm-ink); font-weight:800; }
+body[data-theme="samaritan"] .rank-2 { color:var(--sm-muted); }
+body[data-theme="samaritan"] .pagination button {
+  background:var(--sm-bg); color:var(--sm-ink); border:1px solid var(--sm-control-line); border-radius:0; min-height:44px;
+}
+body[data-theme="samaritan"] .pagination button:hover:not(:disabled) { background:var(--sm-ink); color:#fff; }
+body[data-theme="samaritan"] :is(button,select):disabled { background:var(--sm-wash); color:var(--sm-muted); cursor:not-allowed; opacity:1; }
+body[data-theme="samaritan"] .site-bridge { background:var(--sm-ink); color:#fff; border-bottom:2px solid var(--sm-red); }
+body[data-theme="samaritan"] .site-bridge a { color:#fff; }
+body[data-theme="samaritan"] :is(.kicker,.band-title) { color:var(--sm-muted); letter-spacing:normal; }
+body[data-theme="samaritan"] .metric {
+  background:var(--sm-bg); color:var(--sm-ink); border:1px solid var(--sm-line); border-top:3px solid var(--sm-ink);
+  border-radius:0; box-shadow:none;
+}
+body[data-theme="samaritan"] .metric span { color:var(--sm-muted); opacity:1; }
+body[data-theme="samaritan"] .metric strong { color:var(--sm-ink); }
+body[data-theme="samaritan"] .metric strong .metric-line { font:inherit; color:inherit; }
+body[data-theme="samaritan"] :is(.art-frame,.avatar,.rep-note-only,.rep-note,.img-fallback) { background:var(--sm-wash); border-color:var(--sm-line); border-radius:2px; }
+/* Do not touch .avatar img positioning/cropping or any card image filter. */
+body[data-theme="samaritan"] .tile:hover { border-color:var(--sm-ink); }
+body[data-theme="samaritan"] .nav-btn { border-radius:0 !important; border-color:var(--sm-control-line) !important; }
+body[data-theme="samaritan"] dialog { border-color:var(--sm-ink); }
+body[data-theme="samaritan"] dialog::backdrop { background:rgba(0,0,0,.45); }
+body[data-theme="samaritan"] :is(.site-footer,.site-foot) { background:var(--sm-bg); color:var(--sm-muted); border-top:1px solid var(--sm-line); }
+body[data-theme="samaritan"] :is(a,button,input,select,summary):focus-visible { outline:3px solid var(--sm-red); outline-offset:3px; }
+@media(max-width:520px){
+  body[data-theme="samaritan"] :is(.container,.wrap) { min-width:0; }
+  body[data-theme="samaritan"] :is(.event-venue,.event-name-line,.copy h3,.scope-note,.lede) { overflow-wrap:anywhere; }
+}
+@media(prefers-reduced-motion:reduce){
+  body[data-theme="samaritan"] * { scroll-behavior:auto; }
+}

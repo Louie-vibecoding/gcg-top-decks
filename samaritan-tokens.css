@@ -1,0 +1,11 @@
+/* Portable tokens. Opt in per page: <body data-theme="samaritan"> */
+body[data-theme="samaritan"] {
+  --sm-bg:#fff; --sm-ink:#111; --sm-muted:#646c74;
+  --sm-line:#dfe3e7; --sm-control-line:#7b838b; --sm-wash:#f6f7f8;
+  --sm-red:#b8172c; --sm-signal:#d0021b; --sm-red-wash:#fff4f5;
+  --sm-sans:'Microsoft YaHei','PingFang SC','Hiragino Sans GB',system-ui,sans-serif;
+  --sm-mono:'IBM Plex Mono','JetBrains Mono',Consolas,'Courier New',monospace;
+  --sm-space-1:4px; --sm-space-2:8px; --sm-space-3:12px;
+  --sm-space-4:16px; --sm-space-5:20px; --sm-space-6:24px;
+  --sm-radius:2px; --sm-focus:3px solid var(--sm-red);
+}

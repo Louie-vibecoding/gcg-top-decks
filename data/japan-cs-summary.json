@@ -3,7 +3,7 @@
   "event_type": "CS",
   "min_date": "2026-08-01",
   "min_entrants": 50,
-  "as_of": "2026-11-09",
+  "as_of": "2026-11-10",
   "total_events": 1,
   "total_decks": 2,
   "events_with_full_lists": 1,
@@ -73,7 +73,8 @@
     "web/X/Tonamel recheck 2026-11-05 (no new qualifying unofficial CS ≥50 found; ARCH bio next 11/8 5on5 team exclude; 11/1 アークCS/からセナCS 3on3 team exclude maintained; UC杯 10/25 29<50 exclude; keyword hits only flat工房大須店 store swiss / カーキン告知)",
     "web/X recheck 2026-11-06 (no new qualifying unofficial CS ≥50 found; ARCH bio next 11/8 5on5 team exclude; 11/5 only 3on3 match video; UC杯 10/25 29<50; karasena meta chatter only; keyword hits shop battles / flat工房小赛 <50)",
     "web/X recheck 2026-11-07 (no new qualifying unofficial CS ≥50 found; ARCH bio next 11/8 5on5 team exclude; 11/7 only LABO collab playmat RT for tomorrow; UC杯 10/25 29<50; karasena meta/店舗予選 only; keyword hits flat工房小赛 <50)",
-    "web/X recheck 2026-11-08 (no new qualifying unofficial CS ≥50 individual; @arch_cs_gcg bio still 次は11月8日5on5; today 第一回アークLABO CS started with 主催発表 総勢190名、協賛紹介は優勝チーム向け、選手投稿も5on5/5ON5in東京・個人優勝報告あり → チーム戦のため不収録；主催公式冠亚チームデッキリストは本確認時点で未投稿；@UCCUP2025 自11-06无新帖、UC杯10/25 29<50不収録维持、bio 次回7/11(3on3)；@karasenaGCG 11/7–11/8 闲聊/地震/店舗予選のみ、11/1 からセナCS 3on3仍チーム戦→不収録；X关键词 アークCS/からセナCS/UC杯/キラキラ杯/GCG CS 優勝/結果 since 11-07 主要为今日アークLABO 5on5 选手战报，其他命中为影之诗/WS非GCG CS；Tonamel org pages not reparsed (historically JS-shell))"
+    "web/X recheck 2026-11-08 (no new qualifying unofficial CS ≥50 individual; @arch_cs_gcg bio still 次は11月8日5on5; today 第一回アークLABO CS started with 主催発表 総勢190名、協賛紹介は優勝チーム向け、選手投稿も5on5/5ON5in東京・個人優勝報告あり → チーム戦のため不収録；主催公式冠亚チームデッキリストは本確認時点で未投稿；@UCCUP2025 自11-06无新帖、UC杯10/25 29<50不収録维持、bio 次回7/11(3on3)；@karasenaGCG 11/7–11/8 闲聊/地震/店舗予選のみ、11/1 からセナCS 3on3仍チーム戦→不収録；X关键词 アークCS/からセナCS/UC杯/キラキラ杯/GCG CS 優勝/結果 since 11-07 主要为今日アークLABO 5on5 选手战报，其他命中为影之诗/WS非GCG CS；Tonamel org pages not reparsed (historically JS-shell))",
+    "web/X recheck 2026-11-10 (no new qualifying unofficial CS ≥50 individual; @arch_cs_gcg bio still 次は12月に個人戦, today/yesterday only 福福トレカ 3on3 match videos; 11/8 アークLABO CS 5on5 remains team exclude, 次回 5on5 2/14; @UCCUP2025 自11-06无新帖、UC杯10/25 29<50不収録维持、bio 次回7/11(3on3)；@karasenaGCG 闲聊/GD07引用/来年5on開催意向，无新CS赛果，11/1 からセナCS 3on3仍チーム戦→不収録；X关键词 アークLABO/アークCS 命中均为 11/8 5on5 战报/RT，からセナ/UC杯/キラキラ杯 无新结果；非公認命中含 燈桜 11/10 9名<50 及其他非GCG/政治；Tonamel org pages not reparsed (historically JS-shell))"
   ],
   "excluded": [
     {
@@ -179,6 +180,7 @@
     "2026-11-06: X @arch_cs_gcg/@UCCUP2025/@karasenaGCG + keyword (GCG/ガンダムカード CS/非公認 優勝/準優勝) since 11-05 — no new ≥50 individual CS with champ+runner lists; team formats remain excluded.",
     "2026-11-07: X @arch_cs_gcg/@UCCUP2025/@karasenaGCG + keyword (GCG/ガンダムカード CS/非公認 優勝/準優勝) since 11-06 — no new ≥50 individual CS with champ+runner lists; team formats remain excluded.",
     "2026-11-08: X @arch_cs_gcg/@UCCUP2025/@karasenaGCG + keyword (アークCS/からセナCS/UC杯/キラキラ杯/GCG CS 優勝/結果) since 11-07 — 第一回 アークLABO CS 11/8 is 5on5 team (190 players announced) and excluded; no new ≥50 individual CS with champ+runner lists; 11/1 アークCS/からセナCS 3on3 and UC杯 10/25 29<50 remain excluded. total_events 維持1（GCG大阪祭）。",
-    "2026-11-09: X @arch_cs_gcg/@UCCUP2025/@karasenaGCG + keyword (アークCS/からセナCS/UC杯/キラキラ杯/GCG CS 優勝/結果) since 11-08 — 第一回 アークLABO CS 11/8 official 冠亚队伍颜色已发但仍为 5on5 团队战（次回 5on5 2/14；bio 次は12月に個人戦）；@UCCUP2025 自 11-06 无新帖、次回 7/11(3on3)；@karasenaGCG 无新 CS 结果；关键词命中均为 アークLABO 5on5 战报/应援，无新 ≥50 个人战民间 CS。11/1 アークCS/からセナCS 3on3 与 UC杯 10/25 29<50 仍排除。total_events 維持1（GCG大阪祭）。"
+    "2026-11-09: X @arch_cs_gcg/@UCCUP2025/@karasenaGCG + keyword (アークCS/からセナCS/UC杯/キラキラ杯/GCG CS 優勝/結果) since 11-08 — 第一回 アークLABO CS 11/8 official 冠亚队伍颜色已发但仍为 5on5 团队战（次回 5on5 2/14；bio 次は12月に個人戦）；@UCCUP2025 自 11-06 无新帖、次回 7/11(3on3)；@karasenaGCG 无新 CS 结果；关键词命中均为 アークLABO 5on5 战报/应援，无新 ≥50 个人战民间 CS。11/1 アークCS/からセナCS 3on3 与 UC杯 10/25 29<50 仍排除。total_events 維持1（GCG大阪祭）。",
+    "2026-11-10: X @arch_cs_gcg/@UCCUP2025/@karasenaGCG + keyword (アークCS/からセナCS/UC杯/キラキラ杯/GCG CS/非公認 優勝/結果) since 11-09 — 第一回 アークLABO CS 11/8 仍为 5on5 团队战（次回 5on5 2/14；bio 次は12月に個人戦）；@UCCUP2025 自 11-06 无新帖、次回 7/11(3on3)；@karasenaGCG 无新 CS 结果；关键词无新 ≥50 个人战民间 CS（燈桜 11/10 非公認 9名<50 不収録）。11/1 アークCS/からセナCS 3on3 与 UC杯 10/25 29<50 仍排除。total_events 維持1（GCG大阪祭）。"
   ]
 }

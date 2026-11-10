@@ -59,30 +59,31 @@ class WeeklyStatsTest(unittest.TestCase):
         self.assertEqual(window["start"], "2026-11-07")
         self.assertEqual(window["end"], "2026-11-08")
         self.assertFalse(window["complete"])
-        self.assertEqual(window["events"], 37)
-        self.assertEqual(window["raw_decks"], 74)
-        self.assertEqual(window["included_decks"], 68)
-        self.assertEqual(window["champions"], 37)
-        self.assertEqual(window["runners_up"], 31)
+        self.assertEqual(window["events"], 38)
+        self.assertEqual(window["raw_decks"], 76)
+        self.assertEqual(window["included_decks"], 70)
+        self.assertEqual(window["champions"], 38)
+        self.assertEqual(window["runners_up"], 32)
         self.assertEqual(window["quarantined_decks"], 6)
-        self.assertEqual(window["unconfirmed_decks"], 7)
-        self.assertEqual(window["group_total_sum"], 68)
+        self.assertEqual(window["unconfirmed_decks"], 8)
+        self.assertEqual(window["group_total_sum"], 70)
         expected = {
-            "蓝绿·ν高达": (15, 6, 9, "22.1"),
-            "红白·机动武斗传": (13, 11, 2, "19.1"),
-            "红白·ZZ高达": (11, 8, 3, "16.2"),
-            "绿紫·新吉翁": (7, 3, 4, "10.3"),
-            "蓝白·强袭自由": (5, 3, 2, "7.4"),
-            "蓝绿·体系待确认": (4, 0, 4, "5.9"),
-            "绿白·飞翼高达": (3, 1, 2, "4.4"),
+            "蓝绿·ν高达": (15, 6, 9, "21.4"),
+            "红白·机动武斗传": (13, 11, 2, "18.6"),
+            "红白·ZZ高达": (11, 8, 3, "15.7"),
+            "绿紫·新吉翁": (8, 4, 4, "11.4"),
+            "蓝白·强袭自由": (5, 3, 2, "7.1"),
+            "蓝绿·体系待确认": (4, 0, 4, "5.7"),
+            "绿白·飞翼高达": (3, 1, 2, "4.3"),
             "红蓝·强袭自由": (2, 2, 0, "2.9"),
             "绿紫·体系待确认": (2, 2, 0, "2.9"),
-            "红白·加拉尔霍恩": (1, 1, 0, "1.5"),
-            "白紫·密涅瓦": (1, 0, 1, "1.5"),
-            "红紫·体系待确认": (1, 0, 1, "1.5"),
-            "绿紫·全装独角兽": (1, 0, 1, "1.5"),
-            "蓝白·GQuuuuuuX": (1, 0, 1, "1.5"),
-            "蓝白·天使号": (1, 0, 1, "1.5"),
+            "红白·加拉尔霍恩": (1, 1, 0, "1.4"),
+            "白紫·密涅瓦": (1, 0, 1, "1.4"),
+            "红紫·体系待确认": (1, 0, 1, "1.4"),
+            "红蓝·体系待确认": (1, 0, 1, "1.4"),
+            "绿紫·全装独角兽": (1, 0, 1, "1.4"),
+            "蓝白·GQuuuuuuX": (1, 0, 1, "1.4"),
+            "蓝白·天使号": (1, 0, 1, "1.4"),
         }
         got = {group["name"]: (group["total"], group["champion"], group["runner_up"], group["percent"]) for group in window["groups"]}
         self.assertEqual(got, expected)
@@ -97,13 +98,13 @@ class WeeklyStatsTest(unittest.TestCase):
         self.assertGreater(week["events"], window["events"])
         self.assertNotEqual(week["included_decks"], window["included_decks"])
         self.assertNotEqual(week["raw_decks"], 72)
-        self.assertEqual(week["events"], 76)
-        self.assertEqual(week["raw_decks"], 152)
-        self.assertEqual(week["included_decks"], 138)
-        self.assertEqual(week["champions"], 76)
-        self.assertEqual(week["runners_up"], 62)
+        self.assertEqual(week["events"], 77)
+        self.assertEqual(week["raw_decks"], 154)
+        self.assertEqual(week["included_decks"], 140)
+        self.assertEqual(week["champions"], 77)
+        self.assertEqual(week["runners_up"], 63)
         self.assertEqual(week["quarantined_decks"], 14)
-        self.assertEqual(week["unconfirmed_decks"], 25)
+        self.assertEqual(week["unconfirmed_decks"], 26)
         self.assertEqual(week["champions"] + week["runners_up"], week["included_decks"])
         self.assertEqual(week["included_decks"] + week["quarantined_decks"], week["raw_decks"])
         dates = {deck["date"] for group in week["groups"] for deck in group["decks"]}
@@ -112,18 +113,18 @@ class WeeklyStatsTest(unittest.TestCase):
         self.assertIn("2026-11-01", self._dates("week:2026-10-26"))
         self.assertNotIn("2026-11-01", dates)
         expected = {
-            "红白·机动武斗传": (32, 22, 10, "23.2"),
-            "蓝绿·ν高达": (22, 9, 13, "15.9"),
-            "绿紫·新吉翁": (17, 8, 9, "12.3"),
-            "蓝白·强袭自由": (13, 7, 6, "9.4"),
-            "红白·ZZ高达": (11, 8, 3, "8.0"),
-            "蓝绿·体系待确认": (8, 4, 4, "5.8"),
-            "绿紫·体系待确认": (7, 6, 1, "5.1"),
+            "红白·机动武斗传": (32, 22, 10, "22.9"),
+            "蓝绿·ν高达": (22, 9, 13, "15.7"),
+            "绿紫·新吉翁": (18, 9, 9, "12.9"),
+            "蓝白·强袭自由": (13, 7, 6, "9.3"),
+            "红白·ZZ高达": (11, 8, 3, "7.9"),
+            "蓝绿·体系待确认": (8, 4, 4, "5.7"),
+            "绿紫·体系待确认": (7, 6, 1, "5.0"),
             "蓝紫·巴巴托斯": (6, 3, 3, "4.3"),
             "绿白·飞翼高达": (5, 3, 2, "3.6"),
-            "红紫·体系待确认": (3, 0, 3, "2.2"),
+            "红紫·体系待确认": (3, 0, 3, "2.1"),
             "红蓝·强袭自由": (2, 2, 0, "1.4"),
-            "红蓝·体系待确认": (2, 1, 1, "1.4"),
+            "红蓝·体系待确认": (3, 1, 2, "2.1"),
             "绿白·体系待确认": (2, 1, 1, "1.4"),
             "蓝紫·体系待确认": (2, 1, 1, "1.4"),
             "红白·加拉尔霍恩": (1, 1, 0, "0.7"),

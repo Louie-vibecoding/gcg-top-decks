@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>每周上位统计 · GCG</title>
   <link rel="icon" href="data:," />
-  <link rel="stylesheet" href="weekly.css?v=20261109c" />
+  <link rel="stylesheet" href="weekly.css?v=20261110a" />
 </head>
 <body>
   <a class="skip" href="#summary">跳到本周摘要</a>
@@ -40,6 +40,10 @@
     <p id="status" class="status" role="status">正在读取统计…</p>
     <section id="banner" class="banner" hidden></section>
     <section id="summary" class="summary" aria-label="本周摘要" hidden></section>
+    <div id="display-switch" class="segment display-switch" role="tablist" aria-label="展示方式" hidden>
+      <button type="button" data-display="distribution" aria-selected="true">卡组分布</button>
+      <button type="button" data-display="pie">占比饼图</button>
+    </div>
     <section id="distribution" class="panel" aria-label="体系分布" hidden></section>
     <section id="chart" class="panel" aria-label="样本占比" hidden></section>
     <section id="quarantine" class="panel" aria-label="名次争议" hidden></section>
@@ -61,7 +65,7 @@
     <div id="dialog-body" class="dialog-body"></div>
   </dialog>
 
-  <script src="weekly-pie.js?v=20261109c"></script>
-  <script src="weekly.js?v=20261109c"></script>
+  <script src="weekly-pie.js?v=20261110a"></script>
+  <script src="weekly.js?v=20261110a"></script>
 </body>
 </html>

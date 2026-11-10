@@ -1,5 +1,5 @@
 {
-  "policy": "默认保守口径：TCG+ 展示的亚军标签可以单独注明，但只要独立渠道写成双全胜或分桌冠军，或缺少亚军的独立佐证，该套就不进入冠亚分母，也不改判成冠军。gcg-stats 可能转引官方页，不算第二独立证据。",
+  "policy": "默认保守口径：名次有冲突的套不进入冠亚分母，也不改判成冠军。已独立核验的 5 套，TCG+ 展示亚军，但独立渠道写成双全胜或分桌冠军，或缺少亚军佐证。另有公开页把站点亚军标成優勝、且同场出现两名優勝的套，只按标签冲突隔离，尚未做独立店铺或选手原帖核验。gcg-stats 可能转引官方页，不算第二独立证据。",
   "entries": [
     {
       "strong_event_id": "01M6TXM9DTBHD37WTSY2AFTPG7",
@@ -70,6 +70,96 @@
       "secondary_url": "https://x.com/TCSCiel/status/2119350999194485098",
       "secondary_author": "TradingCardShop Ciel官方门店",
       "reason": "独立渠道只公布冠军シンゴ与蓝红卡表，没有パー式的亚军或同列全胜证据。实际冠亚口径未核实。"
+    },
+    {
+      "strong_event_id": "01M6DQASKQPHQDBRNN2W52GPP7",
+      "player": "しげ",
+      "stored_rank": 2,
+      "date": "2026-11-02",
+      "store": "Japan TCG Center吉祥寺駅北口店",
+      "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6DQASKQPHQDBRNN2W52GPP7.html",
+      "verification": "公开页名次标签冲突，尚未独立核验",
+      "reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。"
+    },
+    {
+      "strong_event_id": "01M6DTQZ6W657PKMT1BJB11WNX",
+      "player": "しょこみみ",
+      "stored_rank": 2,
+      "date": "2026-11-02",
+      "store": "チェルモサード",
+      "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6DTQZ6W657PKMT1BJB11WNX.html",
+      "verification": "公开页名次标签冲突，尚未独立核验",
+      "reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。"
+    },
+    {
+      "strong_event_id": "01M6DQARGHATTSDR8XGEE238G0",
+      "player": "よしけん",
+      "stored_rank": 2,
+      "date": "2026-11-02",
+      "store": "ドラゴンスター町田店",
+      "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6DQARGHATTSDR8XGEE238G0.html",
+      "verification": "公开页名次标签冲突，尚未独立核验",
+      "reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。"
+    },
+    {
+      "strong_event_id": "01M6G2VPAFQRTXE5CT6BB7CGVH",
+      "player": "パンダザウルス",
+      "stored_rank": 2,
+      "date": "2026-11-03",
+      "store": "コーギーアール大宮駅前店",
+      "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6G2VPAFQRTXE5CT6BB7CGVH.html",
+      "verification": "公开页名次标签冲突，尚未独立核验",
+      "reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。"
+    },
+    {
+      "strong_event_id": "01M6G9R42V9CAP5B5H33SFXZ8T",
+      "player": "たま",
+      "stored_rank": 2,
+      "date": "2026-11-03",
+      "store": "コーギーアール本店",
+      "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6G9R42V9CAP5B5H33SFXZ8T.html",
+      "verification": "公开页名次标签冲突，尚未独立核验",
+      "reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。"
+    },
+    {
+      "strong_event_id": "01M6JW5PFDJPJVF2DC6ZRF6CZ0",
+      "player": "宇宙海賊",
+      "stored_rank": 2,
+      "date": "2026-11-04",
+      "store": "カードショップさくら",
+      "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6JW5PFDJPJVF2DC6ZRF6CZ0.html",
+      "verification": "公开页名次标签冲突，尚未独立核验",
+      "reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。"
+    },
+    {
+      "strong_event_id": "01M6NEJN7XRY5ZHQSMPWFQS79N",
+      "player": "tom",
+      "stored_rank": 2,
+      "date": "2026-11-05",
+      "store": "フルコンプ PLAYERS CENTER 八王子本店",
+      "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6NEJN7XRY5ZHQSMPWFQS79N.html",
+      "verification": "公开页名次标签冲突，尚未独立核验",
+      "reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。"
+    },
+    {
+      "strong_event_id": "01M6R4CBANKCPRJ2FF6WHMX657",
+      "player": "r1o",
+      "stored_rank": 2,
+      "date": "2026-11-06",
+      "store": "トーナメントセンターバトロコ金沢駅前",
+      "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6R4CBANKCPRJ2FF6WHMX657.html",
+      "verification": "公开页名次标签冲突，尚未独立核验",
+      "reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。"
+    },
+    {
+      "strong_event_id": "01M6Z6YB6FV1GRDGMPAM50SGJ5",
+      "player": "オチアス",
+      "stored_rank": 2,
+      "date": "2026-11-08",
+      "store": "トレーディングカードゲームショップ193名駅太閤店",
+      "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6Z6YB6FV1GRDGMPAM50SGJ5.html",
+      "verification": "公开页名次标签冲突，尚未独立核验",
+      "reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。ZZ 本体有 4 张，但双头龙只有 2 张、没有风灵包，也没有哈利配套，即使不隔离也不算红白·ZZ高达。"
     }
   ]
 }

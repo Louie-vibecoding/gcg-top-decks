@@ -44,35 +44,39 @@ class WeeklyStatsTest(unittest.TestCase):
         cls.ctx = weekly.load_context(ROOT)
         cls.records = weekly.collect_records(cls.ctx)
 
-    def test_baseline_file_still_matches_audit_commit_counts(self):
+    def test_daily_refresh_is_kept_and_not_replaced_by_the_old_baseline(self):
+        summary = json.loads((ROOT / "data/japan-summary.json").read_text(encoding="utf-8"))
         info = self.report["meta"]["japan_events_file"]
-        self.assertEqual(info["events"], 1238)
-        self.assertEqual(info["placements"], 2482)
+        self.assertEqual(info["events"], summary["total_events"])
+        self.assertEqual(info["placements"], summary["total_decks"])
+        self.assertGreaterEqual(info["events"], 1246)
+        self.assertGreaterEqual(info["placements"], 2498)
         self.assertEqual(self.report["meta"]["audit_baseline_commit"], weekly.AUDIT_COMMIT)
+        self.assertIn("01M6Z6YB6FV1GRDGMPAM50SGJ5", (ROOT / "data/japan-events.json").read_text(encoding="utf-8"))
 
     def test_special_window_matches_conservative_v2_audit(self):
         window = self._special()
         self.assertEqual(window["start"], "2026-11-07")
         self.assertEqual(window["end"], "2026-11-08")
         self.assertFalse(window["complete"])
-        self.assertEqual(window["events"], 36)
-        self.assertEqual(window["raw_decks"], 72)
-        self.assertEqual(window["included_decks"], 67)
-        self.assertEqual(window["champions"], 36)
+        self.assertEqual(window["events"], 37)
+        self.assertEqual(window["raw_decks"], 74)
+        self.assertEqual(window["included_decks"], 68)
+        self.assertEqual(window["champions"], 37)
         self.assertEqual(window["runners_up"], 31)
-        self.assertEqual(window["quarantined_decks"], 5)
+        self.assertEqual(window["quarantined_decks"], 6)
         self.assertEqual(window["unconfirmed_decks"], 7)
-        self.assertEqual(window["group_total_sum"], 67)
+        self.assertEqual(window["group_total_sum"], 68)
         expected = {
-            "蓝绿·ν高达": (14, 5, 9, "20.9"),
-            "红白·机动武斗传": (13, 11, 2, "19.4"),
-            "红白·ZZ高达": (11, 8, 3, "16.4"),
-            "绿紫·新吉翁": (7, 3, 4, "10.4"),
-            "蓝白·强袭自由": (5, 3, 2, "7.5"),
-            "蓝绿·体系待确认": (4, 0, 4, "6.0"),
-            "绿白·飞翼高达": (3, 1, 2, "4.5"),
-            "红蓝·强袭自由": (2, 2, 0, "3.0"),
-            "绿紫·体系待确认": (2, 2, 0, "3.0"),
+            "蓝绿·ν高达": (15, 6, 9, "22.1"),
+            "红白·机动武斗传": (13, 11, 2, "19.1"),
+            "红白·ZZ高达": (11, 8, 3, "16.2"),
+            "绿紫·新吉翁": (7, 3, 4, "10.3"),
+            "蓝白·强袭自由": (5, 3, 2, "7.4"),
+            "蓝绿·体系待确认": (4, 0, 4, "5.9"),
+            "绿白·飞翼高达": (3, 1, 2, "4.4"),
+            "红蓝·强袭自由": (2, 2, 0, "2.9"),
+            "绿紫·体系待确认": (2, 2, 0, "2.9"),
             "红白·加拉尔霍恩": (1, 1, 0, "1.5"),
             "白紫·密涅瓦": (1, 0, 1, "1.5"),
             "红紫·体系待确认": (1, 0, 1, "1.5"),
@@ -93,11 +97,65 @@ class WeeklyStatsTest(unittest.TestCase):
         self.assertGreater(week["events"], window["events"])
         self.assertNotEqual(week["included_decks"], window["included_decks"])
         self.assertNotEqual(week["raw_decks"], 72)
+        self.assertEqual(week["events"], 76)
+        self.assertEqual(week["raw_decks"], 152)
+        self.assertEqual(week["included_decks"], 138)
+        self.assertEqual(week["champions"], 76)
+        self.assertEqual(week["runners_up"], 62)
+        self.assertEqual(week["quarantined_decks"], 14)
+        self.assertEqual(week["unconfirmed_decks"], 25)
+        self.assertEqual(week["champions"] + week["runners_up"], week["included_decks"])
+        self.assertEqual(week["included_decks"] + week["quarantined_decks"], week["raw_decks"])
         dates = {deck["date"] for group in week["groups"] for deck in group["decks"]}
         self.assertTrue(dates)
         self.assertTrue(all("2026-11-02" <= day <= "2026-11-08" for day in dates))
         self.assertIn("2026-11-01", self._dates("week:2026-10-26"))
         self.assertNotIn("2026-11-01", dates)
+        expected = {
+            "红白·机动武斗传": (32, 22, 10, "23.2"),
+            "蓝绿·ν高达": (22, 9, 13, "15.9"),
+            "绿紫·新吉翁": (17, 8, 9, "12.3"),
+            "蓝白·强袭自由": (13, 7, 6, "9.4"),
+            "红白·ZZ高达": (11, 8, 3, "8.0"),
+            "蓝绿·体系待确认": (8, 4, 4, "5.8"),
+            "绿紫·体系待确认": (7, 6, 1, "5.1"),
+            "蓝紫·巴巴托斯": (6, 3, 3, "4.3"),
+            "绿白·飞翼高达": (5, 3, 2, "3.6"),
+            "红紫·体系待确认": (3, 0, 3, "2.2"),
+            "红蓝·强袭自由": (2, 2, 0, "1.4"),
+            "红蓝·体系待确认": (2, 1, 1, "1.4"),
+            "绿白·体系待确认": (2, 1, 1, "1.4"),
+            "蓝紫·体系待确认": (2, 1, 1, "1.4"),
+            "红白·加拉尔霍恩": (1, 1, 0, "0.7"),
+            "白紫·密涅瓦": (1, 0, 1, "0.7"),
+            "红白·体系待确认": (1, 0, 1, "0.7"),
+            "绿紫·全装独角兽": (1, 0, 1, "0.7"),
+            "蓝白·GQuuuuuuX": (1, 0, 1, "0.7"),
+            "蓝白·天使号": (1, 0, 1, "0.7"),
+        }
+        got = {
+            group["name"]: (group["total"], group["champion"], group["runner_up"], group["percent"])
+            for group in week["groups"]
+        }
+        self.assertEqual(got, expected)
+        barbatos = next(group for group in week["groups"] if group["name"] == "蓝紫·巴巴托斯")
+        self.assertEqual(
+            [card["card_id"] for card in barbatos["representative"]["cards"]],
+            ["GD02-054", "GD05-002"],
+        )
+        quarantined_ids = {row["strong_event_id"] for row in week["quarantine"]}
+        for sid in (
+            "01M6DQASKQPHQDBRNN2W52GPP7",
+            "01M6DTQZ6W657PKMT1BJB11WNX",
+            "01M6DQARGHATTSDR8XGEE238G0",
+            "01M6G2VPAFQRTXE5CT6BB7CGVH",
+            "01M6G9R42V9CAP5B5H33SFXZ8T",
+            "01M6JW5PFDJPJVF2DC6ZRF6CZ0",
+            "01M6NEJN7XRY5ZHQSMPWFQS79N",
+            "01M6R4CBANKCPRJ2FF6WHMX657",
+            "01M6Z6YB6FV1GRDGMPAM50SGJ5",
+        ):
+            self.assertIn(sid, quarantined_ids)
 
     def test_opening_week_is_partial(self):
         first = self.japan["weeks"][0]
@@ -127,21 +185,26 @@ class WeeklyStatsTest(unittest.TestCase):
             for group in window["groups"]
             for deck in group["decks"]
         }
-        self.assertEqual(len(window["quarantine"]), 5)
+        self.assertEqual(len(window["quarantine"]), 6)
+        verified = [row for row in window["quarantine"] if row["verification"] == "实际冠亚口径未核实"]
+        pending = [row for row in window["quarantine"] if row["verification"] == "公开页名次标签冲突，尚未独立核验"]
+        self.assertEqual(len(verified), 5)
+        self.assertEqual([row["player"] for row in pending], ["オチアス"])
         for row in window["quarantine"]:
             self.assertFalse(row["chart_included"])
-            self.assertEqual(row["verification"], "实际冠亚口径未核实")
             self.assertEqual(row["stored_rank"], 2)
             self.assertNotIn((row["strong_event_id"], row["player"]), included_players)
+        for row in verified:
             self.assertTrue(row["official_url"].startswith("https://"))
             self.assertTrue(row["secondary_url"].startswith("https://"))
+        self.assertNotIn("official_url", pending[0])
         champions = {
             deck["player"]
             for group in window["groups"]
             for deck in group["decks"]
             if deck["rank"] == 1 and deck["strong_event_id"] in {row["strong_event_id"] for row in window["quarantine"]}
         }
-        self.assertEqual(champions, {"ウキョウ", "ドフィ", "あまと", "ショウマ", "シンゴ"})
+        self.assertEqual(champions, {"ウキョウ", "ドフィ", "あまと", "ショウマ", "シンゴ", "げーしー"})
         self.assertEqual(self.report["meta"]["quarantine_unmatched"], [])
 
     def test_dedup_does_not_merge_distinct_events_or_double_count(self):
@@ -267,6 +330,21 @@ class WeeklyStatsTest(unittest.TestCase):
         self.assertEqual(weekly.classify_deck(horn_counts, "红白", rules)["name"], "红白·加拉尔霍恩")
         self.assertTrue(weekly.classify_deck({"GD06-033": 2}, "红白", rules)["unconfirmed"])
         self.assertEqual(weekly.classify_deck({"GD06-033": 2}, "红白", rules)["name"], "红白·体系待确认")
+        self.assertTrue(weekly.classify_deck({"GD06-033": 4}, "红白", rules)["unconfirmed"])
+        self.assertEqual(
+            weekly.classify_deck({"GD06-033": 3, "GD06-064": 3}, "红白", rules)["name"],
+            "红白·ZZ高达",
+        )
+        self.assertTrue(weekly.classify_deck({"GD06-033": 3, "GD06-064": 3}, "蓝白", rules)["unconfirmed"])
+        barbatos = {
+            "GD02-054": 3,
+            "GD03-056": 3,
+            "ST05-010": 3,
+            "GD05-002": 3,
+            "GD05-081": 3,
+        }
+        self.assertEqual(weekly.classify_deck(barbatos, "蓝紫", rules)["name"], "蓝紫·巴巴托斯")
+        self.assertNotEqual(weekly.classify_deck(barbatos, "蓝白", rules)["name"], "蓝紫·巴巴托斯")
         tied_rules = [
             {"name": "甲体系", "color": "红", "minimum_cards": {"A": 3, "B": 3}, "representative_card": "A"},
             {"name": "乙体系", "color": "红", "minimum_cards": {"C": 3, "D": 3}, "representative_card": "C"},

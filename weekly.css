@@ -115,6 +115,7 @@ h1 {
   padding: 0 16px;
   cursor: pointer;
 }
+.display-switch { margin: 0 0 12px; }
 .segment button[aria-selected="true"] {
   background: linear-gradient(135deg, var(--deep), var(--deep-2));
   color: #fff;

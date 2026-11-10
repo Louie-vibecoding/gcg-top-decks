@@ -6,7 +6,7 @@
   const imageCache = new Map();
   let chartToken = 0;
 
-  const state = { report: null, region: "日本", viewId: "" };
+  const state = { report: null, region: "日本", viewId: "", display: "distribution" };
   const $ = (id) => document.getElementById(id);
 
   function escapeHtml(value) {
@@ -135,8 +135,12 @@
     const meta = state.report.meta;
     const kind = view.kind === "special" ? "特别窗口" : (view.complete ? "完整周" : "非完整周");
     $("summary").hidden = false;
-    $("distribution").hidden = false;
     $("method").hidden = false;
+    const switcher = $("display-switch");
+    switcher.hidden = false;
+    switcher.querySelectorAll("[data-display]").forEach((button) => {
+      button.setAttribute("aria-selected", button.dataset.display === state.display ? "true" : "false");
+    });
     $("summary").innerHTML = [
       metric("日期", [view.start, `至 ${view.end}`], true),
       metric("地区", [state.region, kind], true),
@@ -422,7 +426,7 @@
       <p>${escapeHtml(meta.attendance_policy || "")}</p>
       <p>${escapeHtml(meta.baseline_note || "")} 当前店赛文件 ${escapeHtml(String((meta.japan_events_file || {}).events || ""))} 场 / ${escapeHtml(String((meta.japan_events_file || {}).placements || ""))} 条名次。</p>
       <p>团队赛已排除 ${escapeHtml(String((meta.excluded_team_events || []).length))} 场。官方 1on1 只计冠亚，不把淘汰赛其余名次算进分布。生成于 ${escapeHtml(meta.generated_at_label || "")}。</p>
-      <p>代表图先取规则里的两台机体；只有一张核心时，才看组内同场、投入张数和是不是通用外挂。同一机体的不同形态不拼成两张。未知体系不借用别的体系的代表。</p>`;
+      <p>卡组分布和占比饼图用的是同一份套数。代表图先取规则里的两台机体；只有一张核心时，才看组内同场、投入张数和是不是通用外挂。同一机体的不同形态不拼成两张。未知体系不借用别的体系的代表。切换展示时只保留当前这一屏的大图。</p>`;
   }
 
   function ruleLine(group) {
@@ -448,6 +452,30 @@
     $("deck-dialog").showModal();
   }
 
+  function renderActiveDisplay(view) {
+    const dist = $("distribution");
+    const chart = $("chart");
+    if (!view.groups.length) {
+      chartToken += 1;
+      chart.hidden = true;
+      chart.innerHTML = "";
+      renderDistribution(view);
+      dist.hidden = false;
+      return;
+    }
+    if (state.display === "pie") {
+      dist.hidden = true;
+      dist.innerHTML = "";
+      renderChart(view);
+      return;
+    }
+    chartToken += 1;
+    chart.hidden = true;
+    chart.innerHTML = "";
+    renderDistribution(view);
+    dist.hidden = false;
+  }
+
   function render() {
     const view = currentView();
     $("status").textContent = view ? `${state.region} · ${view.title || optionLabel(view)}` : "没有这一档数据";
@@ -455,12 +483,11 @@
     renderSwitch();
     renderBanner(view);
     renderSummary(view);
-    renderDistribution(view);
-    renderChart(view);
+    renderActiveDisplay(view);
     renderQuarantine(view);
     renderIsolated(view);
     renderMethod(view);
-    const params = new URLSearchParams({ region: state.region, view: state.viewId });
+    const params = new URLSearchParams({ region: state.region, view: state.viewId, display: state.display });
     history.replaceState(null, "", `?${params.toString()}`);
   }
 
@@ -480,6 +507,12 @@
   }
 
   function bind() {
+    $("display-switch").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-display]");
+      if (!button || button.dataset.display === state.display) return;
+      state.display = button.dataset.display;
+      render();
+    });
     $("region-switch").addEventListener("click", (event) => {
       const button = event.target.closest("[data-region]");
       if (button) setRegion(button.dataset.region);
@@ -537,6 +570,7 @@
       state.region = state.report.regions[region] ? region : (state.report.meta.default_region || "日本");
       const requested = params.get("view");
       state.viewId = findView(state.region, requested) ? requested : state.report.regions[state.region].default_view;
+      state.display = params.get("display") === "pie" ? "pie" : "distribution";
       render();
     } catch (err) {
       $("status").textContent = "统计没有载入。请从站点根目录打开 weekly.html。";

@@ -154,12 +154,29 @@ def _rule_spec(rule: dict):
     return (len(minimum), sum(int(v) for v in minimum.values()))
 
 
+def _minimum_met(counts: dict, minimum: dict) -> bool:
+    return all(counts.get(cid, 0) >= int(need) for cid, need in (minimum or {}).items())
+
+
+def _rule_matches(rule: dict, counts: dict, deck_type: str) -> bool:
+    """Color has to agree, then every required card, then one support package if the rule lists any."""
+    rule_color = (rule.get("color") or "").strip()
+    deck_color = (deck_type or "").strip()
+    if rule_color and rule_color != deck_color:
+        return False
+    if not _minimum_met(counts, rule.get("minimum_cards") or {}):
+        return False
+    support = rule.get("support_any") or []
+    if support and not any(_minimum_met(counts, group) for group in support):
+        return False
+    return True
+
+
 def classify_deck(counts: dict, deck_type: str, rules: list) -> dict:
     """Match the most specific card-count rule. Equal specificity is not guessed."""
     hits = []
     for rule in rules:
-        minimum = rule["minimum_cards"]
-        if all(counts.get(cid, 0) >= int(need) for cid, need in minimum.items()):
+        if _rule_matches(rule, counts, deck_type):
             hits.append(rule)
     if not hits:
         color = (deck_type or "").strip() or "颜色未标注"
@@ -763,7 +780,7 @@ def _quarantine_public(record: dict) -> dict:
             "source_url": record.get("source_url") or entry.get("gcg_stats_url") or "",
             "would_be_archetype": record.get("archetype") or "",
             "chart_included": False,
-            "verification": "实际冠亚口径未核实",
+            "verification": entry.get("verification") or "实际冠亚口径未核实",
         }
     )
     return entry

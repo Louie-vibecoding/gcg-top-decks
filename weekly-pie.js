@@ -26,7 +26,15 @@
       const start = angle;
       const end = angle + sweep;
       angle = end;
-      const cards = (group.cards || []).filter((card) => card && card.card_id).slice(0, 2);
+      const cards = (group.cards || []).filter((card) => card && card.card_id).slice(0, 2).map((card) => {
+        const known = focusFor(card.card_id);
+        return {
+          card_id: card.card_id,
+          name: card.name,
+          focusX: card.focusX == null ? known.x : card.focusX,
+          focusY: card.focusY == null ? known.y : card.focusY,
+        };
+      });
       const percent = percentText(group.percent);
       return {
         name: group.name || "",
@@ -90,6 +98,8 @@
     return {
       cardId: card.card_id,
       name: card.name || card.card_id,
+      focusX: card.focusX,
+      focusY: card.focusY,
       start,
       end,
       x: px - coverW / 2,
@@ -185,5 +195,58 @@
     return layout.sectors.find((sector) => angle >= sector.start - 1e-6 && angle <= sector.end + 1e-6) || null;
   }
 
-  return { CARD_ASPECT, layoutPie, hitSector };
+  // Measured on each weekly-cards print: fraction across and down the full card
+  // where that unit's head sits. Not the geometric center of the card frame.
+  const CARD_FOCUS = {
+    "GD01-003": [0.511, 0.288], "GD01-026": [0.400, 0.312], "GD01-031": [0.589, 0.304],
+    "GD01-035": [0.500, 0.272], "GD01-044": [0.444, 0.240], "GD01-066": [0.411, 0.296],
+    "GD01-086": [0.567, 0.288], "GD02-054": [0.456, 0.216], "GD02-079": [0.456, 0.240],
+    "GD04-003": [0.456, 0.272], "GD04-006": [0.456, 0.344], "GD04-016": [0.622, 0.328],
+    "GD04-050": [0.567, 0.360], "GD05-002": [0.511, 0.312], "GD05-003": [0.567, 0.376],
+    "GD05-004": [0.433, 0.344], "GD05-005": [0.556, 0.288], "GD05-017": [0.433, 0.312],
+    "GD05-027": [0.556, 0.304], "GD05-029": [0.489, 0.280], "GD05-033": [0.578, 0.352],
+    "GD05-049": [0.478, 0.272], "GD05-050": [0.489, 0.296], "GD05-058": [0.500, 0.376],
+    "GD05-066": [0.578, 0.304], "GD05-067": [0.444, 0.304], "GD06-003": [0.444, 0.280],
+    "GD06-033": [0.544, 0.336], "GD06-034": [0.478, 0.336], "GD06-036": [0.611, 0.296],
+    "GD06-041": [0.578, 0.264], "GD06-050": [0.633, 0.288], "GD06-064": [0.511, 0.264],
+    "ST02-001": [0.589, 0.336], "ST03-006": [0.489, 0.272], "ST03-007": [0.600, 0.304],
+    "ST04-001": [0.511, 0.272], "ST09-006": [0.544, 0.288], "ST11-007": [0.644, 0.336],
+    "ST11-009": [0.444, 0.344], "ST12-006": [0.378, 0.344], "ST13-001": [0.544, 0.264],
+    "ST13-006": [0.456, 0.296], "ST14-006": [0.667, 0.272],
+  };
+  const DEFAULT_FOCUS = { x: 0.50, y: 0.31, measured: false };
+
+  function focusFor(cardId) {
+    const row = CARD_FOCUS[cardId];
+    if (!row) return DEFAULT_FOCUS;
+    return { x: row[0], y: row[1], measured: true };
+  }
+
+  function clamp(value, min, max) {
+    return Math.min(max, Math.max(min, value));
+  }
+
+  // Portrait crop of the real head. Same aspect as the card, so drawing it into
+  // the wedge cover does not squash the art or change the sector's area.
+  // Tighter on narrow slices; the paired legend stays the readable dual portrait.
+  function sourceCrop(imgW, imgH, focusX, focusY, sweep) {
+    const fx = clamp(Number(focusX) || DEFAULT_FOCUS.x, 0.02, 0.98);
+    const fy = clamp(Number(focusY) || DEFAULT_FOCUS.y, 0.02, 0.98);
+    const angle = Math.max(Number(sweep) || 0, 0);
+    const desired = angle >= 1 ? 0.5 : angle >= 0.55 ? 0.42 : angle >= 0.28 ? 0.34 : 0.26;
+    const maxFrac = 2 * Math.min(fx, 1 - fx, fy, 1 - fy);
+    const frac = Math.min(desired, maxFrac * 0.98);
+    const sw = imgW * frac;
+    const sh = imgH * frac;
+    return {
+      sx: fx * imgW - sw / 2,
+      sy: fy * imgH - sh / 2,
+      sw,
+      sh,
+      focusX: fx,
+      focusY: fy,
+    };
+  }
+
+  return { CARD_ASPECT, CARD_FOCUS, layoutPie, hitSector, focusFor, sourceCrop };
 });

@@ -1,6 +1,6 @@
 const assert = require("node:assert/strict");
 const test = require("node:test");
-const { layoutPie, hitSector, CARD_ASPECT } = require("../weekly-pie.js");
+const { layoutPie, hitSector, CARD_ASPECT, focusFor, sourceCrop, CARD_FOCUS } = require("../weekly-pie.js");
 
 function group(name, total, extra) {
   return Object.assign({ name, total, percent: "", cards: [], unconfirmed: false }, extra || {});
@@ -82,6 +82,36 @@ test("小扇区不标外侧数字，留下来的标签互不重叠", () => {
       assert.ok(labels[i].label.y - labels[i - 1].label.y >= labels[i].label.height + 5);
     }
   });
+});
+
+test("每张卡的取景以自己的头部为中心，窄扇区只是缩得更紧", () => {
+  const master = focusFor("GD05-033");
+  const wing = focusFor("ST02-001");
+  assert.notEqual(master.x, wing.x);
+  assert.equal(master.measured, true);
+  assert.equal(focusFor("NO-SUCH").measured, false);
+  [0.2, 0.7, 1.4].forEach((sweep) => {
+    Object.entries(CARD_FOCUS).forEach(([cardId, point]) => {
+      const crop = sourceCrop(600, 838, point[0], point[1], sweep);
+      assert.ok(Math.abs(crop.sw / crop.sh - 600 / 838) < 1e-9, cardId);
+      assert.ok(crop.sx >= -1e-6 && crop.sy >= -1e-6, cardId);
+      assert.ok(crop.sx + crop.sw <= 600 + 1e-6, cardId);
+      assert.ok(crop.sy + crop.sh <= 838 + 1e-6, cardId);
+      const cx = crop.sx + crop.sw / 2;
+      const cy = crop.sy + crop.sh / 2;
+      assert.ok(Math.abs(cx / 600 - point[0]) < 1e-9, cardId);
+      assert.ok(Math.abs(cy / 838 - point[1]) < 1e-9, cardId);
+    });
+  });
+  const wide = sourceCrop(600, 838, master.x, master.y, 1.2);
+  const thin = sourceCrop(600, 838, master.x, master.y, 0.16);
+  assert.ok(thin.sw < wide.sw);
+  const layout = layoutPie([
+    group("双机", 20, { cards: [{ card_id: "GD05-033" }, { card_id: "GD05-066" }] }),
+  ], { minSweep: 0 });
+  assert.equal(layout.sectors[0].parts[0].focusY, focusFor("GD05-033").y);
+  assert.equal(layout.sectors[0].parts[1].focusY, focusFor("GD05-066").y);
+  assert.notEqual(layout.sectors[0].parts[0].focusY, layout.sectors[0].parts[1].focusY);
 });
 
 test("点击落在扇区内部才命中对应体系", () => {

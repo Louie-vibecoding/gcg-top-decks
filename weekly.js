@@ -154,13 +154,21 @@
     ].join("");
   }
 
+  function focusStyle(cardId) {
+    const focus = WeeklyPie.focusFor(cardId);
+    return `--fx:${focus.x};--fy:${focus.y}`;
+  }
+
+  function portrait(cardId, alt) {
+    const src = cardImage(cardId);
+    if (!src) return `<span class="img-fallback">${escapeHtml(cardId)}</span>`;
+    return `<span class="avatar" style="${focusStyle(cardId)}"><img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" width="600" height="838" decoding="sync" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'img-fallback',textContent:this.alt}))" /></span>`;
+  }
+
   function figure(card) {
-    const src = cardImage(card.card_id);
     const name = displayName(card);
     const avg = avgCopies(card);
-    const img = src
-      ? `<img src="${escapeHtml(src)}" alt="${escapeHtml(name + " " + card.card_id)}" width="600" height="838" decoding="sync" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-fallback',textContent:this.alt}))" />`
-      : `<div class="img-fallback">${escapeHtml(card.card_id)}</div>`;
+    const img = portrait(card.card_id, name + " " + card.card_id);
     return { img, caption: `<figcaption><span class="role">${escapeHtml(ROLE[card.role] || "机体")}</span><span class="cname">${escapeHtml(name)}</span><span class="cid">${escapeHtml(card.card_id)}${avg ? ` · 平均 ${escapeHtml(avg)} 张` : ""}</span><span class="mini">${escapeHtml(String(card.decks_with_card))}/${escapeHtml(String(card.group_size))} 套有这张</span></figcaption>` };
   }
 
@@ -226,7 +234,7 @@
     const src = cardImage(card.card_id);
     const name = displayName(card);
     if (!src) return `<span class="pie-ph">无图</span>`;
-    return `<img src="${escapeHtml(src)}" alt="${escapeHtml(name)}" width="600" height="838" decoding="sync" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'pie-ph',textContent:this.alt}))" />`;
+    return portrait(card.card_id, name);
   }
 
   function pieSpec() {
@@ -292,7 +300,8 @@
           ctx.textBaseline = "middle";
           ctx.fillText(part.name, part.x + part.width / 2, part.y + part.height / 2);
         } else {
-          ctx.drawImage(image, part.x, part.y, part.width, part.height);
+          const crop = WeeklyPie.sourceCrop(image.naturalWidth, image.naturalHeight, part.focusX, part.focusY, part.end - part.start);
+          ctx.drawImage(image, crop.sx, crop.sy, crop.sw, crop.sh, part.x, part.y, part.width, part.height);
         }
         ctx.restore();
       });
@@ -368,7 +377,7 @@
       const num = `${group.total}套${group.percent ? ` · ${group.percent}%` : ""}`;
       return `<button type="button" class="pie-legend-item" data-group="${escapeHtml(group.name)}" role="listitem"><span class="pie-icons">${icons}</span><span class="pie-name">${escapeHtml(group.name)} ${badge}</span><span class="pie-num">${escapeHtml(num)}</span></button>`;
     }).join("");
-    host.innerHTML = `<h2>样本占比</h2><p class="hint">实心扇区面积按纳入套数。图是该组选出的机体；双色优先同一卡表里的两台核心，没有第二台或未知体系时不配凑数图。外侧只标放得下的套数和占比，小扇区看右侧图例。点击扇区或图例可看赛事来源。</p><div class="chart-layout"><div class="pie-stage"><canvas class="pie-canvas" role="img" aria-label="按纳入套数划分的实心饼图，扇区用机体卡图填满"></canvas></div><div class="pie-legend" role="list">${legend}</div></div>`;
+    host.innerHTML = `<h2>样本占比</h2><p class="hint">实心扇区面积按纳入套数。每片按该机体自己的头部位置取景，双机体各看各的头，不把整张卡从正中一刀裁开。扇区太窄、放不下两张头像时，看右侧图例里的两台；面积和机体都不改。点击扇区或图例可看赛事来源。</p><div class="chart-layout"><div class="pie-stage"><canvas class="pie-canvas" role="img" aria-label="按纳入套数划分的实心饼图，扇区对准各组机体头部"></canvas></div><div class="pie-legend" role="list">${legend}</div></div>`;
     const canvas = host.querySelector("canvas");
     const ids = [];
     layout.sectors.forEach((sector) => sector.parts.forEach((part) => ids.push(part.cardId)));

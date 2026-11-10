@@ -214,6 +214,7 @@ select {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 12px;
+  align-items: start;
 }
 .tile {
   display: block;
@@ -234,7 +235,7 @@ select {
 .tile-body { min-width: 0; }
 .tile.lead .tile-body {
   display: grid;
-  grid-template-columns: minmax(0, 250px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
   gap: 12px;
   align-items: center;
 }
@@ -242,21 +243,41 @@ select {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 8px;
+  align-items: start;
   min-width: 0;
   padding: 8px;
   border-radius: 14px;
   background: #f4f7fb;
   border: 1px solid rgba(22, 54, 110, 0.12);
 }
-.art-frame img, .rep-note {
+/* The card file is 600×838. As a grid item, min-height:auto kept that
+   intrinsic height and object-fit then sliced a 112×838 strip of the torso.
+   The avatar box sets the size; the photo is only a head-centered crop inside it. */
+.avatar {
+  position: relative;
+  display: block;
   width: 100%;
-  aspect-ratio: 600 / 838;
+  aspect-ratio: 5 / 4;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #e7eef6;
+  min-width: 0;
+}
+.avatar img {
+  position: absolute;
+  width: 220%;
+  height: auto;
+  max-width: none;
+  aspect-ratio: auto;
+  left: 50%;
+  top: 40%;
+  transform: translate(calc(var(--fx, 0.5) * -100%), calc(var(--fy, 0.31) * -100%));
+}
+.rep-note {
+  width: 100%;
+  min-height: 0;
   border-radius: 10px;
   display: block;
-}
-.art-frame img {
-  object-fit: cover;
-  background: #e7eef6;
 }
 .rep-note, .img-fallback {
   margin: 0;
@@ -364,12 +385,14 @@ select {
   cursor: pointer;
 }
 .pie-legend-item:hover { border-color: #8eb0df; }
-.pie-icons { display: flex; gap: 3px; flex: none; }
-.pie-icons img, .pie-ph {
-  width: 32px;
-  height: 45px;
+.pie-icons { display: flex; gap: 4px; flex: none; }
+.pie-icons .avatar { width: 78px; border-radius: 6px; }
+.pie-icons .avatar img { border-radius: 0; }
+.pie-ph {
+  width: 78px;
+  height: 62px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 6px;
   background: #eef3f9;
 }
 .pie-ph {

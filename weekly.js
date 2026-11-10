@@ -136,8 +136,8 @@
     const kind = view.kind === "special" ? "特别窗口" : (view.complete ? "完整周" : "非完整周");
     $("summary").hidden = false;
     $("method").hidden = false;
+    $("toolbar").hidden = false;
     const switcher = $("display-switch");
-    switcher.hidden = false;
     switcher.querySelectorAll("[data-display]").forEach((button) => {
       button.setAttribute("aria-selected", button.dataset.display === state.display ? "true" : "false");
     });
@@ -503,15 +503,6 @@
     render();
   }
 
-  function move(step) {
-    const list = flatViews(state.region);
-    const index = list.findIndex((view) => view.id === state.viewId);
-    const next = list[index + step];
-    if (!next) return;
-    state.viewId = next.id;
-    render();
-  }
-
   function bind() {
     $("display-switch").addEventListener("click", (event) => {
       const button = event.target.closest("[data-display]");
@@ -527,8 +518,6 @@
       state.viewId = $("view-select").value;
       render();
     });
-    $("prev-view").addEventListener("click", () => move(-1));
-    $("next-view").addEventListener("click", () => move(1));
     $("banner").addEventListener("click", (event) => {
       const button = event.target.closest("[data-open-view]");
       if (!button) return;

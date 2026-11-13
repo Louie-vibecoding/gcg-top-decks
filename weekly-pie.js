@@ -15,7 +15,7 @@
     const cy = opt.cy == null ? height / 2 : opt.cy;
     const r = opt.r || 132;
     const cardAspect = opt.cardAspect || CARD_ASPECT;
-    const usable = (groups || []).filter((group) => group && group.total > 0);
+    const usable = coalesceBlanks((groups || []).filter((group) => group && group.total > 0));
     const total = usable.reduce((sum, group) => sum + group.total, 0);
     const layout = { width, height, cx, cy, r, total, cardAspect, sectors: [] };
     if (!total) return layout;
@@ -41,6 +41,8 @@
         total: group.total,
         percent,
         unconfirmed: Boolean(group.unconfirmed),
+        others: Boolean(group.others),
+        members: group.members || null,
         start,
         end,
         sweep,
@@ -64,6 +66,42 @@
       fontSize: opt.fontSize || 13,
     });
     return layout;
+  }
+
+  function coalesceBlanks(groups) {
+    const blanks = groups.filter((group) => group.blank);
+    if (!blanks.length) return groups;
+    const blankTotal = blanks.reduce((sum, group) => sum + group.total, 0);
+    const denominator = groups.reduce((sum, group) => sum + group.total, 0);
+    const others = {
+      name: "others",
+      total: blankTotal,
+      percent: percentOf(blankTotal, denominator),
+      unconfirmed: blanks.some((group) => group.unconfirmed),
+      others: true,
+      members: blanks.map((group) => ({
+        name: group.name || "",
+        total: group.total,
+        unconfirmed: Boolean(group.unconfirmed),
+      })),
+      cards: [],
+    };
+    let inserted = false;
+    const out = [];
+    groups.forEach((group) => {
+      if (!group.blank) out.push(group);
+      else if (!inserted) {
+        out.push(others);
+        inserted = true;
+      }
+    });
+    return out;
+  }
+
+  function percentOf(numerator, denominator) {
+    if (denominator <= 0) return "";
+    const rounded = Math.floor((numerator * 2000 + denominator) / (denominator * 2));
+    return (rounded / 10).toFixed(1);
   }
 
   function percentText(value) {
@@ -125,38 +163,93 @@
     return width;
   }
 
+  function shortenName(name) {
+    const text = String(name || "");
+    if (text === "others") return text;
+    const mark = text.indexOf("·");
+    if (mark >= 0 && mark < text.length - 1) return text.slice(mark + 1);
+    return text;
+  }
+
+  function sideGutter(side, opt) {
+    const pad = 4;
+    if (side === "right") return opt.width - pad - (opt.cx + opt.r + 26);
+    return opt.cx - opt.r - 26 - pad;
+  }
+
+  function fitLabel(side, name, count, maxWidth, fontSize, mustKeepName) {
+    const short = shortenName(name);
+    const candidates = [];
+    if (name) candidates.push(String(name));
+    if (short && short !== name) candidates.push(short);
+    const oneLine = (candidate) => (side === "right" ? count + "  " + candidate : candidate + "  " + count);
+    for (const candidate of candidates) {
+      const text = oneLine(candidate);
+      const width = textWidth(text, fontSize);
+      if (width <= maxWidth) return { lines: [text], width, name: candidate };
+    }
+    for (const candidate of candidates) {
+      const width = Math.max(textWidth(candidate, fontSize), textWidth(count, fontSize));
+      if (width <= maxWidth) return { lines: [candidate, count], width, name: candidate };
+    }
+    if (!mustKeepName) return null;
+    const candidate = short || String(name || "others");
+    return {
+      lines: [candidate, count],
+      width: Math.max(textWidth(candidate, fontSize), textWidth(count, fontSize)),
+      name: candidate,
+    };
+  }
+
   function placeLabels(sectors, opt) {
+    const lineH = opt.fontSize + 4;
     const sides = { left: [], right: [] };
     sectors.forEach((sector) => {
-      if (sector.sweep < opt.minSweep) return;
+      if (sector.sweep < opt.minSweep && !sector.others) return;
       const mid = (sector.start + sector.end) / 2;
       sector._mid = mid;
       sector._side = Math.cos(mid) >= 0 ? "right" : "left";
-      sector._idealY = opt.cy + Math.sin(mid) * (opt.r + 20);
+      sector._idealY = opt.cy + Math.sin(mid) * (opt.r + 22);
       sector._y = sector._idealY;
+      const fit = fitLabel(
+        sector._side,
+        sector.name,
+        sector.labelText,
+        sideGutter(sector._side, opt),
+        opt.fontSize,
+        Boolean(sector.others)
+      );
+      if (!fit) return;
+      sector._fit = fit;
+      sector._block = fit.lines.length * lineH;
       sides[sector._side].push(sector);
     });
     Object.keys(sides).forEach((side) => {
       const items = sides[side].sort((a, b) => a._y - b._y);
-      const step = opt.labelHeight + opt.labelGap;
+      const gapOf = (prev, next) => prev._block / 2 + next._block / 2 + opt.labelGap;
       for (let i = 1; i < items.length; i += 1) {
-        if (items[i]._y < items[i - 1]._y + step) items[i]._y = items[i - 1]._y + step;
+        const minY = items[i - 1]._y + gapOf(items[i - 1], items[i]);
+        if (items[i]._y < minY) items[i]._y = minY;
       }
-      const maxY = opt.height - 14;
+      const maxY = opt.height - 8 - (items.length ? items[items.length - 1]._block / 2 : 0);
       if (items.length && items[items.length - 1]._y > maxY) {
         items[items.length - 1]._y = maxY;
         for (let i = items.length - 2; i >= 0; i -= 1) {
-          if (items[i]._y > items[i + 1]._y - step) items[i]._y = items[i + 1]._y - step;
+          const maxPrev = items[i + 1]._y - gapOf(items[i], items[i + 1]);
+          if (items[i]._y > maxPrev) items[i]._y = maxPrev;
         }
       }
       items.forEach((sector) => {
-        const width = textWidth(sector.labelText, opt.fontSize);
+        const width = sector._fit.width;
         const anchor = side === "right" ? "start" : "end";
         const x = side === "right" ? opt.cx + opt.r + 26 : opt.cx - opt.r - 26;
         const left = anchor === "end" ? x - width : x;
         const right = left + width;
-        const inside = left >= 2 && right <= opt.width - 2 && sector._y >= 16 && sector._y <= opt.height - 8;
-        if (!inside || Math.abs(sector._y - sector._idealY) > opt.maxLabelShift) {
+        const top = sector._y - sector._block / 2;
+        const bottom = sector._y + sector._block / 2;
+        const inside = left >= 2 && right <= opt.width - 2 && top >= 2 && bottom <= opt.height - 2;
+        const shifted = Math.abs(sector._y - sector._idealY) > opt.maxLabelShift;
+        if (!inside || (shifted && !sector.others)) {
           sector.showLabel = false;
           sector.label = null;
           return;
@@ -167,13 +260,15 @@
         const outY = opt.cy + Math.sin(sector._mid) * (opt.r + 12);
         sector.showLabel = true;
         sector.label = {
-          text: sector.labelText,
+          text: sector._fit.lines.join(" "),
+          lines: sector._fit.lines.slice(),
+          name: sector._fit.name,
           x,
           y: sector._y,
           anchor,
           width,
-          height: opt.labelHeight,
-          leader: [arcX, arcY, outX, outY, x + (side === "right" ? -6 : 6), sector._y - 4],
+          height: sector._block,
+          leader: [arcX, arcY, outX, outY, x + (side === "right" ? -6 : 6), sector._y],
         };
       });
     });
@@ -182,6 +277,8 @@
       delete sector._side;
       delete sector._idealY;
       delete sector._y;
+      delete sector._fit;
+      delete sector._block;
     });
   }
 

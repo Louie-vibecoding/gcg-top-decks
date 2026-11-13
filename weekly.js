@@ -237,7 +237,7 @@
   function pieSpec() {
     const mobile = window.matchMedia("(max-width: 640px)").matches;
     return mobile
-      ? { width: 440, height: 400, cx: 214, cy: 196, r: 102, minSweep: 0.42, maxLabelShift: 18, fontSize: 12 }
+      ? { width: 470, height: 420, cx: 230, cy: 206, r: 102, minSweep: 0.42, maxLabelShift: 22, fontSize: 12 }
       : { width: 640, height: 520, cx: 320, cy: 260, r: 150, minSweep: 0.2, maxLabelShift: 24, fontSize: 13 };
   }
 
@@ -252,6 +252,7 @@
     const ink = theme.getPropertyValue("--sm-ink").trim() || "#111111";
     const muted = theme.getPropertyValue("--sm-muted").trim() || "#646c74";
     const wash = theme.getPropertyValue("--sm-wash").trim() || "#f6f7f8";
+    const line = theme.getPropertyValue("--sm-line").trim() || "#dfe3e7";
     ctx.fillStyle = "#ffffff";
     ctx.fillRect(0, 0, layout.width, layout.height);
     const font = theme.fontFamily || "sans-serif";
@@ -273,16 +274,29 @@
       if (!sector.parts.length) {
         ctx.save();
         clipWedge(sector.start, sector.end, sector.fullCircle);
-        ctx.fillStyle = wash;
+        ctx.fillStyle = sector.others ? line : wash;
         ctx.fillRect(layout.cx - layout.r, layout.cy - layout.r, layout.r * 2, layout.r * 2);
-        if (sector.sweep > 0.55) {
+        if (sector.others) {
           const mid = (sector.start + sector.end) / 2;
-          const dist = layout.r * 0.55;
-          ctx.fillStyle = ink;
-          ctx.font = `700 12px ${font}`;
+          const half = Math.min(sector.sweep, Math.PI) / 2;
+          const sine = Math.max(0.08, Math.sin(half));
+          let size = 15;
+          let dist = layout.r * 0.62;
           ctx.textAlign = "center";
           ctx.textBaseline = "middle";
-          ctx.fillText("待确认", layout.cx + Math.cos(mid) * dist, layout.cy + Math.sin(mid) * dist);
+          while (size >= 10) {
+            ctx.font = `700 ${size}px ${font}`;
+            const need = ctx.measureText("others").width;
+            const fitted = need / (2 * sine * 0.88);
+            if (fitted <= layout.r * 0.8) {
+              dist = Math.max(layout.r * 0.42, fitted);
+              break;
+            }
+            size -= 1;
+          }
+          ctx.font = `700 ${size}px ${font}`;
+          ctx.fillStyle = ink;
+          ctx.fillText("others", layout.cx + Math.cos(mid) * dist, layout.cy + Math.sin(mid) * dist);
         }
         ctx.restore();
         return;
@@ -347,7 +361,12 @@
       ctx.lineTo(x3, y3);
       ctx.stroke();
       ctx.textAlign = sector.label.anchor === "end" ? "end" : "start";
-      ctx.fillText(sector.label.text, sector.label.x, sector.label.y);
+      const lines = sector.label.lines && sector.label.lines.length ? sector.label.lines : [sector.label.text];
+      const lineH = sector.label.height / lines.length;
+      lines.forEach((lineText, index) => {
+        const y = sector.label.y - sector.label.height / 2 + lineH * (index + 0.5);
+        ctx.fillText(lineText, sector.label.x, y);
+      });
     });
     canvas._pieLayout = layout;
     canvas.dataset.ready = "1";
@@ -364,24 +383,29 @@
     }
     host.hidden = false;
     const spec = pieSpec();
-    const input = view.groups.map((group) => ({
-      name: group.name,
-      total: group.total,
-      percent: group.percent,
-      unconfirmed: group.unconfirmed,
-      cards: (((group.representative || {}).cards) || []).map((card) => ({ card_id: card.card_id, name: displayName(card) })),
-    }));
+    const input = view.groups.map((group) => {
+      const cards = (((group.representative || {}).cards) || []).map((card) => ({ card_id: card.card_id, name: displayName(card) }));
+      return {
+        name: group.name,
+        total: group.total,
+        percent: group.percent,
+        unconfirmed: group.unconfirmed,
+        blank: cards.length === 0,
+        cards,
+      };
+    });
     const layout = WeeklyPie.layoutPie(input, spec);
     const legend = view.groups.map((group) => {
       const cards = ((group.representative || {}).cards) || [];
       const icons = cards.length
         ? cards.map(legendIcon).join("")
-        : `<span class="pie-ph">${group.unconfirmed ? "待确认" : "无代表机体"}</span>`;
+        : `<span class="pie-ph">待确认</span>`;
       const badge = group.unconfirmed ? `<span class="badge warn">待确认</span>` : "";
+      const merged = cards.length === 0 ? `<span class="mini">饼图归入 others</span>` : "";
       const num = `${group.total}套${group.percent ? ` · ${group.percent}%` : ""}`;
-      return `<button type="button" class="pie-legend-item" data-group="${escapeHtml(group.name)}" role="listitem"><span class="pie-icons">${icons}</span><span class="pie-name">${escapeHtml(group.name)} ${badge}</span><span class="pie-num">${escapeHtml(num)}</span></button>`;
+      return `<button type="button" class="pie-legend-item" data-group="${escapeHtml(group.name)}" role="listitem"><span class="pie-icons">${icons}</span><span class="pie-name">${escapeHtml(group.name)} ${badge}${merged}</span><span class="pie-num">${escapeHtml(num)}</span></button>`;
     }).join("");
-    host.innerHTML = `<h2>样本占比</h2><p class="hint">实心扇区面积按纳入套数。大扇区尽量放进该机体的头；扇区太窄时完整的头看右侧图例，不改面积，也不换机体。点击扇区或图例可看赛事来源。</p><div class="chart-layout"><div class="pie-stage"><canvas class="pie-canvas" role="img" aria-label="按纳入套数划分的实心饼图。窄扇区看右侧图例里的机体头像"></canvas></div><div class="pie-legend" role="list">${legend}</div></div>`;
+    host.innerHTML = `<h2>样本占比</h2><p class="hint">实心扇区面积按纳入套数。大扇区尽量放进该机体的头；扇区太窄时完整的头看右侧图例，不改面积，也不换机体。没有代表图的扇区合成一块 others，外侧和扇区都写 others。右侧仍按原体系分开，待确认可以点开。点击扇区或图例可看赛事来源。</p><div class="chart-layout"><div class="pie-stage"><canvas class="pie-canvas" role="img" aria-label="按纳入套数划分的实心饼图。没有代表图的部分标为 others。窄扇区看右侧图例里的机体头像"></canvas></div><div class="pie-legend" role="list">${legend}</div></div>`;
     const canvas = host.querySelector("canvas");
     const ids = [];
     layout.sectors.forEach((sector) => sector.parts.forEach((part) => ids.push(part.cardId)));
@@ -446,6 +470,13 @@
     if (!group.rule || !group.rule.minimum_cards) return "";
     const text = Object.entries(group.rule.minimum_cards).map(([cardId, count]) => `${cardId}×${count}`).join("、");
     return `<p class="mini">分类规则按卡号数量：${escapeHtml(text)}。不是只看颜色。</p>`;
+  }
+
+  function openOthers(members) {
+    const rows = (members || []).map((member) => `<li><button type="button" class="nav-btn" data-group="${escapeHtml(member.name)}">${escapeHtml(member.name)} · ${escapeHtml(String(member.total))}套${member.unconfirmed ? " · 待确认" : ""}</button></li>`).join("");
+    $("dialog-title").textContent = "others";
+    $("dialog-body").innerHTML = `<p>这些体系没有代表机体，饼图合成一块 others。面积是套数之和，分母不变。点一组可看原来的赛事。</p><ul class="audit-list">${rows}</ul>`;
+    $("deck-dialog").showModal();
   }
 
   function openGroup(name) {
@@ -547,7 +578,9 @@
       const x = ((event.clientX - rect.left) * canvas._pieLayout.width) / rect.width;
       const y = ((event.clientY - rect.top) * canvas._pieLayout.height) / rect.height;
       const sector = WeeklyPie.hitSector(canvas._pieLayout, x, y);
-      if (sector) openGroup(sector.name);
+      if (!sector) return;
+      if (sector.others) openOthers(sector.members);
+      else openGroup(sector.name);
     });
     let resizeTimer = 0;
     window.addEventListener("resize", () => {
@@ -559,6 +592,10 @@
       }, 150);
     });
     $("dialog-close").addEventListener("click", () => $("deck-dialog").close());
+    $("deck-dialog").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-group]");
+      if (button) openGroup(button.dataset.group);
+    });
   }
 
   async function init() {

@@ -1,0 +1,49 @@
+name: Rebuild weekly stats
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/japan-events.json"
+      - "data/japan-cs.json"
+      - "data/japan-official.json"
+      - "data/eu.json"
+      - "data/china.json"
+      - "data/japan-summary.json"
+      - "data/japan-cs-summary.json"
+      - "scripts/weekly_stats.py"
+      - "scripts/build_weekly_stats.py"
+      - "scripts/sync_weekly_cards.py"
+      - "scripts/data/**"
+      - ".github/workflows/weekly-stats.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild weekly snapshot
+        run: python3 scripts/build_weekly_stats.py
+      - name: Check weekly snapshot
+        run: |
+          python3 scripts/build_weekly_stats.py --check
+          python3 scripts/sync_weekly_cards.py --check
+          python3 scripts/test_weekly_stats.py
+          node --test scripts/test_weekly_pie.js
+      - name: Commit rebuilt weekly files
+        run: |
+          git add data/weekly-top.json weekly-cards
+          if git diff --cached --quiet; then
+            echo "weekly snapshot already current"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: rebuild weekly stats after event refresh"
+          git push

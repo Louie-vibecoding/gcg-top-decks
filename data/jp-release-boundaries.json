@@ -1,0 +1,657 @@
+{
+  "title": "日本官方GCG候选环境分界（按商品发售日）",
+  "region": "JP",
+  "checked_on": "2026-11-12",
+  "checked_at": "2026-11-12T22:41:00-08:00",
+  "checked_timezone": "America/Los_Angeles",
+  "source": "https://www.gundam-gcg.com/jp/products/list.php",
+  "rules": [
+    "只把详情页写明精确单一発売日、且类别为新卡补充包或预组的商品，作为自动候选分界。",
+    "同一发售日的补充包与预组合并为一条分界。",
+    "发售日不等于赛事合法生效日，使用前必须再核对官方赛事规则。",
+    "周边、纯再录、以及无法确认是否为新卡的商品，即使同日发售，也不能自动划分环境。",
+    "只有预约开始日或发货月份、或写会场顺次发售的商品，不进入自动分界。",
+    "不根据产品编号推测发售日。"
+  ],
+  "candidate_boundaries": [
+    {
+      "boundary_date_iso": "2025-07-12",
+      "region": "JP",
+      "kind_summary": [
+        "预组"
+      ],
+      "products": [
+        {
+          "id": "st01",
+          "product_code": "ST01",
+          "product_codes": [
+            "ST01",
+            "ST01A"
+          ],
+          "name_official_jp_site": "Heroic Beginnings [ST01]",
+          "kind": "预组",
+          "category_zh": "预组（含组装模型特别版）",
+          "release_date_original": "2025年7月12日(土)発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st01.html"
+        },
+        {
+          "id": "st04",
+          "product_code": "ST04",
+          "product_codes": [
+            "ST04",
+            "ST04A"
+          ],
+          "name_official_jp_site": "SEED Strike [ST04]",
+          "kind": "预组",
+          "category_zh": "预组（含组装模型特别版）",
+          "release_date_original": "2025年7月12日(土)発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st04.html"
+        },
+        {
+          "id": "st02",
+          "product_code": "ST02",
+          "product_codes": [
+            "ST02",
+            "ST02A"
+          ],
+          "name_official_jp_site": "Wings of Advance [ST02]",
+          "kind": "预组",
+          "category_zh": "预组（含组装模型特别版）",
+          "release_date_original": "2025年7月12日(土)発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st02.html"
+        },
+        {
+          "id": "st03",
+          "product_code": "ST03",
+          "product_codes": [
+            "ST03",
+            "ST03A"
+          ],
+          "name_official_jp_site": "Zeon's Rush [ST03]",
+          "kind": "预组",
+          "category_zh": "预组（含组装模型特别版）",
+          "release_date_original": "2025年7月12日(土)発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st03.html"
+        }
+      ],
+      "same_day_not_auto_included": [
+        {
+          "id": "deck-case01",
+          "product_code": null,
+          "name_official_jp_site": "オフィシャルカードケースセット 01",
+          "kind": "未知",
+          "category_zh": "周边（卡盒，含EX卡）",
+          "reason": "同日发售，但属于周边、再录或无法确认的新卡商品，不能自动划分环境",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/deck-case01.html"
+        },
+        {
+          "id": "sleeve01",
+          "product_code": null,
+          "name_official_jp_site": "オフィシャルカードスリーブ 01",
+          "kind": "重印周边",
+          "category_zh": "周边（卡套）",
+          "reason": "同日发售，但属于周边、再录或无法确认的新卡商品，不能自动划分环境",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/sleeve01.html"
+        },
+        {
+          "id": "dice01",
+          "product_code": null,
+          "name_official_jp_site": "オフィシャルダメージカウンターダイス 01",
+          "kind": "重印周边",
+          "category_zh": "周边（骰子）",
+          "reason": "同日发售，但属于周边、再录或无法确认的新卡商品，不能自动划分环境",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/dice01.html"
+        }
+      ],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    },
+    {
+      "boundary_date_iso": "2025-07-26",
+      "region": "JP",
+      "kind_summary": [
+        "新卡补充包"
+      ],
+      "products": [
+        {
+          "id": "gd01",
+          "product_code": "GD01",
+          "product_codes": [
+            "GD01"
+          ],
+          "name_official_jp_site": "Newtype Rising [GD01]",
+          "kind": "新卡补充包",
+          "category_zh": "补充包",
+          "release_date_original": "2025年7月26日(土)発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/gd01.html"
+        }
+      ],
+      "same_day_not_auto_included": [],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    },
+    {
+      "boundary_date_iso": "2025-09-27",
+      "region": "JP",
+      "kind_summary": [
+        "预组"
+      ],
+      "products": [
+        {
+          "id": "st05",
+          "product_code": "ST05",
+          "product_codes": [
+            "ST05"
+          ],
+          "name_official_jp_site": "Iron Bloom [ST05]",
+          "kind": "预组",
+          "category_zh": "预组",
+          "release_date_original": "2025年9月27日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st05.html"
+        }
+      ],
+      "same_day_not_auto_included": [],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    },
+    {
+      "boundary_date_iso": "2025-10-25",
+      "region": "JP",
+      "kind_summary": [
+        "预组",
+        "新卡补充包"
+      ],
+      "products": [
+        {
+          "id": "st06",
+          "product_code": "ST06",
+          "product_codes": [
+            "ST06"
+          ],
+          "name_official_jp_site": "Clan Unity [ST06]",
+          "kind": "预组",
+          "category_zh": "预组",
+          "release_date_original": "2025年10月25日(土)発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st06.html"
+        },
+        {
+          "id": "gd02",
+          "product_code": "GD02",
+          "product_codes": [
+            "GD02"
+          ],
+          "name_official_jp_site": "Dual Impact [GD02]",
+          "kind": "新卡补充包",
+          "category_zh": "补充包",
+          "release_date_original": "2025年10月25日(土)発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/gd02.html"
+        }
+      ],
+      "same_day_not_auto_included": [],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    },
+    {
+      "boundary_date_iso": "2026-01-17",
+      "region": "JP",
+      "kind_summary": [
+        "预组"
+      ],
+      "products": [
+        {
+          "id": "st07",
+          "product_code": "ST07",
+          "product_codes": [
+            "ST07"
+          ],
+          "name_official_jp_site": "Celestial Drive [ST07]",
+          "kind": "预组",
+          "category_zh": "预组",
+          "release_date_original": "2026年1月17日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st07.html"
+        },
+        {
+          "id": "st08",
+          "product_code": "ST08",
+          "product_codes": [
+            "ST08"
+          ],
+          "name_official_jp_site": "Flash of Radiance [ST08]",
+          "kind": "预组",
+          "category_zh": "预组",
+          "release_date_original": "2026年1月17日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st08.html"
+        }
+      ],
+      "same_day_not_auto_included": [],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    },
+    {
+      "boundary_date_iso": "2026-01-31",
+      "region": "JP",
+      "kind_summary": [
+        "新卡补充包"
+      ],
+      "products": [
+        {
+          "id": "gd03",
+          "product_code": "GD03",
+          "product_codes": [
+            "GD03"
+          ],
+          "name_official_jp_site": "Steel Requiem [GD03]",
+          "kind": "新卡补充包",
+          "category_zh": "补充包",
+          "release_date_original": "2026年1月31日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/gd03.html"
+        }
+      ],
+      "same_day_not_auto_included": [],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    },
+    {
+      "boundary_date_iso": "2026-03-28",
+      "region": "JP",
+      "kind_summary": [
+        "预组"
+      ],
+      "products": [
+        {
+          "id": "st09",
+          "product_code": "ST09",
+          "product_codes": [
+            "ST09"
+          ],
+          "name_official_jp_site": "Destiny Ignition [ST09]",
+          "kind": "预组",
+          "category_zh": "终极预组",
+          "release_date_original": "2026年3月28日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st09.html"
+        }
+      ],
+      "same_day_not_auto_included": [],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    },
+    {
+      "boundary_date_iso": "2026-04-25",
+      "region": "JP",
+      "kind_summary": [
+        "新卡补充包"
+      ],
+      "products": [
+        {
+          "id": "gd04",
+          "product_code": "GD04",
+          "product_codes": [
+            "GD04"
+          ],
+          "name_official_jp_site": "Phantom Aria [GD04]",
+          "kind": "新卡补充包",
+          "category_zh": "补充包",
+          "release_date_original": "2026年4月25日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/gd04.html"
+        }
+      ],
+      "same_day_not_auto_included": [],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    },
+    {
+      "boundary_date_iso": "2026-06-27",
+      "region": "JP",
+      "kind_summary": [
+        "新卡补充包",
+        "预组"
+      ],
+      "products": [
+        {
+          "id": "eb01",
+          "product_code": "EB01",
+          "product_codes": [
+            "EB01"
+          ],
+          "name_official_jp_site": "Eternal Nexus [EB01]",
+          "kind": "新卡补充包",
+          "category_zh": "额外补充包",
+          "release_date_original": "2026年6月27日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/eb01.html"
+        },
+        {
+          "id": "st10",
+          "product_code": "ST10",
+          "product_codes": [
+            "ST10"
+          ],
+          "name_official_jp_site": "Generation Pulse [ST10]",
+          "kind": "预组",
+          "category_zh": "预组",
+          "release_date_original": "2026年6月27日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st10.html"
+        }
+      ],
+      "same_day_not_auto_included": [],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    },
+    {
+      "boundary_date_iso": "2026-07-25",
+      "region": "JP",
+      "kind_summary": [
+        "新卡补充包"
+      ],
+      "products": [
+        {
+          "id": "gd05",
+          "product_code": "GD05",
+          "product_codes": [
+            "GD05"
+          ],
+          "name_official_jp_site": "Freedom Ascension [GD05]",
+          "kind": "新卡补充包",
+          "category_zh": "补充包",
+          "release_date_original": "2026年7月25日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/gd05.html"
+        }
+      ],
+      "same_day_not_auto_included": [
+        {
+          "id": "deck-case02",
+          "product_code": null,
+          "name_official_jp_site": "オフィシャルカードケースセット 02",
+          "kind": "重印周边",
+          "category_zh": "周边（卡盒，含既有编号卡）",
+          "reason": "同日发售，但属于周边、再录或无法确认的新卡商品，不能自动划分环境",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/deck-case02.html"
+        },
+        {
+          "id": "sleeve03",
+          "product_code": null,
+          "name_official_jp_site": "オフィシャルカードスリーブ 02",
+          "kind": "重印周边",
+          "category_zh": "周边（卡套）",
+          "reason": "同日发售，但属于周边、再录或无法确认的新卡商品，不能自动划分环境",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/sleeve03.html"
+        },
+        {
+          "id": "custom-deck-box",
+          "product_code": "SC01",
+          "name_official_jp_site": "カスタムデッキボックスFreedom Ascension [SC01]",
+          "kind": "重印周边",
+          "category_zh": "自定义牌盒（含再录卡与补充包）",
+          "reason": "同日发售，但属于周边、再录或无法确认的新卡商品，不能自动划分环境",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/custom-deck-box.html"
+        }
+      ],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    },
+    {
+      "boundary_date_iso": "2026-09-26",
+      "region": "JP",
+      "kind_summary": [
+        "预组"
+      ],
+      "products": [
+        {
+          "id": "st11",
+          "product_code": "ST11",
+          "product_codes": [
+            "ST11"
+          ],
+          "name_official_jp_site": "Aquatic Assault [ST11]",
+          "kind": "预组",
+          "category_zh": "预组",
+          "release_date_original": "2026年9月26日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st11.html"
+        },
+        {
+          "id": "st14",
+          "product_code": "ST14",
+          "product_codes": [
+            "ST14"
+          ],
+          "name_official_jp_site": "Heavy Dominion [ST14]",
+          "kind": "预组",
+          "category_zh": "预组",
+          "release_date_original": "2026年9月26日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st14.html"
+        },
+        {
+          "id": "st12",
+          "product_code": "ST12",
+          "product_codes": [
+            "ST12"
+          ],
+          "name_official_jp_site": "Raging Onslaught [ST12]",
+          "kind": "预组",
+          "category_zh": "预组",
+          "release_date_original": "2026年9月26日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st12.html"
+        },
+        {
+          "id": "st13",
+          "product_code": "ST13",
+          "product_codes": [
+            "ST13"
+          ],
+          "name_official_jp_site": "Silent Barrage [ST13]",
+          "kind": "预组",
+          "category_zh": "预组",
+          "release_date_original": "2026年9月26日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st13.html"
+        }
+      ],
+      "same_day_not_auto_included": [
+        {
+          "id": "evx08",
+          "product_code": "EVX08",
+          "name_official_jp_site": "オフィシャルダメージカウンターダイス -ハロ-[EVX08]",
+          "kind": "重印周边",
+          "category_zh": "周边（骰子）",
+          "reason": "同日发售，但属于周边、再录或无法确认的新卡商品，不能自动划分环境",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/evx08.html"
+        }
+      ],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    },
+    {
+      "boundary_date_iso": "2026-10-31",
+      "region": "JP",
+      "kind_summary": [
+        "新卡补充包"
+      ],
+      "products": [
+        {
+          "id": "gd06",
+          "product_code": "GD06",
+          "product_codes": [
+            "GD06"
+          ],
+          "name_official_jp_site": "Stardust Trails[GD06]",
+          "kind": "新卡补充包",
+          "category_zh": "补充包",
+          "release_date_original": "2026年10月31日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/gd06.html"
+        }
+      ],
+      "same_day_not_auto_included": [],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    },
+    {
+      "boundary_date_iso": "2027-01-30",
+      "region": "JP",
+      "kind_summary": [
+        "新卡补充包"
+      ],
+      "products": [
+        {
+          "id": "gd07",
+          "product_code": "GD07",
+          "product_codes": [
+            "GD07"
+          ],
+          "name_official_jp_site": "Blazing Fist [GD07]",
+          "kind": "新卡补充包",
+          "category_zh": "补充包",
+          "release_date_original": "2027年1月30日(土)発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/gd07.html"
+        }
+      ],
+      "same_day_not_auto_included": [],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    },
+    {
+      "boundary_date_iso": "2027-02-27",
+      "region": "JP",
+      "kind_summary": [
+        "新卡补充包"
+      ],
+      "products": [
+        {
+          "id": "eb02",
+          "product_code": "EB02",
+          "product_codes": [
+            "EB02"
+          ],
+          "name_official_jp_site": "Cosmic Crisis [EB02]",
+          "kind": "新卡补充包",
+          "category_zh": "额外补充包",
+          "release_date_original": "2027年2月27日(土)発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/eb02.html"
+        }
+      ],
+      "same_day_not_auto_included": [],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    },
+    {
+      "boundary_date_iso": "2027-04-17",
+      "region": "JP",
+      "kind_summary": [
+        "预组"
+      ],
+      "products": [
+        {
+          "id": "st15",
+          "product_code": "ST15",
+          "product_codes": [
+            "ST15"
+          ],
+          "name_official_jp_site": "Unicorn Awakening [ST15]",
+          "kind": "预组",
+          "category_zh": "预组（内容含替换卡，类似终极预组）",
+          "release_date_original": "2027年4月17日(土) 発売",
+          "detail_url": "https://www.gundam-gcg.com/jp/products/st15.html"
+        }
+      ],
+      "same_day_not_auto_included": [],
+      "caveat": "发售日不等于赛事合法生效日。本列表只是按官方商品发售日合并的候选环境分界，需要再用赛事规则确认。"
+    }
+  ],
+  "not_auto_included_but_noteworthy": [
+    {
+      "id": "limitedbox-beta",
+      "name_official_jp_site": "ガンダムカードゲーム リミテッドBOX Ver.β",
+      "release_date_iso": "2024-12-14",
+      "release_date_original": "2024年12月14日(土)発売",
+      "kind": "未知",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/limitedbox-beta.html",
+      "why_not_auto_included": "这是β版限定盒，属于官方最早的卡牌商品，但页面定位为体验/先行套装。发售日不能自动当作赛事环境分界。"
+    },
+    {
+      "id": "pc01a",
+      "name_official_jp_site": "プレミアムカードコレクション ガンダムアッセンブルセット -機動戦士ガンダム 鉄血のオルフェンズ- [PC01A]",
+      "release_date_iso": "2026-02-28",
+      "release_date_original": "2026年2月28日(土)発売",
+      "kind": "未知",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/pc01a.html",
+      "why_not_auto_included": "高级卡牌收藏，含卡牌，但详情页未说明这些卡是否为可改变环境的新卡，不能自动划分环境。"
+    },
+    {
+      "id": "pc02a",
+      "name_official_jp_site": "プレミアムカードコレクション ガンダムアッセンブルセット -機動戦士Gundam GQuuuuuuX- [PC02A]",
+      "release_date_iso": "2026-02-28",
+      "release_date_original": "2026年2月28日(土)発売",
+      "kind": "未知",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/pc02a.html",
+      "why_not_auto_included": "高级卡牌收藏，含卡牌，但详情页未说明这些卡是否为可改变环境的新卡，不能自动划分环境。"
+    }
+  ],
+  "numbering_observations": {
+    "note": "以下编号缺口仅根据已抓到的商品列表观察，官方页面和详情页中没有对应链接，未访问未出现的URL，也未据此补日期。",
+    "observed_present_prefixes": {
+      "ST": [
+        "ST01",
+        "ST01A",
+        "ST02",
+        "ST02A",
+        "ST03",
+        "ST03A",
+        "ST04",
+        "ST04A",
+        "ST05",
+        "ST06",
+        "ST07",
+        "ST08",
+        "ST09",
+        "ST10",
+        "ST11",
+        "ST12",
+        "ST13",
+        "ST14",
+        "ST15"
+      ],
+      "GD": [
+        "GD01",
+        "GD02",
+        "GD03",
+        "GD04",
+        "GD05",
+        "GD06",
+        "GD07"
+      ],
+      "EB": [
+        "EB01",
+        "EB02"
+      ],
+      "PB": [
+        "PB01",
+        "PB02",
+        "PB04"
+      ],
+      "PC": [
+        "PC01A",
+        "PC02A"
+      ],
+      "EVX": [
+        "EVX02",
+        "EVX03",
+        "EVX05",
+        "EVX06",
+        "EVX07",
+        "EVX08",
+        "EVX09",
+        "EVX10",
+        "EVX11",
+        "EVX12",
+        "EVX13",
+        "EVX14",
+        "EVX15",
+        "EVX16"
+      ],
+      "SC": [
+        "SC01"
+      ]
+    },
+    "gaps_without_official_links": [
+      "EVX01",
+      "EVX04",
+      "EVX编号中未见的EVX00附近空缺"
+    ],
+    "unnumbered_products": [
+      "limitedbox-beta",
+      "deck-case01",
+      "sleeve01",
+      "dice01",
+      "goodsset01",
+      "sleeve02-2",
+      "deck-case02",
+      "sleeve03",
+      "pb03",
+      "playmat01"
+    ],
+    "pb03_has_no_printed_code": true
+  }
+}

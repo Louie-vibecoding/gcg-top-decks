@@ -27,11 +27,12 @@
         <h1>每周上位统计</h1>
       </div>
       <p class="lede">按赛事日期的周一至周日汇总已收录的冠军和亚军。默认日本、最近一个已经过完的完整周。套数只表示样本多少，不是强度，也不是全体参赛使用率。</p>
-      <div id="region-switch" class="segment" role="tablist" aria-label="地区"></div>
     </div>
   </header>
 
   <main class="wrap" id="main">
+    <section id="releases" class="panel releases" aria-label="日本官方发售日历" hidden></section>
+    <div id="region-switch" class="segment" role="tablist" aria-label="地区"></div>
     <p id="status" class="status" role="status">正在读取统计…</p>
     <section id="banner" class="banner" hidden></section>
     <section id="summary" class="summary" aria-label="本周摘要" hidden></section>
@@ -63,7 +64,6 @@
     <section id="quarantine" class="panel" aria-label="名次争议" hidden></section>
     <section id="isolated" class="panel" aria-label="异常隔离" hidden></section>
     <section id="method" class="panel method" aria-label="口径说明" hidden></section>
-    <section id="releases" class="panel releases" aria-label="日本官方发售日历" hidden></section>
   </main>
 
   <footer class="site-foot">

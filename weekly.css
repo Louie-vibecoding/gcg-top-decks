@@ -520,6 +520,16 @@ button:focus-visible, select:focus-visible, a:focus-visible {
   font-size: 14px;
 }
 .range-error { color: var(--sm-red, #b8172c); font-weight: 700; }
+.cal-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.cal-head h2 { margin: 0; }
+.cal-head .hint { margin: 4px 0 0; }
+.cal-toggle { flex: 0 0 auto; }
+.releases.is-collapsed { padding-bottom: 12px; }
 .cal-tools, .cal-filters {
   display: flex;
   flex-wrap: wrap;

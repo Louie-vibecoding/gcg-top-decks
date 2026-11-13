@@ -13,6 +13,7 @@
     region: "日本",
     viewId: "",
     display: "distribution",
+    calendarOpen: false,
     mode: "week",
     rangeStart: "",
     rangeEnd: "",
@@ -116,7 +117,7 @@
       ? `<optgroup label="${escapeHtml(label)}">${views.map((view) => `<option value="${escapeHtml(view.id)}"${view.id === state.viewId ? " selected" : ""}>${escapeHtml(optionLabel(view))}</option>`).join("")}</optgroup>`
       : "";
     const select = $("view-select");
-    select.innerHTML = groupHtml("完整周", groups.complete) + groupHtml("非完整周", groups.partial) + groupHtml("特别窗口（不是整周总数）", groups.special);
+    select.innerHTML = groupHtml("完整周", groups.complete) + groupHtml("非完整周", groups.partial);
     if (state.mode !== "week") {
       select.insertAdjacentHTML("afterbegin", `<option value="">当前不是单周</option>`);
       select.value = "";
@@ -125,19 +126,11 @@
 
   function renderBanner(view) {
     const host = $("banner");
-    const windows = state.report.regions[state.region].special_windows || [];
-    const contained = view.kind === "week"
-      ? windows.find((item) => item.start >= view.start && item.end <= view.end)
-      : null;
     let html = "";
     if (view.kind === "custom") {
       html = `<p><strong>${escapeHtml(view.range_label || "自定义区间")}</strong> ${escapeHtml(view.coverage_note || "")}</p>`;
-    } else if (view.kind === "special") {
-      html = `<p><strong>特别窗口，不是完整周。</strong> ${escapeHtml(view.note || view.coverage_note)} 原始 ${view.raw_decks} 套，保守口径纳入 ${view.included_decks} 套。</p>`;
     } else if (!view.complete) {
       html = `<p><strong>这一档不是完整周。</strong> ${escapeHtml(view.coverage_note)}</p>`;
-    } else if (contained) {
-      html = `<p>这是 ${escapeHtml(view.start)} 至 ${escapeHtml(view.end)} 的完整周总数。其中 ${escapeHtml(contained.start)} 至 ${escapeHtml(contained.end)} 另有特别窗口，两套数字不能互相代替。</p><button type="button" class="nav-btn" data-open-view="${escapeHtml(contained.id)}">查看特别窗口</button>`;
     }
     host.hidden = !html;
     host.innerHTML = html;
@@ -680,12 +673,11 @@
     error.textContent = state.rangeError || "";
     if (state.mode !== "weeks") return;
     const weeks = flatViews(state.region).filter((view) => view.kind !== "special");
-    const specials = flatViews(state.region).filter((view) => view.kind === "special");
     const box = (view) => {
       const checked = state.selectedWeekIds.includes(view.id) ? " checked" : "";
       return `<label class="week-check"><input type="checkbox" data-week="${escapeHtml(view.id)}"${checked} /> <span>${escapeHtml(optionLabel(view))}</span></label>`;
     };
-    $("week-merge").innerHTML = `<p class="hint">勾选要合并的周。中间没勾的周不会算进去。特别窗口和它所在的周重叠时，同一套只计一次。</p>${weeks.map(box).join("")}${specials.length ? `<p class="band-title">特别窗口</p>${specials.map(box).join("")}` : ""}`;
+    $("week-merge").innerHTML = `<p class="hint">勾选要合并的周。中间没勾的周不会算进去。</p>${weeks.map(box).join("")}`;
   }
 
   function productsOf() {
@@ -760,8 +752,17 @@
     const uncertainHtml = uncertain.length
       ? uncertain.map((item) => releaseCard(item, today, true)).join("")
       : `<p class="hint">当前筛选下没有日期不精确的商品。</p>`;
-    host.innerHTML = `<h2>日本官方发售日历</h2>
-      <p class="hint">只使用日本官网商品列表和详情页，核对日 ${escapeHtml(catalog.checked_on || "")}。发售日不是赛事合法生效日。这些日期不会自动套到中国或欧美。同一天的商品放在同一格。预约开始、发货月和会场顺次不写进日历格子。</p>
+    const open = state.calendarOpen;
+    host.classList.toggle("is-collapsed", !open);
+    host.innerHTML = `<div class="cal-head">
+        <div>
+          <h2 id="releases-title">日本官方发售日历</h2>
+          <p class="hint">只使用日本官网商品列表和详情页，核对日 ${escapeHtml(catalog.checked_on || "")}。发售日不是赛事合法生效日。这些日期不会自动套到中国或欧美。</p>
+        </div>
+        <button type="button" class="nav-btn cal-toggle" data-calendar-toggle aria-expanded="${open ? "true" : "false"}" aria-controls="releases-body">${open ? "收起" : "展开"}</button>
+      </div>
+      <div id="releases-body"${open ? "" : " hidden"}>
+      <p class="hint">同一天的商品放在同一格。预约开始、发货月和会场顺次不写进日历格子。</p>
       <div class="cal-tools">
         <button type="button" class="nav-btn" data-month="-1">上一月</button>
         <strong>${escapeHtml(monthLabel(state.releaseMonth))}</strong>
@@ -774,7 +775,24 @@
       <h3>这个月的发售</h3>
       <div class="month-list">${monthList}</div>
       <h3>日期不精确，不放进日历</h3>
-      <div class="uncertain-list">${uncertainHtml}</div>`;
+      <div class="uncertain-list">${uncertainHtml}</div>
+      </div>`;
+  }
+
+  function readCalendarOpen() {
+    try {
+      return localStorage.getItem("gcg-weekly-calendar") === "open";
+    } catch (err) {
+      return false;
+    }
+  }
+
+  function writeCalendarOpen(open) {
+    try {
+      localStorage.setItem("gcg-weekly-calendar", open ? "open" : "closed");
+    } catch (err) {
+      /* 浏览器不允许保存时，这一次访问仍按当前开关显示。 */
+    }
   }
 
   function releaseCard(item, today, loose) {
@@ -832,19 +850,45 @@
     state.history = "replace";
   }
 
+  function weekChoices(region) {
+    return flatViews(region).filter((view) => view.kind !== "special");
+  }
+
+  function contiguousDates(views) {
+    const dates = WeeklyRange.unionWeekDates(views);
+    if (!dates.length) return null;
+    const span = WeeklyRange.eachDay(dates[0], dates[dates.length - 1]);
+    if (span.length !== dates.length) return null;
+    return { start: dates[0], end: dates[dates.length - 1] };
+  }
+
   function readParams() {
     const params = new URLSearchParams(location.search);
     const region = params.get("region");
     state.region = state.report.regions[region] ? region : (state.report.meta.default_region || "日本");
-    const requested = params.get("view");
-    state.viewId = findView(state.region, requested) ? requested : state.report.regions[state.region].default_view;
+    const requested = findView(state.region, params.get("view"));
+    const fallback = state.report.regions[state.region].default_view;
+    state.viewId = requested && requested.kind !== "special" ? requested.id : fallback;
     state.display = params.get("display") === "pie" ? "pie" : "distribution";
     const mode = params.get("mode");
     state.mode = mode === "dates" || mode === "weeks" ? mode : "week";
     state.rangeStart = params.get("from") || "";
     state.rangeEnd = params.get("to") || "";
-    const known = new Set(flatViews(state.region).map((view) => view.id));
-    state.selectedWeekIds = (params.get("weeks") || "").split(",").filter((id) => known.has(id));
+    const requestedWeeks = (params.get("weeks") || "").split(",").map((id) => findView(state.region, id)).filter(Boolean);
+    const specials = requestedWeeks.filter((view) => view.kind === "special");
+    state.selectedWeekIds = requestedWeeks.filter((view) => view.kind !== "special").map((view) => view.id);
+    if (requested && requested.kind === "special" && state.mode !== "weeks") specials.push(requested);
+    if (specials.length) {
+      const mapped = contiguousDates(state.mode === "weeks" ? requestedWeeks : specials);
+      if (mapped) {
+        state.mode = "dates";
+        state.rangeStart = mapped.start;
+        state.rangeEnd = mapped.end;
+      }
+    }
+    if (state.mode === "weeks" && !state.selectedWeekIds.length) state.selectedWeekIds = [state.viewId];
+    if (!state.selectedWeekIds.length) state.selectedWeekIds = [state.viewId];
+    state.selectedWeekIds = state.selectedWeekIds.filter((id) => weekChoices(state.region).some((view) => view.id === id));
     if (!state.selectedWeekIds.length) state.selectedWeekIds = [state.viewId];
   }
 
@@ -942,6 +986,15 @@
       render();
     });
     $("releases").addEventListener("click", (event) => {
+      const toggle = event.target.closest("[data-calendar-toggle]");
+      if (toggle) {
+        state.calendarOpen = !state.calendarOpen;
+        writeCalendarOpen(state.calendarOpen);
+        renderReleases();
+        const next = document.querySelector("[data-calendar-toggle]");
+        if (next) next.focus();
+        return;
+      }
       const month = event.target.closest("[data-month]");
       if (month) {
         state.releaseMonth = shiftMonth(state.releaseMonth, Number(month.dataset.month));
@@ -967,15 +1020,6 @@
       if (!state.report) return;
       readParams();
       state.history = "skip";
-      applyMode();
-      render();
-    });
-    $("banner").addEventListener("click", (event) => {
-      const button = event.target.closest("[data-open-view]");
-      if (!button) return;
-      state.mode = "week";
-      state.viewId = button.dataset.openView;
-      state.history = "push";
       applyMode();
       render();
     });
@@ -1027,6 +1071,7 @@
       state.report = await reportResponse.json();
       state.records = recordsResponse.ok ? await recordsResponse.json() : null;
       state.products = productsResponse.ok ? await productsResponse.json() : null;
+      state.calendarOpen = readCalendarOpen();
       readParams();
       applyMode();
       render();

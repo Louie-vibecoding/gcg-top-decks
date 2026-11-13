@@ -6,7 +6,24 @@
   const imageCache = new Map();
   let chartToken = 0;
 
-  const state = { report: null, region: "日本", viewId: "", display: "distribution" };
+  const state = {
+    report: null,
+    records: null,
+    products: null,
+    region: "日本",
+    viewId: "",
+    display: "distribution",
+    mode: "week",
+    rangeStart: "",
+    rangeEnd: "",
+    selectedWeekIds: [],
+    customView: null,
+    rangeError: "",
+    releaseMonth: "2026-11",
+    releaseKind: "all",
+    releaseWhen: "all",
+    history: "replace",
+  };
   const $ = (id) => document.getElementById(id);
 
   function escapeHtml(value) {
@@ -77,6 +94,7 @@
   }
 
   function currentView() {
+    if (state.mode !== "week" && state.customView) return state.customView;
     return findView(state.region, state.viewId);
   }
 
@@ -97,7 +115,12 @@
     const groupHtml = (label, views) => views.length
       ? `<optgroup label="${escapeHtml(label)}">${views.map((view) => `<option value="${escapeHtml(view.id)}"${view.id === state.viewId ? " selected" : ""}>${escapeHtml(optionLabel(view))}</option>`).join("")}</optgroup>`
       : "";
-    $("view-select").innerHTML = groupHtml("完整周", groups.complete) + groupHtml("非完整周", groups.partial) + groupHtml("特别窗口（不是整周总数）", groups.special);
+    const select = $("view-select");
+    select.innerHTML = groupHtml("完整周", groups.complete) + groupHtml("非完整周", groups.partial) + groupHtml("特别窗口（不是整周总数）", groups.special);
+    if (state.mode !== "week") {
+      select.insertAdjacentHTML("afterbegin", `<option value="">当前不是单周</option>`);
+      select.value = "";
+    }
   }
 
   function renderBanner(view) {
@@ -107,7 +130,9 @@
       ? windows.find((item) => item.start >= view.start && item.end <= view.end)
       : null;
     let html = "";
-    if (view.kind === "special") {
+    if (view.kind === "custom") {
+      html = `<p><strong>${escapeHtml(view.range_label || "自定义区间")}</strong> ${escapeHtml(view.coverage_note || "")}</p>`;
+    } else if (view.kind === "special") {
       html = `<p><strong>特别窗口，不是完整周。</strong> ${escapeHtml(view.note || view.coverage_note)} 原始 ${view.raw_decks} 套，保守口径纳入 ${view.included_decks} 套。</p>`;
     } else if (!view.complete) {
       html = `<p><strong>这一档不是完整周。</strong> ${escapeHtml(view.coverage_note)}</p>`;
@@ -133,7 +158,10 @@
 
   function renderSummary(view) {
     const meta = state.report.meta;
-    const kind = view.kind === "special" ? "特别窗口" : (view.complete ? "完整周" : "非完整周");
+    const kind = view.kind === "custom" ? (view.range_label || "自定义区间") : view.kind === "special" ? "特别窗口" : (view.complete ? "完整周" : "非完整周");
+    const counted = view.kind === "custom" && view.date_count && view.start && view.end && view.date_count !== WeeklyRange.eachDay(view.start, view.end).length;
+    const dateLines = [view.start || "—", view.end ? `至 ${view.end}` : "至 —"];
+    if (counted) dateLines.push(`计入 ${view.date_count} 天`);
     $("summary").hidden = false;
     $("method").hidden = false;
     $("toolbar").hidden = false;
@@ -142,7 +170,7 @@
       button.setAttribute("aria-selected", button.dataset.display === state.display ? "true" : "false");
     });
     $("summary").innerHTML = [
-      metric("日期", [view.start, `至 ${view.end}`], true),
+      metric("日期", dateLines, true),
       metric("地区", [state.region, kind], true),
       metric("纳入样本", `${view.included_decks} 套`),
       metric("冠军 / 亚军", `${view.champions} / ${view.runners_up}`),
@@ -166,7 +194,8 @@
     const name = displayName(card);
     const avg = avgCopies(card);
     const img = portrait(card.card_id, name + " " + card.card_id);
-    return { img, caption: `<figcaption><span class="role">${escapeHtml(ROLE[card.role] || "机体")}</span><span class="cname">${escapeHtml(name)}</span><span class="cid">${escapeHtml(card.card_id)}${avg ? ` · 平均 ${escapeHtml(avg)} 张` : ""}</span><span class="mini">${escapeHtml(String(card.decks_with_card))}/${escapeHtml(String(card.group_size))} 套有这张</span></figcaption>` };
+    const seen = card.decks_with_card ? `<span class="mini">${escapeHtml(String(card.decks_with_card))}/${escapeHtml(String(card.group_size))} 套有这张</span>` : "";
+    return { img, caption: `<figcaption><span class="role">${escapeHtml(ROLE[card.role] || "机体")}</span><span class="cname">${escapeHtml(name)}</span><span class="cid">${escapeHtml(card.card_id)}${avg ? ` · 平均 ${escapeHtml(avg)} 张` : ""}</span>${seen}</figcaption>` };
   }
 
   function artOf(group) {
@@ -463,7 +492,8 @@
       <p>${escapeHtml(meta.attendance_policy || "")}</p>
       <p>${escapeHtml(meta.baseline_note || "")} 当前店赛文件 ${escapeHtml(String((meta.japan_events_file || {}).events || ""))} 场 / ${escapeHtml(String((meta.japan_events_file || {}).placements || ""))} 条名次。</p>
       <p>团队赛已排除 ${escapeHtml(String((meta.excluded_team_events || []).length))} 场。官方 1on1 只计冠亚，不把淘汰赛其余名次算进分布。生成于 ${escapeHtml(meta.generated_at_label || "")}。</p>
-      <p>卡组分布和占比饼图用的是同一份套数。代表图先取规则里的两台机体；只有一张核心时，才看组内同场、投入张数和是不是通用外挂。同一机体的不同形态不拼成两张。未知体系不借用别的体系的代表。切换展示时只保留当前这一屏的大图。</p>`;
+      <p>卡组分布和占比饼图用的是同一份套数。代表图先取规则里的两台机体；只有一张核心时，才看组内同场、投入张数和是不是通用外挂。同一机体的不同形态不拼成两张。未知体系不借用别的体系的代表。切换展示时只保留当前这一屏的大图。</p>
+      <p>起止日期和合并周次都按单套筛选。跨不完整的几天时，不会把那一周的整周快照相加。没勾选的中间周不计入。同一套若同时落在所选周和特别窗口里，只计一次。体系待确认仍在分母里，名次争议和异常隔离仍不进入分布。</p>`;
   }
 
   function ruleLine(group) {
@@ -520,24 +550,331 @@
     dist.hidden = false;
   }
 
+  function recordPack() {
+    return state.records && state.records.regions[state.region];
+  }
+
+  function todayIso() {
+    const now = new Date();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const day = String(now.getDate()).padStart(2, "0");
+    return `${now.getFullYear()}-${month}-${day}`;
+  }
+
+  function emptyCustom(reason) {
+    const view = WeeklyRange.summarize({ records: [] }, []);
+    view.kind = "custom";
+    view.title = "无效区间";
+    view.range_label = "无效区间";
+    view.coverage_note = reason;
+    view.chart_empty_reason = reason;
+    view.complete = false;
+    return view;
+  }
+
+  function publishedForDates(dates) {
+    const wanted = dates.slice().sort();
+    return flatViews(state.region).find((view) => {
+      const days = WeeklyRange.eachDay(view.start, view.end);
+      return days.length === wanted.length && days.every((day, index) => day === wanted[index]);
+    }) || null;
+  }
+
+  function coverageNote(dates, extra) {
+    const pack = recordPack();
+    const start = dates[0] || "";
+    const end = dates[dates.length - 1] || "";
+    const maxDate = (pack && pack.max_date) || "";
+    const parts = [`含首尾 ${start} 至 ${end}，共 ${dates.length} 天。按单套计入，不是把整周快照相加。`];
+    if (extra) parts.push(extra);
+    if (maxDate && end > maxDate) parts.push(`这一地区收录到 ${maxDate}，更晚的日子还没有赛事。`);
+    if (maxDate && start > maxDate) parts.push("这段日期还没有收录。");
+    const meta = state.report.meta;
+    const file = meta.japan_events_file || {};
+    parts.push(`统计生成于 ${meta.generated_at_label || ""}。店赛文件 ${file.events || ""} 场 / ${file.placements || ""} 条名次。`);
+    return parts.join("");
+  }
+
+  function finishCustom(dates, extra) {
+    const sorted = dates.slice().sort();
+    if (!sorted.length) {
+      state.customView = emptyCustom("没有可统计的日期。");
+      return;
+    }
+    const note = coverageNote(sorted, extra);
+    const match = publishedForDates(sorted);
+    if (match) {
+      state.customView = Object.assign({}, match, {
+        kind: "custom",
+        range_label: state.mode === "weeks" ? "合并周次" : "自定义日期",
+        coverage_note: `${note} 这组日期正好是已发布的「${match.title || optionLabel(match)}」，数字与那一档相同。`,
+      });
+      return;
+    }
+    const view = WeeklyRange.summarize(recordPack(), sorted);
+    view.kind = "custom";
+    view.title = `${sorted[0]} 至 ${sorted[sorted.length - 1]}`;
+    view.range_label = state.mode === "weeks" ? "合并周次" : "自定义日期";
+    view.coverage_note = note;
+    view.chart_empty_reason = view.included_decks ? "" : "这段日期没有纳入的冠亚样本。";
+    view.complete = false;
+    state.customView = view;
+  }
+
+  function applyMode() {
+    state.rangeError = "";
+    if (state.mode !== "dates") state.preset = false;
+    if (state.mode === "week") {
+      state.customView = null;
+      return;
+    }
+    if (!recordPack()) {
+      state.rangeError = "单套记录还没有载入，自定义区间暂时不能计算。";
+      state.customView = emptyCustom(state.rangeError);
+      return;
+    }
+    if (state.mode === "dates") {
+      const start = WeeklyRange.parseDay(state.rangeStart);
+      const end = WeeklyRange.parseDay(state.rangeEnd);
+      if (!start || !end) {
+        state.rangeError = "请填写有效的开始日和结束日。";
+        state.customView = emptyCustom(state.rangeError);
+        return;
+      }
+      if (start > end) {
+        state.rangeError = "结束日不能早于开始日。";
+        state.customView = emptyCustom(state.rangeError);
+        return;
+      }
+      finishCustom(WeeklyRange.eachDay(start, end), "");
+      return;
+    }
+    const weeks = flatViews(state.region).filter((view) => state.selectedWeekIds.includes(view.id));
+    if (!weeks.length) {
+      state.rangeError = "请至少选择一周。";
+      state.customView = emptyCustom(state.rangeError);
+      return;
+    }
+    const gaps = WeeklyRange.gapsBetween(weeks, flatViews(state.region).filter((view) => view.kind !== "special"));
+    const gapText = gaps.length
+      ? `未计入中间的 ${gaps.map((item) => `${item.start} 至 ${item.end}`).join("、")}。`
+      : "所选周次之间没有跳过的周。";
+    const names = weeks.map((view) => (view.kind === "special" ? view.title : `${view.start} 至 ${view.end}`)).join("、");
+    finishCustom(WeeklyRange.unionWeekDates(weeks), `合并 ${names}。${gapText}`);
+  }
+
+  function renderRangeControls() {
+    const host = $("range-switch");
+    if (!host) return;
+    host.querySelectorAll("[data-mode]").forEach((button) => {
+      button.setAttribute("aria-selected", button.dataset.mode === state.mode ? "true" : "false");
+    });
+    const panel = $("range-panel");
+    panel.hidden = state.mode === "week";
+    $("date-range").hidden = state.mode !== "dates";
+    $("week-merge").hidden = state.mode !== "weeks";
+    if (document.activeElement !== $("range-start")) $("range-start").value = state.rangeStart || "";
+    if (document.activeElement !== $("range-end")) $("range-end").value = state.rangeEnd || "";
+    const error = $("range-error");
+    error.hidden = !state.rangeError;
+    error.textContent = state.rangeError || "";
+    if (state.mode !== "weeks") return;
+    const weeks = flatViews(state.region).filter((view) => view.kind !== "special");
+    const specials = flatViews(state.region).filter((view) => view.kind === "special");
+    const box = (view) => {
+      const checked = state.selectedWeekIds.includes(view.id) ? " checked" : "";
+      return `<label class="week-check"><input type="checkbox" data-week="${escapeHtml(view.id)}"${checked} /> <span>${escapeHtml(optionLabel(view))}</span></label>`;
+    };
+    $("week-merge").innerHTML = `<p class="hint">勾选要合并的周。中间没勾的周不会算进去。特别窗口和它所在的周重叠时，同一套只计一次。</p>${weeks.map(box).join("")}${specials.length ? `<p class="band-title">特别窗口</p>${specials.map(box).join("")}` : ""}`;
+  }
+
+  function productsOf() {
+    return (state.products && state.products.products) || [];
+  }
+
+  function boundaryDays() {
+    return [...new Set(productsOf()
+      .filter((item) => item.environment_boundary_eligible && item.release_date_precision === "exact_day" && item.release_date_iso)
+      .map((item) => item.release_date_iso))].sort();
+  }
+
+  function monthLabel(month) {
+    const [year, mon] = month.split("-");
+    return `${year}年${Number(mon)}月`;
+  }
+
+  function shiftMonth(month, delta) {
+    const [year, mon] = month.split("-").map(Number);
+    const date = new Date(Date.UTC(year, mon - 1 + delta, 1));
+    return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}`;
+  }
+
+  function productVisible(product, today) {
+    const bucket = product.kind === "新卡补充包" ? "booster" : product.kind === "预组" ? "starter" : "other";
+    if (state.releaseKind !== "all" && state.releaseKind !== bucket) return false;
+    if (state.releaseWhen === "released" && product.sale_status !== "已发售") return false;
+    if (state.releaseWhen === "scheduled" && product.sale_status !== "预定") return false;
+    if (state.releaseWhen === "past" && !(product.release_date_iso && product.release_date_iso < today)) return false;
+    if (state.releaseWhen === "upcoming" && !(product.release_date_iso && product.release_date_iso >= today)) return false;
+    return true;
+  }
+
+  function renderReleases() {
+    const host = $("releases");
+    if (!host) return;
+    host.hidden = false;
+    const catalog = state.products || {};
+    const today = todayIso();
+    const exact = productsOf().filter((item) => item.release_date_precision === "exact_day" && item.release_date_iso && productVisible(item, today));
+    const uncertain = productsOf().filter((item) => !(item.release_date_precision === "exact_day" && item.release_date_iso) && productVisible(item, today));
+    const [year, month] = state.releaseMonth.split("-").map(Number);
+    const first = `${state.releaseMonth}-01`;
+    const nextMonth = shiftMonth(state.releaseMonth, 1);
+    const byDay = new Map();
+    exact.forEach((item) => {
+      if (item.release_date_iso < first || item.release_date_iso >= `${nextMonth}-01`) return;
+      if (!byDay.has(item.release_date_iso)) byDay.set(item.release_date_iso, []);
+      byDay.get(item.release_date_iso).push(item);
+    });
+    const lead = new Date(Date.UTC(year, month - 1, 1)).getUTCDay();
+    const pad = (lead + 6) % 7;
+    const daysInMonth = new Date(Date.UTC(year, month, 0)).getUTCDate();
+    const cells = [];
+    for (let i = 0; i < pad; i += 1) cells.push(`<div class="cal-cell cal-empty"></div>`);
+    for (let day = 1; day <= daysInMonth; day += 1) {
+      const iso = `${state.releaseMonth}-${String(day).padStart(2, "0")}`;
+      const items = byDay.get(iso) || [];
+      const codes = items.map((item) => {
+        const bucket = item.kind === "新卡补充包" ? "booster" : item.kind === "预组" ? "starter" : "other";
+        const code = item.product_code || "商品";
+        return `<span class="cal-code kind-${bucket}">${escapeHtml(code)}</span>`;
+      }).join("");
+      cells.push(`<div class="cal-cell${items.length ? " cal-has" : ""}"><span class="cal-day">${day}</span>${codes ? `<span class="cal-codes">${codes}</span>` : ""}</div>`);
+    }
+    const monthDays = [...byDay.keys()].sort();
+    const monthList = monthDays.length
+      ? monthDays.map((iso) => `<section class="day-group"><h4>${escapeHtml(iso)}</h4>${byDay.get(iso).map((item) => releaseCard(item, today)).join("")}</section>`).join("")
+      : `<p class="hint">这个月没有精确到日的商品。</p>`;
+    const kindButton = (id, label) => `<button type="button" data-kind="${id}" aria-pressed="${state.releaseKind === id ? "true" : "false"}">${label}</button>`;
+    const whenButton = (id, label) => `<button type="button" data-when="${id}" aria-pressed="${state.releaseWhen === id ? "true" : "false"}">${label}</button>`;
+    const uncertainHtml = uncertain.length
+      ? uncertain.map((item) => releaseCard(item, today, true)).join("")
+      : `<p class="hint">当前筛选下没有日期不精确的商品。</p>`;
+    host.innerHTML = `<h2>日本官方发售日历</h2>
+      <p class="hint">只使用日本官网商品列表和详情页，核对日 ${escapeHtml(catalog.checked_on || "")}。发售日不是赛事合法生效日。这些日期不会自动套到中国或欧美。同一天的商品放在同一格。预约开始、发货月和会场顺次不写进日历格子。</p>
+      <div class="cal-tools">
+        <button type="button" class="nav-btn" data-month="-1">上一月</button>
+        <strong>${escapeHtml(monthLabel(state.releaseMonth))}</strong>
+        <button type="button" class="nav-btn" data-month="1">下一月</button>
+      </div>
+      <div class="cal-filters" role="group" aria-label="商品类别">${kindButton("all", "全部")}${kindButton("booster", "补充包")}${kindButton("starter", "预组")}${kindButton("other", "其他商品")}</div>
+      <div class="cal-filters" role="group" aria-label="发售状态">${whenButton("all", "全部状态")}${whenButton("released", "已发售")}${whenButton("scheduled", "预定")}${whenButton("past", "已过发售日")}${whenButton("upcoming", "未到发售日")}</div>
+      <div class="cal-weekdays"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div>
+      <div class="cal-grid">${cells.join("")}</div>
+      <h3>这个月的发售</h3>
+      <div class="month-list">${monthList}</div>
+      <h3>日期不精确，不放进日历</h3>
+      <div class="uncertain-list">${uncertainHtml}</div>`;
+  }
+
+  function releaseCard(item, today, loose) {
+    const bucket = item.kind === "新卡补充包" ? "booster" : item.kind === "预组" ? "starter" : "other";
+    const label = item.kind === "新卡补充包" ? "补充包" : item.kind === "预组" ? "预组" : "其他";
+    const when = item.release_date_iso && item.release_date_iso < today ? "已过发售日" : item.release_date_iso ? "未到发售日" : "";
+    const href = safeUrl(item.detail_url);
+    const name = item.product_code ? `[${item.product_code}] ${item.name_official_jp_site}` : item.name_official_jp_site;
+    const link = href ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(name)}</a>` : escapeHtml(name);
+    const preset = item.environment_boundary_eligible && item.release_date_iso
+      ? `<button type="button" class="nav-btn preset-btn" data-preset="${escapeHtml(item.release_date_iso)}"${state.region === "日本" ? "" : " disabled"}>用这个发售日截取日本统计</button>`
+      : "";
+    const dateText = loose
+      ? (item.release_date_original || "详情页没有精确到日的发售日")
+      : item.release_date_iso;
+    return `<article class="release-card kind-${bucket}">
+      <p class="release-meta"><span>${escapeHtml(label)}</span><span>${escapeHtml(item.sale_status || "")}</span>${when ? `<span>${escapeHtml(when)}</span>` : ""}</p>
+      <p class="release-name">${link}</p>
+      <p class="mini">${escapeHtml(dateText || "")}${item.environment_boundary_eligible ? " · 可作为日本统计的发售切点" : ""}</p>
+      ${preset}
+    </article>`;
+  }
+
+  function applyReleasePreset(date) {
+    if (state.region !== "日本") return;
+    const next = boundaryDays().find((day) => day > date) || "";
+    const end = next ? WeeklyRange.addDays(next, -1) : date;
+    state.mode = "dates";
+    state.rangeStart = date;
+    state.rangeEnd = end;
+    state.preset = true;
+    state.history = "push";
+    applyMode();
+    if (state.customView) {
+      state.customView.range_label = "按发售日截取";
+      const span = next ? `${date} 至下一次新卡发售日前一天 ${end}` : `${date} 起，这份记录里还没有更晚的新卡发售日`;
+      state.customView.coverage_note = `区间 ${span}。这是按日本官方发售日截取的统计区间，不是官方赛事合法生效日。纯再录、周边和 β 版不会自动切开环境。${state.customView.coverage_note}`;
+    }
+    render();
+    const summary = $("summary");
+    if (summary) summary.scrollIntoView({ block: "start" });
+  }
+
+  function writeUrl() {
+    const params = new URLSearchParams({ region: state.region, display: state.display, mode: state.mode });
+    if (state.mode === "week") params.set("view", state.viewId);
+    if (state.mode === "dates") {
+      if (state.rangeStart) params.set("from", state.rangeStart);
+      if (state.rangeEnd) params.set("to", state.rangeEnd);
+    }
+    if (state.mode === "weeks") params.set("weeks", state.selectedWeekIds.join(","));
+    const next = `?${params.toString()}`;
+    if (state.history === "push" && location.search !== next) history.pushState({ weekly: 1 }, "", next);
+    else if (state.history !== "skip") history.replaceState({ weekly: 1 }, "", next);
+    state.history = "replace";
+  }
+
+  function readParams() {
+    const params = new URLSearchParams(location.search);
+    const region = params.get("region");
+    state.region = state.report.regions[region] ? region : (state.report.meta.default_region || "日本");
+    const requested = params.get("view");
+    state.viewId = findView(state.region, requested) ? requested : state.report.regions[state.region].default_view;
+    state.display = params.get("display") === "pie" ? "pie" : "distribution";
+    const mode = params.get("mode");
+    state.mode = mode === "dates" || mode === "weeks" ? mode : "week";
+    state.rangeStart = params.get("from") || "";
+    state.rangeEnd = params.get("to") || "";
+    const known = new Set(flatViews(state.region).map((view) => view.id));
+    state.selectedWeekIds = (params.get("weeks") || "").split(",").filter((id) => known.has(id));
+    if (!state.selectedWeekIds.length) state.selectedWeekIds = [state.viewId];
+  }
+
   function render() {
     const view = currentView();
     $("status").textContent = view ? `${state.region} · ${view.title || optionLabel(view)}` : "没有这一档数据";
     if (!view) return;
     renderSwitch();
+    renderRangeControls();
     renderBanner(view);
     renderSummary(view);
     renderActiveDisplay(view);
     renderQuarantine(view);
     renderIsolated(view);
     renderMethod(view);
-    const params = new URLSearchParams({ region: state.region, view: state.viewId, display: state.display });
-    history.replaceState(null, "", `?${params.toString()}`);
+    renderReleases();
+    writeUrl();
   }
 
   function setRegion(region) {
+    if (state.preset && region !== "日本") {
+      state.preset = false;
+      state.mode = "week";
+    }
     state.region = region;
     if (!findView(region, state.viewId)) state.viewId = state.report.regions[region].default_view;
+    state.selectedWeekIds = state.selectedWeekIds.filter((id) => findView(region, id));
+    if (!state.selectedWeekIds.length) state.selectedWeekIds = [state.viewId];
+    state.history = "push";
+    applyMode();
     render();
   }
 
@@ -546,6 +883,7 @@
       const button = event.target.closest("[data-display]");
       if (!button || button.dataset.display === state.display) return;
       state.display = button.dataset.display;
+      state.history = "push";
       render();
     });
     $("region-switch").addEventListener("click", (event) => {
@@ -553,13 +891,92 @@
       if (button) setRegion(button.dataset.region);
     });
     $("view-select").addEventListener("change", () => {
+      state.mode = "week";
       state.viewId = $("view-select").value;
+      state.selectedWeekIds = [state.viewId];
+      state.history = "push";
+      applyMode();
+      render();
+    });
+    $("range-switch").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-mode]");
+      if (!button || button.dataset.mode === state.mode) return;
+      state.mode = button.dataset.mode;
+      if (state.mode === "dates" && (!WeeklyRange.parseDay(state.rangeStart) || !WeeklyRange.parseDay(state.rangeEnd))) {
+        const view = findView(state.region, state.viewId);
+        state.rangeStart = view.start;
+        state.rangeEnd = view.end;
+      }
+      if (state.mode === "weeks" && !state.selectedWeekIds.length) state.selectedWeekIds = [state.viewId];
+      state.history = "push";
+      applyMode();
+      render();
+    });
+    $("range-start").addEventListener("change", () => {
+      state.mode = "dates";
+      state.preset = false;
+      state.rangeStart = $("range-start").value;
+      state.history = "push";
+      applyMode();
+      render();
+    });
+    $("range-end").addEventListener("change", () => {
+      state.mode = "dates";
+      state.preset = false;
+      state.rangeEnd = $("range-end").value;
+      state.history = "push";
+      applyMode();
+      render();
+    });
+    $("week-merge").addEventListener("change", (event) => {
+      const box = event.target.closest("[data-week]");
+      if (!box) return;
+      const id = box.dataset.week;
+      const chosen = new Set(state.selectedWeekIds);
+      if (box.checked) chosen.add(id);
+      else chosen.delete(id);
+      state.mode = "weeks";
+      state.selectedWeekIds = [...chosen];
+      state.history = "push";
+      applyMode();
+      render();
+    });
+    $("releases").addEventListener("click", (event) => {
+      const month = event.target.closest("[data-month]");
+      if (month) {
+        state.releaseMonth = shiftMonth(state.releaseMonth, Number(month.dataset.month));
+        renderReleases();
+        return;
+      }
+      const kind = event.target.closest("[data-kind]");
+      if (kind) {
+        state.releaseKind = kind.dataset.kind;
+        renderReleases();
+        return;
+      }
+      const when = event.target.closest("[data-when]");
+      if (when) {
+        state.releaseWhen = when.dataset.when;
+        renderReleases();
+        return;
+      }
+      const preset = event.target.closest("[data-preset]");
+      if (preset && !preset.disabled) applyReleasePreset(preset.dataset.preset);
+    });
+    window.addEventListener("popstate", () => {
+      if (!state.report) return;
+      readParams();
+      state.history = "skip";
+      applyMode();
       render();
     });
     $("banner").addEventListener("click", (event) => {
       const button = event.target.closest("[data-open-view]");
       if (!button) return;
+      state.mode = "week";
       state.viewId = button.dataset.openView;
+      state.history = "push";
+      applyMode();
       render();
     });
     $("distribution").addEventListener("click", (event) => {
@@ -601,15 +1018,17 @@
   async function init() {
     bind();
     try {
-      const response = await fetch("data/weekly-top.json", { cache: "no-cache" });
-      if (!response.ok) throw new Error(String(response.status));
-      state.report = await response.json();
-      const params = new URLSearchParams(location.search);
-      const region = params.get("region");
-      state.region = state.report.regions[region] ? region : (state.report.meta.default_region || "日本");
-      const requested = params.get("view");
-      state.viewId = findView(state.region, requested) ? requested : state.report.regions[state.region].default_view;
-      state.display = params.get("display") === "pie" ? "pie" : "distribution";
+      const [reportResponse, recordsResponse, productsResponse] = await Promise.all([
+        fetch("data/weekly-top.json", { cache: "no-cache" }),
+        fetch("data/weekly-records.json", { cache: "no-cache" }),
+        fetch("data/jp-official-products.json", { cache: "no-cache" }),
+      ]);
+      if (!reportResponse.ok) throw new Error(String(reportResponse.status));
+      state.report = await reportResponse.json();
+      state.records = recordsResponse.ok ? await recordsResponse.json() : null;
+      state.products = productsResponse.ok ? await productsResponse.json() : null;
+      readParams();
+      applyMode();
       render();
     } catch (err) {
       $("status").textContent = "统计没有载入。请从站点根目录打开 weekly.html。";

@@ -1346,6 +1346,161 @@ def dump_report(report: dict) -> str:
     return json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
 
 
+def slim_record(region: str, record: dict) -> dict:
+    payload = {
+        "region": region,
+        "date": record.get("date") or "",
+        "event_id": record.get("event_id") or "",
+        "strong_event_id": record.get("strong_event_id") or "",
+        "rank": record.get("rank"),
+        "player": record.get("player") or "",
+        "store": record.get("store") or "",
+        "event_type": record.get("event_type") or "",
+        "source_url": record.get("source_url") or "",
+        "status": record.get("status") or "",
+        "archetype": record.get("archetype") or "",
+        "unconfirmed": bool(record.get("unconfirmed")),
+    }
+    if record.get("isolate_reason"):
+        reason = record["isolate_reason"]
+        payload["isolate_reason"] = reason
+        payload["reason_zh"] = ISOLATE_TEXT.get(reason, reason)
+    quarantine = record.get("quarantine") or {}
+    if quarantine:
+        payload["quarantine_reason"] = quarantine.get("reason") or ""
+        payload["verification"] = quarantine.get("verification") or ""
+        for key in ("official_url", "gcg_stats_url", "secondary_url"):
+            if quarantine.get(key):
+                payload[key] = quarantine[key]
+    return payload
+
+
+def representative_catalog(region_blob: dict) -> dict:
+    """Largest published slice's representative cards, so a custom range can still draw the pie."""
+    best = {}
+    views = list(region_blob.get("weeks") or []) + list(region_blob.get("special_windows") or [])
+    for view in views:
+        for group in view.get("groups") or []:
+            name = group["name"]
+            current = best.get(name)
+            if current is not None and current["total"] >= group["total"]:
+                continue
+            cards = []
+            for card in ((group.get("representative") or {}).get("cards") or []):
+                card_id = card.get("card_id") or ""
+                if card_id:
+                    cards.append({"card_id": card_id, "name_zh": card.get("name_zh") or ""})
+            best[name] = {"total": group["total"], "cards": cards}
+    return {name: {"cards": item["cards"]} for name, item in best.items()}
+
+
+def build_records_document(report: dict, root: Path | None = None) -> dict:
+    root = root or ROOT
+    ctx = load_context(root)
+    by_region = collect_records(ctx)
+    regions = {}
+    for name, blob in (report.get("regions") or {}).items():
+        rows = [slim_record(name, record) for record in by_region.get(name) or []]
+        rows.sort(
+            key=lambda row: (
+                row["date"],
+                row["event_id"],
+                row["rank"] if isinstance(row["rank"], int) else 99,
+                row["player"],
+                row["status"],
+            )
+        )
+        regions[name] = {
+            "min_date": blob.get("min_date") or "",
+            "max_date": blob.get("max_date") or "",
+            "representatives": representative_catalog(blob),
+            "records": rows,
+        }
+    meta = report.get("meta") or {}
+    return {
+        "meta": {
+            "generator": "scripts/build_weekly_stats.py",
+            "min_date": meta.get("min_date") or MIN_DATE,
+            "source_fingerprints": meta.get("source_fingerprints") or {},
+            "japan_events_file": meta.get("japan_events_file") or {},
+            "source_counts": meta.get("source_counts") or {},
+        },
+        "regions": regions,
+    }
+
+
+def records_fingerprint(document: dict) -> str:
+    raw = json.dumps(document, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
+
+
+def write_records(document: dict, path: Path) -> str:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    text = json.dumps(document, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
+    if path.exists() and path.read_text(encoding="utf-8") == text:
+        return "unchanged"
+    path.write_text(text, encoding="utf-8")
+    return "wrote"
+
+
+def dates_inclusive(start: str, end: str) -> list[str]:
+    if not start or not end or start > end:
+        return []
+    cursor = datetime.strptime(start, "%Y-%m-%d").date()
+    last = datetime.strptime(end, "%Y-%m-%d").date()
+    days = []
+    while cursor <= last:
+        days.append(iso(cursor))
+        cursor += timedelta(days=1)
+    return days
+
+
+def summarize_records(records: list, dates: set[str]) -> dict:
+    """Count a date set with the same inclusion rules as aggregate_view, without redrawing representatives."""
+    chosen = []
+    seen = set()
+    for record in records:
+        day = record.get("date") or ""
+        if day not in dates:
+            continue
+        key = (record.get("strong_event_id") or "", record.get("player") or "", record.get("rank"))
+        if key in seen:
+            continue
+        seen.add(key)
+        chosen.append(record)
+    included = [row for row in chosen if row.get("status") == "included"]
+    quarantined = [row for row in chosen if row.get("status") == "quarantined"]
+    isolated = [row for row in chosen if row.get("status") == "isolated"]
+    grouped = defaultdict(list)
+    for row in included:
+        grouped[row.get("archetype") or ""].append(row)
+    groups = []
+    for name, rows in grouped.items():
+        groups.append(
+            {
+                "name": name,
+                "total": len(rows),
+                "champion": sum(1 for row in rows if row.get("rank") == 1),
+                "runner_up": sum(1 for row in rows if row.get("rank") == 2),
+                "unconfirmed": bool(rows[0].get("unconfirmed")),
+                "percent": _percent(len(rows), len(included)),
+            }
+        )
+    groups.sort(key=lambda group: (-group["total"], -group["champion"], group["name"]))
+    return {
+        "events": len({row.get("event_id") or "" for row in included if row.get("event_id")}),
+        "raw_events": len({row.get("event_id") or "" for row in chosen if row.get("event_id")}),
+        "raw_decks": len(chosen),
+        "included_decks": len(included),
+        "champions": sum(1 for row in included if row.get("rank") == 1),
+        "runners_up": sum(1 for row in included if row.get("rank") == 2),
+        "unconfirmed_decks": sum(1 for row in included if row.get("unconfirmed")),
+        "quarantined_decks": len(quarantined),
+        "isolated_decks": len(isolated),
+        "groups": groups,
+    }
+
+
 def write_report(report: dict, path: Path) -> str:
     """Write the report. A second run with the same inputs keeps the previous file byte-for-byte."""
     path.parent.mkdir(parents=True, exist_ok=True)

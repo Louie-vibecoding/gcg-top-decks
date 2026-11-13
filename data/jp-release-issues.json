@@ -1,0 +1,45 @@
+{
+  "checked_on": "2026-11-12",
+  "checked_timezone": "America/Los_Angeles",
+  "conflicts": [
+    {
+      "product_id": "evx12",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/evx12.html",
+      "type": "detail_page_internal_conflict",
+      "detail": "EVX12详情页「発売日」写的是BANDAI CARD GAMES Fest 25-26，但「入手方法」和商品列表写的是Fest 26-27。ISO发售日留空。"
+    },
+    {
+      "product_id": "pb01",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/pb01.html",
+      "type": "list_date_vs_reservation_start",
+      "detail": "列表页把「発売日」写成 2025.8.20，详情页对应字段是预约开始日 2025年9月1日(月)(二次予約)，二者日期不同。不以列表页日期作为发售日。"
+    },
+    {
+      "product_id": "pb02",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/pb02.html",
+      "type": "list_mislabels_reservation_as_release",
+      "detail": "列表页「発売日」2025.10.9 与详情页「予約開始日」相同。该日期是预约开始日，不是精确发售日，ISO发售日留空。"
+    },
+    {
+      "product_id": "pb03",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/pb03.html",
+      "type": "list_mislabels_reservation_as_release",
+      "detail": "列表页「発売日」2026.7.27 与详情页「予約開始日」相同。该日期是预约开始日，不是精确发售日，ISO发售日留空。"
+    },
+    {
+      "product_id": "pb04",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/pb04.html",
+      "type": "list_mislabels_reservation_as_release",
+      "detail": "列表页「発売日」2026.10.2 与详情页「予約開始日」相同。该日期是预约开始日，不是精确发售日，ISO发售日留空。"
+    }
+  ],
+  "coverage_notes": [
+    "官方「すべて」列表共5页；第6页无商品。",
+    "すべて列表54行、53个去重URL；evx07在第2、3页重复。",
+    "加上分类页多出的evx06，去重产品共54个。",
+    "limitedbox-beta只在すべて列表出现，不在五个分类标签中。",
+    "已抓取HTML中没有EVX01、EVX04的链接或文案，未访问未列出的URL。",
+    "1st Anniversary Set（pb03）详情页标题没有产品编号。",
+    "sitemap.xml只有地区首页，没有产品清单；robots.txt返回404。"
+  ]
+}

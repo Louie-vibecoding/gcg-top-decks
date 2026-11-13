@@ -1,0 +1,4770 @@
+{
+  "title": "GUNDAM CARD GAME 日本官方商品发售记录",
+  "region": "JP",
+  "source_list_url": "https://www.gundam-gcg.com/jp/products/list.php",
+  "checked_on": "2026-11-12",
+  "checked_at": "2026-11-12T22:41:00-08:00",
+  "checked_timezone": "America/Los_Angeles",
+  "caveats": [
+    "发售日不等于赛事合法生效日。",
+    "ISO发售日只来自详情页「発売日」且能解析为单一日历日的文本；不根据产品编号或列表页单独推测。",
+    "列表页把部分Premium Bandai商品的预约开始日标成「発売日」，这类记录的ISO发售日留空。",
+    "周边和纯再录商品不能自动划分环境。",
+    "本数据集只覆盖日本官方商品列表及其详情页，未抓取其他地区站点。"
+  ],
+  "field_guide": {
+    "product_code": "产品编号，来自官方标题或详情页标题中的方括号；没有编号则为null",
+    "name_official_jp_site": "日本官网详情页原名（部分商品官方原名就是英文）",
+    "category_zh": "谨慎中文类别，结合官方列表分类和详情页类型/内容，不夸大",
+    "kind": "新卡补充包 / 预组 / 重印周边 / 未知",
+    "release_date_original": "详情页「発売日」原文；没有该字段则为null",
+    "release_date_iso": "仅在発売日可精确到日且不是「起」或会场顺次时填写",
+    "region": "固定 JP",
+    "detail_url": "官方详情页URL",
+    "discovered_on_list_pages": "发现该商品的列表页（含分类筛选页）",
+    "checked_on": "核对日期（America/Los_Angeles）",
+    "sale_status": "已发售 / 预定 / 日期不精确待确认"
+  },
+  "pagination": {
+    "all_products_list": {
+      "url_pattern": "https://www.gundam-gcg.com/jp/products/list.php?page={n}",
+      "official_pager": "1/5 to 5/5",
+      "pages_with_items": 5,
+      "page_6_checked": true,
+      "page_6_result": "pager shows 6/5 and 0 product cards",
+      "items_including_duplicate_row": 54,
+      "unique_products_on_all_list": 53,
+      "duplicate_on_all_list": "evx07.html appears on both page 2 and page 3"
+    },
+    "tag_lists": {
+      "STARTERDECK": {
+        "pages": 2,
+        "count": 15
+      },
+      "BOOSTERPACK": {
+        "pages": 1,
+        "count": 9
+      },
+      "ACCESSORIES": {
+        "pages": 2,
+        "count": 21
+      },
+      "PREMIUMBANDAI": {
+        "pages": 1,
+        "count": 4
+      },
+      "OTHER": {
+        "pages": 1,
+        "count": 4
+      }
+    },
+    "union_unique_products": 54,
+    "only_in_tag_not_in_all": [
+      "https://www.gundam-gcg.com/jp/products/evx06.html"
+    ],
+    "only_in_all_not_in_tags": [
+      "https://www.gundam-gcg.com/jp/products/limitedbox-beta.html"
+    ]
+  },
+  "products": [
+    {
+      "id": "limitedbox-beta",
+      "product_code": null,
+      "product_codes": [],
+      "name_official_jp_site": "ガンダムカードゲーム リミテッドBOX Ver.β",
+      "list_name_official_jp_site": "ガンダムカードゲーム リミテッドBOX Ver.β",
+      "category_zh": "限定盒（β版）",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [
+        "ガンダムカードゲーム リミテッドBOX Ver.β"
+      ],
+      "list_category_jp": [],
+      "official_list_tags": [],
+      "release_date_original": "2024年12月14日(土)発売",
+      "release_date_iso": "2024-12-14",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2024-12-14",
+      "list_release_date_original": [
+        "2024.12.14"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/limitedbox-beta.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=5",
+          "page_num": 5,
+          "filter_tag": "all",
+          "pager_text": "5/5",
+          "in_all_products_list": true
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥7,700(税込)",
+      "contents_original": "β版ブースター: 16パック（1パック9枚入り） 固定カード: 56枚 プレイシート: 2枚 ダメージカウンターダイス: 6個 レジェンドレアカード: 1枚",
+      "variants": [
+        {
+          "official_heading_jp": "ガンダムカードゲーム リミテッドBOX Ver.β",
+          "official_type_jp": "ガンダムカードゲーム リミテッドBOX Ver.β",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2024年12月14日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥7,700(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "β版ブースター: 16パック（1パック9枚入り） 固定カード: 56枚 プレイシート: 2枚 ダメージカウンターダイス: 6個 レジェンドレアカード: 1枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2024.12.14",
+      "notes": [
+        "出现在「すべて」列表，但五个官方分类标签页中都没有该商品。",
+        "最早官方卡牌商品，含β版补充包与固定卡，但是体验/先行商品；发售日不能自动当作赛事环境分界"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "st01",
+      "product_code": "ST01",
+      "product_codes": [
+        "ST01",
+        "ST01A"
+      ],
+      "name_official_jp_site": "Heroic Beginnings [ST01]",
+      "list_name_official_jp_site": "Heroic Beginnings [ST01]",
+      "category_zh": "预组（含组装模型特别版）",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "スタートデッキ",
+        "スタートデッキ ガンダムアッセンブルセット"
+      ],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2025年7月12日(土)発売",
+      "release_date_iso": "2025-07-12",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2025-07-12",
+      "list_release_date_original": [
+        "2025.7.12"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st01.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=4",
+          "page_num": 4,
+          "filter_tag": "all",
+          "pager_text": "4/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=STARTERDECK",
+          "page_num": 1,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥1,320(税込)",
+      "contents_original": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 8枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック",
+      "variants": [
+        {
+          "official_heading_jp": "スタートデッキ Heroic Beginnings [ST01]",
+          "official_type_jp": "スタートデッキ",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年7月12日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥1,320(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 8枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック"
+            },
+            {
+              "label": "レアリティ",
+              "value": "レジェンドレア: 2種 コモン: 14種"
+            },
+            {
+              "label": "",
+              "value": "本商品は製品の特性上、同じカードが複数枚入っています。 写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        },
+        {
+          "official_heading_jp": "スタートデッキ ガンダムアッセンブルセット Heroic Beginnings [ST01A]",
+          "official_type_jp": "スタートデッキ ガンダムアッセンブルセット",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年7月12日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥3,300(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "ガンダムアッセンブル: 3体 TP-001 ガンダム TP-002 ガンキャノン TP-003 ガンタンク デッキ: 50枚 リソースカード: 10枚 トークンカード: 8枚 ダメージカウンターシート: 1枚 プレイシート: 2枚 ボーナスパック: 1パック"
+            },
+            {
+              "label": "レアリティ",
+              "value": "レジェンドレア: 2種 コモン: 14種"
+            },
+            {
+              "label": "",
+              "value": "ガンダムアッセンブルは未塗装の状態で提供されます。 本商品は製品の特性上、同じカードが複数枚入っています。 写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2025.7.12",
+      "notes": [
+        "详情页标明スタートデッキ，另有ST01Aガンダムアッセンブルセット"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "st04",
+      "product_code": "ST04",
+      "product_codes": [
+        "ST04",
+        "ST04A"
+      ],
+      "name_official_jp_site": "SEED Strike [ST04]",
+      "list_name_official_jp_site": "SEED Strike [ST04]",
+      "category_zh": "预组（含组装模型特别版）",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "スタートデッキ",
+        "スタートデッキ ガンダムアッセンブルセット"
+      ],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2025年7月12日(土)発売",
+      "release_date_iso": "2025-07-12",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2025-07-12",
+      "list_release_date_original": [
+        "2025.7.12"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st04.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=5",
+          "page_num": 5,
+          "filter_tag": "all",
+          "pager_text": "5/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2&subcategory=product&tag=STARTERDECK",
+          "page_num": 2,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "2/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥1,320(税込)",
+      "contents_original": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 8枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック",
+      "variants": [
+        {
+          "official_heading_jp": "スタートデッキ SEED Strike [ST04]",
+          "official_type_jp": "スタートデッキ",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年7月12日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥1,320(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 8枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック"
+            },
+            {
+              "label": "レアリティ",
+              "value": "レジェンドレア: 2種 コモン: 14種"
+            },
+            {
+              "label": "",
+              "value": "本商品は製品の特性上、同じカードが複数枚入っています。 写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        },
+        {
+          "official_heading_jp": "スタートデッキ ガンダムアッセンブルセット SEED Strike [ST04A]",
+          "official_type_jp": "スタートデッキ ガンダムアッセンブルセット",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年7月12日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥3,300(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "ガンダムアッセンブル: 3体 TP-009ランチャーストライクガンダム TP-010ソードストライクガンダム スカイグラスパー デッキ: 50枚 リソースカード: 10枚 トークンカード: 8枚 ダメージカウンターシート: 1枚 プレイシート: 2枚 ボーナスパック: 1パック"
+            },
+            {
+              "label": "レアリティ",
+              "value": "レジェンドレア: 2種 コモン: 14種"
+            },
+            {
+              "label": "",
+              "value": "ガンダムアッセンブルは未塗装の状態で提供されます。 本商品は製品の特性上、同じカードが複数枚入っています。 写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2025.7.12",
+      "notes": [
+        "详情页标明スタートデッキ，另有ST04Aガンダムアッセンブルセット"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "st02",
+      "product_code": "ST02",
+      "product_codes": [
+        "ST02",
+        "ST02A"
+      ],
+      "name_official_jp_site": "Wings of Advance [ST02]",
+      "list_name_official_jp_site": "Wings of Advance [ST02]",
+      "category_zh": "预组（含组装模型特别版）",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "スタートデッキ",
+        "スタートデッキ ガンダムアッセンブルセット"
+      ],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2025年7月12日(土)発売",
+      "release_date_iso": "2025-07-12",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2025-07-12",
+      "list_release_date_original": [
+        "2025.7.12"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st02.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=4",
+          "page_num": 4,
+          "filter_tag": "all",
+          "pager_text": "4/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2&subcategory=product&tag=STARTERDECK",
+          "page_num": 2,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "2/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥1,320(税込)",
+      "contents_original": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 8枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック",
+      "variants": [
+        {
+          "official_heading_jp": "スタートデッキ Wings of Advance [ST02]",
+          "official_type_jp": "スタートデッキ",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年7月12日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥1,320(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 8枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック"
+            },
+            {
+              "label": "レアリティ",
+              "value": "レジェンドレア: 2種 コモン: 14種"
+            },
+            {
+              "label": "",
+              "value": "本商品は製品の特性上、同じカードが複数枚入っています。 写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        },
+        {
+          "official_heading_jp": "スタートデッキ ガンダムアッセンブルセット Wings of Advance [ST02A]",
+          "official_type_jp": "スタートデッキ ガンダムアッセンブルセット",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年7月12日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥3,300(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "ガンダムアッセンブル: 3体 TP-004A リーオー TP-004B リーオー TP-005 トールギス デッキ: 50枚 リソースカード: 10枚 トークンカード: 8枚 ダメージカウンターシート: 1枚 プレイシート: 2枚 ボーナスパック: 1パック"
+            },
+            {
+              "label": "レアリティ",
+              "value": "レジェンドレア: 2種 コモン: 14種"
+            },
+            {
+              "label": "",
+              "value": "ガンダムアッセンブルは未塗装の状態で提供されます。 本商品は製品の特性上、同じカードが複数枚入っています。 写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2025.7.12",
+      "notes": [
+        "详情页标明スタートデッキ，另有ST02Aガンダムアッセンブルセット"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "st03",
+      "product_code": "ST03",
+      "product_codes": [
+        "ST03",
+        "ST03A"
+      ],
+      "name_official_jp_site": "Zeon's Rush [ST03]",
+      "list_name_official_jp_site": "Zeon's Rush [ST03]",
+      "category_zh": "预组（含组装模型特别版）",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "スタートデッキ",
+        "スタートデッキ ガンダムアッセンブルセット"
+      ],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2025年7月12日(土)発売",
+      "release_date_iso": "2025-07-12",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2025-07-12",
+      "list_release_date_original": [
+        "2025.7.12"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st03.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=5",
+          "page_num": 5,
+          "filter_tag": "all",
+          "pager_text": "5/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2&subcategory=product&tag=STARTERDECK",
+          "page_num": 2,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "2/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥1,320(税込)",
+      "contents_original": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 8枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック",
+      "variants": [
+        {
+          "official_heading_jp": "スタートデッキ Zeon's Rush [ST03]",
+          "official_type_jp": "スタートデッキ",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年7月12日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥1,320(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 8枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック"
+            },
+            {
+              "label": "レアリティ",
+              "value": "レジェンドレア: 2種 コモン: 14種"
+            },
+            {
+              "label": "",
+              "value": "本商品は製品の特性上、同じカードが複数枚入っています。 写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        },
+        {
+          "official_heading_jp": "スタートデッキ ガンダムアッセンブルセット Zeon's Rush [ST03A]",
+          "official_type_jp": "スタートデッキ ガンダムアッセンブルセット",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年7月12日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥3,300(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "ガンダムアッセンブル: 3体 TP-006 ザクⅡ(シャア・アズナブル専用機) TP-007A ザクⅡ TP-007B ザクⅡ デッキ: 50枚 リソースカード: 10枚 トークンカード: 8枚 ダメージカウンターシート: 1枚 プレイシート: 2枚 ボーナスパック: 1パック"
+            },
+            {
+              "label": "レアリティ",
+              "value": "レジェンドレア: 2種 コモン: 14種"
+            },
+            {
+              "label": "",
+              "value": "ガンダムアッセンブルは未塗装の状態で提供されます。 本商品は製品の特性上、同じカードが複数枚入っています。 写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2025.7.12",
+      "notes": [
+        "详情页标明スタートデッキ，另有ST03Aガンダムアッセンブルセット"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "deck-case01",
+      "product_code": null,
+      "product_codes": [],
+      "name_official_jp_site": "オフィシャルカードケースセット 01",
+      "list_name_official_jp_site": "オフィシャルカードケースセット 01",
+      "category_zh": "周边（卡盒，含EX卡）",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2025年7月12日(土)発売",
+      "release_date_iso": "2025-07-12",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2025-07-12",
+      "list_release_date_original": [
+        "2025.7.12"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/deck-case01.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=4",
+          "page_num": 4,
+          "filter_tag": "all",
+          "pager_text": "4/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2&subcategory=product&tag=ACCESSORIES",
+          "page_num": 2,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "2/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥1,320(税込)",
+      "contents_original": "デッキケース: 1個 カード: EXリソースカード (ラクス・クライン) 1枚 EXベースカード (ストライクガンダム) 1枚 セパレーター: 1枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年7月12日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥1,320(税込)"
+            },
+            {
+              "label": "種類数",
+              "value": "全1種"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキケース: 1個 カード: EXリソースカード (ラクス・クライン) 1枚 EXベースカード (ストライクガンダム) 1枚 セパレーター: 1枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "含EX资源卡与EX基地卡，详情页未说明是否新卡或再录，不自动划分环境"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "sleeve01",
+      "product_code": null,
+      "product_codes": [],
+      "name_official_jp_site": "オフィシャルカードスリーブ 01",
+      "list_name_official_jp_site": "オフィシャルカードスリーブ 01",
+      "category_zh": "周边（卡套）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2025年7月12日(土)発売",
+      "release_date_iso": "2025-07-12",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2025-07-12",
+      "list_release_date_original": [
+        "2025.7.12"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/sleeve01.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=4",
+          "page_num": 4,
+          "filter_tag": "all",
+          "pager_text": "4/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2&subcategory=product&tag=ACCESSORIES",
+          "page_num": 2,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "2/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥880(税込)",
+      "contents_original": "各セット カードスリーブ: 70枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年7月12日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥880(税込)"
+            },
+            {
+              "label": "種類数",
+              "value": "全4種 ガンダムカードゲーム ロゴ 溢れる慈愛 ガンダム･EFSF ザクⅡ（シャア・アズナブル機）･ジオン"
+            },
+            {
+              "label": "内容",
+              "value": "各セット カードスリーブ: 70枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "内容仅为卡套，无卡牌"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "dice01",
+      "product_code": null,
+      "product_codes": [],
+      "name_official_jp_site": "オフィシャルダメージカウンターダイス 01",
+      "list_name_official_jp_site": "オフィシャルダメージカウンターダイス 01",
+      "category_zh": "周边（骰子）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2025年7月12日(土)発売",
+      "release_date_iso": "2025-07-12",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2025-07-12",
+      "list_release_date_original": [
+        "2025.7.12"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/dice01.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=4",
+          "page_num": 4,
+          "filter_tag": "all",
+          "pager_text": "4/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2&subcategory=product&tag=ACCESSORIES",
+          "page_num": 2,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "2/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥1,650(税込)",
+      "contents_original": "ダイス: 6個(ケース付き)",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年7月12日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥1,650(税込)"
+            },
+            {
+              "label": "種類数",
+              "value": "全1種"
+            },
+            {
+              "label": "セット内容",
+              "value": "ダイス: 6個(ケース付き)"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "内容仅为骰子"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "gd01",
+      "product_code": "GD01",
+      "product_codes": [
+        "GD01"
+      ],
+      "name_official_jp_site": "Newtype Rising [GD01]",
+      "list_name_official_jp_site": "Newtype Rising [GD01]",
+      "category_zh": "补充包",
+      "kind": "新卡补充包",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "ブースターパック"
+      ],
+      "list_category_jp": [
+        "ブースター"
+      ],
+      "official_list_tags": [
+        "BOOSTERPACK"
+      ],
+      "release_date_original": "2025年7月26日(土)発売",
+      "release_date_iso": "2025-07-26",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2025-07-26",
+      "list_release_date_original": [
+        "2025.7.26"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/gd01.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=4",
+          "page_num": 4,
+          "filter_tag": "all",
+          "pager_text": "4/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=BOOSTERPACK",
+          "page_num": 1,
+          "filter_tag": "BOOSTERPACK",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥242(税込)",
+      "contents_original": "1パック カード: 6枚+1枚",
+      "variants": [
+        {
+          "official_heading_jp": "ブースターパック Newtype Rising [GD01]",
+          "official_type_jp": "ブースターパック",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年7月26日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥242(税込)"
+            },
+            {
+              "label": "内容",
+              "value": "1パック カード: 6枚+1枚"
+            },
+            {
+              "label": "レアリティ",
+              "value": "全130種+6種 コモン：50種 アンコモン：36種 レア：32種 レジェンドレア：12種 リソース／トークン：6種"
+            },
+            {
+              "label": "",
+              "value": "写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2025.7.26",
+      "notes": [
+        "详情页标明ブースターパック，并给出完整稀有度种数"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "goodsset01",
+      "product_code": null,
+      "product_codes": [],
+      "name_official_jp_site": "オフィシャルグッズセット01 FIRST COMBAT",
+      "list_name_official_jp_site": "オフィシャルグッズセット01 FIRST COMBAT",
+      "category_zh": "周边套装（含资源卡）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2025年8月30日(土)",
+      "release_date_iso": "2025-08-30",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2025-08-30",
+      "list_release_date_original": [
+        "2025.8.30"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/goodsset01.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=4",
+          "page_num": 4,
+          "filter_tag": "all",
+          "pager_text": "4/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2&subcategory=product&tag=ACCESSORIES",
+          "page_num": 2,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "2/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥5,500(税込)",
+      "contents_original": "・リソースカード: 10枚 各種1枚ずつ ・ストレージボックス: 1個 ・プレイマット: 1枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年8月30日(土)"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥5,500(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "・リソースカード: 10枚 各種1枚ずつ ・ストレージボックス: 1個 ・プレイマット: 1枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "资源卡、收纳盒与牌垫；未见新卡说明，不作为环境分界"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "pb01",
+      "product_code": "PB01",
+      "product_codes": [
+        "PB01"
+      ],
+      "name_official_jp_site": "プレミアムグッズセット -新機動戦記ガンダムW- [PB01]",
+      "list_name_official_jp_site": "プレミアムグッズセット -新機動戦記ガンダムW- [PB01]",
+      "category_zh": "高级万代限定套装（含卡牌）",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "プレミアムバンダイ"
+      ],
+      "official_list_tags": [
+        "PREMIUMBANDAI"
+      ],
+      "release_date_original": null,
+      "release_date_iso": null,
+      "release_date_precision": "reservation_or_shipping_only",
+      "release_date_start_iso": null,
+      "list_release_date_original": [
+        "2025.8.20"
+      ],
+      "reservation_start_original": "2025年9月1日(月)(二次予約)",
+      "reservation_start_iso": "2025-09-01",
+      "shipping_period_original": "2026年2月発送予定",
+      "shipping_period_year_month": "2026-02",
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/pb01.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=4",
+          "page_num": 4,
+          "filter_tag": "all",
+          "pager_text": "4/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=PREMIUMBANDAI",
+          "page_num": 1,
+          "filter_tag": "PREMIUMBANDAI",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "日期不精确待确认",
+      "price_original": "¥9,900(税込)",
+      "contents_original": "カードケース: 1個 カードスリーブ: 70枚 リソースカード: 10種各1枚（合計10枚） カード: 2種各2枚（合計4枚） ラバー製プレイマット: 1枚 ストレージボックス: 1個",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "予約開始日",
+              "value": "2025年9月1日(月)(二次予約)"
+            },
+            {
+              "label": "発送時期",
+              "value": "2026年2月発送予定"
+            },
+            {
+              "label": "販売価格",
+              "value": "¥9,900(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "カードケース: 1個 カードスリーブ: 70枚 リソースカード: 10種各1枚（合計10枚） カード: 2種各2枚（合計4枚） ラバー製プレイマット: 1枚 ストレージボックス: 1個"
+            },
+            {
+              "label": "",
+              "value": "プレミアムバンダイ"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "详情页没有「発売日」，只有「予約開始日」和「発送時期」",
+        "发货时期原文：2026年2月発送予定（仅有月份，ISO发售日留空）",
+        "详情页只有预约开始日和发货月份，没有精确発売日；含卡牌但不足以自动划分环境"
+      ],
+      "conflicts": [
+        {
+          "type": "list_date_vs_reservation_start",
+          "detail": "列表页把「発売日」写成 2025.8.20，详情页对应字段是预约开始日 2025年9月1日(月)(二次予約)，二者日期不同。不以列表页日期作为发售日。"
+        }
+      ]
+    },
+    {
+      "id": "st05",
+      "product_code": "ST05",
+      "product_codes": [
+        "ST05"
+      ],
+      "name_official_jp_site": "Iron Bloom [ST05]",
+      "list_name_official_jp_site": "Iron Bloom [ST05]",
+      "category_zh": "预组",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "スタートデッキ"
+      ],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2025年9月27日(土) 発売",
+      "release_date_iso": "2025-09-27",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2025-09-27",
+      "list_release_date_original": [
+        "2025.9.27"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st05.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=4",
+          "page_num": 4,
+          "filter_tag": "all",
+          "pager_text": "4/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=STARTERDECK",
+          "page_num": 1,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥1,650(税込)",
+      "contents_original": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 2枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック",
+      "variants": [
+        {
+          "official_heading_jp": "スタートデッキ Iron Bloom [ST05]",
+          "official_type_jp": "スタートデッキ",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年9月27日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥1,650(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 2枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック"
+            },
+            {
+              "label": "レアリティ",
+              "value": "レジェンドレア: 2種 コモン: 14種"
+            },
+            {
+              "label": "",
+              "value": "本商品は製品の特性上、同じカードが複数枚入っています。 写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2025.9.27",
+      "notes": [
+        "详情页标明スタートデッキ，并写明铁血的奥尔芬斯新参战"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "pb02",
+      "product_code": "PB02",
+      "product_codes": [
+        "PB02"
+      ],
+      "name_official_jp_site": "プレミアムグッズセット -機動戦士ガンダム 鉄血のオルフェンズ- [PB02]",
+      "list_name_official_jp_site": "プレミアムグッズセット -機動戦士ガンダム 鉄血のオルフェンズ- [PB02]",
+      "category_zh": "高级万代限定套装（含卡牌）",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "プレミアムバンダイ"
+      ],
+      "official_list_tags": [
+        "PREMIUMBANDAI"
+      ],
+      "release_date_original": null,
+      "release_date_iso": null,
+      "release_date_precision": "reservation_or_shipping_only",
+      "release_date_start_iso": null,
+      "list_release_date_original": [
+        "2025.10.9"
+      ],
+      "reservation_start_original": "2025年10月9日(木)",
+      "reservation_start_iso": "2025-10-09",
+      "shipping_period_original": "2026年3月発送予定",
+      "shipping_period_year_month": "2026-03",
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/pb02.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=3",
+          "page_num": 3,
+          "filter_tag": "all",
+          "pager_text": "3/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=PREMIUMBANDAI",
+          "page_num": 1,
+          "filter_tag": "PREMIUMBANDAI",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "日期不精确待确认",
+      "price_original": "¥9,900(税込)",
+      "contents_original": "カードケース: 1個 カードスリーブ: 70枚 リソースカード: 10種各1枚（合計10枚） カード: 2種各2枚（合計4枚） ラバー製プレイマット: 1枚 ストレージボックス: 1個",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "予約開始日",
+              "value": "2025年10月9日(木)"
+            },
+            {
+              "label": "発送時期",
+              "value": "2026年3月発送予定"
+            },
+            {
+              "label": "販売価格",
+              "value": "¥9,900(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "カードケース: 1個 カードスリーブ: 70枚 リソースカード: 10種各1枚（合計10枚） カード: 2種各2枚（合計4枚） ラバー製プレイマット: 1枚 ストレージボックス: 1個"
+            },
+            {
+              "label": "",
+              "value": "プレミアムバンダイ"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "详情页没有「発売日」，只有「予約開始日」和「発送時期」",
+        "发货时期原文：2026年3月発送予定（仅有月份，ISO发售日留空）",
+        "详情页只有预约开始日和发货月份，没有精确発売日；含卡牌但不足以自动划分环境"
+      ],
+      "conflicts": [
+        {
+          "type": "list_mislabels_reservation_as_release",
+          "detail": "列表页「発売日」2025.10.9 与详情页「予約開始日」相同。该日期是预约开始日，不是精确发售日，ISO发售日留空。"
+        }
+      ]
+    },
+    {
+      "id": "sleeve02-2",
+      "product_code": null,
+      "product_codes": [],
+      "name_official_jp_site": "【イベント限定品】オフィシャルマットスリーブEX",
+      "list_name_official_jp_site": "【イベント限定品】オフィシャルマットスリーブEX",
+      "category_zh": "周边（活动限定卡套）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2025年10月11日(土)",
+      "release_date_iso": "2025-10-11",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2025-10-11",
+      "list_release_date_original": [
+        "2025.10.11"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/sleeve02-2.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=4",
+          "page_num": 4,
+          "filter_tag": "all",
+          "pager_text": "4/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2&subcategory=product&tag=ACCESSORIES",
+          "page_num": 2,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "2/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥990(税込)",
+      "contents_original": "各セット カードスリーブ: 70枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年10月11日(土)"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥990(税込)"
+            },
+            {
+              "label": "種類数",
+              "value": "全4種 シャア ビスト財団 鉄華団 ポメラニアンズ"
+            },
+            {
+              "label": "内容",
+              "value": "各セット カードスリーブ: 70枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "内容仅为卡套，无卡牌；标题无产品编号"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "st06",
+      "product_code": "ST06",
+      "product_codes": [
+        "ST06"
+      ],
+      "name_official_jp_site": "Clan Unity [ST06]",
+      "list_name_official_jp_site": "Clan Unity [ST06]",
+      "category_zh": "预组",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "スタートデッキ"
+      ],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2025年10月25日(土)発売",
+      "release_date_iso": "2025-10-25",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2025-10-25",
+      "list_release_date_original": [
+        "2025.10.25"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st06.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=3",
+          "page_num": 3,
+          "filter_tag": "all",
+          "pager_text": "3/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=STARTERDECK",
+          "page_num": 1,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥1,650(税込)",
+      "contents_original": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 2枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック",
+      "variants": [
+        {
+          "official_heading_jp": "スタートデッキ Clan Unity [ST06]",
+          "official_type_jp": "スタートデッキ",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年10月25日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥1,650(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 2枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック"
+            },
+            {
+              "label": "レアリティ",
+              "value": "レジェンドレア: 2種 コモン: 14種"
+            },
+            {
+              "label": "",
+              "value": "本商品は製品の特性上、同じカードが複数枚入っています。 写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2025.10.25",
+      "notes": [
+        "详情页标明スタートデッキ，并写明GQuuuuuuX新参战"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "gd02",
+      "product_code": "GD02",
+      "product_codes": [
+        "GD02"
+      ],
+      "name_official_jp_site": "Dual Impact [GD02]",
+      "list_name_official_jp_site": "Dual Impact [GD02]",
+      "category_zh": "补充包",
+      "kind": "新卡补充包",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "ブースターパック"
+      ],
+      "list_category_jp": [
+        "ブースター"
+      ],
+      "official_list_tags": [
+        "BOOSTERPACK"
+      ],
+      "release_date_original": "2025年10月25日(土)発売",
+      "release_date_iso": "2025-10-25",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2025-10-25",
+      "list_release_date_original": [
+        "2025.10.25"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/gd02.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=3",
+          "page_num": 3,
+          "filter_tag": "all",
+          "pager_text": "3/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=BOOSTERPACK",
+          "page_num": 1,
+          "filter_tag": "BOOSTERPACK",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥242(税込)",
+      "contents_original": "1パック カード: 6枚+1枚",
+      "variants": [
+        {
+          "official_heading_jp": "ブースターパック Dual Impact [GD02]",
+          "official_type_jp": "ブースターパック",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2025年10月25日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥242(税込)"
+            },
+            {
+              "label": "内容",
+              "value": "1パック カード: 6枚+1枚"
+            },
+            {
+              "label": "レアリティ",
+              "value": "130種＋13種 コモン： 50種 アンコモン：36種 レア：32種 レジェンドレア：12種 トークン：3種 リソース：10種"
+            },
+            {
+              "label": "",
+              "value": "写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2025.10.25",
+      "notes": [
+        "详情页标明ブースターパック，并给出完整稀有度种数"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "st07",
+      "product_code": "ST07",
+      "product_codes": [
+        "ST07"
+      ],
+      "name_official_jp_site": "Celestial Drive [ST07]",
+      "list_name_official_jp_site": "Celestial Drive [ST07]",
+      "category_zh": "预组",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "スタートデッキ"
+      ],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2026年1月17日(土) 発売",
+      "release_date_iso": "2026-01-17",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-01-17",
+      "list_release_date_original": [
+        "2026.1.17"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st07.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=3",
+          "page_num": 3,
+          "filter_tag": "all",
+          "pager_text": "3/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=STARTERDECK",
+          "page_num": 1,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥1,650(税込)",
+      "contents_original": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 2枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック",
+      "variants": [
+        {
+          "official_heading_jp": "スタートデッキ Celestial Drive [ST07]",
+          "official_type_jp": "スタートデッキ",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年1月17日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥1,650(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 2枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック"
+            },
+            {
+              "label": "レアリティ",
+              "value": "レジェンドレア: 2種 コモン: 14種"
+            },
+            {
+              "label": "",
+              "value": "本商品は製品の特性上、同じカードが複数枚入っています。 写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2026.1.17",
+      "notes": [
+        "详情页标明スタートデッキ，并写明高达00新参战"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "st08",
+      "product_code": "ST08",
+      "product_codes": [
+        "ST08"
+      ],
+      "name_official_jp_site": "Flash of Radiance [ST08]",
+      "list_name_official_jp_site": "Flash of Radiance [ST08]",
+      "category_zh": "预组",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "スタートデッキ"
+      ],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2026年1月17日(土) 発売",
+      "release_date_iso": "2026-01-17",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-01-17",
+      "list_release_date_original": [
+        "2026.1.17"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st08.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=3",
+          "page_num": 3,
+          "filter_tag": "all",
+          "pager_text": "3/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=STARTERDECK",
+          "page_num": 1,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥1,650(税込)",
+      "contents_original": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 2枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック",
+      "variants": [
+        {
+          "official_heading_jp": "スタートデッキ Flash of Radiance [ST08]",
+          "official_type_jp": "スタートデッキ",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年1月17日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥1,650(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 2枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック"
+            },
+            {
+              "label": "レアリティ",
+              "value": "レジェンドレア: 2種 コモン: 14種"
+            },
+            {
+              "label": "",
+              "value": "本商品は製品の特性上、同じカードが複数枚入っています。 写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2026.1.17",
+      "notes": [
+        "详情页标明スタートデッキ，并写明闪光的哈萨韦新参战"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "gd03",
+      "product_code": "GD03",
+      "product_codes": [
+        "GD03"
+      ],
+      "name_official_jp_site": "Steel Requiem [GD03]",
+      "list_name_official_jp_site": "Steel Requiem [GD03]",
+      "category_zh": "补充包",
+      "kind": "新卡补充包",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "ブースターパック"
+      ],
+      "list_category_jp": [
+        "ブースター"
+      ],
+      "official_list_tags": [
+        "BOOSTERPACK"
+      ],
+      "release_date_original": "2026年1月31日(土) 発売",
+      "release_date_iso": "2026-01-31",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-01-31",
+      "list_release_date_original": [
+        "2026.1.31"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/gd03.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=3",
+          "page_num": 3,
+          "filter_tag": "all",
+          "pager_text": "3/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=BOOSTERPACK",
+          "page_num": 1,
+          "filter_tag": "BOOSTERPACK",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥242(税込)",
+      "contents_original": "1パック カード: 6枚+1枚",
+      "variants": [
+        {
+          "official_heading_jp": "ブースターパック Steel Requiem [GD03]",
+          "official_type_jp": "ブースターパック",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年1月31日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥242(税込)"
+            },
+            {
+              "label": "内容",
+              "value": "1パック カード: 6枚+1枚"
+            },
+            {
+              "label": "レアリティ",
+              "value": "139種＋20種 コモン： 50種 アンコモン：36種 レア：34種 レジェンドレア：12種 スペシャルカード：7種 トークン：10種 リソース：10種"
+            },
+            {
+              "label": "",
+              "value": "写真と実際の商品は多少異なる場合があります。 商品の仕様は変更になる場合があります。"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2026.1.31",
+      "notes": [
+        "详情页标明ブースターパック，并给出完整稀有度种数"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "pc02a",
+      "product_code": "PC02A",
+      "product_codes": [
+        "PC02A"
+      ],
+      "name_official_jp_site": "プレミアムカードコレクション ガンダムアッセンブルセット -機動戦士Gundam GQuuuuuuX- [PC02A]",
+      "list_name_official_jp_site": "プレミアムカードコレクション ガンダムアッセンブルセット -機動戦士Gundam GQuuuuuuX- [PC02A]",
+      "category_zh": "高级卡牌收藏（含组装模型）",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "その他"
+      ],
+      "official_list_tags": [
+        "OTHER"
+      ],
+      "release_date_original": "2026年2月28日(土)発売",
+      "release_date_iso": "2026-02-28",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-02-28",
+      "list_release_date_original": [
+        "2026.2.28"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/pc02a.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=3",
+          "page_num": 3,
+          "filter_tag": "all",
+          "pager_text": "3/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=OTHER",
+          "page_num": 1,
+          "filter_tag": "OTHER",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥3,850(税込)",
+      "contents_original": "ガンダムアッセンブル: 3体 TP-014 GQuuuuuuX（オメガ・サイコミュ起動時） TP-015 赤いガンダム TP-016 GFreD カード: 14枚（7種×2枚） ボーナスパック: 1パック(全5種※ランダム) ガンダムアッセンブル取り扱い説明書:1枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年2月28日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥3,850(税込)"
+            },
+            {
+              "label": "内容",
+              "value": "ガンダムアッセンブル: 3体 TP-014 GQuuuuuuX（オメガ・サイコミュ起動時） TP-015 赤いガンダム TP-016 GFreD カード: 14枚（7種×2枚） ボーナスパック: 1パック(全5種※ランダム) ガンダムアッセンブル取り扱い説明書:1枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "含14枚卡与奖励包，详情页未说明是否全部为新卡；不自动划分环境"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "pc01a",
+      "product_code": "PC01A",
+      "product_codes": [
+        "PC01A"
+      ],
+      "name_official_jp_site": "プレミアムカードコレクション ガンダムアッセンブルセット -機動戦士ガンダム 鉄血のオルフェンズ- [PC01A]",
+      "list_name_official_jp_site": "プレミアムカードコレクション ガンダムアッセンブルセット -機動戦士ガンダム 鉄血のオルフェンズ- [PC01A]",
+      "category_zh": "高级卡牌收藏（含组装模型）",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "その他"
+      ],
+      "official_list_tags": [
+        "OTHER"
+      ],
+      "release_date_original": "2026年2月28日(土)発売",
+      "release_date_iso": "2026-02-28",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-02-28",
+      "list_release_date_original": [
+        "2026.2.28"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/pc01a.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=3",
+          "page_num": 3,
+          "filter_tag": "all",
+          "pager_text": "3/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=OTHER",
+          "page_num": 1,
+          "filter_tag": "OTHER",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥3,850(税込)",
+      "contents_original": "ガンダムアッセンブル: 3体 TP-011 ガンダム・バルバトス(第4形態) TP-012 グレイズ改 TP-013 CGSモビルワーカー カード: 14枚（7種×2枚） ボーナスパック: 1パック(全5種※ランダム) ガンダムアッセンブル取り扱い説明書:1枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年2月28日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥3,850(税込)"
+            },
+            {
+              "label": "内容",
+              "value": "ガンダムアッセンブル: 3体 TP-011 ガンダム・バルバトス(第4形態) TP-012 グレイズ改 TP-013 CGSモビルワーカー カード: 14枚（7種×2枚） ボーナスパック: 1パック(全5種※ランダム) ガンダムアッセンブル取り扱い説明書:1枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "含14枚卡与奖励包，详情页未说明是否全部为新卡；不自动划分环境"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "st09",
+      "product_code": "ST09",
+      "product_codes": [
+        "ST09"
+      ],
+      "name_official_jp_site": "Destiny Ignition [ST09]",
+      "list_name_official_jp_site": "Destiny Ignition [ST09]",
+      "category_zh": "终极预组",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "アルティメットデッキ"
+      ],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2026年3月28日(土) 発売",
+      "release_date_iso": "2026-03-28",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-03-28",
+      "list_release_date_original": [
+        "2026.3.28"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st09.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=3",
+          "page_num": 3,
+          "filter_tag": "all",
+          "pager_text": "3/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=STARTERDECK",
+          "page_num": 1,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "3,850円(税込)",
+      "contents_original": "デッキ:50枚 差し替えカード22枚 リソースカード:10枚 トークンカード:2枚 ボーナスパック: 1パック ダメージカウンターダイス:6個 プレイシート: 1枚",
+      "variants": [
+        {
+          "official_heading_jp": "アルティメットデッキ Destiny Ignition [ST09]",
+          "official_type_jp": "アルティメットデッキ",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年3月28日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "3,850円(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ:50枚 差し替えカード22枚 リソースカード:10枚 トークンカード:2枚 ボーナスパック: 1パック ダメージカウンターダイス:6個 プレイシート: 1枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2026.3.28",
+      "notes": [
+        "详情页标明アルティメットデッキ"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "gd04",
+      "product_code": "GD04",
+      "product_codes": [
+        "GD04"
+      ],
+      "name_official_jp_site": "Phantom Aria [GD04]",
+      "list_name_official_jp_site": "Phantom Aria [GD04]",
+      "category_zh": "补充包",
+      "kind": "新卡补充包",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "ブースターパック"
+      ],
+      "list_category_jp": [
+        "ブースター"
+      ],
+      "official_list_tags": [
+        "BOOSTERPACK"
+      ],
+      "release_date_original": "2026年4月25日(土) 発売",
+      "release_date_iso": "2026-04-25",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-04-25",
+      "list_release_date_original": [
+        "2026.4.25"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/gd04.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=3",
+          "page_num": 3,
+          "filter_tag": "all",
+          "pager_text": "3/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=BOOSTERPACK",
+          "page_num": 1,
+          "filter_tag": "BOOSTERPACK",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "242円(税込)",
+      "contents_original": "1パック カード: 6枚+1枚",
+      "variants": [
+        {
+          "official_heading_jp": "ブースターパック Phantom Aria [GD04]",
+          "official_type_jp": "ブースターパック",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年4月25日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "242円(税込)"
+            },
+            {
+              "label": "内容",
+              "value": "1パック カード: 6枚+1枚"
+            },
+            {
+              "label": "レアリティ",
+              "value": "135種＋16種 コモン： 50種 アンコモン：36種 レア：32種 レジェンドレア：12種 スペシャルカード：5種 リソース：10種 トークン：6種"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2026.4.25",
+      "notes": [
+        "详情页标明ブースターパック，并写明新作品参战"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "evx06",
+      "product_code": "EVX06",
+      "product_codes": [
+        "EVX06"
+      ],
+      "name_official_jp_site": "オフィシャルマットスリーブEX 02[EVX06]",
+      "list_name_official_jp_site": "オフィシャルマットスリーブEX 02[EVX06]",
+      "category_zh": "周边（卡套）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2026年5月9日(土)～",
+      "release_date_iso": null,
+      "release_date_precision": "start_onward",
+      "release_date_start_iso": "2026-05-09",
+      "list_release_date_original": [
+        "2026.5.9～"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/evx06.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=ACCESSORIES",
+          "page_num": 1,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": false,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥990(税込)",
+      "contents_original": "各セット カードスリーブ: 70枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年5月9日(土)～"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥990(税込)"
+            },
+            {
+              "label": "種類数",
+              "value": "全4種 マフティー ザフト ソレスタルビーイング ジオン"
+            },
+            {
+              "label": "内容",
+              "value": "各セット カードスリーブ: 70枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "列表页発売日原文：2026.5.9～",
+        "该商品出现在「周辺アイテム」分类页，但未出现在「すべて」5页完整列表中。",
+        "内容仅为卡套，无卡牌；仅出现在周边分类页，未出现在「すべて」5页列表",
+        "发售日带「～」，只标明起始日、没有截止日，ISO精确发售日留空。"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "evx07",
+      "product_code": "EVX07",
+      "product_codes": [
+        "EVX07"
+      ],
+      "name_official_jp_site": "ストレージボックス&リソースカードセット[EVX07]",
+      "list_name_official_jp_site": "ストレージボックス&リソースカードセット[EVX07]",
+      "category_zh": "周边（收纳与资源卡）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2026年5月9日(土)～",
+      "release_date_iso": null,
+      "release_date_precision": "start_onward",
+      "release_date_start_iso": "2026-05-09",
+      "list_release_date_original": [
+        "2026.5.9～"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/evx07.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2",
+          "page_num": 2,
+          "filter_tag": "all",
+          "pager_text": "2/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=3",
+          "page_num": 3,
+          "filter_tag": "all",
+          "pager_text": "3/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=ACCESSORIES",
+          "page_num": 1,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥1980(税込)",
+      "contents_original": "ハーフストレージボックス: 1個 リソースカード: 10枚 各種1枚ずつ",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年5月9日(土)～"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥1980(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "ハーフストレージボックス: 1個 リソースカード: 10枚 各種1枚ずつ"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "列表页発売日原文：2026.5.9～",
+        "在「すべて」列表第[2, 3]页重复出现，已按详情URL去重。",
+        "收纳盒加资源卡；未见新卡说明，不作为环境分界",
+        "发售日带「～」，只标明起始日、没有截止日，ISO精确发售日留空。"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "eb01",
+      "product_code": "EB01",
+      "product_codes": [
+        "EB01"
+      ],
+      "name_official_jp_site": "Eternal Nexus [EB01]",
+      "list_name_official_jp_site": "Eternal Nexus [EB01]",
+      "category_zh": "额外补充包",
+      "kind": "新卡补充包",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "エクストラブースターパック"
+      ],
+      "list_category_jp": [
+        "ブースター"
+      ],
+      "official_list_tags": [
+        "BOOSTERPACK"
+      ],
+      "release_date_original": "2026年6月27日(土) 発売",
+      "release_date_iso": "2026-06-27",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-06-27",
+      "list_release_date_original": [
+        "2026.6.27"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/eb01.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2",
+          "page_num": 2,
+          "filter_tag": "all",
+          "pager_text": "2/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=BOOSTERPACK",
+          "page_num": 1,
+          "filter_tag": "BOOSTERPACK",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥242(税込)",
+      "contents_original": "1パック カード: 6枚",
+      "variants": [
+        {
+          "official_heading_jp": "エクストラブースターパック Eternal Nexus [EB01]",
+          "official_type_jp": "エクストラブースターパック",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年6月27日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥242(税込)"
+            },
+            {
+              "label": "内容",
+              "value": "1パック カード: 6枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2026.6.27",
+      "notes": [
+        "详情页标明エクストラブースターパック，SDガンダムコラボ"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "st10",
+      "product_code": "ST10",
+      "product_codes": [
+        "ST10"
+      ],
+      "name_official_jp_site": "Generation Pulse [ST10]",
+      "list_name_official_jp_site": "Generation Pulse [ST10]",
+      "category_zh": "预组",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "スタートデッキ"
+      ],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2026年6月27日(土) 発売",
+      "release_date_iso": "2026-06-27",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-06-27",
+      "list_release_date_original": [
+        "2026.6.27"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st10.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2",
+          "page_num": 2,
+          "filter_tag": "all",
+          "pager_text": "2/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=STARTERDECK",
+          "page_num": 1,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥1,650(税込)",
+      "contents_original": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 2枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック",
+      "variants": [
+        {
+          "official_heading_jp": "スタートデッキ Generation Pulse [ST10]",
+          "official_type_jp": "スタートデッキ",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年6月27日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥1,650(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 2枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2026.6.27",
+      "notes": [
+        "详情页标明スタートデッキ，与EB01同属G世代联动"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "evx09",
+      "product_code": "EVX09",
+      "product_codes": [
+        "EVX09"
+      ],
+      "name_official_jp_site": "ダイスケース付きカードケースセット[EVX09]",
+      "list_name_official_jp_site": "ダイスケース付きカードケースセット[EVX09]",
+      "category_zh": "周边（卡盒，含EX基地卡）",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2026年7月1日(土)",
+      "release_date_iso": "2026-07-01",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-07-01",
+      "list_release_date_original": [
+        "2026.7.1"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/evx09.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2",
+          "page_num": 2,
+          "filter_tag": "all",
+          "pager_text": "2/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=ACCESSORIES",
+          "page_num": 1,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥4,400(税込)",
+      "contents_original": "カードケース：1個 EXベース：1枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年7月1日(土)"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥4,400(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "カードケース：1個 EXベース：1枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "含EXベース1枚，详情页未说明是否新卡，不自动划分环境"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "gd05",
+      "product_code": "GD05",
+      "product_codes": [
+        "GD05"
+      ],
+      "name_official_jp_site": "Freedom Ascension [GD05]",
+      "list_name_official_jp_site": "Freedom Ascension [GD05]",
+      "category_zh": "补充包",
+      "kind": "新卡补充包",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "ブースターパック"
+      ],
+      "list_category_jp": [
+        "ブースター"
+      ],
+      "official_list_tags": [
+        "BOOSTERPACK"
+      ],
+      "release_date_original": "2026年7月25日(土) 発売",
+      "release_date_iso": "2026-07-25",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-07-25",
+      "list_release_date_original": [
+        "2026.7.25"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/gd05.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2",
+          "page_num": 2,
+          "filter_tag": "all",
+          "pager_text": "2/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=BOOSTERPACK",
+          "page_num": 1,
+          "filter_tag": "BOOSTERPACK",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥250(税込)",
+      "contents_original": "1パック カード: 6枚",
+      "variants": [
+        {
+          "official_heading_jp": "ブースターパック Freedom Ascension [GD05]",
+          "official_type_jp": "ブースターパック",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年7月25日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥250(税込)"
+            },
+            {
+              "label": "内容",
+              "value": "1パック カード: 6枚"
+            },
+            {
+              "label": "レアリティ",
+              "value": "138種＋10種 コモン： 50種 アンコモン：36種 レア：32種 レジェンドレア：12種 スペシャルカード：8種 トークン：2種 スペシャルEXリソース：8種"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2026.7.25",
+      "notes": [
+        "详情页标明ブースターパック，1周年记念弹"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "deck-case02",
+      "product_code": null,
+      "product_codes": [],
+      "name_official_jp_site": "オフィシャルカードケースセット 02",
+      "list_name_official_jp_site": "オフィシャルカードケースセット 02",
+      "category_zh": "周边（卡盒，含既有编号卡）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2026年7月25日(土)発売",
+      "release_date_iso": "2026-07-25",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-07-25",
+      "list_release_date_original": [
+        "2026.7.25"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/deck-case02.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2",
+          "page_num": 2,
+          "filter_tag": "all",
+          "pager_text": "2/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=ACCESSORIES",
+          "page_num": 1,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥1,320(税込)",
+      "contents_original": "デッキケース: 1個 GD01-023 シャア専用ゲルググ :1枚 GD01-030 リック・ドム :1枚 セパレーター: 1枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年7月25日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥1,320(税込)"
+            },
+            {
+              "label": "種類数",
+              "value": "全1種"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキケース: 1個 GD01-023 シャア専用ゲルググ :1枚 GD01-030 リック・ドム :1枚 セパレーター: 1枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "内容写明GD01-023、GD01-030，为既有补充包编号卡，按再录周边处理，不划分环境"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "sleeve03",
+      "product_code": null,
+      "product_codes": [],
+      "name_official_jp_site": "オフィシャルカードスリーブ 02",
+      "list_name_official_jp_site": "オフィシャルカードスリーブ 02",
+      "category_zh": "周边（卡套）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2026年7月25日(土)発売",
+      "release_date_iso": "2026-07-25",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-07-25",
+      "list_release_date_original": [
+        "2026.7.25"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/sleeve03.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2",
+          "page_num": 2,
+          "filter_tag": "all",
+          "pager_text": "2/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=ACCESSORIES",
+          "page_num": 1,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥880(税込)",
+      "contents_original": "各セット カードスリーブ: 70枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年7月25日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥880(税込)"
+            },
+            {
+              "label": "種類数",
+              "value": "全4種 スレッタ・マーキュリー 幸運の女神 シャイニングガンダム VS マスターガンダム νガンダム VS サザビー"
+            },
+            {
+              "label": "内容",
+              "value": "各セット カードスリーブ: 70枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "内容仅为卡套，无卡牌"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "custom-deck-box",
+      "product_code": "SC01",
+      "product_codes": [
+        "SC01"
+      ],
+      "name_official_jp_site": "カスタムデッキボックスFreedom Ascension [SC01]",
+      "list_name_official_jp_site": "カスタムデッキボックスFreedom Ascension [SC01]",
+      "category_zh": "自定义牌盒（含再录卡与补充包）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2026年7月25日(土) 発売",
+      "release_date_iso": "2026-07-25",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-07-25",
+      "list_release_date_original": [
+        "2026.7.25"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/custom-deck-box.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2",
+          "page_num": 2,
+          "filter_tag": "all",
+          "pager_text": "2/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=ACCESSORIES",
+          "page_num": 1,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥3,850(税込)",
+      "contents_original": "構築用再録カード：125枚 Freedom Ascention[GD05]：8パック ハーフストレージボックス：1個 リソースカード：10枚 トークンカード：2枚 プレイシート：2枚 ダメージカウンターシート：1枚 ボーナスパック：1パック",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年7月25日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥3,850(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "構築用再録カード：125枚 Freedom Ascention[GD05]：8パック ハーフストレージボックス：1個 リソースカード：10枚 トークンカード：2枚 プレイシート：2枚 ダメージカウンターシート：1枚 ボーナスパック：1パック"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "详情页套装内容把 Freedom Ascension 拼成了 Freedom Ascention，按原文保留。",
+        "详情页写明構築用再録カード125枚，并附GD05补充包；属周边/再录，不单独划分环境"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "pb03",
+      "product_code": null,
+      "product_codes": [],
+      "name_official_jp_site": "ガンダムカードゲーム 1st Anniversary Set",
+      "list_name_official_jp_site": "ガンダムカードゲーム 1st Anniversary Set",
+      "category_zh": "高级万代限定套装（含卡牌）",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "プレミアムバンダイ"
+      ],
+      "official_list_tags": [
+        "PREMIUMBANDAI"
+      ],
+      "release_date_original": null,
+      "release_date_iso": null,
+      "release_date_precision": "reservation_or_shipping_only",
+      "release_date_start_iso": null,
+      "list_release_date_original": [
+        "2026.7.27"
+      ],
+      "reservation_start_original": "2026年7月27日（月）",
+      "reservation_start_iso": "2026-07-27",
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/pb03.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2",
+          "page_num": 2,
+          "filter_tag": "all",
+          "pager_text": "2/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=PREMIUMBANDAI",
+          "page_num": 1,
+          "filter_tag": "PREMIUMBANDAI",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "日期不精确待确认",
+      "price_original": "¥15,400(税込)",
+      "contents_original": "カード:10種各1枚 リソースカード:1種10枚 EXリソース:1種1枚 EXベース:1種1枚 カードスリーブ:2種各70枚 合皮製カードケース:1種1個 ラバー製プレイマット:1種1枚 ダメージカウンターダイス:1種6個 ストレージボックス:1種1個",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "予約開始日",
+              "value": "2026年7月27日（月）"
+            },
+            {
+              "label": "販売価格",
+              "value": "¥15,400(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "カード:10種各1枚 リソースカード:1種10枚 EXリソース:1種1枚 EXベース:1種1枚 カードスリーブ:2種各70枚 合皮製カードケース:1種1個 ラバー製プレイマット:1種1枚 ダメージカウンターダイス:1種6個 ストレージボックス:1種1個"
+            },
+            {
+              "label": "",
+              "value": "プレミアムバンダイ(外部リンク)"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "详情页没有「発売日」，只有「予約開始日」",
+        "1st Anniversary Set，详情页只有预约开始日，没有精确発売日或发货月份；不自动划分环境"
+      ],
+      "conflicts": [
+        {
+          "type": "list_mislabels_reservation_as_release",
+          "detail": "列表页「発売日」2026.7.27 与详情页「予約開始日」相同。该日期是预约开始日，不是精确发售日，ISO发售日留空。"
+        }
+      ]
+    },
+    {
+      "id": "playmat01",
+      "product_code": null,
+      "product_codes": [],
+      "name_official_jp_site": "オフィシャルプレイマット＆カードセット -機動戦士ガンダム00-",
+      "list_name_official_jp_site": "オフィシャルプレイマット＆カードセット -機動戦士ガンダム00-",
+      "category_zh": "周边（牌垫，含促销卡）",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2026年8月29日（土） ※ガンダムカードゲーム エキスパートショップ限定販売となります。",
+      "release_date_iso": "2026-08-29",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-08-29",
+      "list_release_date_original": [
+        "2026.8.29"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/playmat01.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2",
+          "page_num": 2,
+          "filter_tag": "all",
+          "pager_text": "2/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=ACCESSORIES",
+          "page_num": 1,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥4,730円（税込）",
+      "contents_original": "プレイマット: 1枚 プロモーションカード: 1枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年8月29日（土） ※ガンダムカードゲーム エキスパートショップ限定販売となります。"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥4,730円（税込）"
+            },
+            {
+              "label": "セット内容",
+              "value": "プレイマット: 1枚 プロモーションカード: 1枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "含プロモーションカード1枚，专家店限定；不自动划分环境"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "st11",
+      "product_code": "ST11",
+      "product_codes": [
+        "ST11"
+      ],
+      "name_official_jp_site": "Aquatic Assault [ST11]",
+      "list_name_official_jp_site": "Aquatic Assault [ST11]",
+      "category_zh": "预组",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "スタートデッキ"
+      ],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2026年9月26日(土) 発売",
+      "release_date_iso": "2026-09-26",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-09-26",
+      "list_release_date_original": [
+        "2026.9.26"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st11.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1",
+          "page_num": 1,
+          "filter_tag": "all",
+          "pager_text": "1/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=STARTERDECK",
+          "page_num": 1,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥1,650(税込)",
+      "contents_original": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 4枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック",
+      "variants": [
+        {
+          "official_heading_jp": "スタートデッキ Aquatic Assault [ST11]",
+          "official_type_jp": "スタートデッキ",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年9月26日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥1,650(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 4枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2026.9.26",
+      "notes": [
+        "详情页标明スタートデッキ"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "st14",
+      "product_code": "ST14",
+      "product_codes": [
+        "ST14"
+      ],
+      "name_official_jp_site": "Heavy Dominion [ST14]",
+      "list_name_official_jp_site": "Heavy Dominion [ST14]",
+      "category_zh": "预组",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "スタートデッキ"
+      ],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2026年9月26日(土) 発売",
+      "release_date_iso": "2026-09-26",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-09-26",
+      "list_release_date_original": [
+        "2026.9.26"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st14.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2",
+          "page_num": 2,
+          "filter_tag": "all",
+          "pager_text": "2/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=STARTERDECK",
+          "page_num": 1,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥1,650(税込)",
+      "contents_original": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 2枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック",
+      "variants": [
+        {
+          "official_heading_jp": "スタートデッキ Heavy Dominion [ST14]",
+          "official_type_jp": "スタートデッキ",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年9月26日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥1,650(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 2枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2026.9.26",
+      "notes": [
+        "详情页标明スタートデッキ"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "st12",
+      "product_code": "ST12",
+      "product_codes": [
+        "ST12"
+      ],
+      "name_official_jp_site": "Raging Onslaught [ST12]",
+      "list_name_official_jp_site": "Raging Onslaught [ST12]",
+      "category_zh": "预组",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "スタートデッキ"
+      ],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2026年9月26日(土) 発売",
+      "release_date_iso": "2026-09-26",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-09-26",
+      "list_release_date_original": [
+        "2026.9.26"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st12.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1",
+          "page_num": 1,
+          "filter_tag": "all",
+          "pager_text": "1/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=STARTERDECK",
+          "page_num": 1,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥1,650(税込)",
+      "contents_original": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 2枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック",
+      "variants": [
+        {
+          "official_heading_jp": "スタートデッキ Raging Onslaught [ST12]",
+          "official_type_jp": "スタートデッキ",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年9月26日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥1,650(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 2枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2026.9.26",
+      "notes": [
+        "详情页标明スタートデッキ"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "st13",
+      "product_code": "ST13",
+      "product_codes": [
+        "ST13"
+      ],
+      "name_official_jp_site": "Silent Barrage [ST13]",
+      "list_name_official_jp_site": "Silent Barrage [ST13]",
+      "category_zh": "预组",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "スタートデッキ"
+      ],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2026年9月26日(土) 発売",
+      "release_date_iso": "2026-09-26",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-09-26",
+      "list_release_date_original": [
+        "2026.9.26"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st13.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1",
+          "page_num": 1,
+          "filter_tag": "all",
+          "pager_text": "1/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=STARTERDECK",
+          "page_num": 1,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥1,650(税込)",
+      "contents_original": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 4枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック",
+      "variants": [
+        {
+          "official_heading_jp": "スタートデッキ Silent Barrage [ST13]",
+          "official_type_jp": "スタートデッキ",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年9月26日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥1,650(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ: 50枚 リソースカード: 10枚 トークンカード: 4枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ボーナスパック: 1パック"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2026.9.26",
+      "notes": [
+        "详情页标明スタートデッキ"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "evx08",
+      "product_code": "EVX08",
+      "product_codes": [
+        "EVX08"
+      ],
+      "name_official_jp_site": "オフィシャルダメージカウンターダイス -ハロ-[EVX08]",
+      "list_name_official_jp_site": "オフィシャルダメージカウンターダイス -ハロ-[EVX08]",
+      "category_zh": "周边（骰子）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2026年9月26日(土)",
+      "release_date_iso": "2026-09-26",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-09-26",
+      "list_release_date_original": [
+        "2026.9.26"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/evx08.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2",
+          "page_num": 2,
+          "filter_tag": "all",
+          "pager_text": "2/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=ACCESSORIES",
+          "page_num": 1,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "¥1,100(税込)",
+      "contents_original": "ダイス：6個",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年9月26日(土)"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥1,100(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "ダイス：6個"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "内容仅为骰子"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "pb04",
+      "product_code": "PB04",
+      "product_codes": [
+        "PB04"
+      ],
+      "name_official_jp_site": "ガンダムカードゲーム プレミアムグッズセット-機動新世紀ガンダムX-[PB04]",
+      "list_name_official_jp_site": "ガンダムカードゲーム プレミアムグッズセット-機動新世紀ガンダムX-[PB04]",
+      "category_zh": "高级万代限定套装（含卡牌）",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "プレミアムバンダイ"
+      ],
+      "official_list_tags": [
+        "PREMIUMBANDAI"
+      ],
+      "release_date_original": null,
+      "release_date_iso": null,
+      "release_date_precision": "reservation_or_shipping_only",
+      "release_date_start_iso": null,
+      "list_release_date_original": [
+        "2026.10.2"
+      ],
+      "reservation_start_original": "2026年10月2日(金)",
+      "reservation_start_iso": "2026-10-02",
+      "shipping_period_original": "2027年3月発送予定",
+      "shipping_period_year_month": "2027-03",
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/pb04.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1",
+          "page_num": 1,
+          "filter_tag": "all",
+          "pager_text": "1/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=PREMIUMBANDAI",
+          "page_num": 1,
+          "filter_tag": "PREMIUMBANDAI",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "日期不精确待确认",
+      "price_original": "¥9,900(税込)",
+      "contents_original": "カードケース: 1個 カードスリーブ: 70枚 リソースカード: 10種各1枚（合計10枚） カード: 2種各2枚（合計4枚） ラバー製プレイマット: 1枚 ストレージボックス: 1個",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "予約開始日",
+              "value": "2026年10月2日(金)"
+            },
+            {
+              "label": "発送時期",
+              "value": "2027年3月発送予定"
+            },
+            {
+              "label": "販売価格",
+              "value": "¥9,900(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "カードケース: 1個 カードスリーブ: 70枚 リソースカード: 10種各1枚（合計10枚） カード: 2種各2枚（合計4枚） ラバー製プレイマット: 1枚 ストレージボックス: 1個"
+            },
+            {
+              "label": "",
+              "value": "プレミアムバンダイ"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "详情页没有「発売日」，只有「予約開始日」和「発送時期」",
+        "发货时期原文：2027年3月発送予定（仅有月份，ISO发售日留空）",
+        "详情页只有预约开始日和发货月份，没有精确発売日；不自动划分环境"
+      ],
+      "conflicts": [
+        {
+          "type": "list_mislabels_reservation_as_release",
+          "detail": "列表页「発売日」2026.10.2 与详情页「予約開始日」相同。该日期是预约开始日，不是精确发售日，ISO发售日留空。"
+        }
+      ]
+    },
+    {
+      "id": "gd06",
+      "product_code": "GD06",
+      "product_codes": [
+        "GD06"
+      ],
+      "name_official_jp_site": "Stardust Trails[GD06]",
+      "list_name_official_jp_site": "Stardust Trails[GD06]",
+      "category_zh": "补充包",
+      "kind": "新卡补充包",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [
+        "ブースターパック"
+      ],
+      "list_category_jp": [
+        "ブースター"
+      ],
+      "official_list_tags": [
+        "BOOSTERPACK"
+      ],
+      "release_date_original": "2026年10月31日(土) 発売",
+      "release_date_iso": "2026-10-31",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-10-31",
+      "list_release_date_original": [
+        "2026.10.31"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/gd06.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1",
+          "page_num": 1,
+          "filter_tag": "all",
+          "pager_text": "1/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=BOOSTERPACK",
+          "page_num": 1,
+          "filter_tag": "BOOSTERPACK",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "已发售",
+      "price_original": "￥250(税込)",
+      "contents_original": "1パック カード: 6枚",
+      "variants": [
+        {
+          "official_heading_jp": "ブースターパック Stardust Trails[GD06]",
+          "official_type_jp": "ブースターパック",
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年10月31日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥250(税込)"
+            },
+            {
+              "label": "内容",
+              "value": "1パック カード: 6枚"
+            },
+            {
+              "label": "レアリティ",
+              "value": "135種+8種 コモン： 50種 アンコモン：36種 レア：32種 レジェンドレア：12種 スペシャルカード：5種 トークン：8種"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": "2026.10.31",
+      "notes": [
+        "详情页标明ブースターパック，并给出完整稀有度种数"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "evx10",
+      "product_code": "EVX10",
+      "product_codes": [
+        "EVX10"
+      ],
+      "name_official_jp_site": "オフィシャルカードスリーブ EX 02 [EVX10]",
+      "list_name_official_jp_site": "オフィシャルカードスリーブ EX 02 [EVX10]",
+      "category_zh": "周边（卡套）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2026年11月28日(土)",
+      "release_date_iso": "2026-11-28",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2026-11-28",
+      "list_release_date_original": [
+        "2026.11.28"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/evx10.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1",
+          "page_num": 1,
+          "filter_tag": "all",
+          "pager_text": "1/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=ACCESSORIES",
+          "page_num": 1,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "预定",
+      "price_original": "¥990(税込)",
+      "contents_original": "各セット カードスリーブ: 70枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2026年11月28日(土)"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥990(税込)"
+            },
+            {
+              "label": "種類数",
+              "value": "全4種 エルピー・プル マチュ＆ニャアン CBガールズ カガリ・ユラ・アスハ"
+            },
+            {
+              "label": "内容",
+              "value": "各セット カードスリーブ: 70枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "内容仅为卡套，无卡牌"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "evx16",
+      "product_code": "EVX16",
+      "product_codes": [
+        "EVX16"
+      ],
+      "name_official_jp_site": "オフィシャルカードケースセットEX 01 [EVX16]",
+      "list_name_official_jp_site": "オフィシャルカードケースセットEX 01 [EVX16]",
+      "category_zh": "周边（卡盒，含EX资源卡）",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2027年1月9日(土)",
+      "release_date_iso": "2027-01-09",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2027-01-09",
+      "list_release_date_original": [
+        "2027.1.9"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/evx16.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1",
+          "page_num": 1,
+          "filter_tag": "all",
+          "pager_text": "1/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=ACCESSORIES",
+          "page_num": 1,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "预定",
+      "price_original": "¥1,320(税込)",
+      "contents_original": "デッキケース: 1個 EXリソース: 1枚 セパレーター: 1枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2027年1月9日(土)"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥1,320(税込)"
+            },
+            {
+              "label": "種類数",
+              "value": "全2種 少年とガンダム キュベレイ"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキケース: 1個 EXリソース: 1枚 セパレーター: 1枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "含EXリソース1枚，详情页未说明是否新卡，不自动划分环境"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "evx14",
+      "product_code": "EVX14",
+      "product_codes": [
+        "EVX14"
+      ],
+      "name_official_jp_site": "オフィシャルカードスリーブEX 04 [EVX14]",
+      "list_name_official_jp_site": "オフィシャルカードスリーブEX 04 [EVX14]",
+      "category_zh": "周边（卡套）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2027年1月9日(土)",
+      "release_date_iso": "2027-01-09",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2027-01-09",
+      "list_release_date_original": [
+        "2027.1.9"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/evx14.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1",
+          "page_num": 1,
+          "filter_tag": "all",
+          "pager_text": "1/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=ACCESSORIES",
+          "page_num": 1,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "预定",
+      "price_original": "¥990(税込)",
+      "contents_original": "各セット カードスリーブ: 70枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2027年1月9日(土)"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥990(税込)"
+            },
+            {
+              "label": "種類数",
+              "value": "全2種 少年とガンダム キュベレイ"
+            },
+            {
+              "label": "内容",
+              "value": "各セット カードスリーブ: 70枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "内容仅为卡套，无卡牌"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "evx15",
+      "product_code": "EVX15",
+      "product_codes": [
+        "EVX15"
+      ],
+      "name_official_jp_site": "ストレージボックス＆リソースカードセットEX 02[EVX15]",
+      "list_name_official_jp_site": "ストレージボックス＆リソースカードセットEX 02[EVX15]",
+      "category_zh": "周边（收纳与资源卡）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "2027年1月9日(土)",
+      "release_date_iso": "2027-01-09",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2027-01-09",
+      "list_release_date_original": [
+        "2027.1.9"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/evx15.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1",
+          "page_num": 1,
+          "filter_tag": "all",
+          "pager_text": "1/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=ACCESSORIES",
+          "page_num": 1,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "预定",
+      "price_original": "¥1980(税込)",
+      "contents_original": "ハーフストレージボックス: 1個 リソースカード: 10枚 各種1枚ずつ",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2027年1月9日(土)"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥1980(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "ハーフストレージボックス: 1個 リソースカード: 10枚 各種1枚ずつ"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "收纳盒加资源卡；未见新卡说明，不作为环境分界"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "gd07",
+      "product_code": "GD07",
+      "product_codes": [
+        "GD07"
+      ],
+      "name_official_jp_site": "Blazing Fist [GD07]",
+      "list_name_official_jp_site": "Blazing Fist [GD07]",
+      "category_zh": "补充包",
+      "kind": "新卡补充包",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "ブースター"
+      ],
+      "official_list_tags": [
+        "BOOSTERPACK"
+      ],
+      "release_date_original": "2027年1月30日(土)発売",
+      "release_date_iso": "2027-01-30",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2027-01-30",
+      "list_release_date_original": [
+        "2027.1.30"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/gd07.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1",
+          "page_num": 1,
+          "filter_tag": "all",
+          "pager_text": "1/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=BOOSTERPACK",
+          "page_num": 1,
+          "filter_tag": "BOOSTERPACK",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "预定",
+      "price_original": null,
+      "contents_original": "1パック カード: 6枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2027年1月30日(土)発売"
+            },
+            {
+              "label": "内容",
+              "value": "1パック カード: 6枚"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "列表分类为ブースター，详情页未写明ブースターパック标题，但内容为1パック卡片；不单凭编号判断"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "eb02",
+      "product_code": "EB02",
+      "product_codes": [
+        "EB02"
+      ],
+      "name_official_jp_site": "Cosmic Crisis [EB02]",
+      "list_name_official_jp_site": "Cosmic Crisis [EB02]",
+      "category_zh": "额外补充包",
+      "kind": "新卡补充包",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "ブースター"
+      ],
+      "official_list_tags": [
+        "BOOSTERPACK"
+      ],
+      "release_date_original": "2027年2月27日(土)発売",
+      "release_date_iso": "2027-02-27",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2027-02-27",
+      "list_release_date_original": [
+        "2027.02.27"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/eb02.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1",
+          "page_num": 1,
+          "filter_tag": "all",
+          "pager_text": "1/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=BOOSTERPACK",
+          "page_num": 1,
+          "filter_tag": "BOOSTERPACK",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "预定",
+      "price_original": "¥250(税込)",
+      "contents_original": "1パック カード: 6枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2027年2月27日(土)発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥250(税込)"
+            },
+            {
+              "label": "内容",
+              "value": "1パック カード: 6枚"
+            },
+            {
+              "label": "レアリティ",
+              "value": "100種+3種 コモン： 45種 アンコモン：21種 レア：15種 レジェンドレア：9種 スペシャルカード：10種 トークン：3種"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "列表分类为ブースター，详情页未写明エクストラ标题，但给出约100种稀有度构成，按补充包记录；不单凭EB编号判断"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "st15",
+      "product_code": "ST15",
+      "product_codes": [
+        "ST15"
+      ],
+      "name_official_jp_site": "Unicorn Awakening [ST15]",
+      "list_name_official_jp_site": "Unicorn Awakening [ST15]",
+      "category_zh": "预组（内容含替换卡，类似终极预组）",
+      "kind": "预组",
+      "environment_boundary_eligible": true,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "デッキ"
+      ],
+      "official_list_tags": [
+        "STARTERDECK"
+      ],
+      "release_date_original": "2027年4月17日(土) 発売",
+      "release_date_iso": "2027-04-17",
+      "release_date_precision": "exact_day",
+      "release_date_start_iso": "2027-04-17",
+      "list_release_date_original": [
+        "2027.4.17"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/st15.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1",
+          "page_num": 1,
+          "filter_tag": "all",
+          "pager_text": "1/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=STARTERDECK",
+          "page_num": 1,
+          "filter_tag": "STARTERDECK",
+          "pager_text": "1/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "预定",
+      "price_original": "￥3,850(税込)",
+      "contents_original": "デッキ: 50枚 差し替えカード25枚 リソースカード: 10枚 トークンカード: 6枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ダメージカウンターダイス: 6個 ボーナスパック: 1パック",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "2027年4月17日(土) 発売"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "￥3,850(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "デッキ: 50枚 差し替えカード25枚 リソースカード: 10枚 トークンカード: 6枚 ダメージカウンターシート: 1枚 プレイシート: 1枚 ダメージカウンターダイス: 6個 ボーナスパック: 1パック"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "列表分类为デッキ，详情页未写明スタート/アルティメット标题，但内容含デッキ与差し替えカード；不单凭ST编号判断"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "evx12",
+      "product_code": "EVX12",
+      "product_codes": [
+        "EVX12"
+      ],
+      "name_official_jp_site": "オフィシャルカードスリーブEX 03 [EVX12]",
+      "list_name_official_jp_site": "オフィシャルカードスリーブEX 03 [EVX12]",
+      "category_zh": "周边（卡套）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "会場ごとの発売日はBANDAI CARD GAMES Fest 25-26公式サイトをご確認ください",
+      "release_date_iso": null,
+      "release_date_precision": "event_sequential",
+      "release_date_start_iso": null,
+      "list_release_date_original": [
+        "BANDAI CARD GAMES Fest 26-27各会場にて順次"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/evx12.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=5",
+          "page_num": 5,
+          "filter_tag": "all",
+          "pager_text": "5/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2&subcategory=product&tag=ACCESSORIES",
+          "page_num": 2,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "2/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "日期不精确待确认",
+      "price_original": "¥990(税込)",
+      "contents_original": "各セット カードスリーブ: 70枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "会場ごとの発売日はBANDAI CARD GAMES Fest 25-26公式サイトをご確認ください"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥990(税込)"
+            },
+            {
+              "label": "種類数",
+              "value": "全2種 νガンダム ザクⅡ"
+            },
+            {
+              "label": "内容",
+              "value": "各セット カードスリーブ: 70枚"
+            },
+            {
+              "label": "入手方法",
+              "value": "商品の取り扱い会場はBANDAI CARD GAMES Fest 26-27公式サイトをご確認ください。 BANDAI CARD GAMES Fest 26-27 公式サイト"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "列表页発売日原文：BANDAI CARD GAMES Fest 26-27各会場にて順次",
+        "内容仅为卡套，无卡牌",
+        "发售日为活动会场顺次，没有单一精确日期，ISO留空。"
+      ],
+      "conflicts": [
+        {
+          "type": "detail_page_internal_conflict",
+          "detail": "EVX12详情页「発売日」写的是BANDAI CARD GAMES Fest 25-26，但「入手方法」和商品列表写的是Fest 26-27。ISO发售日留空。"
+        }
+      ]
+    },
+    {
+      "id": "ev03",
+      "product_code": "EVX03",
+      "product_codes": [
+        "EVX03"
+      ],
+      "name_official_jp_site": "オフィシャルカードスリーブEX [EVX03]",
+      "list_name_official_jp_site": "オフィシャルカードスリーブEX [EVX03]",
+      "category_zh": "周边（卡套）",
+      "kind": "重印周边",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "会場ごとの発売日はBANDAI CARD GAMES Fest 25-26公式サイトをご確認ください",
+      "release_date_iso": null,
+      "release_date_precision": "event_sequential",
+      "release_date_start_iso": null,
+      "list_release_date_original": [
+        "各会場にて順次"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/ev03.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=4",
+          "page_num": 4,
+          "filter_tag": "all",
+          "pager_text": "4/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2&subcategory=product&tag=ACCESSORIES",
+          "page_num": 2,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "2/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "日期不精确待确认",
+      "price_original": "¥990(税込)",
+      "contents_original": "各セット カードスリーブ: 70枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "会場ごとの発売日はBANDAI CARD GAMES Fest 25-26公式サイトをご確認ください"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥990(税込)"
+            },
+            {
+              "label": "種類数",
+              "value": "全2種 スペースブラック ハロ"
+            },
+            {
+              "label": "内容",
+              "value": "各セット カードスリーブ: 70枚"
+            },
+            {
+              "label": "入手方法",
+              "value": "商品の取り扱い会場はBANDAI CARD GAMES Fest 25-26公式サイトをご確認ください。 BANDAI CARD GAMES Fest 25-26 公式サイト"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "列表页発売日原文：各会場にて順次",
+        "内容仅为卡套，无卡牌",
+        "发售日为活动会场顺次，没有单一精确日期，ISO留空。"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "evx11",
+      "product_code": "EVX11",
+      "product_codes": [
+        "EVX11"
+      ],
+      "name_official_jp_site": "オフィシャルプレイマット＆カードセット アスラン＆カガリ [EVX11]",
+      "list_name_official_jp_site": "オフィシャルプレイマット＆カードセット アスラン＆カガリ [EVX11]",
+      "category_zh": "周边（牌垫，含EX资源卡）",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "会場ごとの発売日はBANDAI CARD GAMES Fest 26-27公式サイトをご確認ください",
+      "release_date_iso": null,
+      "release_date_precision": "event_sequential",
+      "release_date_start_iso": null,
+      "list_release_date_original": [
+        "BANDAI CARD GAMES Fest 26-27各会場にて順次"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/evx11.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=5",
+          "page_num": 5,
+          "filter_tag": "all",
+          "pager_text": "5/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2&subcategory=product&tag=ACCESSORIES",
+          "page_num": 2,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "2/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "日期不精确待确认",
+      "price_original": "¥4,730(税込)",
+      "contents_original": "プレイマット: 1枚 EXリソースカード（アスラン＆カガリ）: 1枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "会場ごとの発売日はBANDAI CARD GAMES Fest 26-27公式サイトをご確認ください"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥4,730(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "プレイマット: 1枚 EXリソースカード（アスラン＆カガリ）: 1枚"
+            },
+            {
+              "label": "入手方法",
+              "value": "商品の取り扱い会場はBANDAI CARD GAMES Fest 26-27公式サイトをご確認ください。 BANDAI CARD GAMES Fest 26-27 公式サイト"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "列表页発売日原文：BANDAI CARD GAMES Fest 26-27各会場にて順次",
+        "含EX资源卡，发售日仅为活动会场顺次，不自动划分环境",
+        "发售日为活动会场顺次，没有单一精确日期，ISO留空。"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "ev02",
+      "product_code": "EVX02",
+      "product_codes": [
+        "EVX02"
+      ],
+      "name_official_jp_site": "オフィシャルプレイマット＆カードセット スレッタ＆ミオリネ [EVX02]",
+      "list_name_official_jp_site": "オフィシャルプレイマット＆カードセット スレッタ＆ミオリネ [EVX02]",
+      "category_zh": "周边（牌垫，含EX资源卡）",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "周辺アイテム"
+      ],
+      "official_list_tags": [
+        "ACCESSORIES"
+      ],
+      "release_date_original": "会場ごとの発売日はBANDAI CARD GAMES Fest 25-26公式サイトをご確認ください",
+      "release_date_iso": null,
+      "release_date_precision": "event_sequential",
+      "release_date_start_iso": null,
+      "list_release_date_original": [
+        "各会場にて順次"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/ev02.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=4",
+          "page_num": 4,
+          "filter_tag": "all",
+          "pager_text": "4/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=2&subcategory=product&tag=ACCESSORIES",
+          "page_num": 2,
+          "filter_tag": "ACCESSORIES",
+          "pager_text": "2/2",
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "日期不精确待确认",
+      "price_original": "¥4,730(税込)",
+      "contents_original": "プレイマット: 1枚 EXリソースカード（スレッタ＆ミオリネ）: 1枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "会場ごとの発売日はBANDAI CARD GAMES Fest 25-26公式サイトをご確認ください"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥4,730(税込)"
+            },
+            {
+              "label": "セット内容",
+              "value": "プレイマット: 1枚 EXリソースカード（スレッタ＆ミオリネ）: 1枚"
+            },
+            {
+              "label": "入手方法",
+              "value": "商品の取り扱い会場はBANDAI CARD GAMES Fest 25-26公式サイトをご確認ください。 BANDAI CARD GAMES Fest 25-26 公式サイト"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "列表页発売日原文：各会場にて順次",
+        "含EX资源卡，发售日仅为活动会场顺次，不自动划分环境",
+        "发售日为活动会场顺次，没有单一精确日期，ISO留空。"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "evx05",
+      "product_code": "EVX05",
+      "product_codes": [
+        "EVX05"
+      ],
+      "name_official_jp_site": "プレミアムカードコレクション01 [EVX05]",
+      "list_name_official_jp_site": "プレミアムカードコレクション01 [EVX05]",
+      "category_zh": "高级卡牌收藏",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "その他"
+      ],
+      "official_list_tags": [
+        "OTHER"
+      ],
+      "release_date_original": "会場ごとの発売日はBANDAI CARD GAMES Fest 25-26公式サイトをご確認ください",
+      "release_date_iso": null,
+      "release_date_precision": "event_sequential",
+      "release_date_start_iso": null,
+      "list_release_date_original": [
+        "各会場にて順次"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/evx05.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=3",
+          "page_num": 3,
+          "filter_tag": "all",
+          "pager_text": "3/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=OTHER",
+          "page_num": 1,
+          "filter_tag": "OTHER",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "日期不精确待确认",
+      "price_original": "¥1,650(税込)",
+      "contents_original": "カード: 6種各1枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "会場ごとの発売日はBANDAI CARD GAMES Fest 25-26公式サイトをご確認ください"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥1,650(税込)"
+            },
+            {
+              "label": "内容",
+              "value": "カード: 6種各1枚"
+            },
+            {
+              "label": "入手方法",
+              "value": "商品の取り扱い会場はBANDAI CARD GAMES Fest 25-26公式サイトをご確認ください。 BANDAI CARD GAMES Fest 25-26 公式サイト"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "列表页発売日原文：各会場にて順次",
+        "内容为6种卡各1枚，活动会场顺次发售，无精确日期；不自动划分环境",
+        "发售日为活动会场顺次，没有单一精确日期，ISO留空。"
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "evx13",
+      "product_code": "EVX13",
+      "product_codes": [
+        "EVX13"
+      ],
+      "name_official_jp_site": "プレミアムカードコレクション02 [EVX13]",
+      "list_name_official_jp_site": "プレミアムカードコレクション02 [EVX13]",
+      "category_zh": "高级卡牌收藏",
+      "kind": "未知",
+      "environment_boundary_eligible": false,
+      "official_type_jp": [],
+      "list_category_jp": [
+        "その他"
+      ],
+      "official_list_tags": [
+        "OTHER"
+      ],
+      "release_date_original": "会場ごとの発売日はBANDAI CARD GAMES Fest 26-27公式サイトをご確認ください",
+      "release_date_iso": null,
+      "release_date_precision": "event_sequential",
+      "release_date_start_iso": null,
+      "list_release_date_original": [
+        "BANDAI CARD GAMES Fest 26-27各会場にて順次"
+      ],
+      "reservation_start_original": null,
+      "reservation_start_iso": null,
+      "shipping_period_original": null,
+      "shipping_period_year_month": null,
+      "region": "JP",
+      "detail_url": "https://www.gundam-gcg.com/jp/products/evx13.html",
+      "discovered_on_list_pages": [
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=5",
+          "page_num": 5,
+          "filter_tag": "all",
+          "pager_text": "5/5",
+          "in_all_products_list": true
+        },
+        {
+          "list_url": "https://www.gundam-gcg.com/jp/products/list.php?page=1&subcategory=product&tag=OTHER",
+          "page_num": 1,
+          "filter_tag": "OTHER",
+          "pager_text": null,
+          "in_all_products_list": false
+        }
+      ],
+      "in_all_products_list": true,
+      "checked_on": "2026-11-12",
+      "checked_at": "2026-11-12T22:41:00-08:00",
+      "checked_timezone": "America/Los_Angeles",
+      "sale_status": "日期不精确待确认",
+      "price_original": "¥1,650(税込)",
+      "contents_original": "カード: 6種各1枚",
+      "variants": [
+        {
+          "official_heading_jp": null,
+          "official_type_jp": null,
+          "fields": [
+            {
+              "label": "発売日",
+              "value": "会場ごとの発売日はBANDAI CARD GAMES Fest 26-27公式サイトをご確認ください"
+            },
+            {
+              "label": "メーカー希望小売価格",
+              "value": "¥1,650(税込)"
+            },
+            {
+              "label": "内容",
+              "value": "カード: 6種各1枚"
+            },
+            {
+              "label": "入手方法",
+              "value": "商品の取り扱い会場はBANDAI CARD GAMES Fest 26-27公式サイトをご確認ください。 BANDAI CARD GAMES Fest 26-27 公式サイト"
+            }
+          ]
+        }
+      ],
+      "mv_date_text": null,
+      "notes": [
+        "列表页発売日原文：BANDAI CARD GAMES Fest 26-27各会場にて順次",
+        "内容为6种卡各1枚，活动会场顺次发售，无精确日期；不自动划分环境",
+        "发售日为活动会场顺次，没有单一精确日期，ISO留空。"
+      ],
+      "conflicts": []
+    }
+  ],
+  "stored_as": "data/jp-official-products.json",
+  "provenance": "Initial version copied from the 2026-11-12 public scrape of https://www.gundam-gcg.com/jp/products/list.php. Local HTML paths removed. No dates were inferred."
+}

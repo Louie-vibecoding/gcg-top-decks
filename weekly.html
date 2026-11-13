@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>每周上位统计 · GCG</title>
   <link rel="icon" href="data:," />
-  <link rel="stylesheet" href="weekly.css?v=20261110e" />
+  <link rel="stylesheet" href="weekly.css?v=20261113e" />
   <link rel="stylesheet" href="samaritan-tokens.css?v=20261110a" />
   <link rel="stylesheet" href="gcg-samaritan-override.css?v=20261110a" />
   <link rel="stylesheet" href="samaritan-gcg.css?v=20261110a" />
@@ -44,12 +44,26 @@
         <span>周次</span>
         <select id="view-select" aria-label="选择周次或特别窗口"></select>
       </label>
+      <div id="range-switch" class="segment" role="tablist" aria-label="统计范围">
+        <button type="button" data-mode="week" aria-selected="true">单周</button>
+        <button type="button" data-mode="dates" aria-selected="false">起止日期</button>
+        <button type="button" data-mode="weeks" aria-selected="false">合并周次</button>
+      </div>
     </div>
+    <section id="range-panel" class="panel range-panel" hidden>
+      <div id="date-range" class="date-range">
+        <label>开始日<input id="range-start" type="date" /></label>
+        <label>结束日<input id="range-end" type="date" /></label>
+      </div>
+      <div id="week-merge" class="week-merge"></div>
+      <p id="range-error" class="range-error" hidden></p>
+    </section>
     <section id="distribution" class="panel" aria-label="体系分布" hidden></section>
     <section id="chart" class="panel" aria-label="样本占比" hidden></section>
     <section id="quarantine" class="panel" aria-label="名次争议" hidden></section>
     <section id="isolated" class="panel" aria-label="异常隔离" hidden></section>
     <section id="method" class="panel method" aria-label="口径说明" hidden></section>
+    <section id="releases" class="panel releases" aria-label="日本官方发售日历" hidden></section>
   </main>
 
   <footer class="site-foot">
@@ -66,7 +80,8 @@
     <div id="dialog-body" class="dialog-body"></div>
   </dialog>
 
-  <script src="weekly-pie.js?v=20261113a"></script>
-  <script src="weekly.js?v=20261113a"></script>
+  <script src="weekly-pie.js?v=20261113c"></script>
+  <script src="weekly-range.js?v=20261113c"></script>
+  <script src="weekly.js?v=20261113d"></script>
 </body>
 </html>

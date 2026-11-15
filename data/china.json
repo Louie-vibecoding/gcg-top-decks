@@ -1,5 +1,51 @@
 [
   {
+    "id": "cn-2026-11-hangzhou-regional-qual",
+    "date": "2026-11-14",
+    "month": "2026-11",
+    "region_tag": "中国",
+    "event_type": "TOURNAMENT",
+    "event_name": "冠军锦标赛 26-27 地区预选 杭州站",
+    "series_name": "冠军锦标赛 26-27 地区预选 杭州站",
+    "store_name": "杭州",
+    "area": "杭州",
+    "source": "weibo",
+    "source_url": "https://www.sina.cn/news/detail/5365260439519338.html",
+    "players": 487,
+    "players_source": "official",
+    "players_source_url": "https://www.sina.cn/news/detail/5365110992277474.html",
+    "placements": [
+      {
+        "rank": 1,
+        "player_name": "达琪@泥头车",
+        "deck_name": "红白卡组",
+        "cards": [],
+        "deck_photo": "data/china/hz_p1_champ.jpg",
+        "photo_note": "牌表为实物图，OCR 待补",
+        "deck_type": "红白",
+        "deck_type_key": "Red+White",
+        "colors": [
+          "Red",
+          "White"
+        ]
+      },
+      {
+        "rank": 2,
+        "player_name": "否定企鹅",
+        "deck_name": "蓝白卡组",
+        "cards": [],
+        "deck_photo": "data/china/hz_p2_runner.jpg",
+        "photo_note": "牌表为实物图，OCR 待补",
+        "deck_type": "蓝白",
+        "deck_type_key": "Blue+White",
+        "colors": [
+          "Blue",
+          "White"
+        ]
+      }
+    ]
+  },
+  {
     "id": "cn-2026-10-guangzhou-regional-qual",
     "date": "2026-10-17",
     "month": "2026-10",

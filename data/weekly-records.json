@@ -43,7 +43,7 @@
       "scripts/data/archetype_rules.json": "6c1e9bfa36604674c993cc3f08542adca358329d8ca25b5b4daf4b70b9ff803e",
       "scripts/data/card_catalog.json": "5fb62ae6404d12ca5990b0cf958eb06668aa01f259287fa41916acd9d0fda4eb",
       "scripts/data/card_names_zh.json": "1bb4b377df6bc59c40a1dd4431c46c43ba9a569931c23adec35c9a2833f1a6ec",
-      "scripts/data/rank_quarantine.json": "2d18c281ff21882a74570a6f7f16e44ca8d17424afb57953b1687b85e47ed495",
+      "scripts/data/rank_quarantine.json": "3a45ca717b8155a6a5a1dfb786d953ff707d8b84bd484d38ad95be0e19185253",
       "scripts/data/special_windows.json": "a412e639c4cccb5df0371a1ff6799ac765a59f656708cf5b4109e0289009167f",
       "scripts/data/unit_families.json": "78e546d632463c79ef8bae7b4332163a699af95b7e5b0aa4e552f4dcaa29365f"
     }
@@ -35098,14 +35098,17 @@
           "date": "2026-11-09",
           "event_id": "ntcd-01M6ZACJQ1C55ET57RMFH3JJ8E",
           "event_type": "NTC",
+          "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6ZACJQ1C55ET57RMFH3JJ8E.html",
           "player": "ななか。",
+          "quarantine_reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。",
           "rank": 2,
           "region": "日本",
           "source_url": "https://gcg-stats.com/events/ntcd-01M6ZACJQ1C55ET57RMFH3JJ8E.html",
-          "status": "included",
+          "status": "quarantined",
           "store": "TSUTAYA Trading Card 北千住店",
           "strong_event_id": "01M6ZACJQ1C55ET57RMFH3JJ8E",
-          "unconfirmed": false
+          "unconfirmed": false,
+          "verification": "公开页名次标签冲突，尚未独立核验"
         },
         {
           "archetype": "蓝绿·ν高达",
@@ -35210,14 +35213,17 @@
           "date": "2026-11-09",
           "event_id": "ntcd-01M6ZVJ2WMDETS88ZJ15J7A6RM",
           "event_type": "NTC",
+          "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M6ZVJ2WMDETS88ZJ15J7A6RM.html",
           "player": "たっち",
+          "quarantine_reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。",
           "rank": 2,
           "region": "日本",
           "source_url": "https://gcg-stats.com/events/ntcd-01M6ZVJ2WMDETS88ZJ15J7A6RM.html",
-          "status": "included",
+          "status": "quarantined",
           "store": "トーナメントセンターバトロコ川崎駅前",
           "strong_event_id": "01M6ZVJ2WMDETS88ZJ15J7A6RM",
-          "unconfirmed": false
+          "unconfirmed": false,
+          "verification": "公开页名次标签冲突，尚未独立核验"
         },
         {
           "archetype": "红白·机动武斗传",
@@ -35434,14 +35440,17 @@
           "date": "2026-11-10",
           "event_id": "ntcd-01M74P2E6SKV961S09M6QBVC9K",
           "event_type": "NTC",
+          "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M74P2E6SKV961S09M6QBVC9K.html",
           "player": "マニ屋",
+          "quarantine_reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。",
           "rank": 2,
           "region": "日本",
           "source_url": "https://gcg-stats.com/events/ntcd-01M74P2E6SKV961S09M6QBVC9K.html",
-          "status": "included",
+          "status": "quarantined",
           "store": "カードショップLight",
           "strong_event_id": "01M74P2E6SKV961S09M6QBVC9K",
-          "unconfirmed": false
+          "unconfirmed": false,
+          "verification": "公开页名次标签冲突，尚未独立核验"
         },
         {
           "archetype": "红蓝·体系待确认",
@@ -35546,14 +35555,17 @@
           "date": "2026-11-11",
           "event_id": "ntcd-01M74WXFSJGWZ7ZSE959ZCNKVR",
           "event_type": "NTC",
+          "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M74WXFSJGWZ7ZSE959ZCNKVR.html",
           "player": "多々良",
+          "quarantine_reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。",
           "rank": 2,
           "region": "日本",
           "source_url": "https://gcg-stats.com/events/ntcd-01M74WXFSJGWZ7ZSE959ZCNKVR.html",
-          "status": "included",
+          "status": "quarantined",
           "store": "BOOKOFF SUPER BAZAAR イトーヨーカドー八王子店",
           "strong_event_id": "01M74WXFSJGWZ7ZSE959ZCNKVR",
-          "unconfirmed": false
+          "unconfirmed": false,
+          "verification": "公开页名次标签冲突，尚未独立核验"
         },
         {
           "archetype": "红白·ZZ高达",
@@ -35574,14 +35586,17 @@
           "date": "2026-11-11",
           "event_id": "ntcd-01M74WY866TE60Y0WYP4F8M893",
           "event_type": "NTC",
+          "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M74WY866TE60Y0WYP4F8M893.html",
           "player": "Epsilon",
+          "quarantine_reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。",
           "rank": 2,
           "region": "日本",
           "source_url": "https://gcg-stats.com/events/ntcd-01M74WY866TE60Y0WYP4F8M893.html",
-          "status": "included",
+          "status": "quarantined",
           "store": "カードボックスヨコハマ本店",
           "strong_event_id": "01M74WY866TE60Y0WYP4F8M893",
-          "unconfirmed": true
+          "unconfirmed": true,
+          "verification": "公开页名次标签冲突，尚未独立核验"
         },
         {
           "archetype": "蓝绿·ν高达",
@@ -35658,14 +35673,17 @@
           "date": "2026-11-12",
           "event_id": "ntcd-01M77BWQJFKRYG0C0E1RFA4M3Q",
           "event_type": "NTC",
+          "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M77BWQJFKRYG0C0E1RFA4M3Q.html",
           "player": "もな",
+          "quarantine_reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。",
           "rank": 2,
           "region": "日本",
           "source_url": "https://gcg-stats.com/events/ntcd-01M77BWQJFKRYG0C0E1RFA4M3Q.html",
-          "status": "included",
+          "status": "quarantined",
           "store": "ジラフル広島ドンキ店",
           "strong_event_id": "01M77BWQJFKRYG0C0E1RFA4M3Q",
-          "unconfirmed": true
+          "unconfirmed": true,
+          "verification": "公开页名次标签冲突，尚未独立核验"
         },
         {
           "archetype": "红蓝·体系待确认",
@@ -35770,14 +35788,17 @@
           "date": "2026-11-13",
           "event_id": "ntcd-01M79Y9A7GN017TA3SR8XPHKM4",
           "event_type": "NTC",
+          "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M79Y9A7GN017TA3SR8XPHKM4.html",
           "player": "あかいきつね",
+          "quarantine_reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。",
           "rank": 2,
           "region": "日本",
           "source_url": "https://gcg-stats.com/events/ntcd-01M79Y9A7GN017TA3SR8XPHKM4.html",
-          "status": "included",
+          "status": "quarantined",
           "store": "ドラゴンスター日本橋2号店",
           "strong_event_id": "01M79Y9A7GN017TA3SR8XPHKM4",
-          "unconfirmed": true
+          "unconfirmed": true,
+          "verification": "公开页名次标签冲突，尚未独立核验"
         },
         {
           "archetype": "蓝白·强袭自由",
@@ -35854,14 +35875,17 @@
           "date": "2026-11-14",
           "event_id": "ntcd-01M7CD8XPKJ2WEB8NEMS2WW431",
           "event_type": "NTC",
+          "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M7CD8XPKJ2WEB8NEMS2WW431.html",
           "player": "オクタン",
+          "quarantine_reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。",
           "rank": 2,
           "region": "日本",
           "source_url": "https://gcg-stats.com/events/ntcd-01M7CD8XPKJ2WEB8NEMS2WW431.html",
-          "status": "included",
+          "status": "quarantined",
           "store": "カードゲームのシーガル郡山店",
           "strong_event_id": "01M7CD8XPKJ2WEB8NEMS2WW431",
-          "unconfirmed": false
+          "unconfirmed": false,
+          "verification": "公开页名次标签冲突，尚未独立核验"
         },
         {
           "archetype": "红白·机动武斗传",
@@ -36246,14 +36270,17 @@
           "date": "2026-11-14",
           "event_id": "ntcd-01M7CYDSAGZ4SW49YSSA9MKWQR",
           "event_type": "NTC",
+          "gcg_stats_url": "https://gcg-stats.com/events/ntcd-01M7CYDSAGZ4SW49YSSA9MKWQR.html",
           "player": "あらぞう",
+          "quarantine_reason": "gcg-stats 公开页将该选手标为優勝，且同场出现两名優勝；站点收录为 rank=2。未做独立店铺或选手原帖核验，不把自动采集当可用。按冲突隔离，不改判冠军，也不计入分母。",
           "rank": 2,
           "region": "日本",
           "source_url": "https://gcg-stats.com/events/ntcd-01M7CYDSAGZ4SW49YSSA9MKWQR.html",
-          "status": "included",
+          "status": "quarantined",
           "store": "カードボックス高槻店",
           "strong_event_id": "01M7CYDSAGZ4SW49YSSA9MKWQR",
-          "unconfirmed": false
+          "unconfirmed": false,
+          "verification": "公开页名次标签冲突，尚未独立核验"
         },
         {
           "archetype": "红白·机动武斗传",

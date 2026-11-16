@@ -94,7 +94,9 @@ class WeeklyStatsTest(unittest.TestCase):
         self.assertEqual(week["start"], "2026-11-02")
         self.assertEqual(week["end"], "2026-11-08")
         self.assertTrue(week["complete"])
-        self.assertEqual(self.japan["default_view"], "week:2026-11-02")
+        complete_ids = [row["id"] for row in self.japan["weeks"] if row.get("complete")]
+        self.assertEqual(self.japan["default_view"], complete_ids[-1])
+        self.assertNotEqual(self.japan["default_view"], window["id"])
         self.assertGreater(week["events"], window["events"])
         self.assertNotEqual(week["included_decks"], window["included_decks"])
         self.assertNotEqual(week["raw_decks"], 72)

@@ -2,8 +2,8 @@
   "meta": {
     "generator": "scripts/build_weekly_stats.py",
     "japan_events_file": {
-      "events": 1309,
-      "placements": 2624,
+      "events": 1313,
+      "placements": 2632,
       "region": "日本"
     },
     "min_date": "2026-08-01",
@@ -24,8 +24,8 @@
         "region": "日本"
       },
       "data/japan-events.json": {
-        "events": 1309,
-        "placements": 2624,
+        "events": 1313,
+        "placements": 2632,
         "region": "日本"
       },
       "data/japan-official.json": {
@@ -38,7 +38,7 @@
       "data/china.json": "11ed0fb4f7f7ce3afc9081a8633f06bc6f3121c22c8c61c7f4d316f20731d221",
       "data/eu.json": "b015ebe3791c599ffde5a179f0ded397804e49e9bf17ebcce33c9e914195fc84",
       "data/japan-cs.json": "04bcb86b0f0f7503c73355e00c7b5f476510b3cacffb84c935d47545ccb592c4",
-      "data/japan-events.json": "8abc735f81f5f0a40db0cda8d5d13ff8973871c48eaf9a4e1dff75e4d18d449a",
+      "data/japan-events.json": "052cfbd6cbed4a83f8954ba50902646c5d045bfbb5a565f819a63a75a1bca314",
       "data/japan-official.json": "a9219391066183e68f081eb4909e7fa7b0da859314315cb59fd1d735d259d1b8",
       "scripts/data/archetype_rules.json": "6c1e9bfa36604674c993cc3f08542adca358329d8ca25b5b4daf4b70b9ff803e",
       "scripts/data/card_catalog.json": "5fb62ae6404d12ca5990b0cf958eb06668aa01f259287fa41916acd9d0fda4eb",
@@ -164,7 +164,7 @@
       }
     },
     "日本": {
-      "max_date": "2026-11-18",
+      "max_date": "2026-11-19",
       "min_date": "2026-08-01",
       "records": [
         {
@@ -37036,6 +37036,118 @@
           "status": "included",
           "store": "カードラボ郡山店",
           "strong_event_id": "01M7PPVA8E8N3R7VKG3BZESJ2F",
+          "unconfirmed": false
+        },
+        {
+          "archetype": "红白·机动武斗传",
+          "date": "2026-11-19",
+          "event_id": "ntcd-01M7SCN7ZM1ZZT1NRMKDDEYHNN",
+          "event_type": "NTC",
+          "player": "とっくまん",
+          "rank": 1,
+          "region": "日本",
+          "source_url": "https://gcg-stats.com/events/ntcd-01M7SCN7ZM1ZZT1NRMKDDEYHNN.html",
+          "status": "included",
+          "store": "ドラゴンスター秋葉原駅前店",
+          "strong_event_id": "01M7SCN7ZM1ZZT1NRMKDDEYHNN",
+          "unconfirmed": false
+        },
+        {
+          "archetype": "红白·ZZ高达",
+          "date": "2026-11-19",
+          "event_id": "ntcd-01M7SCN7ZM1ZZT1NRMKDDEYHNN",
+          "event_type": "NTC",
+          "player": "アルカセット",
+          "rank": 2,
+          "region": "日本",
+          "source_url": "https://gcg-stats.com/events/ntcd-01M7SCN7ZM1ZZT1NRMKDDEYHNN.html",
+          "status": "included",
+          "store": "ドラゴンスター秋葉原駅前店",
+          "strong_event_id": "01M7SCN7ZM1ZZT1NRMKDDEYHNN",
+          "unconfirmed": false
+        },
+        {
+          "archetype": "红白·机动武斗传",
+          "date": "2026-11-19",
+          "event_id": "ntcd-01M7SCNEJGY5SXNHF7RBVE28YX",
+          "event_type": "NTC",
+          "player": "おか",
+          "rank": 1,
+          "region": "日本",
+          "source_url": "https://gcg-stats.com/events/ntcd-01M7SCNEJGY5SXNHF7RBVE28YX.html",
+          "status": "included",
+          "store": "アメニティードリーム立川店",
+          "strong_event_id": "01M7SCNEJGY5SXNHF7RBVE28YX",
+          "unconfirmed": false
+        },
+        {
+          "archetype": "红白·机动武斗传",
+          "date": "2026-11-19",
+          "event_id": "ntcd-01M7SCNEJGY5SXNHF7RBVE28YX",
+          "event_type": "NTC",
+          "player": "まろん",
+          "rank": 2,
+          "region": "日本",
+          "source_url": "https://gcg-stats.com/events/ntcd-01M7SCNEJGY5SXNHF7RBVE28YX.html",
+          "status": "included",
+          "store": "アメニティードリーム立川店",
+          "strong_event_id": "01M7SCNEJGY5SXNHF7RBVE28YX",
+          "unconfirmed": false
+        },
+        {
+          "archetype": "蓝白·强袭自由",
+          "date": "2026-11-19",
+          "event_id": "ntcd-01M7SG3S47B8GVPDZF0D8894W3",
+          "event_type": "NTC",
+          "player": "トラ",
+          "rank": 1,
+          "region": "日本",
+          "source_url": "https://gcg-stats.com/events/ntcd-01M7SG3S47B8GVPDZF0D8894W3.html",
+          "status": "included",
+          "store": "カードボックス京都店",
+          "strong_event_id": "01M7SG3S47B8GVPDZF0D8894W3",
+          "unconfirmed": false
+        },
+        {
+          "archetype": "红白·ZZ高达",
+          "date": "2026-11-19",
+          "event_id": "ntcd-01M7SG3S47B8GVPDZF0D8894W3",
+          "event_type": "NTC",
+          "player": "四葉のごはん",
+          "rank": 2,
+          "region": "日本",
+          "source_url": "https://gcg-stats.com/events/ntcd-01M7SG3S47B8GVPDZF0D8894W3.html",
+          "status": "included",
+          "store": "カードボックス京都店",
+          "strong_event_id": "01M7SG3S47B8GVPDZF0D8894W3",
+          "unconfirmed": false
+        },
+        {
+          "archetype": "蓝白·强袭自由",
+          "date": "2026-11-19",
+          "event_id": "ntcd-01M7SKHM1GSNNR4XSB4AK8P8YW",
+          "event_type": "NTC",
+          "player": "msk",
+          "rank": 1,
+          "region": "日本",
+          "source_url": "https://gcg-stats.com/events/ntcd-01M7SKHM1GSNNR4XSB4AK8P8YW.html",
+          "status": "included",
+          "store": "青馬堂本店",
+          "strong_event_id": "01M7SKHM1GSNNR4XSB4AK8P8YW",
+          "unconfirmed": false
+        },
+        {
+          "archetype": "红白·机动武斗传",
+          "date": "2026-11-19",
+          "event_id": "ntcd-01M7SKHM1GSNNR4XSB4AK8P8YW",
+          "event_type": "NTC",
+          "player": "すろあ",
+          "rank": 2,
+          "region": "日本",
+          "source_url": "https://gcg-stats.com/events/ntcd-01M7SKHM1GSNNR4XSB4AK8P8YW.html",
+          "status": "included",
+          "store": "青馬堂本店",
+          "strong_event_id": "01M7SKHM1GSNNR4XSB4AK8P8YW",
           "unconfirmed": false
         }
       ],

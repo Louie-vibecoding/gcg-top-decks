@@ -2,8 +2,8 @@
   "meta": {
     "generator": "scripts/build_weekly_stats.py",
     "japan_events_file": {
-      "events": 1313,
-      "placements": 2632,
+      "events": 1314,
+      "placements": 2634,
       "region": "日本"
     },
     "min_date": "2026-08-01",
@@ -24,8 +24,8 @@
         "region": "日本"
       },
       "data/japan-events.json": {
-        "events": 1313,
-        "placements": 2632,
+        "events": 1314,
+        "placements": 2634,
         "region": "日本"
       },
       "data/japan-official.json": {
@@ -38,7 +38,7 @@
       "data/china.json": "11ed0fb4f7f7ce3afc9081a8633f06bc6f3121c22c8c61c7f4d316f20731d221",
       "data/eu.json": "b015ebe3791c599ffde5a179f0ded397804e49e9bf17ebcce33c9e914195fc84",
       "data/japan-cs.json": "04bcb86b0f0f7503c73355e00c7b5f476510b3cacffb84c935d47545ccb592c4",
-      "data/japan-events.json": "052cfbd6cbed4a83f8954ba50902646c5d045bfbb5a565f819a63a75a1bca314",
+      "data/japan-events.json": "77fa6c20463a82f7ff0f11b336a4f8a19e635810042eaa0d2a1c2bc83e89d141",
       "data/japan-official.json": "a9219391066183e68f081eb4909e7fa7b0da859314315cb59fd1d735d259d1b8",
       "scripts/data/archetype_rules.json": "6c1e9bfa36604674c993cc3f08542adca358329d8ca25b5b4daf4b70b9ff803e",
       "scripts/data/card_catalog.json": "5fb62ae6404d12ca5990b0cf958eb06668aa01f259287fa41916acd9d0fda4eb",
@@ -164,7 +164,7 @@
       }
     },
     "日本": {
-      "max_date": "2026-11-19",
+      "max_date": "2026-11-20",
       "min_date": "2026-08-01",
       "records": [
         {
@@ -37148,6 +37148,34 @@
           "status": "included",
           "store": "青馬堂本店",
           "strong_event_id": "01M7SKHM1GSNNR4XSB4AK8P8YW",
+          "unconfirmed": false
+        },
+        {
+          "archetype": "红白·机动武斗传",
+          "date": "2026-11-20",
+          "event_id": "ntcd-01M7VZ2SCVA19NN7H8ZVASZJGQ",
+          "event_type": "NTC",
+          "player": "古砂夢（ふるすなゆめ）",
+          "rank": 1,
+          "region": "日本",
+          "source_url": "https://gcg-stats.com/events/ntcd-01M7VZ2SCVA19NN7H8ZVASZJGQ.html",
+          "status": "included",
+          "store": "ドラゴンスター神戸三宮",
+          "strong_event_id": "01M7VZ2SCVA19NN7H8ZVASZJGQ",
+          "unconfirmed": false
+        },
+        {
+          "archetype": "蓝白·强袭自由",
+          "date": "2026-11-20",
+          "event_id": "ntcd-01M7VZ2SCVA19NN7H8ZVASZJGQ",
+          "event_type": "NTC",
+          "player": "紀緑/TTpros",
+          "rank": 2,
+          "region": "日本",
+          "source_url": "https://gcg-stats.com/events/ntcd-01M7VZ2SCVA19NN7H8ZVASZJGQ.html",
+          "status": "included",
+          "store": "ドラゴンスター神戸三宮",
+          "strong_event_id": "01M7VZ2SCVA19NN7H8ZVASZJGQ",
           "unconfirmed": false
         }
       ],

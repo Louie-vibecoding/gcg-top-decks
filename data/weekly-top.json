@@ -17,7 +17,7 @@
       "source": "https://github.com/yzRobo/gcg-api/blob/main/data/cards.json",
       "upstream": "Public snapshot of the official English Gundam Card Game card database via gcgapi. Types are used only to tell units from pilots, commands, bases and resources."
     },
-    "data_git_commit": "7698dd753f1bebbf6f9314da3679208b0da4e452",
+    "data_git_commit": "76e517b925b71b3f66fc84610219a2bc40aed353",
     "default_region": "日本",
     "duplicate_drops": [],
     "excluded_team_events": [
@@ -30,8 +30,8 @@
         "region": "日本"
       }
     ],
-    "generated_at": "2026-11-25T19:53:58+08:00",
-    "generated_at_label": "2026-11-25 19:53 北京时间",
+    "generated_at": "2026-11-26T19:56:52+08:00",
+    "generated_at_label": "2026-11-26 19:56 北京时间",
     "generation_log": [
       {
         "fingerprint": "6b45887e4073c659a93452e4405c49807a1853dd786eede2d1d947da6a6f67b9",
@@ -117,12 +117,17 @@
         "fingerprint": "4baf8bc9928d0a8c22ecb49f12b2ad257a40377eefb8683cc99b67e89d4329bd",
         "generated_at": "2026-11-24T19:56:02+08:00",
         "japan_default_view": "week:2026-11-16"
+      },
+      {
+        "fingerprint": "0bdddf3378bbd643e3a4047c710f99e5afd43979c5533ba4833778f067362814",
+        "generated_at": "2026-11-25T19:53:58+08:00",
+        "japan_default_view": "week:2026-11-16"
       }
     ],
     "generator": "scripts/build_weekly_stats.py",
     "japan_events_file": {
-      "events": 1363,
-      "placements": 2733,
+      "events": 1364,
+      "placements": 2735,
       "region": "日本"
     },
     "min_date": "2026-08-01",
@@ -151,8 +156,8 @@
         "region": "日本"
       },
       "data/japan-events.json": {
-        "events": 1363,
-        "placements": 2733,
+        "events": 1364,
+        "placements": 2735,
         "region": "日本"
       },
       "data/japan-official.json": {
@@ -165,7 +170,7 @@
       "data/china.json": "11ed0fb4f7f7ce3afc9081a8633f06bc6f3121c22c8c61c7f4d316f20731d221",
       "data/eu.json": "b015ebe3791c599ffde5a179f0ded397804e49e9bf17ebcce33c9e914195fc84",
       "data/japan-cs.json": "04bcb86b0f0f7503c73355e00c7b5f476510b3cacffb84c935d47545ccb592c4",
-      "data/japan-events.json": "d79baca27b37b02d80da97e9dfcfcd838df876292cc1fe510c3b34f3395564a7",
+      "data/japan-events.json": "d4016a5434d4a6eb7f7e24353bdce9ebf2e1ba5e21fff94939e2c6d29e751507",
       "data/japan-official.json": "a9219391066183e68f081eb4909e7fa7b0da859314315cb59fd1d735d259d1b8",
       "scripts/data/archetype_rules.json": "6c1e9bfa36604674c993cc3f08542adca358329d8ca25b5b4daf4b70b9ff803e",
       "scripts/data/card_catalog.json": "5fb62ae6404d12ca5990b0cf958eb06668aa01f259287fa41916acd9d0fda4eb",
@@ -793,9 +798,9 @@
     },
     "日本": {
       "default_view": "week:2026-11-16",
-      "included_decks": 2714,
-      "included_events": 1365,
-      "max_date": "2026-11-25",
+      "included_decks": 2716,
+      "included_events": 1366,
+      "max_date": "2026-11-26",
       "min_date": "2026-08-01",
       "region": "日本",
       "special_windows": [
@@ -1406,7 +1411,7 @@
                     "card_type": "UNIT",
                     "copies_sum": 27,
                     "decks_with_card": 7,
-                    "detail": "在本体系之外的卡表里出现率 11.7%，视为通用外挂，不作为代表。",
+                    "detail": "在本体系之外的卡表里出现率 11.8%，视为通用外挂，不作为代表。",
                     "group_size": 11,
                     "name_en": "Flat (Militia)",
                     "reason_code": "generic_splash"
@@ -1451,7 +1456,7 @@
                   "group_size": 11
                 },
                 "mode": "observed_pair",
-                "reason": "规则核心机体是 ZZ高达 GD06-033（11/11）。双头龙高达（EW） GD06-064 不在最低张数规则里，但在本组 11/11 套与核心同时出现，平均投入 3.7 张，体系外出现率 2.5%。第二张图取这台同场机体，不拿驾驶员或通用外挂补位。Suletta Mercury ST13-012 是驾驶员（9/11 套），不用来补第二张图。"
+                "reason": "规则核心机体是 ZZ高达 GD06-033（11/11）。双头龙高达（EW） GD06-064 不在最低张数规则里，但在本组 11/11 套与核心同时出现，平均投入 3.7 张，体系外出现率 2.6%。第二张图取这台同场机体，不拿驾驶员或通用外挂补位。Suletta Mercury ST13-012 是驾驶员（9/11 套），不用来补第二张图。"
               },
               "rule": {
                 "color": "红白",
@@ -39234,7 +39239,7 @@
                     "card_type": "UNIT",
                     "copies_sum": 27,
                     "decks_with_card": 7,
-                    "detail": "在本体系之外的卡表里出现率 11.7%，视为通用外挂，不作为代表。",
+                    "detail": "在本体系之外的卡表里出现率 11.8%，视为通用外挂，不作为代表。",
                     "group_size": 11,
                     "name_en": "Flat (Militia)",
                     "reason_code": "generic_splash"
@@ -39279,7 +39284,7 @@
                   "group_size": 11
                 },
                 "mode": "observed_pair",
-                "reason": "规则核心机体是 ZZ高达 GD06-033（11/11）。双头龙高达（EW） GD06-064 不在最低张数规则里，但在本组 11/11 套与核心同时出现，平均投入 3.7 张，体系外出现率 2.5%。第二张图取这台同场机体，不拿驾驶员或通用外挂补位。Suletta Mercury ST13-012 是驾驶员（9/11 套），不用来补第二张图。"
+                "reason": "规则核心机体是 ZZ高达 GD06-033（11/11）。双头龙高达（EW） GD06-064 不在最低张数规则里，但在本组 11/11 套与核心同时出现，平均投入 3.7 张，体系外出现率 2.6%。第二张图取这台同场机体，不拿驾驶员或通用外挂补位。Suletta Mercury ST13-012 是驾驶员（9/11 套），不用来补第二张图。"
               },
               "rule": {
                 "color": "红白",
@@ -42497,7 +42502,7 @@
                     "card_type": "UNIT",
                     "copies_sum": 3,
                     "decks_with_card": 1,
-                    "detail": "在本体系之外的卡表里出现率 11.0%，视为通用外挂，不作为代表。",
+                    "detail": "在本体系之外的卡表里出现率 10.9%，视为通用外挂，不作为代表。",
                     "group_size": 1,
                     "name_en": "Sword Strike Gundam",
                     "reason_code": "generic_splash"
@@ -44098,21 +44103,8 @@
               "name": "绿紫·体系待确认",
               "percent": "3.4",
               "representative": {
-                "cards": [
-                  {
-                    "card_id": "GD05-049",
-                    "card_type": "UNIT",
-                    "copies_sum": 9,
-                    "decks_with_card": 3,
-                    "group_size": 3,
-                    "level": 7,
-                    "name_en": "Sazabi",
-                    "name_zh": "沙扎比",
-                    "role": "unconfirmed_unit"
-                  }
-                ],
-                "mode": "unconfirmed_single",
-                "reason": "体系未确认。沙扎比 GD05-049 在本组 3/3 套出现，平均 3.0 张，但没有第二台通过同场检验。不使用扎古、巴巴托斯一类通用机体充数。哈曼·卡恩 ST13-011 是驾驶员（3/3 套），不用来补第二张图。"
+                "mode": "unconfirmed_none",
+                "reason": "体系未确认，组内也没有一对稳定、且不属于通用外挂的机体。不按颜色凑图，也不用驾驶员补位。哈曼·卡恩 ST13-011 是驾驶员（3/3 套），不用来补第二张图。"
               },
               "runner_up": 1,
               "total": 3,
@@ -44336,14 +44328,14 @@
           "unconfirmed_decks": 14
         },
         {
-          "champions": 24,
+          "champions": 25,
           "chart_empty": false,
           "complete": false,
-          "coverage_note": "全部地区数据最晚到 2026-11-25，这一周还没有过完，不作为默认周。",
-          "denominator": 48,
+          "coverage_note": "全部地区数据最晚到 2026-11-26，这一周还没有过完，不作为默认周。",
+          "denominator": 50,
           "end": "2026-11-29",
-          "events": 24,
-          "group_total_sum": 48,
+          "events": 25,
+          "group_total_sum": 50,
           "groups": [
             {
               "ambiguous": false,
@@ -44516,29 +44508,41 @@
                   "source_url": "https://gcg-stats.com/events/ntcd-01M88V2DHC22D2KVXDFKYA89DJ.html",
                   "store": "ブックオフ相模大野店",
                   "strong_event_id": "01M88V2DHC22D2KVXDFKYA89DJ"
+                },
+                {
+                  "area": "関東",
+                  "date": "2026-11-26",
+                  "event_id": "ntcd-01M8BA1KZBFAT1MPYA3DSK4PND",
+                  "event_type": "NTC",
+                  "player": "カミナ",
+                  "rank": 2,
+                  "source": "gcg-stats",
+                  "source_url": "https://gcg-stats.com/events/ntcd-01M8BA1KZBFAT1MPYA3DSK4PND.html",
+                  "store": "トレカマーケットオンリーワン",
+                  "strong_event_id": "01M8BA1KZBFAT1MPYA3DSK4PND"
                 }
               ],
               "name": "蓝白·强袭自由",
-              "percent": "29.2",
+              "percent": "30.0",
               "representative": {
                 "alternatives": [
                   {
                     "card_id": "GD04-068",
                     "card_type": "UNIT",
-                    "copies_sum": 51,
-                    "decks_with_card": 14,
+                    "copies_sum": 55,
+                    "decks_with_card": 15,
                     "detail": "在本体系之外的卡表里出现率 24.6%，视为通用外挂，不作为代表。",
-                    "group_size": 14,
+                    "group_size": 15,
                     "name_en": "Silver Bullet",
                     "reason_code": "generic_splash"
                   },
                   {
                     "card_id": "GD06-002",
                     "card_type": "UNIT",
-                    "copies_sum": 15,
-                    "decks_with_card": 11,
+                    "copies_sum": 17,
+                    "decks_with_card": 12,
                     "detail": "出现时平均只有 1.4 张，更像点缀而不是核心投入。",
-                    "group_size": 14,
+                    "group_size": 15,
                     "name_en": "Infinite Justice Gundam",
                     "reason_code": "low_copies"
                   },
@@ -44548,7 +44552,7 @@
                     "copies_sum": 4,
                     "decks_with_card": 1,
                     "detail": "瓦尔德菲尔德的村雨 GD05-003 是另一个已定义体系的核心，不用来给本组凑第二台。",
-                    "group_size": 14,
+                    "group_size": 15,
                     "name_en": "Waldfeld's Murasame",
                     "name_zh": "瓦尔德菲尔德的村雨",
                     "reason_code": "other_archetype_core"
@@ -44558,9 +44562,9 @@
                   {
                     "card_id": "GD05-002",
                     "card_type": "UNIT",
-                    "copies_sum": 56,
-                    "decks_with_card": 14,
-                    "group_size": 14,
+                    "copies_sum": 60,
+                    "decks_with_card": 15,
+                    "group_size": 15,
                     "level": 8,
                     "name_en": "Strike Freedom Gundam",
                     "name_zh": "强袭自由高达",
@@ -44569,20 +44573,20 @@
                   {
                     "card_id": "GD05-010",
                     "card_type": "UNIT",
-                    "copies_sum": 50,
-                    "decks_with_card": 14,
-                    "group_size": 14,
+                    "copies_sum": 52,
+                    "decks_with_card": 15,
+                    "group_size": 15,
                     "level": 4,
                     "name_en": "Kira's Strike Rouge",
                     "role": "cooccurring_unit"
                   }
                 ],
                 "co_occurrence": {
-                  "decks": 14,
-                  "group_size": 14
+                  "decks": 15,
+                  "group_size": 15
                 },
                 "mode": "observed_pair",
-                "reason": "规则核心机体是 强袭自由高达 GD05-002（14/14）。Kira's Strike Rouge GD05-010 不在最低张数规则里，但在本组 14/14 套与核心同时出现，平均投入 3.6 张，体系外出现率 6.2%。第二张图取这台同场机体，不拿驾驶员或通用外挂补位。基拉·大和 GD05-081 是驾驶员（14/14 套），不用来补第二张图。"
+                "reason": "规则核心机体是 强袭自由高达 GD05-002（15/15）。Kira's Strike Rouge GD05-010 不在最低张数规则里，但在本组 15/15 套与核心同时出现，平均投入 3.5 张，体系外出现率 6.2%。第二张图取这台同场机体，不拿驾驶员或通用外挂补位。基拉·大和 GD05-081 是驾驶员（15/15 套），不用来补第二张图。"
               },
               "rule": {
                 "color": "蓝白",
@@ -44592,8 +44596,8 @@
                 },
                 "representative_card": "GD05-002"
               },
-              "runner_up": 7,
-              "total": 14,
+              "runner_up": 8,
+              "total": 15,
               "unconfirmed": false
             },
             {
@@ -44698,7 +44702,7 @@
                 }
               ],
               "name": "红白·机动武斗传",
-              "percent": "16.7",
+              "percent": "16.0",
               "representative": {
                 "cards": [
                   {
@@ -44746,7 +44750,7 @@
             },
             {
               "ambiguous": false,
-              "champion": 5,
+              "champion": 6,
               "decks": [
                 {
                   "area": "九州",
@@ -44831,29 +44835,41 @@
                   "source_url": "https://gcg-stats.com/events/ntcd-01M88QM216QR36E65QT7HHSRQH.html",
                   "store": "ホビーステーション秋葉原本店",
                   "strong_event_id": "01M88QM216QR36E65QT7HHSRQH"
+                },
+                {
+                  "area": "関東",
+                  "date": "2026-11-26",
+                  "event_id": "ntcd-01M8BA1KZBFAT1MPYA3DSK4PND",
+                  "event_type": "NTC",
+                  "player": "かーな",
+                  "rank": 1,
+                  "source": "gcg-stats",
+                  "source_url": "https://gcg-stats.com/events/ntcd-01M8BA1KZBFAT1MPYA3DSK4PND.html",
+                  "store": "トレカマーケットオンリーワン",
+                  "strong_event_id": "01M8BA1KZBFAT1MPYA3DSK4PND"
                 }
               ],
               "name": "绿紫·新吉翁",
-              "percent": "14.6",
+              "percent": "16.0",
               "representative": {
                 "alternatives": [
                   {
                     "card_id": "GD02-055",
                     "card_type": "UNIT",
-                    "copies_sum": 28,
-                    "decks_with_card": 7,
+                    "copies_sum": 32,
+                    "decks_with_card": 8,
                     "detail": "在本体系之外的卡表里出现率 16.7%，视为通用外挂，不作为代表。",
-                    "group_size": 7,
+                    "group_size": 8,
                     "name_en": "Gundam Gusion Rebake",
                     "reason_code": "generic_splash"
                   },
                   {
                     "card_id": "GD03-056",
                     "card_type": "UNIT",
-                    "copies_sum": 28,
-                    "decks_with_card": 7,
+                    "copies_sum": 32,
+                    "decks_with_card": 8,
                     "detail": "巴巴托斯（适应型） GD03-056 是另一个已定义体系的核心，不用来给本组凑第二台。",
-                    "group_size": 7,
+                    "group_size": 8,
                     "name_en": "Gundam Barbatos Adapt",
                     "name_zh": "巴巴托斯（适应型）",
                     "reason_code": "other_archetype_core"
@@ -44861,10 +44877,10 @@
                   {
                     "card_id": "ST03-006",
                     "card_type": "UNIT",
-                    "copies_sum": 28,
-                    "decks_with_card": 7,
+                    "copies_sum": 32,
+                    "decks_with_card": 8,
                     "detail": "在本体系之外的卡表里出现率 15.5%，视为通用外挂，不作为代表。",
-                    "group_size": 7,
+                    "group_size": 8,
                     "name_en": "Char's Zaku Ⅱ",
                     "reason_code": "generic_splash"
                   }
@@ -44873,9 +44889,9 @@
                   {
                     "card_id": "ST13-001",
                     "card_type": "UNIT",
-                    "copies_sum": 26,
-                    "decks_with_card": 7,
-                    "group_size": 7,
+                    "copies_sum": 30,
+                    "decks_with_card": 8,
+                    "group_size": 8,
                     "level": 7,
                     "name_en": "Qubeley",
                     "name_zh": "丘贝雷",
@@ -44884,9 +44900,9 @@
                   {
                     "card_id": "GD05-049",
                     "card_type": "UNIT",
-                    "copies_sum": 26,
-                    "decks_with_card": 7,
-                    "group_size": 7,
+                    "copies_sum": 30,
+                    "decks_with_card": 8,
+                    "group_size": 8,
                     "level": 7,
                     "name_en": "Sazabi",
                     "name_zh": "沙扎比",
@@ -44894,11 +44910,11 @@
                   }
                 ],
                 "co_occurrence": {
-                  "decks": 7,
-                  "group_size": 7
+                  "decks": 8,
+                  "group_size": 8
                 },
                 "mode": "observed_pair",
-                "reason": "规则核心机体是 丘贝雷 ST13-001（7/7）。沙扎比 GD05-049 不在最低张数规则里，但在本组 7/7 套与核心同时出现，平均投入 3.7 张，体系外出现率 5.6%。第二张图取这台同场机体，不拿驾驶员或通用外挂补位。哈曼·卡恩 ST13-011 是驾驶员（7/7 套），不用来补第二张图。"
+                "reason": "规则核心机体是 丘贝雷 ST13-001（8/8）。沙扎比 GD05-049 不在最低张数规则里，但在本组 8/8 套与核心同时出现，平均投入 3.8 张，体系外出现率 5.6%。第二张图取这台同场机体，不拿驾驶员或通用外挂补位。哈曼·卡恩 ST13-011 是驾驶员（8/8 套），不用来补第二张图。"
               },
               "rule": {
                 "color": "绿紫",
@@ -44911,7 +44927,7 @@
                 "representative_card": "ST13-001"
               },
               "runner_up": 2,
-              "total": 7,
+              "total": 8,
               "unconfirmed": false
             },
             {
@@ -44980,7 +44996,7 @@
                 }
               ],
               "name": "蓝绿·ν高达",
-              "percent": "10.4",
+              "percent": "10.0",
               "representative": {
                 "cards": [
                   {
@@ -45069,7 +45085,7 @@
                 }
               ],
               "name": "绿紫·体系待确认",
-              "percent": "6.3",
+              "percent": "6.0",
               "representative": {
                 "mode": "unconfirmed_none",
                 "reason": "体系未确认，组内也没有一对稳定、且不属于通用外挂的机体。不按颜色凑图，也不用驾驶员补位。"
@@ -45108,7 +45124,7 @@
                 }
               ],
               "name": "蓝紫·巴巴托斯",
-              "percent": "4.2",
+              "percent": "4.0",
               "representative": {
                 "alternatives": [
                   {
@@ -45199,7 +45215,7 @@
                 }
               ],
               "name": "红白·ZZ高达",
-              "percent": "4.2",
+              "percent": "4.0",
               "representative": {
                 "alternatives": [
                   {
@@ -45217,7 +45233,7 @@
                     "card_type": "UNIT",
                     "copies_sum": 6,
                     "decks_with_card": 2,
-                    "detail": "在本体系之外的卡表里出现率 11.7%，视为通用外挂，不作为代表。",
+                    "detail": "在本体系之外的卡表里出现率 11.8%，视为通用外挂，不作为代表。",
                     "group_size": 2,
                     "name_en": "Flat (Militia)",
                     "reason_code": "generic_splash"
@@ -45305,7 +45321,7 @@
                 }
               ],
               "name": "蓝绿·体系待确认",
-              "percent": "4.2",
+              "percent": "4.0",
               "representative": {
                 "mode": "unconfirmed_none",
                 "reason": "体系未确认，组内也没有一对稳定、且不属于通用外挂的机体。不按颜色凑图，也不用驾驶员补位。Char Aznable ST03-011 是驾驶员（2/2 套），不用来补第二张图。"
@@ -45332,7 +45348,7 @@
                 }
               ],
               "name": "红蓝·强袭自由",
-              "percent": "2.1",
+              "percent": "2.0",
               "representative": {
                 "cards": [
                   {
@@ -45397,7 +45413,7 @@
                 }
               ],
               "name": "蓝紫·体系待确认",
-              "percent": "2.1",
+              "percent": "2.0",
               "representative": {
                 "mode": "unconfirmed_none",
                 "reason": "体系未确认，组内也没有一对稳定、且不属于通用外挂的机体。不按颜色凑图，也不用驾驶员补位。Loni Garvey ST11-012 是驾驶员（1/1 套），不用来补第二张图。"
@@ -45424,7 +45440,7 @@
                 }
               ],
               "name": "红绿·体系待确认",
-              "percent": "2.1",
+              "percent": "2.0",
               "representative": {
                 "mode": "unconfirmed_none",
                 "reason": "体系未确认，组内也没有一对稳定、且不属于通用外挂的机体。不按颜色凑图，也不用驾驶员补位。Char Aznable ST03-011 是驾驶员（1/1 套），不用来补第二张图。"
@@ -45451,7 +45467,7 @@
                 }
               ],
               "name": "红蓝·体系待确认",
-              "percent": "2.1",
+              "percent": "2.0",
               "representative": {
                 "mode": "unconfirmed_none",
                 "reason": "体系未确认，组内也没有一对稳定、且不属于通用外挂的机体。不按颜色凑图，也不用驾驶员补位。新罗安那克 GD06-092 是驾驶员（1/1 套），不用来补第二张图。"
@@ -45478,7 +45494,7 @@
                 }
               ],
               "name": "绿白·体系待确认",
-              "percent": "2.1",
+              "percent": "2.0",
               "representative": {
                 "mode": "unconfirmed_none",
                 "reason": "体系未确认，组内也没有一对稳定、且不属于通用外挂的机体。不按颜色凑图，也不用驾驶员补位。哈曼·卡恩 ST13-011 是驾驶员（1/1 套），不用来补第二张图。"
@@ -45489,17 +45505,17 @@
             }
           ],
           "id": "week:2026-11-23",
-          "included_decks": 48,
+          "included_decks": 50,
           "isolated": [],
           "isolated_decks": 0,
           "kind": "week",
           "note": "",
           "quarantine": [],
           "quarantined_decks": 0,
-          "raw_decks": 48,
-          "raw_events": 24,
+          "raw_decks": 50,
+          "raw_events": 25,
           "region": "日本",
-          "runners_up": 24,
+          "runners_up": 25,
           "start": "2026-11-23",
           "sum_matches_denominator": true,
           "title": "2026-11-23 至 2026-11-29",
